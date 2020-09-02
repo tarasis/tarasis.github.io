@@ -13,16 +13,14 @@ body {
     
     color: white;
     margin: 0;
+
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400; /* 400 & 40 are very close*/
     font-size: 40px;
-}
-
-body {
-    font-family: 'Open Sans', sans-serif;
 }
 
 .logo {
@@ -84,7 +82,7 @@ body {
 }
 
 .circleIcon {
-    magin: 0;
+    margin: 0;
     color: white;
     background: transparent;
     border: 1.75px solid #fff;
@@ -115,11 +113,93 @@ body {
 
 /* Formating for Mobile devices. Sample to match is 375z800 */
 @media screen and (max-width: 375px) {
+
     body {
         background-image: url("../images/bg-mobile.svg");
         background-repeat: no-repeat;
+        /* background-size: contain; */
         
         color: white;
-        margin: 2em 4em;
+        margin: 0;
+    }
+
+    .logo {
+        width: 128px;
+        margin: 8.5325% 35px 0rem; /* 3.75% 4.375rem 0rem*/
+    }
+
+    .illustrations {
+        margin: 3.5rem 2.375rem 1rem;
+    }
+
+    .illustration {
+        max-width: 100%;
+        max-height: 100vh;
+        height: auto;
+    }
+
+    .middleSection {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .siteBlurb {
+        margin:0;
+        margin-top: 1rem;
+        text-align: center;
+    
+        /* line-height: 2rem;
+        font-weight: 400; */
+    }
+    
+    .siteBlurb h1 {
+        margin: 1rem 2rem;
+        font-size: 1.5rem;
+    }
+    
+    .siteBlurb p {
+        margin:0;
+    }
+    
+    .registerButton {
+        background-color: white;
+        color: var(--site-color);
+        font-size: 19px;
+        border: none;
+        padding: 17px 64px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        /* margin: 4px 2px; */
+        cursor: pointer;
+        border-radius: 32px;
+        box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.4); /* 10px 5px 10px*/
+    }
+    
+    .socialButtonsSection {
+        /* display: block; */
+        text-align: center;
+    }
+    
+    .socialButtonsSection i {
+        /* padding: 0.5rem; */
+        /* margin-left: 0.5rem;
+        margin-top: 0.9375rem;
+        margin-right: 0; */
+    }
+    
+    .circleIcon {
+        margin: 0;
+        color: white;
+        background: transparent;
+        border: 1.75px solid #fff;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        vertical-align: middle;
+        font-size: 19px;
     }
 }
