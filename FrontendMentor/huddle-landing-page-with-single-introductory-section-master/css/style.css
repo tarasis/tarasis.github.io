@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap');
 
+:root {
+    font-size: 16px;
+    --site-color: hsl(257, 40%, 49%);
+}
+
 body {
-    background-color: hsl(257, 40%, 49%);
+    background-color: var(--site-color);
     background-image: url("../images/bg-desktop.svg");
     /* background-repeat: no-repeat;
     background-size: contain; */
@@ -12,7 +17,8 @@ body {
 
 h1 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 400; /* 400 & 40 are very close*/
+    font-size: 40px;
 }
 
 body {
@@ -21,48 +27,74 @@ body {
 
 .logo {
     width: 215px;
-    margin: 3.3125rem 4.4rem 0rem;
+    margin: 3.75% 4.86% 0rem; /* 3.75% 4.375rem 0rem*/
 }
 
 .middleSection {
     display: flex;
-    margin: 5.0625rem 4.6rem 0rem 4.55rem;
+    margin: 5.0625rem 0rem 0rem 4.55rem;
 }
 
 .siteBlurb {
-    margin: 3rem;
+    margin: 1.0625rem 4rem 2rem 3.325rem;
+
     /* line-height: 2rem;
     font-weight: 400; */
 }
 
 .siteBlurb h1 {
     margin-right: 2em;
+    margin-bottom: 0;
 }
 
-/* .siteBlurb p {
-    line-height: 1.5rem;
-} */
+.siteBlurb p {
+    margin-right: 1.5rem;
+    margin-bottom: 1.5625rem;
+    line-height: 1.7rem;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.registerButton {
+    background-color: white;
+    color: var(--site-color);
+    font-size: 19px;
+    border: none;
+    padding: 17px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+    border-radius: 32px;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.4); /* 10px 5px 10px*/
+}
 
 .socialButtonsSection {
     display: block;
     text-align: right;
+    margin-right: 5.1875rem;
 }
 
 .socialButtonsSection i {
-    padding: 0.5em;
-    margin-left: 0.5em;
-    margin-top: 1em;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.9375rem;
+    margin-right: 0;
 }
 
 .circleIcon {
+    magin: 0;
+    color: white;
     background: transparent;
-    border: 1px solid #fff;
-    width: 16px;
-    height: 16px;
+    border: 1.75px solid #fff;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     text-align: center;
-    line-height: 16px;
+    line-height: 20px;
     vertical-align: middle;
+    font-size: 19px;
     /* padding: 5px; */
 
     /* border: 2px solid #fff;
@@ -72,6 +104,10 @@ body {
     position: relative;
     left: 8px;
     color: transparent; */
+}
+
+.circleIcon:hover {
+    color: blue;
 }
 
 .attribution { font-size: 11px; text-align: center; }

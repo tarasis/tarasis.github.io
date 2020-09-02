@@ -32,8 +32,23 @@ next day
     download diffchecker trial rather than keep using website
     adjust size of logo svg
     play with positioning using margin and rem. Logo and mockup images are so close at this point (see image diff 1)
+    ![alt](image-diff-1.png)
     realise I probably should be using % rather than rem for margin positioning
     also should probably be using 0 positioning in body and doing it in each element
+    tweaked logo and mid section margins mixture rem & % for the moment
+    set body to have 0 margin
+    seemingly no changes are made with % unless they are to a pixel, so 4.86 is the same as 4.8611111, need to go to next px % which is 4.7916666667
+    then lots and lots of iterating. Making changes and comparing in diffchecker against the design doc.
+    Spent 2 hours+ on this. Too long.
+    Still haven't quite nailed the blurb section.
+        Basically the logo is slight off
+        the differences between the mockup and symbols are image quality between jpg and png
+        its like a pixel off with the social media buttons
+    img-diff-2-desktop-near-enough.png
+    ![alt](img-diff-2-desktop-near-enough.png)
+
+    Still now on to the mobile variant. Can I nail it better?
+
 
 Things I've not touched so far:
     main section
