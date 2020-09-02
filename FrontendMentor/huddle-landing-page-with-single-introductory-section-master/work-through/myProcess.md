@@ -54,6 +54,12 @@ next day
 
     so. This is where I gave up.
 
+    --
+    Assessment: 
+
+    Issues with going in the sizes between 375w and 1440w. Social buttons are no longer right aligned or center aligned.
+    Still needs accessibility stuff
+
 Things I've not touched so far:
     main section
     accessibility
