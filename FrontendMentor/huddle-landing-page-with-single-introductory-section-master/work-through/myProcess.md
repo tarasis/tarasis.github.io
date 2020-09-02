@@ -48,7 +48,11 @@ next day
     ![alt](img-diff-2-desktop-near-enough.png)
 
     Still now on to the mobile variant. Can I nail it better?
+    spent an age on this, lots of tweaking. Not quite there but nearly, so nearly
 
+    ![alt](mob-img-diff-1.png)
+
+    so. This is where I gave up.
 
 Things I've not touched so far:
     main section
