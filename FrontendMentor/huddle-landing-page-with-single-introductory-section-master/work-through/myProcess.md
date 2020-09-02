@@ -27,6 +27,13 @@ next morning I realise
     set up 2, one 1440x800 and the other 375x800
     I can then save out the image and use diffchecker.com and use the design image vs the current image of the page to compare and see how close I am. You can use a diff mode that only shows the differences (mostly in green) which makes it easier to adjust.
     Now, now I need to finish styling for desktop ...
+    remainder of day lost to calls and roleplaying
+next day 
+    download diffchecker trial rather than keep using website
+    adjust size of logo svg
+    play with positioning using margin and rem. Logo and mockup images are so close at this point (see image diff 1)
+    realise I probably should be using % rather than rem for margin positioning
+    also should probably be using 0 positioning in body and doing it in each element
 
 Things I've not touched so far:
     main section
