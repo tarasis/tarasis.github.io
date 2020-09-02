@@ -1,2 +1,3 @@
 # tarasis.github.io
-A playground
+
+Temporary store for various completed Web Development exercises
