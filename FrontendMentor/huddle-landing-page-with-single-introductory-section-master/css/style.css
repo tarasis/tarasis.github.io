@@ -8,8 +8,8 @@
 body {
     background-color: var(--site-color);
     background-image: url("../images/bg-desktop.svg");
-    /* background-repeat: no-repeat;
-    background-size: contain; */
+    background-repeat: no-repeat;
+    /*background-size: contain; */
     
     color: white;
     margin: 0;
@@ -103,7 +103,7 @@ h1 {
 .attribution a { color: hsl(228, 45%, 44%); }
 
 /* Formating for Mobile devices. Sample to match is 375z800 */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
 
     body {
         background-image: url("../images/bg-mobile.svg");
