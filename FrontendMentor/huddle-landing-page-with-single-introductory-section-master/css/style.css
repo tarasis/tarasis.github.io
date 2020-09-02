@@ -7,7 +7,7 @@ body {
     background-size: contain; */
     
     color: white;
-    margin: 3.30rem 4.6rem 0rem;
+    margin: 0;
 }
 
 h1 {
@@ -21,11 +21,12 @@ body {
 
 .logo {
     width: 215px;
+    margin: 3.3125rem 4.4rem 0rem;
 }
 
 .middleSection {
     display: flex;
-    margin: 5.15rem 0rem 0rem 0rem;
+    margin: 5.0625rem 4.6rem 0rem 4.55rem;
 }
 
 .siteBlurb {
