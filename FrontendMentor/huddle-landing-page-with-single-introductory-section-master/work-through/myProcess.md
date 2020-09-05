@@ -64,7 +64,7 @@ Couple of days later
 * fifth: look at stacked icons on font awesome https://fontawesome.com/how-to-use/on-the-web/styling/stacking-icons
 * ~~sixth: hover state for social icons not a good color. Aim for a lighter violet. Aim to stay in color scheme (important for accessibility)~~
 * seventh: good not used too much css, nor complex structure
-* eighth: "personal pet peeve" html button is only valid in an html form, otherwise use a anchor styled as a button because a button has no href. -- Not sure which way to go with this because its not clear what would happen on the button press. Does it go to a new page, or reveal a email submission box
+* ~~eighth: "personal pet peeve" html button is only valid in an html form, otherwise use a anchor styled as a button because a button has no href.~~ -- Not sure which way to go with this because its not clear what would happen on the button press. Does it go to a new page, or reveal a email submission box
 * ninth: "personally I would have wrapped the social icons and the footer links in a combined foot section just because that makes them easier to move later if doing a whole site". Mixed on this, attribution link at bottom was not part of the original design, but was part of the base files, and is something that was deletable. 
 * tenth: (overall people though I did a good/awesome job)
 * eleventh: was told to check out PerfectPixel extension for Chrome/Firefox. Similar job to diffchecker, can use to add a design image as a layer and you can see how off you are from the design ... being by opacity or there is a difference view
