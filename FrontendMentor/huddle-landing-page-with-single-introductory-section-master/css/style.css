@@ -100,7 +100,7 @@ h1 {
 }
 
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: hsl(63, 100%, 65%); }
 
 /* Formating for Mobile devices. Sample to match is 375z800 */
 @media screen and (max-width: 500px) {
