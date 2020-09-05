@@ -77,3 +77,9 @@ Couple of days later
 
 Bit of a delay but started to work through the changes above.
 Was going to use the global selector to set Margin to 0, but it didn't work as I expected and from what I read its generally recommended not to use it.
+
+Made tweaks to mobile css, that made it work better between intended design sizes (375x800 and 1440x800). However that temporarily messed up 1440x800 design.
+
+Made tweaks to the desktop CSS and while its not quite as close as before I think it will do. Switched so that the transition occurs for phones and tablets to 1100 pixels BUT that has the drawback that the logo is too small and the background image is in the wrong place. (and argulably the mockup is a little big).
+
+I should work on it a bit further, but honestly thats enough for now. Next challenge.
