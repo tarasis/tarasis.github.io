@@ -13,6 +13,7 @@ body {
     
     color: white;
     margin: 0;
+    /* display: flex; */
 
     font-family: 'Open Sans', sans-serif;
 }
@@ -30,11 +31,23 @@ h1 {
 
 .middleSection {
     display: flex;
+    /* margin: auto; */
     margin: 5.0625rem 0rem 0rem 4.55rem;
+    width: 90%;
+    max-width: 1440px;
+}
+
+.illustrations {
+    width: 50%;
+}
+
+.illustration {
+    width: 100%;
 }
 
 .siteBlurb {
     margin: 1.0625rem 4rem 2rem 3.325rem;
+    width: 50%;
 
     /* line-height: 2rem;
     font-weight: 400; */
@@ -121,7 +134,10 @@ h1 {
     }
 
     .illustrations {
-        margin: 3.5rem 2.3125rem 1rem;
+        /* margin: 3.5rem 2.3125rem 1rem; */
+        margin: auto;
+        margin-top: 3.5rem;
+        width: 90%;
     }
 
     .illustration {
@@ -134,13 +150,15 @@ h1 {
         margin: 0;
         display: flex;
         flex-direction: column;
+        width: 100%
 
     }
     
     .siteBlurb {
         margin:0;
-        margin-top: 0.9375rem;
+        margin-top: 0.5rem;
         text-align: center;
+        width: 100%;
     
         /* line-height: 2rem;
         font-weight: 400; */
@@ -150,10 +168,11 @@ h1 {
         margin: 1.625rem 2rem 0rem 2rem;
         font-weight: 400;
         font-size: 1.5rem;
+        line-height: 1.5;
     }
     
     .siteBlurb p {
-        margin:0.75rem 2.25rem;
+        margin:0.9rem 2.25rem;
         font-size: 1rem;
         line-height: 1.5rem;
     }
