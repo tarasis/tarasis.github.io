@@ -96,7 +96,7 @@ h1 {
 }
 
 .circleIcon:hover {
-    color: blue;
+    background: rgb(174, 6, 208);
 }
 
 .attribution { font-size: 11px; text-align: center; }
@@ -195,11 +195,11 @@ h1 {
         color: white;
         background: transparent;
         border: 1.5px solid #fff;
-        width: 9px;
-        height: 9px;
+        width: 13px;
+        height: 13px;
         border-radius: 50%;
         text-align: center;
-        line-height: 11px;
+        line-height: 13px;
         /* vertical-align: middle; */
         align-content: center;
         font-size: 14px;

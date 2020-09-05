@@ -59,10 +59,10 @@ Couple of days later
 
 * First: Don't worry about it being so exact(!!), being a little off/up/down/font off doesn't really matter ... ALTHOUGH it CAN pay off to be exact. Theoretically you are hired to implement the required design, so best to be as exact as possible.
 * ~~Second: Link color in the attribution is impossible to read. My fault for not making any changes to it.~~
-* Third: mobile design - make icon size 13x13, that will fix centering
+* ~~Third: mobile design - make icon size 13x13, that will fix centering~~
 * Fourth: mobile design - the hit box for the link is off from the image/circle
 * fifth: look at stacked icons on font awesome https://fontawesome.com/how-to-use/on-the-web/styling/stacking-icons
-* sixth: hover state for social icons not a good color. Aim for a lighter violet. Aim to stay in color scheme (important for accessibility)
+* ~~sixth: hover state for social icons not a good color. Aim for a lighter violet. Aim to stay in color scheme (important for accessibility)~~
 * seventh: good not used too much css, nor complex structure
 * eighth: "personal pet peeve" html button is only valid in an html form, otherwise use a anchor styled as a button because a button has no href. -- Not sure which way to go with this because its not clear what would happen on the button press. Does it go to a new page, or reveal a email submission box
 * ninth: "personally I would have wrapped the social icons and the footer links in a combined foot section just because that makes them easier to move later if doing a whole site". Mixed on this, attribution link at bottom was not part of the original design, but was part of the base files, and is something that was deletable. 
@@ -74,3 +74,6 @@ Couple of days later
 * fifteenth: At present if you go really wide on the page, the text will appear in only one line. It totally loses its expected design. Use a main container to hold everything inside it. Limit its size and automatically center it.
 * sixteenth: I've used flexbox but some of the child elements are not restricted in the size they can take. This si useful to maintain proportions at different sizes. (Good example is the mockup image, which takes up more space than it should in the sizes between roughly 500-800px)
 * seventeenth: Basically ... try not to restrict your designs to two resolutions. Make it work for in-between widths.
+
+Bit of a delay but started to work through the changes above.
+Was going to use the global selector to set Margin to 0, but it didn't work as I expected and from what I read its generally recommended not to use it.
