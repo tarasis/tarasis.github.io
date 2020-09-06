@@ -10,23 +10,35 @@
   
   <title>Frontend Mentor | Ping coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
+  <header>
+    <div class="logoSection"></div>
+  </header>
+  <main>
+    <div class="titleSection">
+      <p class="line1">We are launching <b>soon!</b></p>
+      <p class="line2">Subscribe and get notified</p>
+    </div>
+    <div class="formSection">
+      <form action="submit">
+        <input type="email" name="emailInput" id="emailInput" placeholder="Your email address...">
+        <button>Notify Me</button>
+      </form>
+    </div>
+    <div class="imageSection">
+      <img src="./images/illustration-dashboard.png" alt="Illustration of the dashboard" class="mockupImage">
+    </div>
+  </main>
+  <div class="socialButtonsSection">
+    <a href="https://facebook.com/tarasis"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://twitter.com/tarasis"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/tarasis/"><i class="fab fa-instagram"></i></a>
+  </div>
   <footer>
+    <p class="copyright">
+      &copy; Copyright Ping. All rights reserved.
+    </p>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="mailto:work@tarasis.net">Robert McGovern</a>.
