@@ -123,8 +123,9 @@ body {
 }
 
 .imageSection {
-    margin-top: 4rem;
+    margin-top: 3.5rem;
     text-align: center;
+    width: 95%;
     /* display: flex;
     justify-content: center; */
 }
@@ -186,6 +187,10 @@ body {
     .formSection button {
         margin-left: 1rem;
         flex-basis: 40%;
+    }
+
+    .imageSection {
+        width: 89%;
     }
     
 }
