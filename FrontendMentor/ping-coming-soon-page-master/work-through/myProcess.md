@@ -19,3 +19,12 @@ Add basic tags to index.html for header/main/footer, then in main splitting into
 
 __Q should the copyright be added to the footer or the bottom of the main????__
 
+Started mostly with mobile
+
+spent the morning struggling to get flex to work the way I wanted. Got there but also realised that I didn't need to use it the way I did. *facepalm*
+
+Continue to play with positioning rather than focusing on main styling
+
+Nudge screenshot nudge screenshot nudge screenshot *sigh*
+I'm not OCD I swear ...
+
