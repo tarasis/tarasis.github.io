@@ -135,14 +135,32 @@ body {
     /* height: auto; */
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100vw;
+}
+.socialButtonsSection {
+    /* margin-top: auto; */
+    margin-bottom: 1.45rem;
+    font-size: 20px;
+}
+
 .socialButtonsSection a {
     color: var(--site-blue);
 }
 
+.socialButtonsSection .fa-stack {
+    color: rgba(0, 0, 0, 0.03);
+    font-size: 15px;
+}
+
 .copyright {
     color: var(--site-gray);
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
+    margin-bottom: 1.05rem;
 }
 
 /* Feel free to remove these styles or customise in your own stylesheet 👍 */

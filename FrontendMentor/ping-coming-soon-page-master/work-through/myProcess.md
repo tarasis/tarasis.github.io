@@ -28,3 +28,9 @@ Continue to play with positioning rather than focusing on main styling
 Nudge screenshot nudge screenshot nudge screenshot *sigh*
 I'm not OCD I swear ...
 
+Realised better to social icons into footer and move the footer out of the flex container, and clamp it to the bottom.
+
+So mobile is virtually there. The Ping! logo is slightly off, as is the "We are launching soon!"
+So close *sigh*
+
+
