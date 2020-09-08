@@ -19,10 +19,6 @@
 
 body {
     font-family: 'Libre Franklin', sans-serif;
-    /* font-size: 20px; */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
 }
 
 .flexContainer {
@@ -40,9 +36,7 @@ body {
 }
 
 .logoSection img {
-    /* text-align: center; */
     width: 66%;
-    /* height: auto; */
 }
 
 .titleSection {
@@ -51,8 +45,6 @@ body {
 
 .titleSection p {
     text-align: center;
-    /* display: flex;
-    align-items: center; */
 }
 
 .titleSection .line1 {
@@ -75,7 +67,6 @@ body {
 .formSection {
     margin: 1.6rem 0 0 0;
     text-align: center;
-    /* width: 100%; */
 }
 
 .formSection form {
@@ -129,13 +120,10 @@ body {
     margin-top: 3.4rem;
     text-align: center;
     width: 95%;
-    /* display: flex;
-    justify-content: center; */
 }
 
 .imageSection img {
     width: 100%;
-    /* height: auto; */
 }
 
 footer {
@@ -145,9 +133,7 @@ footer {
     width: 100vw;
 }
 .socialButtonsSection {
-    /* margin-top: auto; */
     margin-bottom: 1.35rem;
-    font-size: 20px;
 }
 
 .socialButtonsSection a {
@@ -171,21 +157,10 @@ footer {
 .attribution a i { color: hsl(228, 45%, 44%); }
 
 @media screen and (max-width: 600px) {
-    /* body {
-        width: 90%;
-        align-content: center;
-        align-items: center;
-    }  */
     .flexContainer {
-        /* text-align: center;
-        width: 50vw; */
-        /* max-width: 85%; */
         width: 90vw;
         height: 100vh;
     }
-
-    /* .formSection form {
-    } */
 
     .formSection button {
         margin-top: 0.45rem;
@@ -227,7 +202,6 @@ footer {
 
     .formSection {
         margin: 2rem 0 0 0;
-        text-align: center;
     }
 
     .formSection form {
@@ -241,7 +215,6 @@ footer {
         width: calc(100% - 46px);
         font-size: 17px;
         font-weight: 300;
-        border: 2px solid var(--site-paleBlue);
         padding: 0.8rem 0;
         padding-left: 20px;
         padding-right: 20px;
@@ -260,15 +233,6 @@ footer {
     .imageSection {
         margin-top: 4.3rem;
         width: 89%;
-    }
-    
-    .socialButtonsSection {
-        margin-bottom: 1.35rem;
-        font-size: 20px;
-    }
-    
-    .socialButtonsSection .fa-stack {
-        font-size: 15px;
     }
     
     .copyright {
