@@ -31,7 +31,7 @@ body {
     align-items: center;
     align-content: center;
 
-    margin-top: 4.1rem;
+    margin-top: 4.2rem;
 }
 
 .logoSection {
@@ -58,7 +58,7 @@ body {
 .titleSection .line1 {
     font-weight: 300;
     color: var(--site-gray);
-    letter-spacing: 1.2;
+    letter-spacing: 1.2px;
 }
 
 .line1 b {
@@ -67,7 +67,7 @@ body {
 }
 
 .titleSection .line2 {
-    margin-top: 1rem;
+    margin-top: 0.95rem;
     font-size: 12px;
     color: var(--site-gray);
 }
@@ -89,7 +89,7 @@ body {
     /* width: 85%; */
     width: calc(100% - 46px);
 
-    color: var(--site-paleBlue);
+    color: black;
     font-size: 12px;
     font-weight: 300;
     border: 2px solid var(--site-paleBlue);
@@ -103,6 +103,11 @@ body {
     /*box-shadow: 3px 3px 1px 1px var(--site-paleBlue); */
 }
 
+.formSection input::placeholder{
+    padding-left: 8px;
+    color: var(--site-paleBlue);;
+}
+
 .formSection button {
     font-family: 'Libre Franklin', sans-serif;
     width: 100%;
@@ -111,7 +116,7 @@ body {
     font-size: 12px;
     font-weight: 300;
     border: none;
-    padding: 0.6rem 0;
+    padding: 0.625rem 0;
     text-align: center;
     text-decoration: none;
     /* display: inline-block; */
@@ -123,7 +128,7 @@ body {
 }
 
 .imageSection {
-    margin-top: 3.5rem;
+    margin-top: 3.4rem;
     text-align: center;
     width: 95%;
     /* display: flex;
@@ -143,7 +148,7 @@ footer {
 }
 .socialButtonsSection {
     /* margin-top: auto; */
-    margin-bottom: 1.45rem;
+    margin-bottom: 1.35rem;
     font-size: 20px;
 }
 
@@ -160,7 +165,7 @@ footer {
     color: var(--site-gray);
     font-size: 10px;
     text-align: center;
-    margin-bottom: 1.05rem;
+    margin-bottom: 1.15rem;
 }
 
 /* Feel free to remove these styles or customise in your own stylesheet 👍 */

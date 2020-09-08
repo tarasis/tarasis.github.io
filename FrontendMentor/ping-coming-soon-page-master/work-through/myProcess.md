@@ -33,4 +33,11 @@ Realised better to social icons into footer and move the footer out of the flex 
 So mobile is virtually there. The Ping! logo is slightly off, as is the "We are launching soon!"
 So close *sigh*
 
+Day break
+
+Spent 20 minutes playing with mobile positioning. Crazy I know, but its like __near__ spot on.
+
+![mobile difference](mobile-diff.png)
+
+
 
