@@ -51,3 +51,14 @@ Add JS error checking on submit button (valid email address, and error on submit
     An error will trigger a text line to appear in red
     And change the border color of the input email field to red.
 Hover States for Social Buttons (flip colors)
+
+Attempted to use hover state to change the background of the fa-stack but it wasn't triggering. Could only change the color of the item at the top of the stack (i.e the social icon)
+Learnt you can change css of other elemnts when hovering over a different one ... sorta. Has to be a child you are changing, https://stackoverflow.com/questions/19121223/css-change-an-element-content-on-hover-from-different-element
+
+BUGS:
+* when screen not tall enough social buttons and copyright pushed up the page because I clamped them to the bottom of the browser window, rather than the page. 
+* because I used attacked circles I can't just change the background to blue for hover. Need to either sub in a filled circle on hover OR swap to manually creating the circle
+* transitions sizes between 600 and about 800 look wrong / bad / odd
+
+To Research: 
+* Dynamic font sizing to look nicer transitioning up.
