@@ -45,3 +45,9 @@ Was easier working on mobile first, and then adjusted for desktop on this one.
 ![desktop difference](desktop-diff.png)
 
 Now to remove extra adjustments that aren't needed (because they are duplicates of further up the page.)
+
+Final steps:
+Add JS error checking on submit button (valid email address, and error on submit on an empty field (although my preference really is disable the button if nothing is in the field))
+    An error will trigger a text line to appear in red
+    And change the border color of the input email field to red.
+Hover States for Social Buttons (flip colors)
