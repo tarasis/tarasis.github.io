@@ -39,5 +39,9 @@ Spent 20 minutes playing with mobile positioning. Crazy I know, but its like __n
 
 ![mobile difference](mobile-diff.png)
 
+Worked on the desktop matching. Went much quicker, and getting faster at eyeballing sizes/size differences
+Was easier working on mobile first, and then adjusted for desktop on this one.
 
+![desktop difference](desktop-diff.png)
 
+Now to remove extra adjustments that aren't needed (because they are duplicates of further up the page.)
