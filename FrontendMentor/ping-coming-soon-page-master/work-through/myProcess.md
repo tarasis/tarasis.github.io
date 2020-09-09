@@ -55,6 +55,29 @@ Hover States for Social Buttons (flip colors)
 Attempted to use hover state to change the background of the fa-stack but it wasn't triggering. Could only change the color of the item at the top of the stack (i.e the social icon)
 Learnt you can change css of other elemnts when hovering over a different one ... sorta. Has to be a child you are changing, https://stackoverflow.com/questions/19121223/css-change-an-element-content-on-hover-from-different-element
 
+Next Day:
+
+Realised I had to change a few things. Change the input field from `type="email"` to `type="text"` so that I can do the field validation.
+
+Added a div that starts as hidden and has no text
+
+Added some css styling for the text color, and added an error class for changing the input fields border
+
+In JavaScript created a couple of functions, the first that has to return true/false when the user presses "Notify Me" (basically onsubmit event), does some validation of address length, and address structure.
+
+The other method reveals the hidden div and sets the input fields border to red.
+
+There is a third method that I couldn't decide about using. It will clear the error message. The idea being that as soon as the user starts typing again in the field that the error is cleared. (or better yet, when the field gets focus again. I can check for that? )
+
+Created a simplistic regex for email address validation, with some test cases to check my logic. I'm still learning regex, and I don't want to spend the time learning all the combinations for email addresses.
+
+I did research and find a more "correct" regex that I could use, but I will stick with my for this sample.
+
+Played with alignment so mobile & mobile error are close.
+
+![mobile difference](mobile-error-diff.png)
+
+
 BUGS:
 * when screen not tall enough social buttons and copyright pushed up the page because I clamped them to the bottom of the browser window, rather than the page. 
 * because I used attacked circles I can't just change the background to blue for hover. Need to either sub in a filled circle on hover OR swap to manually creating the circle

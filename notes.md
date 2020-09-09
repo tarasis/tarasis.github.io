@@ -33,4 +33,10 @@ Think of it as a combination of learning, and tips and tricks. They will start u
     ```
 
 * Random aside: can't carry on a list after putting a codeblock inside a list
+* Found useful site for Regex writing / testing https://regex101.com
+    * this specific address has regex for email validation https://regex101.com/r/uP2oL7/1
+
+* CSS - The "!important" rule should only be used as a last resort - nuclear option
+    * better to do elementName.className when wanting to temp add a class to override some css (like say a border color)
+    
 * Blah

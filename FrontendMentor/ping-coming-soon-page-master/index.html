@@ -24,9 +24,13 @@
         <p class="line2">Subscribe and get notified</p>
       </div>
       <div class="formSection">
-        <form action="submit">
-          <input type="email" name="emailInput" id="emailInput" placeholder="Your email address...">
-          <button class="notifyButton">Notify Me</button>
+        <form name="emailForm" action="submit" onsubmit="return validateEmailAddress()">
+          <!-- challenge requires us to do validation of this field, therefore NOT using type="email" -->
+          <input type="text" name="emailInput" id="emailInput" placeholder="Your email address..." onfocus="clearError()">
+          <div class="errorSection" id="errorSection" > <!-- hidden -->
+            <p class="errorMessage" id="errorMessage">Placeholder Text</p>
+          </div>
+          <button class="notifyButton" id="notifyButton">Notify Me</button>
         </form>
       </div>
       <div class="imageSection">
@@ -57,5 +61,6 @@
       Coded by <a href="mailto:work@tarasis.net">Robert McGovern</a>.
     </p>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 </html>
