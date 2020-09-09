@@ -252,10 +252,10 @@ footer {
     .formSection input[type=text] {
         flex-basis: 66%;
 
-        width: calc(100% - 46px);
+        width: calc(100% - 44px);
         font-size: 17px;
         font-weight: 300;
-        padding: 0.8rem 0;
+        padding: 0.85rem 0;
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -267,9 +267,29 @@ footer {
         font-size: 17px;
         font-weight: 300;
 
-        padding: 0.8rem 0;
+        padding: 0.85rem 0;
         box-shadow: 0px 3px 10px 1px var(--site-paleBlue);
     }
+
+    .notifyButton.notifyError {
+        transform: none;
+    }
+    
+    .errorSection {
+        height: 0;
+        width: 0;
+        padding: 0;
+        margin: 0;
+        transform: translate(-21rem, 3.2rem);
+    }
+
+    .errorMessage {
+        font-size: 13px;
+        width: 16rem;
+        height: 2rem;
+        overflow: auto;
+    }
+    
 
     .socialButtonsSection {
         width: 10%;

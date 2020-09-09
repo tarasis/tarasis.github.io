@@ -79,11 +79,17 @@ Played with alignment so mobile & mobile error are close.
 
 Swapped method of doing the circles around the social icons. I would have preferred the stacks but I couldn't figure out how to put a thin border around a fa-circle
 
-
 BUGS:
 * when screen not tall enough social buttons and copyright pushed up the page because I clamped them to the bottom of the browser window, rather than the page. 
 * ~~because I used attacked circles I can't just change the background to blue for hover. Need to either sub in a filled circle on hover OR swap to manually creating the circle~~
 * transitions sizes between 600 and about 800 look wrong / bad / odd
+
+The transition thing is really bad
+
+![transition between mobile and desktop sizes](awful-transition)
+
+How to better handle this?????? Should be dynamic font sizing & padding I guess?
+I have a working solution the error message on the 1440x1024 resolution but it doesn't look good/work on the in between resolutions. Positioning should be calculated, based on resolution
 
 To Research: 
 * Dynamic font sizing to look nicer transitioning up.
