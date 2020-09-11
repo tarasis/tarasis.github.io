@@ -103,3 +103,15 @@ Last thing is my hack for the error when email field and button are in a row. Ho
 Ergh. Want to be done with this. Frustrating myself.
 
 MY GAWD. Eureka, just realised that what I want to use is Flexbox ordering. By doing this, the error message is first, and all I need to do is shift it downwards, no horizontal translation needed. PERFECT.
+
+Final forms:
+
+Desktop:
+
+![Final Desktop at 1440x1024](final-desktop-1440x1024.png)
+![Difference between final desktop & design](final-desktop-diff-1440x1024.png)
+
+Mobile: 
+
+![Final Mobile at 375x812](final-mobile-375x812.png)
+![Difference between final mobile & design](final-mobile-diff-375x812.png)
