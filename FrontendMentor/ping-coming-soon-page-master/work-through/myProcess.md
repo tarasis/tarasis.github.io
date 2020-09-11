@@ -80,7 +80,7 @@ Played with alignment so mobile & mobile error are close.
 Swapped method of doing the circles around the social icons. I would have preferred the stacks but I couldn't figure out how to put a thin border around a fa-circle
 
 BUGS:
-* when screen not tall enough social buttons and copyright pushed up the page because I clamped them to the bottom of the browser window, rather than the page. 
+* ~~when screen not tall enough social buttons and copyright pushed up the page because I clamped them to the bottom of the browser window, rather than the page.~~
 * ~~because I used attacked circles I can't just change the background to blue for hover. Need to either sub in a filled circle on hover OR swap to manually creating the circle~~
 * transitions sizes between 600 and about 800 look wrong / bad / odd
 
@@ -93,3 +93,11 @@ I have a working solution the error message on the 1440x1024 resolution but it d
 
 To Research: 
 * Dynamic font sizing to look nicer transitioning up.
+
+Found a formula to scale the fonts, tried to use it to work with the view port width scaling but it wouldn't work. 
+
+Fixed positioning of the footer section and social buttons. Needed it back in the flexbox, and set the margin-top to auto to fill up the space
+
+Last thing is my hack for the error when email field and button are in a row. How to position the text relative to the input field? Can I hide it behind it and move it down? If its in the same row, then it takes up space which we don't want, hence the 0 width (zero height for when in column)
+
+Ergh. Want to be done with this. Frustrating myself.

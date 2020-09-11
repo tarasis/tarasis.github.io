@@ -19,6 +19,7 @@
 
 body {
     font-family: 'Libre Franklin', sans-serif;
+    min-width: 375px;
 }
 
 .flexContainer {
@@ -27,10 +28,27 @@ body {
     align-items: center;
     align-content: center;
 
-    margin-top: 4.2rem;
+    height:100vh;
+
+    /* width: max(90vw, 50vw); */
+    /* width: max(50vw, 90vw); */
+    /* width: min(90vw, 50vw); */
+    /* width: min(50vw, 90vw); */
+    /* width: max(min(90vw, 70vw), 50vw); */
+    /* width: max(min(50vw, 90vw), 50vw); */
+    /* width: min(max(90vw, 50vw), 50vw); */
+    /* width: clamp(90vw, 70vw, 50vw); */
+    /* width: clamp(90vw, 50vw, 50vw); */
+
+    
+    /* width: calc(90vw + (50vw - 90vw) * ((100vw - 375px) / (1440 - 375))); */
+    /*50vw; < 600 90vw*/
+
 }
 
 .logoSection {
+    margin-top: 4.2rem;
+
     display: flex;
     justify-content: center;
 }
@@ -148,16 +166,16 @@ input[type="text"].errorBorder {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
+    margin-top: auto;
     text-align: center;
-    width: 100vw;
+    /* width: 100vw; */
 }
 .socialButtonsSection {
-    margin-bottom: 1.35rem;
+    margin-bottom: 1.25rem;
     font-size: 14px;
     display: flex;
-    width: 35%;
+    justify-content: space-between;
+    width: 45%;
 }
 
 .socialButtonsSection a {
@@ -196,9 +214,20 @@ footer {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a i { color: hsl(228, 45%, 44%); }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .flexContainer {
         width: 90vw;
+        /* height: 100vh; */
+    }
+
+    .formSection button {
+        margin-top: 0.55rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1050px) {
+    .flexContainer {
+        width: 75vw;
         height: 100vh;
     }
 
@@ -207,11 +236,13 @@ footer {
     }
 }
 
-@media screen and (min-width: 800px) {
+
+@media screen and (min-width: 1050px) {
     .flexContainer {
         width: 50vw;
-        height: 100vh;
+    }
 
+    .logoSection {
         margin-top: 4.3rem;
     }
 
@@ -288,11 +319,6 @@ footer {
         width: 16rem;
         height: 2rem;
         overflow: auto;
-    }
-    
-
-    .socialButtonsSection {
-        width: 10%;
     }
     
 
