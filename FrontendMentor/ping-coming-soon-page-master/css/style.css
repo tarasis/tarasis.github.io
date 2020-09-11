@@ -80,14 +80,15 @@ body {
 
 .formSection input[type=text] {
     font-family: 'Libre Franklin', sans-serif;
-    width: calc(100% - 44px);
+    width: calc(100% - 47px); /* shrink width by padding left+right + border */
 
     color: black;
     font-size: 12px;
     font-weight: 300;
     border: 1px solid var(--site-paleBlue);
-    padding: 0.55rem 0;
-    padding-left: 20px;
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+    padding-left: 25px;
     padding-right: 20px;
     text-align: justify;
     text-decoration: none;
@@ -266,12 +267,11 @@ footer {
     .formSection input[type=text] {
         flex-basis: 66%;
 
-        width: calc(100% - 44px);
         font-size: 17px;
         font-weight: 300;
-        padding: 0.85rem 0;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-top: 0.85rem;
+        padding-bottom: 0.85rem;
+        order: 2;
     }
 
     .formSection button {
@@ -283,6 +283,7 @@ footer {
 
         padding: 0.85rem 0;
         box-shadow: 0px 3px 10px 1px var(--site-paleBlue);
+        order: 3;
     }
 
     .notifyButton.notifyError {
@@ -290,11 +291,12 @@ footer {
     }
     
     .errorSection {
+        order: 1;
         height: 0;
         width: 0;
         padding: 0;
         margin: 0;
-        transform: translate(-21rem, 3.2rem);
+        transform: translate(0, 3.2rem);
     }
 
     .errorMessage {
@@ -302,6 +304,8 @@ footer {
         width: 16rem;
         height: 2rem;
         overflow: auto;
+        text-align: left;
+        padding-left: 1.25rem;
     }
     
 
