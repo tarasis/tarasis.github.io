@@ -29,21 +29,6 @@ body {
     align-content: center;
 
     height:100vh;
-
-    /* width: max(90vw, 50vw); */
-    /* width: max(50vw, 90vw); */
-    /* width: min(90vw, 50vw); */
-    /* width: min(50vw, 90vw); */
-    /* width: max(min(90vw, 70vw), 50vw); */
-    /* width: max(min(50vw, 90vw), 50vw); */
-    /* width: min(max(90vw, 50vw), 50vw); */
-    /* width: clamp(90vw, 70vw, 50vw); */
-    /* width: clamp(90vw, 50vw, 50vw); */
-
-    
-    /* width: calc(90vw + (50vw - 90vw) * ((100vw - 375px) / (1440 - 375))); */
-    /*50vw; < 600 90vw*/
-
 }
 
 .logoSection {
@@ -217,7 +202,6 @@ footer {
 @media screen and (max-width: 600px) {
     .flexContainer {
         width: 90vw;
-        /* height: 100vh; */
     }
 
     .formSection button {
@@ -228,7 +212,6 @@ footer {
 @media screen and (min-width: 600px) and (max-width: 1050px) {
     .flexContainer {
         width: 75vw;
-        height: 100vh;
     }
 
     .formSection button {
