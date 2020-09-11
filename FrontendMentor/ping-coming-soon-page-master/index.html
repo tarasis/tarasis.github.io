@@ -26,11 +26,11 @@
       <div class="formSection">
         <form name="emailForm" action="submit" onsubmit="return validateEmailAddress()">
           <!-- challenge requires us to do validation of this field, therefore NOT using type="email" -->
-          <input type="text" name="emailInput" id="emailInput" placeholder="Your email address..." onfocus="clearError()">
+          <input title="Email Address" type="text" name="emailInput" id="emailInput" placeholder="Your email address..." onfocus="clearError()">
           <div class="errorSection" id="errorSection" > <!-- hidden -->
             <p class="errorMessage" id="errorMessage">Placeholder Text</p>
           </div>
-          <button class="notifyButton" id="notifyButton">Notify Me</button>
+          <button title="Notify Button" class="notifyButton" id="notifyButton">Notify Me</button>
         </form>
       </div>
       <div class="imageSection">
@@ -39,9 +39,9 @@
     </main>
     <footer>
       <div class="socialButtonsSection">
-        <a href="https://facebook.com/tarasis"><i class="fab fa-facebook-f icon-background"></i></a>
-        <a href="https://twitter.com/tarasis"><i class="fab fa-twitter icon-background"></i></a>
-        <a href="https://www.instagram.com/tarasis/"><i class="fab fa-instagram icon-background"></i></a>
+        <a href="https://facebook.com/tarasis"><span class="sr-only">Link to Facebook page</span><i class="fab fa-facebook-f icon-background"></i></a>
+        <a href="https://twitter.com/tarasis"><span class="sr-only">Link to Twitter page</span><i class="fab fa-twitter icon-background"></i></a>
+        <a href="https://www.instagram.com/tarasis/"><span class="sr-only">Link to Instagram page</span><i class="fab fa-instagram icon-background"></i></a>
       </div>
       <p class="copyright">
         &copy; Copyright Ping. All rights reserved.
