@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    /* setting base to 20px to make my life nicer working with rem */
+    font-size: 20px;
+    /* primary site colours */
+    --site-cyan: hsl(179, 62%, 43%);
+    --site-bright-yellow: hsl(71, 73%, 54%);
+    /* neutral site colours */
+    --site-light-gray: hsl(204, 43%, 93%);
+    --site-grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* per the style guide, the body copy is 16px */
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    min-width: 375px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--site-light-gray);
+}
+
+/** 
+* * style guide has 2 designs, one aimed for 375x870, and the other 1440x800
+* TODO: Tweak transition point later
+*/ 
+@media screen and (max-width: 500px) {
+
+}
+
+@media screen and (min-width: 500px) {
+
+}
