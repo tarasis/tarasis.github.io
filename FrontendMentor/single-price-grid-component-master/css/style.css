@@ -20,13 +20,86 @@ body {
     /* per the style guide, the body copy is 16px */
     font-size: 16px;
     font-family: 'Karla', sans-serif;
-    min-width: 375px;
+    width: 90vw;
+    height: 100vh;
+    margin: 0 auto;
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /* align-items: center; */
 
     background-color: var(--site-light-gray);
 }
+
+.box {
+    box-sizing: border-box;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+.topRow {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+}
+.heading {
+    /* margin-top: 1.5rem;  */
+    color: white;
+}
+
+.topRow .heading {
+    color: var(--site-cyan);
+}
+
+.quickSell {
+    color: var(--site-bright-yellow);
+}
+.sellBlurb {
+    color: var(--site-light-gray);
+}
+.bottomRow {
+    flex-direction: column;
+
+    display: flex;
+}
+.pricingBox {
+    background-color: var(--site-cyan);    
+}
+.priceRow {
+    display: flex;
+}
+.price {
+    color: white;
+}
+.pricePeriod {
+    color: var(--site-cyan)
+}
+.sell {
+    color: white;
+}
+.signupButton {
+    background-color: var(--site-bright-yellow);
+    color: white;
+}
+.whyUsBox {
+    background-color: rgb(0, 195, 192);
+}
+.blurb {
+}
+
+.blurb .unstyledList {
+    list-style: none;
+    font-size: 10px;
+    color: var(--site-light-gray)
+}
+
+/* Feel free to remove these styles or customise in your own stylesheet 👍 */
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
 
 /** 
 * * style guide has 2 designs, one aimed for 375x870, and the other 1440x800
@@ -36,6 +109,46 @@ body {
 
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    body {
+        /* roughly half way, arbitrary for the moment */
+        width: 78vw;
+    }
+}
 
+@media screen and (min-width: 800px) {
+    body {
+        width: 45vw;
+    }
+
+    .topRow {
+    }
+    .heading {
+    }
+    .quickSell {
+    }
+    .sellBlurb {
+    }
+    .bottomRow {
+        flex-direction: row;
+        /* flex: 0 50%; */
+    }
+    .pricingBox {
+        width: 50%;
+    }
+    .priceRow {
+    }
+    .price {
+    }
+    .pricePeriod {
+    }
+    .sell {
+    }
+    .signupButton {
+    }
+    .whyUsBox {
+        width: 50%;
+    }
+    .blurb {
+    }
 }
