@@ -32,3 +32,5 @@ As it stands my attempt is roughly there. Desktop just needs some nudging for al
 
 Which is **hilarious** considering I started with mobile first and haven't done any tweaking for desktop yet!
 
+Finding my solution is quite fragile. Tweaking bits of padding causes shifts elsewhere that I don't want. So adjusting one thing requires tweaking another.
+**Not Ideal**
