@@ -34,3 +34,13 @@ Which is **hilarious** considering I started with mobile first and haven't done 
 
 Finding my solution is quite fragile. Tweaking bits of padding causes shifts elsewhere that I don't want. So adjusting one thing requires tweaking another.
 **Not Ideal**
+
+Have checked it in. Heart isn't in working through this one. I __know__ I could tweak this and get it there. Its not far as the diffs show.  
+
+## Mobile Difference
+
+![Mobile Differences](mobile-differences.png)
+
+## Desktop Difference
+
+![Desktop Differences](desktop-differences.png)
