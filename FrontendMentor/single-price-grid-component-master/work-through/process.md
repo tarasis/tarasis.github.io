@@ -19,5 +19,16 @@ Continued basic styling. Used a color picker to find (roughly) what the other to
 
 Stopped for lunch & roleplaying.
 
+... cue next day ....
 
+read a little.  
+Question struck me, is it better to use `margin-top` or `bottom` when it comes to layout between elements. Lead me to this article which says `margin-top` https://matthewjamestaylor.com/css-margin-top-vs-bottom useful article but basically **"Always use top margin. The reason is related to the 'C' in CSS"**. Also in article **"Set default styles for webpage modules then override rules depending on proceeding context."** which seems logical to me and is what I'm trying to do. Set basic css first, See cominalities between the mobile and desktop designs. Then do mobile. Then make last adjustments for desktop.
+
+2020-09-23
+Many Days off - no drive, energy, or anything.  
+Went to start today but ended up phaffing with other things (like not finding the right VSCode theme to use, or the right Fish theme, or or or or or)  
+
+As it stands my attempt is roughly there. Desktop just needs some nudging for alignments to be good. Need to figure out the shadow used. The mobile version is a bit further away. Mine is probably 200 pixels taller.
+
+Which is **hilarious** considering I started with mobile first and haven't done any tweaking for desktop yet!
 

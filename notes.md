@@ -47,3 +47,8 @@ Think of it as a combination of learning, and tips and tricks. They will start u
 * https://thoughtbot.com/blog/transitions-and-transforms
 * https://www.sitepoint.com/hide-elements-in-css/
 * https://www.markheath.net/post/font-awesome-circle-background
+* https://matthewjamestaylor.com/responsive-banner-ads
+* https://uxengineer.com/padding-vs-margin/
+* http://specificity.keegan.st/
+
+src="blob:https://player.vimeo.com/ff6607bc-2a8d-45ce-9cea-b4a5ddc01ccb"
