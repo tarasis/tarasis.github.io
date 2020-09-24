@@ -50,5 +50,6 @@ Think of it as a combination of learning, and tips and tricks. They will start u
 * https://matthewjamestaylor.com/responsive-banner-ads
 * https://uxengineer.com/padding-vs-margin/
 * http://specificity.keegan.st/
-
-src="blob:https://player.vimeo.com/ff6607bc-2a8d-45ce-9cea-b4a5ddc01ccb"
+* https://css-tricks.com/scaled-proportional-blocks-with-css-and-javascript/
+* https://css-tricks.com/how-do-you-do-max-font-size-in-css/
+* https://css-tricks.com/simplified-fluid-typography/

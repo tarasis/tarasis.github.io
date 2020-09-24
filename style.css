@@ -29,13 +29,16 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
     border: 5px solid;
     margin: 0 auto;
-    width: 50%;
+    width: 90%;
+    max-width: 700px;
     box-sizing: border-box;
     border-radius: 10px; 
 }
 
 .blurb, .projectsDiv {
     padding: 10px 20px;
+    margin-top: 2rem;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .header {
@@ -47,18 +50,15 @@ body {
 
 .header > h1 {
     font-family: 'Black Ops One', cursive;
-    font-size: 3rem;
+    /* scale the font from size used on mobile to "desktop" */
+    font-size: min(max(2.5rem, 8vw), 3rem);
 }
 
 .blurb {
-    margin-top: 2rem;
     border-color:  rgba(216, 81, 201, 0.632);
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .projectsDiv {
-    margin-top: 2rem;
-    font-family: 'Source Sans Pro', sans-serif;
     border-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -70,8 +70,7 @@ body {
     font-weight: 400;
 }
 
-.frontEndMentorChallenges {
-}
+/* .frontEndMentorChallenges {} */
 
 .frontEndMentorChallenges .newbieChallenges {
     margin-left: 1rem;
@@ -81,12 +80,9 @@ body {
     font-weight: 600;
 }
 
-.freecodeCampProjects {
-}
-.completeWebDev2020Projects {
-}
-.vanillaJSProjects {
-}
+/* .freecodeCampProjects {} */
+/* .completeWebDev2020Projects {} */
+/* .vanillaJSProjects {} */
 
 footer {
     margin-top: 3rem;
@@ -94,7 +90,7 @@ footer {
     font-size: 16px;
     margin-left: auto;
     margin-right: auto;
-
+    width: 85%;
 }
 
 footer * {
@@ -103,18 +99,4 @@ footer * {
 
 footer > a {
     display: block;
-}
-
-@media screen and (max-width: 500px) {
-    .header, .blurb, .projectsDiv {
-        width: 90%;
-    }
-
-    .header > h1 {
-        font-size: 2.5rem;
-    }
-    
-    footer {
-        width: 85%;
-    }
 }
