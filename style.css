@@ -91,6 +91,10 @@ body {
 footer {
     margin-top: 3rem;
     text-align: center;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 footer * {
@@ -99,4 +103,18 @@ footer * {
 
 footer > a {
     display: block;
+}
+
+@media screen and (max-width: 500px) {
+    .header, .blurb, .projectsDiv {
+        width: 90%;
+    }
+
+    .header > h1 {
+        font-size: 2.5rem;
+    }
+    
+    footer {
+        width: 85%;
+    }
 }
