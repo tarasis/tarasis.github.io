@@ -6,17 +6,36 @@ Last to days lost doing nothing. Spent part of today trying to find the perfect 
 
 Interesting but not quite there 
 
-Tokyo Night - I find the Classes/ID slightly too bright compared to the attributes (green vs purple-blue)
-ReUI Mirage (React) (want darker background)
-Panda Syntax
-Palenight Theme - issues
-Night Owl
-Monokai Dark Soda
-Gruvbox Dark (Hard)
-Firefly Pro - 
-Dark Chrome DevTools - really nice, but JS REGEX is too hard to read 
+Tokyo Night - I find the Classes/ID slightly too bright compared to the attributes (green vs purple-blue)  
+ReUI Mirage (React) (want darker background)  
+Panda Syntax  
+Palenight Theme - issues  
+Night Owl  
+Monokai Dark Soda  
+Gruvbox Dark (Hard)  
+Firefly Pro -   
+Dark Chrome DevTools - really nice, but JS REGEX is too hard to read   
 
 2020-09-26 
 
-Added basics to the style.css from the style guide.
-Again I'm setting the root font to 20px to make working with REM easier.
+Added basics to the style.css from the style guide.  
+Again I'm setting the root font to 20px to make working with REM easier.  
+
+I think the best approach for this is a flex container with 
+
+top row: The title, sub title and blurb.  
+middle row: Is also a flex container, with 3 columns (in destkop) for the cards.  
+            First column is Supervisor  
+            Second column is Team Builder and Karma  
+            Third column is calculator.  
+bottom row: attribution? (might just delete it)  
+
+Added tags & classes to index.html. 
+Don't think I really need the classes for inside card (card-title, card-blurb, card-image). In theory that could just be handled with `card h1 {}` or `card p {}` or `card img {}`  
+
+Layout looks like this right now
+
+![current layout](layout-no-styling(1440x922).png)
+
+
+
