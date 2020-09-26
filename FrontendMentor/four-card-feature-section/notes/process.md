@@ -37,5 +37,14 @@ Layout looks like this right now
 
 ![current layout](layout-no-styling(1440x922).png)
 
+Added some styling, working of the mobile design and building it up. 
+Lots of touch ups required yet, improve shadow, spacing, shrinking icons, but its taking shape.
+
+![mobile difference](mobile-difference-basic-styling.png)
+![mobile difference side by side](mobile-diff-sidebyside.png)
+
+My card titles and card blurbs are too big. Probabl h3 rather than h1, font size is a guess. Icons are also a little big, although its not far off 75% rather than 100%?
+(Prob should pay for the Pro frontend Mentor sub to stop having to guess, but its part of the challenge for me too.)
+
 
 

@@ -35,39 +35,85 @@
 
 body {
     font-size: 15px;
+    background-color: var(--veryLightGray);
+    height: 100vh;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    /* height: 100vh; */
+    margin: 0 auto;
+}
+
+.topSection {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.topSection h1 {
+    font-size: 1.3rem;
+}
+
+.topSection .title1 {
+    font-weight: 200;
+    color: var(--grayishBlue);
+}
+
+/* should be a class but wanted to play with :nth-child() */
+.topSection .title2 {
+    font-weight: 600;
+    color: var(--veryDarkBlue);
+}
+
+.topSection .blurb {
+    text-align: center;
+    color: var(--grayishBlue);
+}
+
+
+.middleSection {
 }
 
 .card {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-top: 2px solid;
+    box-shadow: var(--veryLightGray);
 }
 .card-title {
+    /* font-size: ; */
+    color: var(--veryDarkBlue);
 }
 .card-blurb {
+    color: var(--grayishBlue);
+    /* font-size: ; */
 }
 .card-image {
+    margin-top: 2rem;
+    align-self: flex-end;
 }
 
-
-.flexContainer {
-}
-.topSection {
-}
-.blurb {
-}
-.middleSection {
-}
 .column1 {
 }
 .supervisor {
+    border-top-color: var(--cyan);
 }
 .column2 {
 }
 .teamBuilder {
+    border-top-color: var(--red);
 }
 .karma {
+    border-top-color: var(--orange);
 }
 .column3 {
 }
 .calculator {
+    border-top-color: var(--blue);
 }
 /* .attribution {
 } */
