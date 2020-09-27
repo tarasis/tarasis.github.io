@@ -28,7 +28,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 /* Basic Styling */
@@ -42,21 +42,22 @@ body {
 .flexContainer {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 83.5%;
     /* height: 100vh; */
     margin: 0 auto;
 }
 
 .topSection {
-    margin-top: 4rem;
+    margin-top: 3.8rem;
     text-align: center;
 }
 
 .topSection h1 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .topSection .title1 {
+    margin-top: 0.5rem;
     font-weight: 200;
     color: var(--grayishBlue);
 }
@@ -68,33 +69,40 @@ body {
 }
 
 .topSection .blurb {
+    margin-top: 0.7rem;
     text-align: center;
     color: var(--grayishBlue);
+    font-size: 16px;
 }
 
 
 .middleSection {
+    margin-top: 2.45rem;
 }
 
 .card {
-    margin-top: 1rem;
+    margin-top: 1.35rem;
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-top: 2px solid;
-    box-shadow: var(--veryLightGray);
+    border-top: 4px solid;
+    box-shadow: 0px 3px 5px var(--veryLightGray);
+    padding: 23px 30px 25px 30px;
 }
 .card-title {
-    /* font-size: ; */
+    font-size: 18px;
     color: var(--veryDarkBlue);
+    font-weight: 600;
 }
 .card-blurb {
+    margin-top: 0.4rem;
     color: var(--grayishBlue);
-    /* font-size: ; */
+    font-size: 13px;
 }
 .card-image {
-    margin-top: 2rem;
+    margin-top: 1.8rem;
     align-self: flex-end;
+    width: 22%;
 }
 
 .column1 {

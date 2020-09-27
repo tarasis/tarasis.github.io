@@ -46,5 +46,10 @@ Lots of touch ups required yet, improve shadow, spacing, shrinking icons, but it
 My card titles and card blurbs are too big. Probabl h3 rather than h1, font size is a guess. Icons are also a little big, although its not far off 75% rather than 100%?
 (Prob should pay for the Pro frontend Mentor sub to stop having to guess, but its part of the challenge for me too.)
 
+2020-09-27 15:05 
+
+Picking up from yesterday.
+38 minutes later. Mobile is virtually exact apart from shadow on the cards.
+Basically bits of tweaking to fit. Not a horrendous amount. Havent looked at how it looks on desktop yet :)
 
 
