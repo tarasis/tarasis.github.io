@@ -52,4 +52,8 @@ Picking up from yesterday.
 38 minutes later. Mobile is virtually exact apart from shadow on the cards.
 Basically bits of tweaking to fit. Not a horrendous amount. Havent looked at how it looks on desktop yet :)
 
+So how to judge what the shadow should be? what is the trick to that? Basically experimentation it seems.
+
+![mobile final side by side](mobile-final-diff.png)
+![mobile final diff'd](mobile-final-side-by-side.png)
 

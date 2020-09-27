@@ -77,25 +77,26 @@ body {
 
 
 .middleSection {
-    margin-top: 2.45rem;
+    margin-top: 2.5rem;
 }
 
 .card {
-    margin-top: 1.35rem;
+    margin-top: 1.3rem;
     display: flex;
     flex-direction: column;
     background-color: white;
     border-top: 4px solid;
-    box-shadow: 0px 3px 5px var(--veryLightGray);
-    padding: 23px 30px 25px 30px;
+    border-radius: 6px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 255, 0.15);
+    padding: 23px 30px 26px 30px;
 }
 .card-title {
-    font-size: 18px;
+    font-size: 20px;
     color: var(--veryDarkBlue);
     font-weight: 600;
 }
 .card-blurb {
-    margin-top: 0.4rem;
+    margin-top: 0.3rem;
     color: var(--grayishBlue);
     font-size: 13px;
 }
