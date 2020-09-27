@@ -45,15 +45,17 @@ body {
     width: 83.5%;
     /* height: 100vh; */
     margin: 0 auto;
+    max-width: 400px;
 }
 
 .topSection {
-    margin-top: 3.8rem;
+    /* think this change was brought about by browser differences. Was previously 3.8 */
+    margin-top: 3.65rem;
     text-align: center;
 }
 
 .topSection h1 {
-    font-size: 1.2rem;
+    font-size: calc(24px + (35 - 24) * ((100vw - 375px) / (1440 - 375)));
 }
 
 .topSection .title1 {
@@ -126,3 +128,59 @@ body {
 }
 /* .attribution {
 } */
+
+/* arbitrary figure atm */
+/* @media screen and (min-width: 600px) {
+    .flexContainer {
+        width: 78%;
+    }
+} */
+
+@media screen and (min-width: 1000px) {
+
+    .flexContainer {
+        max-width: 1440px;
+    }
+
+    .topSection {
+        margin-top: 3.45rem;
+    }
+
+    .topSection .blurb {
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+    }
+    
+    .flexContainer {
+        width: 78%;
+    }
+    .middleSection {
+        margin-top: 3.3rem;
+        display: flex;
+    }
+
+    .card {
+        margin-top: 0;
+        padding: 27px 30px 36px 25px;
+    }
+
+    .card-blurb {
+        margin-top: 0.5rem;
+    }
+    .card-image {
+        margin-top: 2rem;
+    }
+    
+    .column {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        max-width: calc((100% /3) - 1.5rem);
+    }
+
+    .karma {
+        margin-top: 1.3rem;
+    }
+}

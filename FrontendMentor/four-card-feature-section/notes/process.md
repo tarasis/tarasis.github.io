@@ -57,3 +57,22 @@ So how to judge what the shadow should be? what is the trick to that? Basically 
 ![mobile final side by side](mobile-final-diff.png)
 ![mobile final diff'd](mobile-final-side-by-side.png)
 
+14 minute break ...
+
+Have to work out how close the desktop is, once I put in columns. Right now, its not close :)
+
+Forgot to note when I restarted work. Around 40 minutes ago. Didn't require too much tweaking to get in nearly in place.
+Not going to spend too long trying to finese it.
+
+
+![desktop final side by side](desktop-final-slider.png)
+![desktop final diff'd](desktop-final-diff.png)
+
+And these are the final images.
+
+![Mobile Final](mobile-final.png)
+![Desktop Final](desktop-final.png)
+
+As per usual the in between state is not ideal, at the transition point the boxes are too big. It was wrong to use a % on the icon images. They become too big before the transition to the desktop form.
+
+May have run into a browser difference. Previously I had thinks lined up in the mobile section, but when I was in a different browser, I had to nudge the top section up 3 pixels.
