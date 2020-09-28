@@ -54,7 +54,7 @@ body {
     text-align: center;
 }
 
-.topSection h1 {
+.topSection > .title {
     font-size: calc(24px + (35 - 24) * ((100vw - 375px) / (1440 - 375)));
 }
 
