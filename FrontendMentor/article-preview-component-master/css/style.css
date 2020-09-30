@@ -1,0 +1,118 @@
+/* 
+ * Challenge resolutions:
+ * 375x667 & 1440x800
+ */
+
+:root {
+    /* font stuff */
+    font-size: 20px;
+    /* colors */
+    --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --desaturatedDarkBlue: hsl(214, 17%, 51%);
+    --grayishBlue: hsl(212, 23%, 69%);
+    --lightGrayishBlue: hsl(210, 46%, 95%);
+    /* corner radius */
+    --cornerRadius: 10px;
+
+}
+
+/* Base styling */ 
+
+body {
+    background-color: var(--lightGrayishBlue);
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+}
+.articlePreview {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: var(--cornerRadius);
+    background-color: white;
+    width: 85%;
+    margin: 0 auto;
+}
+.previewImage {
+    width: 100%;
+    object-fit: fill;
+    border-radius: var(--cornerRadius) var(--cornerRadius) 0 0;    
+}
+.previewBody {
+    margin-top: 1.5rem;
+    padding: 1rem 1rem;
+}
+.articleSummary {
+}
+.articleTitle {
+    color: var(--veryDarkGrayishBlue);
+    font-size: 18px;
+    line-height: 1.3em;
+}
+.articleSell {
+    margin-top: 0.5rem;
+    color: var(--desaturatedDarkBlue);
+    font-size: 16px;
+    line-height: 1.3em;
+}
+.articleAuthor {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.authorImage {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.nameAndDate {
+    margin-left: 0.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.authorName {
+    color: var(--veryDarkGrayishBlue)
+}
+.articleDate {
+    margin-top: 0.3rem;
+    color: var(--desaturatedDarkBlue);
+}
+.articleShareIcon {
+    width: 20px;
+    height: 20px;
+    background-color: var(--lightGrayishBlue);
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* not the right way to put a circle around the icon */
+    border-radius: 50%; 
+}
+.attribution {
+}
+
+@media screen and (min-width: 500px) {
+    body {
+        /* flex-direction: row; */
+        align-content: center;
+        align-items: center; 
+    }
+
+    .articlePreview {
+        flex-direction: row;
+        width: 50%;
+
+    }    
+
+    .previewImage {
+        width: 40%;
+        object-fit: cover;   
+        border-radius: var(--cornerRadius) 0 0 var(--cornerRadius);
+    }    
+}

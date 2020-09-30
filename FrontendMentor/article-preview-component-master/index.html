@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
   
   <title>Frontend Mentor | Article preview component</title>
 
@@ -16,21 +18,38 @@
 </head>
 <body>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+  <div class="container">
+    <div class="articlePreview">
+      <img src="./images/drawers.jpg" alt="Green drawers with a vase and pictures" class="previewImage">
+      <div class="previewBody">
+          <div class="articleSummary">
+            <h1 class="articleTitle">
+              Shift the overall look and feel by adding these wonderful 
+              touches to furniture in your home
+            </h1>
+            <p class="articleSell">
+              Ever been in a room and felt like something was missing? Perhaps 
+              it felt slightly bare and uninviting. I’ve got some simple tips 
+              to help you make any room feel complete.        
+            </p>
+          </div>
+          <div class="articleAuthor">
+            <img src="./images/avatar-michelle.jpg" alt="Author Picture" class="authorImage">
+            <div class="nameAndDate">
+              <p class="authorName">Michelle Appleton</p>
+              <p class="articleDate">28 Jun 2020</p>
+            </div>
+            <!-- look up what to do with this. I know I've seen it. What it there for screenreader, but off the side of the screen -->
+            <!-- <section>Share</section>  -->
+            <img src="./images/icon-share.svg" alt="Share Icon" class="articleShareIcon">
+          </div>
+      </div>
+    </div>
+  </div>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="emailto:work@tarasis.net">Robert McGovern</a>.
   </div>
 </body>
 </html>
