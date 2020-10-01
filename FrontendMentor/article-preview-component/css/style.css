@@ -1,7 +1,10 @@
 /* 
  * Challenge resolutions:
  * 375x667 & 1440x800
+ * 327x512 - 730x280
  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
 
 :root {
     /* font stuff */
@@ -19,6 +22,7 @@
 /* Base styling */ 
 
 body {
+    font-family: 'Manrope', sans-serif;
     background-color: var(--lightGrayishBlue);
     display: flex;
     flex-direction: column;
@@ -35,18 +39,32 @@ body {
 
     border-radius: var(--cornerRadius);
     background-color: white;
-    width: 85%;
+    width: 87%;
     margin: 0 auto;
 }
+
 .previewImage {
-    width: 100%;
-    object-fit: fill;
+    flex: 1 45%;
+    overflow: hidden;
     border-radius: var(--cornerRadius) var(--cornerRadius) 0 0;    
 }
-.previewBody {
-    margin-top: 1.5rem;
-    padding: 1rem 1rem;
+
+    /* 
+    * image size is: 660x528
+    * sketch: 327x200
+    * currently: 326.25x200.5
+    */
+.previewImage > img {
+    width: 100%;
+    margin:-4% 0 -15% 0%  ;
 }
+
+.previewBody {
+    flex: 1 60%;
+    margin-top: 1.5rem;
+    padding: 1rem 1.5rem;
+}
+
 .articleSummary {
 }
 .articleTitle {
@@ -72,18 +90,22 @@ body {
     width: 2.5rem;
     height: 2.5rem;
 }
+
 .nameAndDate {
     margin-left: 0.5rem;
     margin-top: auto;
     margin-bottom: auto;
 }
+
 .authorName {
     color: var(--veryDarkGrayishBlue)
 }
+
 .articleDate {
     margin-top: 0.3rem;
     color: var(--desaturatedDarkBlue);
 }
+
 .articleShareIcon {
     width: 20px;
     height: 20px;
@@ -99,7 +121,6 @@ body {
 
 @media screen and (min-width: 500px) {
     body {
-        /* flex-direction: row; */
         align-content: center;
         align-items: center; 
     }
@@ -107,12 +128,22 @@ body {
     .articlePreview {
         flex-direction: row;
         width: 50%;
-
     }    
 
     .previewImage {
-        width: 40%;
-        object-fit: cover;   
+        width: 100%;
         border-radius: var(--cornerRadius) 0 0 var(--cornerRadius);
-    }    
+    }
+
+    /* 
+    * sketch: 285x280
+    * at present: 237x269
+    * 201x290 using it as a background image
+    */
+    .previewImage > img {
+        height: 105%;
+        object-fit: cover;
+        object-position: left;
+        /* margin-bottom: 10%; */
+    }
 }
