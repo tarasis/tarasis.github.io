@@ -39,6 +39,7 @@ body {
     flex-direction: column;
 
     border-radius: var(--cornerRadius);
+    overflow: hidden;
     background-color: white;
     width: 87%;
     margin: 0 auto;
@@ -49,7 +50,6 @@ body {
 .previewImage {
     flex: 1 45%;
     overflow: hidden;
-    border-radius: var(--cornerRadius) var(--cornerRadius) 0 0;    
 }
 
     /* 
@@ -65,10 +65,10 @@ body {
 .previewBody {
     flex: 1 60%;
     margin-top: 0.85rem;
-    padding: 1rem 1.75rem 1rem 1.5rem;
 }
 
 .articleSummary {
+    padding: 1rem 1.75rem 1rem 1.5rem;
 }
 
 .articleTitle {
@@ -88,11 +88,14 @@ body {
     line-height: 20px;
 }
 
-.articleAuthor {
-    margin-top: 1.5rem;
+.articleFooter {
+    /* margin-top: 1.5rem; */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+
+    transition: 250ms ease-in-out;
 }
 
 .authorImage {
@@ -118,16 +121,90 @@ body {
     font-weight: 500;
 }
 
-.articleShareIcon {
-    width: 20px;
-    height: 20px;
+.articleShareButton {
     background-color: var(--lightGrayishBlue);
+
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+
     margin-left: auto;
     margin-top: auto;
     margin-bottom: auto;
-    /* not the right way to put a circle around the icon */
-    border-radius: 50%; 
+
+
+    transition: 250ms ease-in-out;
+
+
 }
+
+.articleShareButton > .articleShareIcon {
+}
+
+.buttonDark {
+    background-color: var(--veryDarkGrayishBlue);
+}
+
+.buttonDark img svg path {
+    background-color: white;
+}
+
+.articleShareButtonTooltip {
+    display: none;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 0.5rem;
+
+    background: var(--veryDarkGrayishBlue);
+    box-shadow: 0px 10px 10px rgba(201, 213, 225, 0.503415);
+
+    width: 170px;
+    padding: 0.75rem 1rem;
+    bottom: 80px;
+    left: -104px;
+
+    overflow: visible;
+}
+
+.articleShareButtonTooltip::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 0.8rem solid transparent;
+    position: absolute;
+
+    left: 45%;
+    bottom: -25px;
+    border-top: 10px solid var(--veryDarkGrayishBlue);
+}
+
+.articleShareSection {
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 80%;
+    height: 2rem;
+}
+
+.backgroundDark {
+    background: var(--veryDarkGrayishBlue);
+}
+
+.articleShareButtonTooltip > p, .articleShareSection > p {
+    letter-spacing: 5px;
+    color: var(--grayishBlue);
+    font-weight: 500;
+    font-size: 13px;
+
+}
+
 .attribution {
 }
 
@@ -144,7 +221,7 @@ body {
 
     .previewImage {
         width: 100%;
-        border-radius: var(--cornerRadius) 0 0 var(--cornerRadius);
+        /* border-radius: var(--cornerRadius) 0 0 var(--cornerRadius); */
     }
 
     /* 
@@ -161,8 +238,11 @@ body {
 
     .previewBody {
         margin-top: 0.5rem;
-        padding: 1.2rem 2.3rem 1.6rem 0rem;
-        margin-left: 2.45rem;
+        margin-left: 0.25rem;
+    }
+
+    .articleSummary {
+        padding: 1rem 1.5rem 1rem 1.5rem;
     }
 
     .articleTitle {
@@ -175,8 +255,8 @@ body {
         margin-top: 0.5rem;
     }
     
-    .articleAuthor {
-        margin-top: 1rem;
+    .articleFooter {
+        padding: 0rem 1.5rem 1.5rem 1.5rem;
     }
     
 }

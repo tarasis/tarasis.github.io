@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="./js/challenge.js"></script>
   
   <title>Frontend Mentor | Article preview component</title>
 
@@ -35,7 +36,7 @@
               to help you make any room feel complete.        
             </p>
           </div>
-          <div class="articleAuthor">
+          <div class="articleFooter">
             <img src="./images/avatar-michelle.jpg" alt="Author Picture" class="authorImage">
             <div class="nameAndDate">
               <p class="authorName">Michelle Appleton</p>
@@ -43,7 +44,21 @@
             </div>
             <!-- look up what to do with this. I know I've seen it. What it there for screenreader, but off the side of the screen -->
             <!-- <section>Share</section>  -->
-            <img src="./images/icon-share.svg" alt="Share Icon" class="articleShareIcon">
+            <div class="articleShareSection">
+              <p>SHARE</p>
+              <img src="./images/icon-facebook.svg" alt="Facebook Icon" class="articleShareIcon">
+              <img src="./images/icon-twitter.svg" alt="Twitter Icon" class="articleShareIcon">
+              <img src="./images/icon-pinterest.svg" alt="Pinterest Icon" class="articleShareIcon">
+            </div>
+            <button class="articleShareButton" onclick="toggleTooltip()" >
+              <img src="./images/icon-share.svg" alt="Share Icon" class="">
+              <div class="articleShareButtonTooltip">
+                <p>SHARE</p>
+                <img src="./images/icon-facebook.svg" alt="Facebook Icon" class="articleShareIcon">
+                <img src="./images/icon-twitter.svg" alt="Twitter Icon" class="articleShareIcon">
+                <img src="./images/icon-pinterest.svg" alt="Pinterest Icon" class="articleShareIcon">
+              </div>
+            </button>
           </div>
       </div>
     </div>
