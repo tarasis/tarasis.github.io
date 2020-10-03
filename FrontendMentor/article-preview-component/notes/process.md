@@ -17,3 +17,18 @@ These are the differences at this point. Mobile with slider, and desktop with fa
 
 ![mobile rough version](mobile-rough.png)
 ![desktop rough version](desktop-rough.png)
+
+Okay, as I've set things up I can't use something like the following to shrink the image. using absolute takes it out of the flow of the component
+
+```css
+position: absolute;
+clip: rect(0px,60px,200px,0px);
+```
+
+Signed up to the Pro account and made the mistake of taking a look at the sketch file. I knew I couldn't resist getting some of the bits from it. *sigh*
+
+Still trying to eyeball what I can but I find myself wanting to look (for line and letter spacing).
+
+Did use it for the shadow, because I wasn't going to guess that color. Sheesh 🤯
+
+Picking this up on the 3rd. The mobile version is nearly properly positioned. Its off by a bit (whole component is a little shorter), but everything else is close. (Except still not sorted the thing around the share icon) 
