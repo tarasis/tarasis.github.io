@@ -16,7 +16,6 @@
     --lightGrayishBlue: hsl(210, 46%, 95%);
     /* corner radius */
     --cornerRadius: 10px;
-
 }
 
 /* Base styling */ 
@@ -29,9 +28,6 @@ body {
     font-size: 13px;
     justify-content: center;
     height: 100vh;
-}
-
-.container {
 }
 
 .articlePreview {
@@ -48,7 +44,7 @@ body {
 }
 
 .previewImage {
-    flex: 1 45%;
+    flex: 1 40%;
     overflow: hidden;
 }
 
@@ -59,7 +55,7 @@ body {
     */
 .previewImage > img {
     width: 100%;
-    margin:-4% 0 -15% 0%;
+    margin:-4.5% 0 -14.5% 0%;
 }
 
 .previewBody {
@@ -89,7 +85,6 @@ body {
 }
 
 .articleFooter {
-    /* margin-top: 1.5rem; */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -136,13 +131,7 @@ body {
     margin-top: auto;
     margin-bottom: auto;
 
-
     transition: 250ms ease-in-out;
-
-
-}
-
-.articleShareButton > .articleShareIcon {
 }
 
 .buttonDark {
@@ -202,11 +191,10 @@ body {
     color: var(--grayishBlue);
     font-weight: 500;
     font-size: 13px;
-
 }
 
-.attribution {
-}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
 
 @media screen and (min-width: 500px) {
     body {
@@ -217,11 +205,11 @@ body {
     .articlePreview {
         flex-direction: row;
         width: 50%;
+        min-width: 600px;
     }    
 
     .previewImage {
         width: 100%;
-        /* border-radius: var(--cornerRadius) 0 0 var(--cornerRadius); */
     }
 
     /* 
@@ -230,10 +218,10 @@ body {
     * 201x290 using it as a background image
     */
     .previewImage > img {
+        margin:0;
         height: 105%;
         object-fit: cover;
         object-position: left;
-        /* margin-bottom: 10%; */
     }
 
     .previewBody {
@@ -258,5 +246,4 @@ body {
     .articleFooter {
         padding: 0rem 1.5rem 1.5rem 1.5rem;
     }
-    
 }
