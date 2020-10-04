@@ -48,11 +48,6 @@ body {
     overflow: hidden;
 }
 
-    /* 
-    * image size is: 660x528
-    * sketch: 327x200
-    * currently: 326.25x200.5
-    */
 .previewImage > img {
     width: 100%;
     margin:-5% 0 -14.5% 0%;
@@ -118,6 +113,7 @@ body {
 
 .articleShareButton {
     background-color: var(--lightGrayishBlue);
+    color: #6E8098;
 
     width: 30px;
     height: 30px;
@@ -135,11 +131,8 @@ body {
 }
 
 .buttonDark {
-    background-color: var(--veryDarkGrayishBlue);
-}
-
-.buttonDark img svg path {
-    background-color: white;
+    background-color: var(--desaturatedDarkBlue);
+    color: var(--lightGrayishBlue);
 }
 
 .articleShareButtonTooltip {
@@ -193,10 +186,8 @@ body {
     font-size: 13px;
 }
 
-.attribution { position: absolute; bottom: 0; font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 650px) {
     body {
         align-content: center;
         align-items: center; 
@@ -206,17 +197,14 @@ body {
         flex-direction: row;
         width: 50%;
         min-width: 600px;
+        overflow: visible;
     }    
 
     .previewImage {
         width: 100%;
+        border-radius: var(--cornerRadius) 0 0px var(--cornerRadius);
     }
 
-    /* 
-    * sketch: 285x280
-    * at present: 237x269
-    * 201x290 using it as a background image
-    */
     .previewImage > img {
         margin:0;
         height: 105%;
@@ -225,12 +213,12 @@ body {
     }
 
     .previewBody {
-        margin-top: 0.5rem;
+        margin-top: 0.65rem;
         margin-left: 0.25rem;
     }
 
     .articleSummary {
-        padding: 1rem 1.5rem 1rem 1.5rem;
+        padding: 1rem 1.75rem 1rem 1.5rem;
     }
 
     .articleTitle {
@@ -244,6 +232,9 @@ body {
     }
     
     .articleFooter {
-        padding: 0rem 1.5rem 1.5rem 1.5rem;
+        padding: 0rem 1.75rem 1.5rem 1.5rem;
     }
 }
+
+.attribution { position: absolute; bottom: 0; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

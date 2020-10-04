@@ -8,7 +8,7 @@ function toggleTooltip() {
     const articleShareTooltip = document.querySelector(".articleShareButtonTooltip");
     const articleShareSection = document.querySelector(".articleShareSection");
 
-    if (window.innerWidth <= 500) {
+    if (window.innerWidth <= 650) {
         if (isTooltipVisible) {
             articleFooter.classList.remove("backgroundDark");
             articleShareButton.classList.remove("buttonDark");

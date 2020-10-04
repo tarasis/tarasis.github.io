@@ -45,4 +45,28 @@ Used this https://cssdeck.com/labs/bv45bh6p for the callout/tooltip
 
 Don't understand why the img/svg inside the button shifts up when tooltip appears.
 
-~~~Broke the desktop version while adding the share stuff. Not entirely sure how.~~~
+~~Broke the desktop version while adding the share stuff. Not entirely sure how.~~
+
+---
+
+Notes before submission.
+
+Had to disable overflow in articlePreview on desktop to show full callout/tooltip. That meant I had to put code previewImage for border-radius.
+
+Don't get why the svg img is pushed upwards when pressing the share button.
+
+Had to change buttonDark to a lighter shade because I couldn't colour the svg. I've since searched on google and found this q/a with a bunch of options 
+
+https://stackoverflow.com/questions/24933430/img-src-svg-changing-the-styles-with-css
+
+I have inlined the svg and used fill="currentColor" rather than edit the supplied svg.
+
+So this is where I leave it
+
+![Mobile Final](./mobile-final.jpg)
+![Desktop Final](./desktop-final.jpg)
+
+Differences from design
+
+![Mobile Final Difference](./mobile-diff-final.png)
+![Desktop Final Difference](./desktop-diff-final.png)
