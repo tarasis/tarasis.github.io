@@ -70,3 +70,19 @@ Differences from design
 
 ![Mobile Final Difference](./mobile-diff-final.png)
 ![Desktop Final Difference](./desktop-diff-final.png)
+
+---
+
+On subnmission there was an HTML issue:
+
+```
+Element div not allowed as child of element button in this context. (Suppressing further errors from this subtree.)
+
+Context:
+
+<div class=`articleShareButtonTooltip`>
+```
+
+Fixed it. Moved the div outside of the button. Then set `position:relative;` on `articleFooter`, and `position: absolute;` on `.articleShareButtonTooltip`
+
+Last thing, how to I "fake click the tooltip off the screen' when passing the media query breakpoint?

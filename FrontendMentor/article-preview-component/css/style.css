@@ -86,6 +86,8 @@ body {
     padding: 1rem 1.5rem 1rem 1.5rem;
 
     transition: 250ms ease-in-out;
+
+    position: relative;
 }
 
 .authorImage {
@@ -137,7 +139,7 @@ body {
 
 .articleShareButtonTooltip {
     display: none;
-    position: relative;
+    position: absolute;
     justify-content: space-between;
     align-items: center;
 
@@ -148,10 +150,9 @@ body {
 
     width: 170px;
     padding: 0.75rem 1rem;
-    bottom: 80px;
-    left: -104px;
+    top: -60px;
+    right: -47px;
 
-    overflow: visible;
 }
 
 .articleShareButtonTooltip::before {
@@ -234,6 +235,7 @@ body {
     .articleFooter {
         padding: 0rem 1.75rem 1.5rem 1.5rem;
     }
+
 }
 
 .attribution { position: absolute; bottom: 0; font-size: 11px; text-align: center; }
