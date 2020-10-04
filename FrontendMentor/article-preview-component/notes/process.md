@@ -45,4 +45,4 @@ Used this https://cssdeck.com/labs/bv45bh6p for the callout/tooltip
 
 Don't understand why the img/svg inside the button shifts up when tooltip appears.
 
-Broke the desktop version while adding the share stuff. Not entirely sure how.
+~~~Broke the desktop version while adding the share stuff. Not entirely sure how.~~~

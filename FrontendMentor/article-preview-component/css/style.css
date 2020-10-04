@@ -55,7 +55,7 @@ body {
     */
 .previewImage > img {
     width: 100%;
-    margin:-4.5% 0 -14.5% 0%;
+    margin:-5% 0 -14.5% 0%;
 }
 
 .previewBody {
@@ -193,7 +193,7 @@ body {
     font-size: 13px;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { position: absolute; bottom: 0; font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 @media screen and (min-width: 500px) {
