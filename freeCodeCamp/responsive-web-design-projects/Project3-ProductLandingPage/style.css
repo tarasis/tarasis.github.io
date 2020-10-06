@@ -133,7 +133,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 125px;
-    /* width: 15vw; */
+    width: 25px;
     color: var(--blue);
 }
 
