@@ -1,0 +1,137 @@
+body {
+    background-color: rgb(168, 168, 168);
+}
+
+#nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(179, 179, 179);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .nav-bar a {
+      float: none;
+      width: 100%;
+    }
+}
+
+.push {
+    margin-left: auto;
+}
+
+#empty-space {
+    display: block;
+    padding: 1.5em;
+}
+
+#nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em;
+}
+
+.btn-link {
+    background: #6EF63D;
+    background-image: -webkit-linear-gradient(top, #6EF63D, #D0501E);
+    background-image: -moz-linear-gradient(top, #6EF63D, #D0501E);
+    background-image: -ms-linear-gradient(top, #6EF63D, #D0501E);
+    background-image: -o-linear-gradient(top, #6EF63D, #D0501E);
+    background-image: linear-gradient(to bottom, #6EF63D, #D0501E);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 15px;
+    box-shadow: 1px 1px 20px 0px #000000;
+    -webkit-box-shadow: 1px 1px 20px 0px #000000;
+    -moz-box-shadow: 1px 1px 20px 0px #000000;
+    text-shadow: 1px 1px 20px #000000;
+    border: solid #337FED 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 1em 0;
+
+    }
+    
+    .btn-link:hover {
+    border: double #99C624 1px;
+    color: #0e0e0e;
+    background: rgba(110, 246, 61, 0.57);
+    background-image: -webkit-linear-gradient(top, rgba(110, 246, 61, 0.57), rgba(208, 80, 30, 0.98));
+    background-image: -moz-linear-gradient(top, rgba(110, 246, 61, 0.57), rgba(208, 80, 30, 0.98));
+    background-image: -ms-linear-gradient(top, rgba(110, 246, 61, 0.57), rgba(208, 80, 30, 0.98));
+    background-image: -o-linear-gradient(top, rgba(110, 246, 61, 0.57), rgba(208, 80, 30, 0.98));
+    background-image: linear-gradient(to bottom, rgba(110, 246, 61, 0.57), rgba(208, 80, 30, 0.98));
+    text-decoration: none;
+    }
+
+  /* Navbar links */
+/*
+  #nav-bar a {
+    color: #602d2d;
+  }
+*/
+
+#header-img {
+    width: 15%;
+    height: 15%;
+    margin: 0 1em 0;
+}
+
+/* Form Section */
+
+#formsection {
+    text-align: center;
+}
+
+/* Games Section */
+#games {
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+}
+
+#games .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: rgb(17, 76, 202);
+}
+
+#games .details {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+  }
+
+/* How To Section */
+#videos {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+/* Pricing Section */
+#features {
+    text-align: center;
+}
+
