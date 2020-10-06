@@ -57,3 +57,8 @@ Think of it as a combination of learning, and tips and tricks. They will start u
 ## Useful Links
 
 * http://www.heropatterns.com/ << Free repeatable background SVG's
+
+## API's to test with
+
+* https://api.chucknorris.io/jokes/random
+* https://jsonplaceholder.typicode.com/
