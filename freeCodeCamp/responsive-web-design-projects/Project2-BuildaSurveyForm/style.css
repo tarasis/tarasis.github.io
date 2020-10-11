@@ -19,6 +19,7 @@ form {
     color: #b83b5e;
     padding: 2%;
     width: 50%;
+    min-width: 450px;
     display: inline-block;
     text-align: left;
     font-size: large;
@@ -53,5 +54,6 @@ footer {
 @media screen and (max-width: 500px) {
     form {
         width: 90%;
+        min-width: unset;
     }
 }
