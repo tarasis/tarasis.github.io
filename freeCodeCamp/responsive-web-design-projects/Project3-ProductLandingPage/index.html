@@ -29,6 +29,7 @@
                 <input type="email" name="email" id="email" placeholder="person@example.com" required>
             </div>
             <div class="form-example">
+                <!-- using class here doesn't work on iOS -->
                 <input class="btn-link" id="submit" type="submit" value="Subscribe!">
             </div>
         </form>
@@ -75,10 +76,10 @@
     </section>
     <section id="videos">
         <h2>Teasers for games</h2>
-        <iframe class="video" id="video" width="420" height="315" src="https://www.youtube.com/embed/KipPMgbpKzk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-        <iframe class="video" id="video2" width="420" height="315" src="https://www.youtube.com/embed/A4BuL886bJA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-        <iframe class="video" id="video3" width="420" height="315" src="https://www.youtube.com/embed/LhFETREAvhc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-        <iframe class="video" id="video4" width="420" height="315" src="https://www.youtube.com/embed/-PxHfU2Xoac?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <iframe class="video" id="video" src="https://www.youtube.com/embed/KipPMgbpKzk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <iframe class="video" id="video3" src="https://www.youtube.com/embed/LhFETREAvhc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <iframe class="video" id="video4" src="https://www.youtube.com/embed/-PxHfU2Xoac?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <iframe class="video" id="video2" src="https://www.youtube.com/embed/A4BuL886bJA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
     </section>
     <section id="features">
         <h2 >Features</h2>

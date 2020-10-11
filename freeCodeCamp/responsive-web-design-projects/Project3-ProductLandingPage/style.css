@@ -5,8 +5,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+*{ 
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background-color: rgb(189, 188, 188);
+    margin 0 auto;
 }
 
 #nav-bar {
@@ -85,6 +91,15 @@ body {
     padding: 1.5em;
 }
 
+section {
+    margin-top: 0.75rem;
+}
+
+/* Put spacing between the section title (first element) and the next element below */
+section :nth-child(2) {
+    margin-top: 0.5rem;
+}
+
 /* Form Section */
 
 #formsection {
@@ -96,6 +111,7 @@ body {
 }
 
 #formsection #email {
+    margin-top: 1rem;
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -123,6 +139,8 @@ body {
 
 .grid {
     display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
 }
 
 #games .icon {
@@ -137,15 +155,19 @@ body {
 #games .details {
     margin-left: 2rem;
     text-align: left;
-    height: 125px;
+    height: auto;
     width: 50vw;
     padding: 5px;
   }
 
 /* How To Section */
 #videos {
-    padding: 1em;
     text-align: center;
+}
+
+.video {
+    width: 420px;
+    height: 315px;
 }
 
 .video + .video {
@@ -154,9 +176,25 @@ body {
 
 /* Pricing Section */
 #features {
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 60%;
     text-align: center;
+}
+
+/* start handling at 700 for menu */
+@media screen and (max-width: 700px) {
 
 }
 
+/* below video tweak video sizes */
+@media screen and (max-width: 500px) {
+    #formsection #email {
+        font-size: 20px;
+    }
+
+    .video {
+        width: 90%;
+        height: calc((90vw / 4) * 3);
+    }    
+}
