@@ -41,7 +41,7 @@ Note took far to long, but site now using main for branch.
 * CSS - The "!important" rule should only be used as a last resort - nuclear option
     * better to do elementName.className when wanting to temp add a class to override some css (like say a border color)
 
-* Blah
+* Blah ... its been a while. Oops.
 
 ## Articles
 
