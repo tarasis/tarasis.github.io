@@ -7,6 +7,8 @@ Aim of this document is to make notes of various things as I encounter them. Con
 
 Think of it as a combination of learning, and tips and tricks. They will start unorganised, and then should be put into some semblance of order; where that is possible. 
 
+Note took far to long, but site now using main for branch.
+
 ## The Notes Themselves (unorganised)
 ---
 
