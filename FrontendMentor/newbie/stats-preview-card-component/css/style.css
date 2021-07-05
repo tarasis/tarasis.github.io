@@ -1,0 +1,13 @@
+:root {
+    font-size: 16px;
+    --site-color: hsl(233, 47%, 7%);
+}
+
+body {
+    background-color: var(--site-color);
+    color: white;
+    margin: 0;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
