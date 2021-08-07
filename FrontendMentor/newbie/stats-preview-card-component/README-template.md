@@ -45,6 +45,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+This was a little tricky just from the point of view that I hadn't done any HTML/CSS dev / study in 9 months. So it was a case of trying to remind myself of various options that I could do.
+
 ### Built with
 
 - Semantic HTML5 markup
