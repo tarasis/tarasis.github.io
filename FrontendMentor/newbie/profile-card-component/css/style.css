@@ -82,7 +82,7 @@ body {
 
 .stats {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
@@ -111,6 +111,30 @@ body {
     color: var(--dark-grayish-blue);
 
     margin-top: 0.5625rem;
+}
+
+.topCircle, .bottomCircle {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-size: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0.75;
+}
+
+.topCircle {
+    background: url(../images/bg-pattern-top.svg) no-repeat bottom right;
+
+    top: 0;
+    left: 0;
+}
+
+.bottomCircle {
+    background: url(../images/bg-pattern-bottom.svg) no-repeat top left;
+
+    top: 100%;
+    left: 100%;
 }
 
 .attribution { 
