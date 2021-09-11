@@ -8,20 +8,17 @@
 }
 
 :root {
-    --site-color: hsl(185, 75%, 39%);
     --dark-cyan: hsl(185, 75%, 39%);
     --dark-grayish-blue: hsl(227, 10%, 46%);
     --very-dark-desaturated-blue: hsl(229, 23%, 23%);
     --dark-gray: hsl(0, 0%, 59%);
     --border-gray: hsla(228, 9%, 92%, 1);
 
-
     /* default font stuff */
     --page-base-font-size: 16px; /* for rem calculations*/
     --default-font-size: 18px;
     --location-font-size: 14px;
     --label-font-size: 10px;
-
 }
 
 html {
@@ -30,7 +27,7 @@ html {
 }
 
 body {
-    background-color: var(--site-color);
+    background-color: var(--dark-cyan);
     font-size: var(--default-font-size);
     font-weight: 700;
     font-family: 'Kumbh Sans', sans-serif;
@@ -78,6 +75,12 @@ body {
 .nameAndAge {
     margin-top: 4.5rem;
     display: inline-flex;
+    padding-bottom: 0.25rem;
+}
+
+.border {
+    border: 1px solid var(--border-gray);
+    margin-top: 1.5rem;
 }
 
 .stats {
@@ -98,11 +101,7 @@ body {
     font-size: var(--location-font-size);
 
     margin-top: 0.5rem;
-}
-
-.border {
-    border: 1px solid var(--border-gray);
-    margin-top: 1.5rem;
+    padding-bottom: 0.25rem;
 }
 
 .label {
@@ -111,6 +110,7 @@ body {
     color: var(--dark-grayish-blue);
 
     margin-top: 0.5625rem;
+    padding-bottom: 0.1875rem;
 }
 
 .topCircle, .bottomCircle {
