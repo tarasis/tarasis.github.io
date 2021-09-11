@@ -67,11 +67,21 @@ body {
     width: 96px;
     height: 96px;
 
-    border: 5px solid #FFFFFF;
     border-radius: 50%;
-    /* left: calc(50% - 96px/2); */
     top: calc(100% - 96px/2); 
 }
+
+.photo:after {
+    border-radius: 50%;
+    padding: 5px;
+    border: 5px solid white;
+    position: absolute;
+    content: '';
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+  }
 
 .nameAndAge {
     margin-top: 4.5rem;
