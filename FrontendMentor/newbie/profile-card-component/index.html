@@ -5,31 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+ 
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
+  <div class="page">
+    <div class="card">
+      <div class="details">
+        <div class="cardHeader">
+          <div class="photo"></div>
+        </div>
+        <div class="nameAndAge">
+          <div class="name">
+            Victor Crest
+          </div>
+          <div class="age">
+            26
+          </div>  
+        </div>
+        <div class="location">
+          London
+        </div>
+      </div>
+      <div class="border"></div>
+      <div class="stats">
+        <div class="followers">
+          <div class="stat">80K</div>
+          <div class="label">Followers</div>
+        </div>
+        <div class="likes">
+          <div class="stat">803K</div>
+          <div class="label">Likes</div>
+        </div>
+        <div class="photos">
+          <div class="stat">1.4K</div>
+          <div class="label">Photos</div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/tarasis">Robert McGovern</a>.
   </div>
 </body>
 </html>
