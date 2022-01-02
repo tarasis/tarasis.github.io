@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    box-sizing: border-box;
+    margin: 0;
+
+    /* colors */
+
+    --clr-pale-blue: hsl(225, 100%, 94%);
+    --clr-bright-blue: hsl(245, 75%, 52%);
+
+    --clr-very-pale-blue: hsl(225, 100%, 98%);
+    --clr-desaturated-blue: hsl(224, 23%, 55%);
+    --clr-dark-blue: hsl(223, 47%, 23%);
+
+    /* fonts */
+    --fs-p: 1rem;
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-900: 900;
+}
+
+/* General Formating */
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card {
+}
+.hero-image {
+}
+.price-plan {
+}
+.icon {
+}
+.plan-type-area {
+}
+.plan-type {
+}
+.plan-price {
+}
+.change-button {
+}
+.payment-button {
+}
+.cancel-button {
+}
