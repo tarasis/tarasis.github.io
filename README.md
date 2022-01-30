@@ -1,3 +1,3 @@
 # tarasis.github.io
 
-Temporary store for various completed Web Development exercises
+A repo for completed Web Development exercises

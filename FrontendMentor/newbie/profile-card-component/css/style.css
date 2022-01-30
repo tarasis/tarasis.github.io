@@ -8,20 +8,17 @@
 }
 
 :root {
-    --site-color: hsl(185, 75%, 39%);
     --dark-cyan: hsl(185, 75%, 39%);
     --dark-grayish-blue: hsl(227, 10%, 46%);
     --very-dark-desaturated-blue: hsl(229, 23%, 23%);
     --dark-gray: hsl(0, 0%, 59%);
     --border-gray: hsla(228, 9%, 92%, 1);
 
-
     /* default font stuff */
     --page-base-font-size: 16px; /* for rem calculations*/
     --default-font-size: 18px;
     --location-font-size: 14px;
     --label-font-size: 10px;
-
 }
 
 html {
@@ -30,7 +27,7 @@ html {
 }
 
 body {
-    background-color: var(--site-color);
+    background-color: var(--dark-cyan);
     font-size: var(--default-font-size);
     font-weight: 700;
     font-family: 'Kumbh Sans', sans-serif;
@@ -66,18 +63,39 @@ body {
     position: relative;
     margin: 0 auto;
     background: url(../images/image-victor.jpg);
+    background-size: contain;
     width: 96px;
     height: 96px;
 
-    border: 5px solid #FFFFFF;
     border-radius: 50%;
-    /* left: calc(50% - 96px/2); */
     top: calc(100% - 96px/2); 
 }
+
+.photo:after {
+    border-radius: 50%;
+    padding: 5px;
+    border: 5px solid white;
+    position: absolute;
+    content: '';
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+  }
 
 .nameAndAge {
     margin-top: 4.5rem;
     display: inline-flex;
+    padding-bottom: 0.25rem;
+}
+
+.name, .stat {
+    font-weight: bold;
+}
+
+.border {
+    border: 1px solid var(--border-gray);
+    margin-top: 1.5rem;
 }
 
 .stats {
@@ -98,19 +116,17 @@ body {
     font-size: var(--location-font-size);
 
     margin-top: 0.5rem;
-}
-
-.border {
-    border: 1px solid var(--border-gray);
-    margin-top: 1.5rem;
+    padding-bottom: 0.25rem;
 }
 
 .label {
     font-weight: 400;
     font-size: var(--label-font-size);
     color: var(--dark-grayish-blue);
+    letter-spacing: 1.5px;
 
     margin-top: 0.5625rem;
+    padding-bottom: 0.1875rem;
 }
 
 .topCircle, .bottomCircle {
@@ -137,14 +153,14 @@ body {
     left: 100%;
 }
 
-.attribution { 
+footer {
     position: absolute;
+    bottom: 1rem;
+}
+
+.attribution { 
     font-size: 11px; 
     text-align: center; 
     bottom: 1rem;
 }
 .attribution a { color: hsl(228, 45%, 44%); }
-
-@media screen and (min-width: 1100px) {
-
-}

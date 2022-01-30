@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practice Projects</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./FrontendMentor/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
     <header>
         <!-- some logo here -->
@@ -16,63 +19,328 @@
     </header>
     <main>
         <div class="blurb">
-            <p>These are completed projects done to practice using HTML, CSS & Javascript. They come from different services, and most are freely available for anyone to practice with.</p>
+            <p>
+                These are completed projects done to practice using HTML,
+                CSS & Javascript. They come from different services, and
+                most are freely available for anyone to practice with.
+            </p>
             &nbsp;
-            <p>I have put them all into a single GIT repository rather than litter my github page with many different projects. This may change in future depending on how many of these that I do.</p>
+            <p>
+                I have put them all into a single GIT repository rather than
+                litter my github page with many different projects. This may
+                change in future depending on how many of these that I do.
+            </p>
             &nbsp;
             <p>Robert McGovern</p>
         </div>
-        <div class="projectsDiv">
-            <div class="frontEndMentorChallenges">
-                <h2>Frontend Mentor Challenges</h2>
-                <div class="newbieChallenges">
-                    <h3>Newbie Challenges</h3>
-                    <ul>
-                        <li><a href="./FrontendMentor/newbie/huddle-landing-page-with-single-introductory-section-master/index.html">Huddle Landing Page with a Single Introductory Section</a></li>
-                        <li><a href="./FrontendMentor/newbie/ping-coming-soon-page-master/index.html">Ping Coming-Soon page</a></li>
-                        <li><a href="./FrontendMentor/newbie/single-price-grid-component-master/index.html">Single Price Grid Component page</a></li>
-                        <li><a href="./FrontendMentor/newbie/four-card-feature-section/index.html">Four Card Feature Section page</a></li>
-                        <li><a href="./FrontendMentor/newbie/article-preview-component/index.html">Article Preview Component</a></li>
-                        <li><a href="./FrontendMentor/newbie/stats-preview-card-component/index.html">Stats Preview Card Component</a></li>
-                        <li><a href="./FrontendMentor/newbie/profile-card-component/">Profile Card Component</a></li>
-                        <li><a href="./FrontendMentor/newbie/order-summary-component/">Order Summary Component</a></li>
-                    </ul>    
-                </div>
-            </div>
-            <div class="freecodeCampProjects">
-                <h2>FreecodeCamp</h2>
-                <div class="responsiveWebDesignProjects">
-                    <h3>Responsive Web Design Projects</h3>
-                    <p>Note: As of 11 Oct 2020, these require a partial rework to look good on mobile. 1-3 where written much earlier in my learning, so while they fufill all the requirements, they don't look great on mobile.</p>
-                    <ul>
-                        <li><a href="./freeCodeCamp/responsive-web-design-projects/Project1-TributePage/">Project 1 - Tribute Page</a></li>
-                        <li><a href="./freeCodeCamp/responsive-web-design-projects/Project2-BuildaSurveyForm/">Project 2 - Build a Survey Form</a></li>
-                        <li><a href="./freeCodeCamp/responsive-web-design-projects/Project3-ProductLandingPage/">Project 3 - Product Landing Page</a></li>
-                        <li><a href=""></a></li>
-                        <li><a href=""></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="completeWebDev2020Projects">
-                <h2>Complete Web Development 2020</h2>
-                <p>coming soon</p>
-            </div>
-            <div class="vanillaJSProjects">
-                <h2>Vanilla JS Projects</h2>
-                <p>coming soon</p>
-            </div>
-            <div class="playground">
-                <h2>Playground</h2>
-                <p>Intended for just little snippets of code that look useful</p>
-                <a href="./playground.html">The Playground</a>
-            </div>
 
+        <div class="projectsDiv">
+            <div class="alignedHeader">
+                <h2 class="projectsSection__title">Frontend Mentor</h2>
+                <img src="./svgs/frontendmentor.svg" alt="Frontend Mentor" />
+            </div>
+            <p>Collection of challenges I completed for Frontend Mentor</p>
+            <div class="newbieChallenges">
+                <h3>Newbie Challenges</h3>
+
+                <div class="projects-grid">
+                    <div class="project-card stacked featured">
+                        <a href="./FrontendMentor/newbie/huddle-landing-page-with-single-introductory-section-master/">
+                            <img class="card__img"
+                                src="./screenshots/fem-newbie-huddle-landing-page-with-single-introductory-section.png"
+                                alt="The Huddle Landing Page Challenge from FrontendMentor, with a single introductory section." />
+                        </a>
+                        <div class="card__content">
+                            <h3 class="card__title">
+                                The Huddle Landing Page
+                            </h3>
+                            <!-- <p class="card__description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </p> -->
+                            <ul class="card__techUsed">
+                                <li>
+                                    <img src="./svgs/html5.svg" alt="HTML5" />
+                                </li>
+                                <li>
+                                    <img src="./svgs/css3.svg" alt="CSS3" />
+                                </li>
+                                <li>
+                                    <img src="./svgs/javascript.svg" alt="JavaScript" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-card stacked">
+                        <a href="./FrontendMentor/newbie/ping-coming-soon-page-master/">
+                            <img class="card__img" src="./screenshots/fem-newbie-ping-coming-soon-page.jpeg"
+                                alt="Ping Coming-Soon Challenge from FrontendMentor" />
+                        </a>
+                        <div class="card__content">
+                            <h3 class="card__title">Ping Coming-Soon</h3>
+                            <!-- <p class="card__description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </p> -->
+                            <ul class="card__techUsed">
+                                <li>
+                                    <img src="./svgs/html5.svg" alt="HTML5" />
+                                </li>
+                                <li>
+                                    <img src="./svgs/css3.svg" alt="CSS3" />
+                                </li>
+                                <li>
+                                    <img src="./svgs/javascript.svg" alt="JavaScript" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-card stacked">
+                        <a href="./FrontendMentor/newbie/single-price-grid-component-master/">
+                            <img class="card__img" src="./screenshots/fem-newbie-single-price-grid-component.jpeg"
+                                alt="Single Price Grid Component Challenge from FrontendMentor" />
+                        </a>
+                        <div class="card__content">
+                            <h3 class="card__title">
+                                Single Price Grid Component
+                            </h3>
+                            <!-- <p class="card__description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </p> -->
+                            <ul class="card__techUsed">
+                                <li>
+                                    <img src="./svgs/html5.svg" alt="HTML5" />
+                                </li>
+                                <li>
+                                    <img src="./svgs/css3.svg" alt="CSS3" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-card stacked">
+                        <a href="./FrontendMentor/newbie/four-card-feature-section/">
+                            <img class="card__img" src="./screenshots/fem-newbie-four-card-feature-section.jpeg"
+                                alt="Four Card Feature Section Challenge from FrontendMentor" />
+                        </a>
+                        <div class="card__content">
+                            <h3 class="card__title">
+                                Four Card Feature Section
+                            </h3>
+                            <!-- <p class="card__description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </p> -->
+                            <ul class="card__techUsed">
+                                <li>
+                                    <img src="./svgs/html5.svg" alt="HTML5" />
+                                </li>
+                                <li>
+                                    <img src="./svgs/css3.svg" alt="CSS3" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-card stacked">
+                        <a href="./FrontendMentor/newbie/article-preview-component/">
+                            <img class="card__img" src="./screenshots/fem-newbie-article-preview-component.jpeg"
+                                alt="Article Preview Component Challenge from FrontendMentor" />
+                        </a>
+                        <div class="card__content">
+                            <h3 class="card__title">
+                                Article Preview Component
+                            </h3>
+                            <!-- <p class="card__description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </p> -->
+                            <ul class="card__techUsed">
+                                <li>
+                                    <img src="./svgs/html5.svg" alt="HTML5" />
+                                </li>
+                                <li>
+                                    <img src="./svgs/css3.svg" alt="CSS3" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-card stacked">
+                        <a href="./FrontendMentor/newbie/stats-preview-card-component/">
+                            <img class="card__img" src="./screenshots/fem-newbie-stats-preview-card-component.jpeg"
+                                alt="Stats Preview Card Component Challenge from FrontendMentor" />
+                        </a>
+                        <div class="card__content">
+                            <h3 class="card__title">
+                                Stats Preview Card Component
+                            </h3>
+                            <!-- <p class="card__description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </p> -->
+                            <ul class="card__techUsed">
+                                <li>
+                                    <img src="./svgs/html5.svg" alt="HTML5" />
+                                </li>
+                                <li>
+                                    <img src="./svgs/css3.svg" alt="CSS3" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-card stacked">
+                        <a href="./FrontendMentor/newbie/profile-card-component/">
+                            <img class="card__img" src="./screenshots/fem-newbie-profile-card-component.jpeg"
+                                alt="Profile Card Component Challenge from FrontendMentor" />
+                        </a>
+                        <div class="card__content">
+                            <h3 class="card__title">
+                                Profile Card Component
+                            </h3>
+                            <!-- <p class="card__description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </p> -->
+                            <ul class="card__techUsed">
+                                <li>
+                                    <img src="./svgs/html5.svg" alt="HTML5" />
+                                </li>
+                                <li>
+                                    <img src="./svgs/css3.svg" alt="CSS3" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projectsDiv">
+            <div class="alignedHeader">
+                <h2 class="projectsSection__title">Freecodecamp</h2>
+                <img src="./svgs/freecodecamp.svg" alt="Freecodecamp" />
+            </div>
+            <div class="responsiveProjects">
+                <h3>Responsive Web Design Projects</h3>
+                <p>
+                    Note: As of 11 Oct 2020, these require a partial rework
+                    to look good on mobile. 1-3 where written much earlier
+                    in my learning, so while they fufill all the
+                    requirements, they don't look great on mobile.
+                </p>
+                <div class="projects-grid">
+                    <div class="project-card stacked">
+                        <a href="../freeCodeCamp/responsive-web-design-projects/Project1-TributePage/">
+                            <img class="card__img" src="./screenshots/fcc-web-Project1-TributePage.jpeg"
+                                alt="Project 1 - Tribute Page" />
+                        </a>
+                        <div class="card__content">
+                            <h3 class="card__title">
+                                Project 1 - Tribute Page
+                            </h3>
+                            <!-- <p class="card__description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </p> -->
+                            <ul class="card__techUsed">
+                                <li>
+                                    <img src="./svgs/html5.svg" alt="HTML5" />
+                                </li>
+                                <li>
+                                    <img src="./svgs/css3.svg" alt="CSS3" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-card stacked">
+                        <a href="./freeCodeCamp/responsive-web-design-projects/Project2-BuildaSurveyForm/">
+                            <img class="card__img" src="./screenshots/fcc-web-Project2-BuildaSurveyForm.jpeg"
+                                alt="Project 2 - Build A Survey Form" />
+                        </a>
+                        <div class="card__content">
+                            <h3 class="card__title">
+                                Project 2 - Build A Survey Form
+                            </h3>
+                            <!-- <p class="card__description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </p> -->
+                            <ul class="card__techUsed">
+                                <li>
+                                    <img src="./svgs/html5.svg" alt="HTML5" />
+                                </li>
+                                <li>
+                                    <img src="./svgs/css3.svg" alt="CSS3" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-card stacked">
+                        <a href="./freeCodeCamp/responsive-web-design-projects/Project3-ProductLandingPage/">
+                            <img class="card__img" src="./screenshots/fcc-web-Project3-ProductLandingPage.jpeg"
+                                alt="Project 3 - Product Landing Page" />
+                        </a>
+                        <div class="card__content">
+                            <h3 class="card__title">
+                                Project 3 - Product Landing Page
+                            </h3>
+                            <!-- <p class="card__description">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                            </p> -->
+                            <ul class="card__techUsed">
+                                <li>
+                                    <img src="./svgs/html5.svg" alt="HTML5" />
+                                </li>
+                                <li>
+                                    <img src="./svgs/css3.svg" alt="CSS3" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projectsDiv">
+
+            <div class="alignedHeader">
+                <h2 class="projectsSection__title">
+                    The Complete 2022 Web Development Bootcamp
+                </h2>
+                <img src="./svgs/udemy.svg" alt="The Complete 2022 Web Development Bootcamp Udemy Course" />
+            </div>
+            <p>coming soon</p>
+        </div>
+
+        <div class="projectsDiv">
+            <h2 class="projectsSection__title">Vanilla JS Projects</h2>
+            <p>coming soon</p>
+        </div>
+
+        <div class="projectsDiv">
+            <h2 class="projectsSection__title">Playground</h2>
+            <p>
+                Intended for just little snippets of code that look useful
+            </p>
+            <a href="./playground.html">The Playground</a>
         </div>
     </main>
     <footer>
         <!-- some blurb here -->
-        <p>All projects are the work of Robert McGovern, 2020. <a href="emailto:work@tarasis.net">Email</a>, <a href="https://tarasis.net">Website/Blog</a></p>
-        <a href='http://www.heropatterns.com/'>Background SVG provided by Steve Schoger @ Hero Patterns</a>
+        <p>
+            All projects are the work of Robert McGovern, 2020-2022. <br />
+            <a href="emailto:work@tarasis.net">Email</a>,
+            <a href="https://tarasis.net">Website/Blog</a>
+        </p>
+        <a href="http://www.heropatterns.com/">Background SVG provided by Steve Schoger @ Hero Patterns</a>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
