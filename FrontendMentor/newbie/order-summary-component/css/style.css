@@ -68,6 +68,8 @@ main {
     border-radius: var(--br-20);
     background-color: white;
     text-align: center;
+
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
 }
 .card__hero-image {
     width: 100%;
@@ -98,7 +100,7 @@ main {
 
     width: 85%;
     margin: 0 auto clamp(1.5rem, 4vw, 2rem) auto;
-    padding: 1rem 0;
+    padding: clamp(1rem, 2vw, 1.5315rem) 0;
 
     border-radius: var(--br-11);
     background-color: var(--clr-very-pale-blue);
