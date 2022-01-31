@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 
 /* 
-    Mobile 375 x 709
-    Box roughly: 327 x 567
+    Mobile Screen Width: 375 x 709
+    Figma Box : 327 x 567
     Ratio 0.872 x 0.7997179126 
     
-    Desktop: 1440 x 900
-    Box roughly: 450 x 697
+    Desktop Width: 1440 x 900
+    Figma Box: 450 x 697
     Ratio 0.3125 x 0.7744444444
 */
 :root {
-    /* colors */
+    /* Colors */
 
     --clr-pale-blue: hsl(225, 100%, 94%);
     --clr-bright-blue: hsl(245, 75%, 52%);
@@ -19,7 +19,7 @@
     --clr-desaturated-blue: hsl(224, 23%, 55%);
     --clr-dark-blue: hsl(223, 47%, 23%);
 
-    /* fonts */
+    /* Fonts */
     --fs-p: 1rem;
     --fw-500: 500;
     --fw-700: 700;
@@ -28,6 +28,9 @@
     /* Border Radius */
     --br-11: 11px;
     --br-20: 20px;
+
+    --font-width-15px-16px: clamp(0.94rem, 0.92rem + 0.09vw, 1rem);
+    --font-width-14px-16px: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
 }
 
 *,
@@ -36,9 +39,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* because I want it to affect the link color */
+    color: var(--clr-desaturated-blue);
 }
 
-/* General Formating */
+/* General Formatting */
 
 body {
     font-family: "Red Hat Display", sans-serif;
@@ -50,11 +55,9 @@ body {
 main {
     background-image: url(../images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
-    /* margin: 0 auto; */
     width: 100%;
     height: 100%;
 
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,7 +65,7 @@ main {
 }
 
 .card {
-    width: 87.2%;
+    width: clamp(327px, 32%, 450px);
     border-radius: var(--br-20);
     background-color: white;
     text-align: center;
@@ -70,24 +73,23 @@ main {
 .hero-image img {
     width: 100%;
     border-radius: var(--br-20) var(--br-20) 0 0;
-    margin-bottom: 2rem;
+    margin-bottom: clamp(2rem, 8vw, 2.815rem);
 }
 
 .card h1 {
     font-weight: var(--fw-900);
-    font-size: 1.375rem;
-    line-height: 1.2;
+    font-size: clamp(1.375rem, 2.5vw, 1.815rem);
+    line-height: 1.3195;
     margin-bottom: 1rem;
     color: var(--clr-dark-blue);
 }
 
 .card p {
     font-weight: var(--fw-500);
-    color: var(--clr-desaturated-blue);
-    margin: 0 2rem;
-    font-size: 0.9375rem;
+    margin: 0 clamp(2rem, 4vw, 3rem);
+    font-size: var(--font-width-15px-16px);
     margin-bottom: 1.5rem;
-    line-height: 25px;
+    line-height: 165%;
 }
 
 .price-plan {
@@ -96,7 +98,7 @@ main {
     align-items: center;
 
     width: 85%;
-    margin: 0 auto 1.5rem auto;
+    margin: 0 auto clamp(1.5rem, 4vw, 2rem) auto;
     padding: 1rem 0;
 
     border-radius: var(--br-11);
@@ -105,12 +107,11 @@ main {
 
 .plan-type {
     color: var(--clr-dark-blue);
-    font-size: 0.875rem;
+    font-size: var(--font-width-14px-16px);
     font-weight: var(--fw-900);
-    margin-bottom: 0.1875rem;
+    margin-bottom: clamp(0.1875rem, 0.8vw, 0.375rem);
 }
 .plan-price {
-    color: var(--clr-desaturated-blue);
     font-size: 0.875rem;
     font-weight: 500;
 }
@@ -132,18 +133,32 @@ main {
     /* margin-bottom: 1.5rem; */
     background-color: var(--clr-bright-blue);
     width: 85%;
-    margin: 0 auto 1.5rem auto;
+    margin: 0 auto clamp(1.5rem, 4vw, 2rem) auto;
     box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
     border-radius: var(--br-11);
     padding: 15px 0;
 }
 .cancel-button {
-    color: var(--clr-desaturated-blue);
-    margin-bottom: 2rem;
+    margin-bottom: clamp(2rem, 8vw, 3rem);
 }
 
 @media screen and (min-width: 376px) {
+    :root {
+        --clr-light-purple: hsla(245, 83%, 68%, 1);
+    }
     main {
         background-image: url(../images/pattern-background-desktop.svg);
+    }
+
+    .change-button:hover {
+        color: var(--clr-light-purple);
+    }
+
+    .payment-button:hover {
+        background-color: var(--clr-light-purple);
+    }
+
+    .cancel-button:hover {
+        color: var(--clr-dark-blue);
     }
 }
