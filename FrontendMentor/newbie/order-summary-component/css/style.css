@@ -17,6 +17,7 @@
     --clr-very-pale-blue: hsl(225, 100%, 98%);
     --clr-desaturated-blue: hsl(224, 23%, 55%);
     --clr-dark-blue: hsl(223, 47%, 23%);
+    --clr-light-purple: hsla(245, 83%, 68%, 1);
 
     /* Fonts */
     --fs-p: 1rem;
@@ -24,12 +25,21 @@
     --fw-700: 700;
     --fw-900: 900;
 
-    /* Border Radius */
+    /* Border Radii */
     --br-11: 11px;
     --br-20: 20px;
 
+    /* Scaling fonts between the left and right sizes */
     --font-width-15px-16px: clamp(0.94rem, 0.92rem + 0.09vw, 1rem);
     --font-width-14px-16px: clamp(0.88rem, 0.83rem + 0.19vw, 1rem);
+
+    /* 
+    Used for the Price Plan box and the Proceed to Payment button
+    sensibly these should be two seperate variables in case the
+    components where used in different places */
+    --box-width: 85%;
+
+    --page-background-img: url("../images/pattern-background-mobile.svg");
 }
 
 *,
@@ -44,24 +54,29 @@
 
 /* General Formatting */
 
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
 body {
     font-family: "Red Hat Display", sans-serif;
-    width: 100vw;
-    height: 100vh;
     background-color: var(--clr-pale-blue);
 }
 
 main {
-    background-image: url(../images/pattern-background-mobile.svg);
+    background-image: var(--page-background-img);
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+    min-height: 100%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
+/* Order Summary Card formatting */
 
 .card {
     width: clamp(327px, 32%, 450px);
@@ -90,7 +105,7 @@ main {
     margin: 0 clamp(2rem, 4vw, 3rem);
     font-size: var(--font-width-15px-16px);
     margin-bottom: 1.5rem;
-    line-height: 165%;
+    line-height: 162%;
 }
 
 .card__price-plan {
@@ -98,12 +113,16 @@ main {
     justify-content: space-around;
     align-items: center;
 
-    width: 85%;
-    margin: 0 auto clamp(1.5rem, 4vw, 2rem) auto;
+    width: var(--box-width);
+    margin: 0 auto clamp(1.5rem, 2vw, 2rem) auto;
     padding: clamp(1rem, 2vw, 1.5315rem) 0;
 
     border-radius: var(--br-11);
     background-color: var(--clr-very-pale-blue);
+}
+
+.card__plan-type-area {
+    line-height: 1.3125;
 }
 
 .card__plan-type {
@@ -113,11 +132,11 @@ main {
     margin-bottom: clamp(0.1875rem, 0.8vw, 0.375rem);
 }
 .card__plan-price {
-    font-size: 0.875rem;
+    font-size: var(--font-width-14px-16px);
     font-weight: 500;
 }
 .card__change-button {
-    font-size: 0.8125rem;
+    font-size: clamp(0.813rem, 0.79rem + 0.09vw, 0.88rem);
     font-weight: var(--fw-700);
     color: var(--clr-bright-blue);
 }
@@ -132,7 +151,7 @@ main {
 .card__payment-button {
     color: white;
     background-color: var(--clr-bright-blue);
-    width: 85%;
+    width: var(--box-width);
     margin: 0 auto clamp(1.5rem, 4vw, 2rem) auto;
     box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
     border-radius: var(--br-11);
@@ -142,23 +161,21 @@ main {
     margin-bottom: clamp(2rem, 8vw, 3rem);
 }
 
+.card__change-button:is(:hover, :focus) {
+    color: var(--clr-light-purple);
+}
+
+.card__payment-button:is(:hover, :focus) {
+    background-color: var(--clr-light-purple);
+}
+
+.card__cancel-button:is(:hover, :focus) {
+    color: var(--clr-dark-blue);
+}
+
 @media screen and (min-width: 376px) {
     :root {
-        --clr-light-purple: hsla(245, 83%, 68%, 1);
-    }
-    main {
-        background-image: url(../images/pattern-background-desktop.svg);
-    }
-
-    .card__change-button:hover {
-        color: var(--clr-light-purple);
-    }
-
-    .card__payment-button:hover {
-        background-color: var(--clr-light-purple);
-    }
-
-    .card__cancel-button:hover {
-        color: var(--clr-dark-blue);
+        --box-width: 80%;
+        --page-background-img: url("../images/pattern-background-desktop.svg");
     }
 }
