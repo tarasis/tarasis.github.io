@@ -54,9 +54,13 @@
 
 /* General Formatting */
 
+html,
 body {
+    height: 100%;
     width: 100%;
-    min-height: 100vh;
+}
+
+body {
     font-family: "Red Hat Display", sans-serif;
     background-color: var(--clr-pale-blue);
 }
@@ -64,6 +68,8 @@ body {
 main {
     background-image: var(--page-background-img);
     background-repeat: no-repeat;
+    min-height: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
