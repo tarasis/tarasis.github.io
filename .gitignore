@@ -18,6 +18,16 @@ node_modules/
 # eleventy gulp build
 /dist
 
+*.log
+npm-debug.*
+*.scssc
+*.swp
+Thumbs.db
+
+dist
+src/_includes/css
+
+
 # ---> macOS
 # General
 .DS_Store
