@@ -1,0 +1,242 @@
+/* 
+ * Challenge resolutions:
+ * 375x667 & 1440x800
+ * 327x512 - 730x280
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root {
+    /* font stuff */
+    font-size: 20px;
+    /* colors */
+    --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --desaturatedDarkBlue: hsl(214, 17%, 51%);
+    --grayishBlue: hsl(212, 23%, 69%);
+    --lightGrayishBlue: hsl(210, 46%, 95%);
+    /* corner radius */
+    --cornerRadius: 10px;
+}
+
+/* Base styling */ 
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--lightGrayishBlue);
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    justify-content: center;
+    height: 100vh;
+}
+
+.articlePreview {
+    display: flex;
+    flex-direction: column;
+
+    border-radius: var(--cornerRadius);
+    overflow: hidden;
+    background-color: white;
+    width: 87%;
+    margin: 0 auto;
+
+    box-shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.503415);
+}
+
+.previewImage {
+    flex: 1 40%;
+    overflow: hidden;
+}
+
+.previewImage > img {
+    width: 100%;
+    margin:-5% 0 -14.5% 0%;
+}
+
+.previewBody {
+    flex: 1 60%;
+    margin-top: 0.85rem;
+}
+
+.articleSummary {
+    padding: 1rem 1.75rem 1rem 1.5rem;
+}
+
+.articleTitle {
+    color: var(--veryDarkGrayishBlue);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.articleSell {
+    margin-top: 0.5rem;
+    color: var(--desaturatedDarkBlue);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.12px;
+    line-height: 20px;
+}
+
+.articleFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+
+    transition: 250ms ease-in-out;
+
+    position: relative;
+}
+
+.authorImage {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+
+.nameAndDate {
+    margin-left: 0.8rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.authorName {
+    color: var(--veryDarkGrayishBlue);
+    font-weight: 700;
+}
+
+.articleDate {
+    margin-top: 0.3rem;
+    color: var(--desaturatedDarkBlue);
+    font-weight: 500;
+}
+
+.articleShareButton {
+    background-color: var(--lightGrayishBlue);
+    color: #6E8098;
+
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    transition: 250ms ease-in-out;
+}
+
+.buttonDark {
+    background-color: var(--desaturatedDarkBlue);
+    color: var(--lightGrayishBlue);
+}
+
+.articleShareButtonTooltip {
+    display: none;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 0.5rem;
+
+    background: var(--veryDarkGrayishBlue);
+    box-shadow: 0px 10px 10px rgba(201, 213, 225, 0.503415);
+
+    width: 170px;
+    padding: 0.75rem 1rem;
+    top: -60px;
+    right: -47px;
+
+}
+
+.articleShareButtonTooltip::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border: 0.8rem solid transparent;
+    position: absolute;
+
+    left: 45%;
+    bottom: -25px;
+    border-top: 10px solid var(--veryDarkGrayishBlue);
+}
+
+.articleShareSection {
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 80%;
+    height: 2rem;
+}
+
+.backgroundDark {
+    background: var(--veryDarkGrayishBlue);
+}
+
+.articleShareButtonTooltip > p, .articleShareSection > p {
+    letter-spacing: 5px;
+    color: var(--grayishBlue);
+    font-weight: 500;
+    font-size: 13px;
+}
+
+
+@media screen and (min-width: 650px) {
+    body {
+        align-content: center;
+        align-items: center; 
+    }
+
+    .articlePreview {
+        flex-direction: row;
+        width: 50%;
+        min-width: 600px;
+        overflow: visible;
+    }    
+
+    .previewImage {
+        width: 100%;
+        border-radius: var(--cornerRadius) 0 0px var(--cornerRadius);
+    }
+
+    .previewImage > img {
+        margin:0;
+        height: 105%;
+        object-fit: cover;
+        object-position: left;
+    }
+
+    .previewBody {
+        margin-top: 0.65rem;
+        margin-left: 0.25rem;
+    }
+
+    .articleSummary {
+        padding: 1rem 1.75rem 1rem 1.5rem;
+    }
+
+    .articleTitle {
+        font-size: 20px;
+        letter-spacing: 0.25px;
+        line-height: 28px;
+
+    }
+    .articleSell {
+        margin-top: 0.5rem;
+    }
+    
+    .articleFooter {
+        padding: 0rem 1.75rem 1.5rem 1.5rem;
+    }
+
+}
+
+.attribution { position: absolute; bottom: 0; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

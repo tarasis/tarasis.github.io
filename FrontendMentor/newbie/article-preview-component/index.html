@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="./js/challenge.js"></script>
+  
+  <title>Frontend Mentor | Article preview component</title>
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="articlePreview">
+      <div class="previewImage">
+        <img src="./images/drawers.jpg" alt="Green drawers with a vase and pictures" class="">
+      </div>
+      <div class="previewBody">
+          <div class="articleSummary">
+            <h1 class="articleTitle">
+              Shift the overall look and feel by adding these wonderful 
+              touches to furniture in your home
+            </h1>
+            <p class="articleSell">
+              Ever been in a room and felt like something was missing? Perhaps 
+              it felt slightly bare and uninviting. I’ve got some simple tips 
+              to help you make any room feel complete.        
+            </p>
+          </div>
+          <div class="articleFooter">
+            <img src="./images/avatar-michelle.jpg" alt="Author Picture" class="authorImage">
+            <div class="nameAndDate">
+              <p class="authorName">Michelle Appleton</p>
+              <p class="articleDate">28 Jun 2020</p>
+            </div>
+            <!-- look up what to do with this. I know I've seen it. What it there for screenreader, but off the side of the screen -->
+            <!-- <section>Share</section>  -->
+            <div class="articleShareSection">
+              <p>SHARE</p>
+              <img src="./images/icon-facebook.svg" alt="Facebook Icon" class="articleShareIcon">
+              <img src="./images/icon-twitter.svg" alt="Twitter Icon" class="articleShareIcon">
+              <img src="./images/icon-pinterest.svg" alt="Pinterest Icon" class="articleShareIcon">
+            </div>
+            <button class="articleShareButton" onclick="toggleTooltip()" title="Share" >
+              <!-- <img src="./images/icon-share.svg" alt="Share Icon" class=""> -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path fill="currentColor" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+            </button>
+            <div class="articleShareButtonTooltip">
+                <p>SHARE</p>
+                <img src="./images/icon-facebook.svg" alt="Facebook Icon" class="articleShareIcon">
+                <img src="./images/icon-twitter.svg" alt="Twitter Icon" class="articleShareIcon">
+                <img src="./images/icon-pinterest.svg" alt="Pinterest Icon" class="articleShareIcon">
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="emailto:work@tarasis.net">Robert McGovern</a>.
+  </div>
+</body>
+</html>

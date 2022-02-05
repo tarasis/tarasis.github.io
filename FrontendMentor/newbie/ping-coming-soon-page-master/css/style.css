@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+    /* primary */
+    font-size: 20px;
+    --site-blue: hsl(223, 87%, 63%); 
+    /* secondary */
+    --site-paleBlue: hsl(223, 100%, 88%);
+    --site-lightRed: hsl(354, 100%, 66%);
+    /* neutral */
+    --site-gray: hsl(0, 0%, 59%);
+    --site-veryDarkBlue: hsl(209, 33%, 12%);
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    min-width: 375px;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    height:100vh;
+}
+
+.logoSection {
+    margin-top: 4.2rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.logoSection img {
+    width: 66%;
+}
+
+.titleSection {
+    margin-top: 1.95rem;
+}
+
+.titleSection p {
+    text-align: center;
+}
+
+.titleSection .line1 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--site-gray);
+}
+
+.line1 b {
+    color: black;
+    font-weight: 600;
+}
+
+.titleSection .line2 {
+    margin-top: 0.9rem;
+    font-size: 12px;
+    color: var(--site-gray);
+}
+
+.formSection {
+    margin: 1.6rem 0 0 0;
+    text-align: center;
+}
+
+.formSection form {
+    display: flex;
+    flex-direction: column;
+    width: 83%;
+}
+
+.formSection input[type=text] {
+    font-family: 'Libre Franklin', sans-serif;
+    width: calc(100% - 47px); /* shrink width by padding left+right + border */
+
+    color: black;
+    font-size: 12px;
+    font-weight: 300;
+    border: 1px solid var(--site-paleBlue);
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+    padding-left: 25px;
+    padding-right: 20px;
+    text-align: justify;
+    text-decoration: none;
+    border-radius: 32px;
+}
+
+input[type="text"].errorBorder {
+    border-color: var(--site-lightRed);
+}
+
+.formSection input::placeholder{
+    padding-left: 8px;
+    color: var(--site-paleBlue);;
+}
+
+.formSection button {
+    font-family: 'Libre Franklin', sans-serif;
+    width: 100%;
+    background-color: var(--site-blue);
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    border: none;
+    padding: 0.625rem 0;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 32px;
+    box-shadow: 0px 3px 10px 1px var(--site-paleBlue);
+}
+
+.notifyButton.notifyError {
+    transform: translate(0, 1.6rem);
+}
+
+.errorSection {
+    height: 0;
+    padding: 0;
+    transform: translate(0, 0.35rem);
+}
+
+.errorMessage {
+    font-style: italic;
+    font-size: 10px;
+    opacity: 0;
+    color: var(--site-lightRed);
+}
+
+.errorMessage.visible {
+    opacity: 1;
+}
+
+.imageSection {
+    margin-top: 3.4rem;
+    text-align: center;
+    width: 95%;
+}
+
+.imageSection img {
+    width: 100%;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    /* width: 100vw; */
+}
+.socialButtonsSection {
+    margin-bottom: 1.25rem;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.socialButtonsSection a {
+    color: var(--site-blue);
+    width: 100%;
+    height: 100%;
+}
+
+.socialButtonsSection .icon-background {
+    color: var(--site-blue);
+    padding:8px;
+    border-radius: 50%;
+
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    vertical-align: middle;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.icon-background:hover {
+    color: white;
+    background-color: var(--site-blue); 
+}
+
+.copyright {
+    color: var(--site-gray);
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 1.15rem;
+}
+
+/* Feel free to remove these styles or customise in your own stylesheet 👍 */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a i { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 600px) {
+    .flexContainer {
+        width: 90vw;
+    }
+
+    .formSection button {
+        margin-top: 0.55rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1050px) {
+    .flexContainer {
+        width: 75vw;
+    }
+
+    .formSection button {
+        margin-top: 0.55rem;
+    }
+}
+
+
+@media screen and (min-width: 1050px) {
+    .flexContainer {
+        width: 50vw;
+    }
+
+    .logoSection {
+        margin-top: 4.3rem;
+    }
+
+    .logoSection img {
+        width: 100%;
+    }
+
+    .titleSection {
+        margin-top: 2.5rem;
+    }
+
+    .titleSection .line1 {
+        font-weight: 300;
+        letter-spacing: 1.3px;
+        font-size: 45px;
+    }
+
+    .line1 b {
+        font-weight: 700;
+    }
+
+    .titleSection .line2 {
+        margin-top: 0.95rem;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+
+    .formSection {
+        margin: 2rem 0 0 0;
+    }
+
+    .formSection form {
+        flex-direction: row;
+        width: 88%;
+    }
+
+    .formSection input[type=text] {
+        flex-basis: 66%;
+
+        font-size: 17px;
+        font-weight: 300;
+        padding-top: 0.85rem;
+        padding-bottom: 0.85rem;
+        order: 2;
+    }
+
+    .formSection button {
+        margin-left: 1rem;
+        flex-basis: 34%;
+
+        font-size: 17px;
+        font-weight: 300;
+
+        padding: 0.85rem 0;
+        box-shadow: 0px 3px 10px 1px var(--site-paleBlue);
+        order: 3;
+    }
+
+    .notifyButton.notifyError {
+        transform: none;
+    }
+    
+    .errorSection {
+        order: 1;
+        height: 0;
+        width: 0;
+        padding: 0;
+        margin: 0;
+        transform: translate(0, 3.2rem);
+    }
+
+    .errorMessage {
+        font-size: 13px;
+        width: 16rem;
+        height: 2rem;
+        overflow: auto;
+        text-align: left;
+        padding-left: 1.25rem;
+    }
+    
+
+    .imageSection {
+        margin-top: 4.3rem;
+        width: 89%;
+    }
+
+    .copyright {
+        font-size: 12px;
+        margin-bottom: 1.75rem;
+    }
+}

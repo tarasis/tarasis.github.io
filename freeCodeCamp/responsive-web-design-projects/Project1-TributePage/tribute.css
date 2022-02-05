@@ -1,0 +1,32 @@
+  body { 
+    background-color: #FDF0D5;
+  }
+
+  h1, h4 {
+    color: #331832;
+  }
+  
+  #title {
+    text-align: center;
+    font-size: xx-large;
+  }
+  
+  #img-div {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  
+  #image {
+    justify-self: center;
+    max-width: 75%;
+  }
+  
+  #img-caption {
+    text-align: center;
+  }
+  
+  #tribute-link-area {
+    text-align: center;
+  }
+

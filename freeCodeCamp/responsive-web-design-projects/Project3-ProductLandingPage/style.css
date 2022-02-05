@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300;500&display=swap');
+
+:root {
+    --blue: rgb(17, 76, 202);
+    font-family: 'Roboto', sans-serif;
+}
+
+*{ 
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(189, 188, 188);
+    margin 0 auto;
+}
+
+#nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: rgb(179, 179, 179);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .nav-bar a {
+      float: none;
+      width: 100%;
+    }
+}
+
+#header-img {
+    height: 100%;
+    margin: 0 1em 0;
+}
+
+.push {
+    margin-left: auto;
+}
+
+#nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.btn-link {
+    background: var(--blue);
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    color: #FFFFFF;
+    font-family: 'Rubik', sans-serif;
+
+    padding: 5px 40px;
+
+    box-shadow: 1px 1px 20px 0px #000000;
+    -webkit-box-shadow: 1px 1px 20px 0px #000000;
+    -moz-box-shadow: 1px 1px 20px 0px #000000;
+
+    text-shadow: 1px 1px 20px #000000;
+
+    border: solid #337FED 1px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-link + .btn-link {
+    margin-left: 1rem;
+}
+
+    
+.btn-link:hover {
+    border: double 1px;
+}
+
+#empty-space {
+    display: block;
+    padding: 1.5em;
+}
+
+section {
+    margin-top: 0.75rem;
+}
+
+/* Put spacing between the section title (first element) and the next element below */
+section :nth-child(2) {
+    margin-top: 0.5rem;
+}
+
+/* Form Section */
+
+#formsection {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #000000;
+}
+
+#formsection #email {
+    margin-top: 1rem;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+}
+
+#formsection #submit {
+    background-color: var(--blue);
+    color: white;
+    margin-top: 1rem;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Games Section */
+#games {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+
+#games .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 25px;
+    color: var(--blue);
+}
+
+#games .details {
+    margin-left: 2rem;
+    text-align: left;
+    height: auto;
+    width: 50vw;
+    padding: 5px;
+  }
+
+/* How To Section */
+#videos {
+    text-align: center;
+}
+
+.video {
+    width: 420px;
+    height: 315px;
+}
+
+.video + .video {
+    margin-top: 1rem;
+}
+
+/* Pricing Section */
+#features {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
+}
+
+/* start handling at 700 for menu */
+@media screen and (max-width: 700px) {
+
+}
+
+/* below video tweak video sizes */
+@media screen and (max-width: 500px) {
+    #formsection #email {
+        font-size: 20px;
+    }
+
+    .video {
+        width: 90%;
+        height: calc((90vw / 4) * 3);
+    }    
+}
