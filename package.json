@@ -4,6 +4,8 @@
   "description": "Projects completed while working through various HTML/CSS/JavaScript things. Primarily focused on Frontend Mentor. Ultimately it will aim to be a portfolio site.",
   "main": "index.js",
   "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,9 +13,10 @@
     "url": "gitea@git.tarasis.net:tarasis/rmcg.dev.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Robert McGovern",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0"
   }
+  
 }

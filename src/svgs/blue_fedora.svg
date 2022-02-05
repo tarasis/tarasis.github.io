@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg1" viewBox="0 0 300 300" version="1.0">
+  <defs id="defs3">
+    <linearGradient id="linearGradient585">
+      <stop id="stop586" stop-color="#fff" stop-opacity=".175" offset="0"/>
+      <stop id="stop587" stop-color="#fff" stop-opacity=".375" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient582" x1="118.03" gradientUnits="userSpaceOnUse" x2="111.23" gradientTransform="scale(1.7812 .56142)" y1="250.64" y2="259.05">
+      <stop id="stop580" stop-opacity=".40833" offset="0"/>
+      <stop id="stop581" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient584" x1="132.24" xlink:href="#linearGradient585" gradientUnits="userSpaceOnUse" x2="114.92" gradientTransform="scale(1.5608 .64069)" y1="259.45" y2="353.05"/>
+    <linearGradient id="linearGradient589" x1="73.289" xlink:href="#linearGradient585" gradientUnits="userSpaceOnUse" y1="255.43" gradientTransform="scale(2.195 .45558)" x2="147.04" y2="255.43"/>
+  </defs>
+  <g id="g847" transform="matrix(.62464 0 0 .62464 -3.6132 .36617)" fill-rule="evenodd">
+    <path id="path575" stroke-linejoin="round" d="m93.858 201.9c2.9135-12.972 5.827-102.34 32.049-100.89 93.233 2.8827 189.38-93.688 259.3 121.07 215.6 100.9 14.99 181.97-155.69 174.77-168.66-7.07-312.66-128.65-135.66-194.95z" fill-opacity=".99167" stroke="#000" stroke-width="10" fill="#1f3379"/>
+    <path id="path576" stroke="#000" stroke-width="5" d="m89.488 230.73c107.8 67.743 285.53 25.944 292.81-7.2068 10.197 11.531 0 43.24 0 43.24-46.616 60.537-272.41 47.565-297.18 4.324-2.9135-11.531 2.9135-36.034 4.3703-40.358z"/>
+    <path id="path578" stroke-width="1pt" fill="url(#linearGradient582)" d="m130.28 122.63c27.678-24.503 148.59 10.089 164.61 28.827 5.8271 31.71-148.59 7.2068-164.61-28.827z"/>
+    <path id="path583" stroke-width="1pt" fill="url(#linearGradient584)" d="m130.28 158.66c13.111 30.268 64.098 100.89 150.05 33.151-71.381 2.8827-101.97-5.7654-150.05-33.151z"/>
+    <path id="path588" stroke-width="1pt" fill="url(#linearGradient589)" d="m160.87 99.567c18.938 8.6481 138.39 41.799 151.5 31.71 14.568-5.7654 11.654-8.6481 4.3703-10.089-11.654 7.2068-32.049 11.531-155.87-21.62z"/>
+    <path id="path590" d="m106.97 246.58c17.481 8.6481 71.381 20.179 91.776 21.62 14.568 10.089 7.2838 25.944 1.4568 37.475-39.333 0-84.492-10.089-96.146-23.062-7.2838-12.972-4.3703-23.062 2.9135-36.034z" fill-opacity=".31667" stroke="#000" stroke-width="1.8783pt" fill="#fff"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Blue Fedora</dc:title>
+        <dc:date>2013-04-29T14:43:46</dc:date>
+        <dc:description>A blue fedora</dc:description>
+        <dc:source>http://openclipart.org/detail/177540/blue-fedora-by-jcsalomon-177540</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>JCSalomon</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>blue</rdf:li>
+            <rdf:li>cartoon</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>clothing</rdf:li>
+            <rdf:li>fedora</rdf:li>
+            <rdf:li>hat</rdf:li>
+            <rdf:li>image</rdf:li>
+            <rdf:li>media</rdf:li>
+            <rdf:li>people</rdf:li>
+            <rdf:li>png</rdf:li>
+            <rdf:li>public domain</rdf:li>
+            <rdf:li>svg</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

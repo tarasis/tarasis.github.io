@@ -1,0 +1,21 @@
+html,
+body {
+    height: 100%;
+}
+
+header {
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+header > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Vertical center of image & text */
+}
+
+.logo {
+    width: 50%;
+}

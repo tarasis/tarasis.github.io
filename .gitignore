@@ -2,7 +2,7 @@
 
 #_site
 
-package-lock.json
+#package-lock.json
 css/main.css.map
 
 # dependency directories
@@ -26,6 +26,9 @@ Thumbs.db
 
 dist
 src/_includes/css
+
+# my chosen output directory.
+www
 
 
 # ---> macOS
