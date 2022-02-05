@@ -5,10 +5,19 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/svgs");
     eleventyConfig.addPassthroughCopy("./src/js");
     eleventyConfig.addPassthroughCopy("./src/screenshots");
-    eleventyConfig.addPassthroughCopy("./projects");
+    eleventyConfig.addPassthroughCopy({
+        "./projects/freeCodeCamp": "freeCodeCamp",
+    });
+    eleventyConfig.addPassthroughCopy({
+        "./projects/FrontendMentor": "FrontendMentor",
+    });
     //eleventyConfig.addPassthroughCopy({
     //    "./src/assets/images": "img",
     //});
+
+    // WATCH Targets
+    eleventyConfig.addWatchTarget("./src/css/");
+    eleventyConfig.addWatchTarget("./src/js/");
 
     // Return your Object options:
     return {
