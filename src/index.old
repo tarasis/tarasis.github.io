@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <title>rmcg.dev</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="logo" src="./svgs/purple_fedora.svg" alt="Image of a Purple Fedora">
+            <h2>Coming Soon™</h2>
+            <p>Projects from Frontend Mentor and more. Playground for learning.</p>
+        </div>
+    </header>
+</body>
+
+</html>
