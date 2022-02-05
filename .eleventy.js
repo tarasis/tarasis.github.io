@@ -5,6 +5,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/svgs");
     eleventyConfig.addPassthroughCopy("./src/js");
     eleventyConfig.addPassthroughCopy("./src/screenshots");
+    eleventyConfig.addPassthroughCopy("./projects");
     //eleventyConfig.addPassthroughCopy({
     //    "./src/assets/images": "img",
     //});
