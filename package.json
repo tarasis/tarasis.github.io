@@ -6,6 +6,7 @@
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
+    "build-inc": "npx @11ty/eleventy --incremental",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
