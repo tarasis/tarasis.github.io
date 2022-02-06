@@ -11,6 +11,10 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({
         "./projects/FrontendMentor": "FrontendMentor",
     });
+    eleventyConfig.addPassthroughCopy({
+        "./src/assets/faviconstuff": "/",
+    });
+
     //eleventyConfig.addPassthroughCopy({
     //    "./src/assets/images": "img",
     //});
