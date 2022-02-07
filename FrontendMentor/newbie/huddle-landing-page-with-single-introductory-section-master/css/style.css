@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap');
+
+:root {
+    font-size: 16px;
+    --site-color: hsl(257, 40%, 49%);
+}
+
+body {
+    background-color: var(--site-color);
+    background-image: url("../images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    /*background-size: contain; */
+    
+    color: white;
+    margin: 0;
+    /* display: flex; */
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* 400 & 40 are very close*/
+    font-size: 40px;
+}
+
+.logo {
+    width: 215px;
+    margin: 3.75% 4.86% 0rem; /* 3.75% 4.375rem 0rem*/
+}
+
+.middleSection {
+    display: flex;
+    /* margin: auto; */
+    margin: 5.0625rem 0rem 0rem 4.55rem;
+    width: 98%;
+    max-width: 1440px;
+}
+
+.illustrations {
+    width: 55%;
+    padding: 0;
+}
+
+.illustration {
+    width: 100%;
+}
+
+.siteBlurb {
+    margin: 3rem 4rem 2rem 3.325rem;
+    width: 45%;
+
+    /* line-height: 2rem;
+    font-weight: 400; */
+}
+
+.siteBlurb h1 {
+    line-height: 1.5;
+    margin-right: 2em;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+
+.siteBlurb p {
+    margin-top: 1rem;
+    margin-right: 4rem;
+    margin-bottom: 1.5625rem;
+    line-height: 1.7rem;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.registerButton {
+    background-color: white;
+    color: var(--site-color);
+    font-size: 19px;
+    border: none;
+    padding: 18px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 32px;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.4); /* 10px 5px 10px*/
+}
+
+.socialButtonsSection {
+    display: block;
+    text-align: right;
+    margin-right: 5.1875rem;
+}
+
+.socialButtonsSection i {
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.9375rem;
+    margin-right: 0;
+}
+
+.circleIcon {
+    margin: 0;
+    color: white;
+    background: transparent;
+    border: 1.75px solid #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle;
+    font-size: 19px;
+}
+
+.circleIcon:hover {
+    background: rgb(174, 6, 208);
+}
+
+.attribution { margin-top: 1rem; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(63, 100%, 65%); }
+
+/* Formating for Mobile devices. Sample to match is 375z800 */
+@media screen and (max-width: 1100px) {
+
+    body {
+        background-image: url("../images/bg-mobile.svg");
+        background-repeat: no-repeat;
+        /* background-size: contain; */
+        
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo {
+        width: 128px;
+        margin: 8.5325% 35px 0rem; /* 3.75% 4.375rem 0rem*/
+    }
+
+    .illustrations {
+        /* margin: 3.5rem 2.3125rem 1rem; */
+        margin: auto;
+        margin-top: 3.5rem;
+        width: 90%;
+    }
+
+    .illustration {
+        max-width: 100%;
+        max-height: 100vh;
+        height: auto;
+    }
+
+    .middleSection {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%
+
+    }
+    
+    .siteBlurb {
+        margin:0;
+        margin-top: 0.5rem;
+        text-align: center;
+        width: 100%;
+    
+        /* line-height: 2rem;
+        font-weight: 400; */
+    }
+    
+    .siteBlurb h1 {
+        margin: 1.625rem 2rem 0rem 2rem;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+    
+    .siteBlurb p {
+        margin:0.9rem 2.25rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    
+    .registerButton {
+        margin-top: 0.875rem;
+        background-color: white;
+        color: var(--site-color);
+        font-size: 13px;
+        letter-spacing: 1px;
+        border: none;
+        padding: 12px 72px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        /* margin: 4px 2px; */
+        cursor: pointer;
+        border-radius: 32px;
+        box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.4); /* 10px 5px 10px*/
+    }
+    
+    .socialButtonsSection {
+        /* display: block; */
+        text-align: center;
+        margin:0;
+        margin-top: 3rem;
+    }
+    
+    .socialButtonsSection i {
+        /* padding: 0.5rem; */
+        margin-left: 0.375rem;
+        margin-top: 0.9375rem;
+        margin-right: 0; 
+    }
+    
+    .circleIcon {
+        margin: 0;
+        padding: 0;
+        color: white;
+        background: transparent;
+        border: 1.5px solid #fff;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 13px;
+        /* vertical-align: middle; */
+        align-content: center;
+        font-size: 14px;
+    }
+
+    .attribution { margin: 10px 0;}
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build A Survey - Project 2 - FreeCodeCamp</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1 id="title">Project 2 Survey</h1>
+        <p id="description">Tell us a little about you</p>
+    </header>
+
+    <main>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label> <br>
+            <input type="text" name="name" id="name" placeholder="First and Last Names" required=true><br>
+            <br>
+            <label for="email" id="email-label">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="blah@example.com" required=true><br>
+            <br>
+            <label for="number" id="number-label">Enter your age; 8 to 110 (optional)</label><br>
+            <input type="number" min="8" max="110" name="" placeholder="Age"id="number"><br>
+            <br>
+            <label for="favColor">Chose your favourite color:</label><br>
+            <select name="favColor" id="dropdown">
+              <option value="green">Green</option>
+              <option value="blue">Blue</option>
+              <option value="red">Red</option>
+              <option value="purple">Purple</option>
+              <option value="orange">Orange</option>
+            </select>
+            <br>
+            <br>
+            <fieldset id="chooseGender">
+                <legend>What is your gender? (optional)</legend><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br>
+                <input type="radio" id="noAnswer" name="gender" value="noAnswer" value="1">
+                <label for="noAnswer">Prefer not to answer</label><br>
+            </fieldset>
+            <br>
+            <fieldset id="preferredTimeOfDay">
+                <legend>What is you favourite time of day? (Check all that apply)</legend><br>
+                <input type="checkbox" id="morning" name="morning" value="Morning">
+                <label for="morning">I prefer the morning</label><br>
+                <input type="checkbox" id="afternoon" name="afternoon" value="Afternoon">
+                <label for="afternoon">I prefer the afternoon</label><br>
+                <input type="checkbox" id="evening" name="evening" value="Evening">
+                <label for="evening">I prefer the evening</label><br>
+                <input type="checkbox" id="night" name="night" value="Night">
+                <label for="night">I prefer the night</label><br>
+            </fieldset>
+            <br>
+            <label for="comments">Additional Comments? (optional)</label><br>
+            <textarea type="text" name="textarea" id="textarea" rows="5" cols="30" >
+            </textarea><br>
+            <br>
+            <div class="submitButtonBox">
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
+    </main>
+
+    <footer>Thank you for taking the time to participate</footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3 - Build A Product Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://kit.fontawesome.com/25481ff5bf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <img id="header-img" src="fake-logo.png" alt="company logo">
+            <div class="push" id="nav-links">
+                <a class="nav-link btn-link" href="#games">Games</a>
+                <a class="nav-link btn-link" href="#videos">Videos</a>
+                <a class="nav-link btn-link" href="#features">Features</a>
+            </div>
+        </nav>
+    </header>
+    <div id="empty-space">
+        &nbsp
+    </div>
+    <section id="formsection">
+        <h1>Discover the latest games with Fakery</h1>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <div class="form-email">
+                <label for="email">Enter your email: </label>
+                <input type="email" name="email" id="email" placeholder="person@example.com" required>
+            </div>
+            <div class="form-example">
+                <!-- using class here doesn't work on iOS -->
+                <input class="btn-link" id="submit" type="submit" value="Subscribe!">
+            </div>
+        </form>
+    </section>
+    <section id="games">
+        <h2>Latest Games</h2>
+        <div class="grid">
+            <div class="icon">
+                <i class="fab fa-3x fa-acquisitions-incorporated"></i>
+            </div>
+            <div class="details">
+                <h3>Acq Inc</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illum ipsum blanditiis quam ut quibusdam provident voluptas! Repellendus, adipisci ullam, distinctio, eos perferendis quia voluptatibus architecto ab nulla accusantium corrupti!</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="icon">
+                <i class="fab fa-3x fa-d-and-d"></i>
+            </div>
+            <div class="details">
+                <h3>D&D</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illum ipsum blanditiis quam ut quibusdam provident voluptas! Repellendus, adipisci ullam, distinctio, eos perferendis quia voluptatibus architecto ab nulla accusantium corrupti!</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="icon">
+                <i class="fab fa-3x fa-critical-role"></i>
+            </div>
+            <div class="details">
+                <h3>Critical Role</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illum ipsum blanditiis quam ut quibusdam provident voluptas! Repellendus, adipisci ullam, distinctio, eos perferendis quia voluptatibus architecto ab nulla accusantium corrupti!</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="icon">
+                <i class="fab fa-3x fa-fantasy-flight-games"></i>
+            </div>
+            <div class="details">
+                <h3>Star Wars: X-Wing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illum ipsum blanditiis quam ut quibusdam provident voluptas! Repellendus, adipisci ullam, distinctio, eos perferendis quia voluptatibus architecto ab nulla accusantium corrupti!</p>
+            </div>
+        </div>
+
+    </section>
+    <section id="videos">
+        <h2>Teasers for games</h2>
+        <iframe class="video" id="video" src="https://www.youtube.com/embed/KipPMgbpKzk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <iframe class="video" id="video3" src="https://www.youtube.com/embed/LhFETREAvhc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <iframe class="video" id="video4" src="https://www.youtube.com/embed/-PxHfU2Xoac?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <iframe class="video" id="video2" src="https://www.youtube.com/embed/A4BuL886bJA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </section>
+    <section id="features">
+        <h2 >Features</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet voluptatibus nisi maiores quidem quas rem labore explicabo nam quasi, consectetur, soluta error perspiciatis repellendus autem dolores optio? Eaque, quasi magnam?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet voluptatibus nisi maiores quidem quas rem labore explicabo nam quasi, consectetur, soluta error perspiciatis repellendus autem dolores optio? Eaque, quasi magnam?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet voluptatibus nisi maiores quidem quas rem labore explicabo nam quasi, consectetur, soluta error perspiciatis repellendus autem dolores optio? Eaque, quasi magnam?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet voluptatibus nisi maiores quidem quas rem labore explicabo nam quasi, consectetur, soluta error perspiciatis repellendus autem dolores optio? Eaque, quasi magnam?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet voluptatibus nisi maiores quidem quas rem labore explicabo nam quasi, consectetur, soluta error perspiciatis repellendus autem dolores optio? Eaque, quasi magnam?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet voluptatibus nisi maiores quidem quas rem labore explicabo nam quasi, consectetur, soluta error perspiciatis repellendus autem dolores optio? Eaque, quasi magnam?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet voluptatibus nisi maiores quidem quas rem labore explicabo nam quasi, consectetur, soluta error perspiciatis repellendus autem dolores optio? Eaque, quasi magnam?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet voluptatibus nisi maiores quidem quas rem labore explicabo nam quasi, consectetur, soluta error perspiciatis repellendus autem dolores optio? Eaque, quasi magnam?
+        </p>
+    </section>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

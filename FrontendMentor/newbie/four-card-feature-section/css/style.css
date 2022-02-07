@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* 
+ * Challenge colors, font
+ * 
+ * The font-size for 20px is to make rem clearer for increments
+ *
+ * Mobile: 375px (375x1360)
+ * Desktop: 1440px (1440x922)
+*/
+
+:root {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+
+    /* Primary Colors */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    /* Neutral */
+    --veryDarkBlue: hsl(234, 12%, 34%);
+    --grayishBlue: hsl(229, 6%, 66%);
+    --veryLightGray: hsl(0, 0%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+/* Basic Styling */
+
+body {
+    font-size: 15px;
+    background-color: var(--veryLightGray);
+    height: 100vh;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    width: 83.5%;
+    /* height: 100vh; */
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.topSection {
+    /* think this change was brought about by browser differences. Was previously 3.8 */
+    margin-top: 3.65rem;
+    text-align: center;
+}
+
+.topSection > .title {
+    font-size: calc(24px + (35 - 24) * ((100vw - 375px) / (1440 - 375)));
+}
+
+.topSection .title1 {
+    margin-top: 0.5rem;
+    font-weight: 200;
+    color: var(--grayishBlue);
+}
+
+/* should be a class but wanted to play with :nth-child() */
+.topSection .title2 {
+    font-weight: 600;
+    color: var(--veryDarkBlue);
+}
+
+.topSection .blurb {
+    margin-top: 0.7rem;
+    text-align: center;
+    color: var(--grayishBlue);
+    font-size: 16px;
+}
+
+
+.middleSection {
+    margin-top: 2.5rem;
+}
+
+.card {
+    margin-top: 1.3rem;
+    background-color: white;
+    border-top: 4px solid;
+    border-radius: 6px;
+    box-shadow: 0px 10px 15px rgba(56, 75, 108, 0.2);
+    padding: 23px 30px 26px 30px;
+}
+.card-title {
+    font-size: 20px;
+    color: var(--veryDarkBlue);
+    font-weight: 600;
+}
+.card-blurb {
+    margin-top: 0.3rem;
+    color: var(--grayishBlue);
+    font-size: 13px;
+}
+.card-image {
+    display: block;
+    margin-top: 1.8rem;
+    margin-left: auto;
+    width: 22%;
+
+}
+
+.column1 {
+}
+.supervisor {
+    border-top-color: var(--cyan);
+}
+.column2 {
+}
+.teamBuilder {
+    border-top-color: var(--red);
+}
+.karma {
+    border-top-color: var(--orange);
+}
+.column3 {
+}
+.calculator {
+    border-top-color: var(--blue);
+}
+/* .attribution {
+} */
+
+/* arbitrary figure atm */
+/* @media screen and (min-width: 600px) {
+    .flexContainer {
+        width: 78%;
+    }
+} */
+
+@media screen and (min-width: 1000px) {
+
+    .flexContainer {
+        max-width: 1440px;
+    }
+
+    .topSection {
+        margin-top: 3.45rem;
+    }
+
+    .topSection .blurb {
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+    }
+    
+    .flexContainer {
+        width: 78%;
+    }
+    .middleSection {
+        margin-top: 3.3rem;
+        display: flex;
+    }
+
+    .card {
+        margin-top: 0;
+        padding: 27px 30px 36px 25px;
+    }
+
+    .card-blurb {
+        margin-top: 0.5rem;
+    }
+    .card-image {
+        margin-top: 2rem;
+    }
+    
+    .column {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        max-width: calc((100% /3) - 1.5rem);
+    }
+
+    .karma {
+        margin-top: 1.3rem;
+    }
+}

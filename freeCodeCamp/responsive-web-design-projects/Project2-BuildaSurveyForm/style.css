@@ -1,0 +1,59 @@
+body {
+    background-color: #679b9b;
+    color: whitesmoke;
+    text-align: center;
+}
+
+header {
+    color: whitesmoke;
+    text-align:center;
+}
+
+main {
+    display: block;
+    text-align: center;
+}
+
+form {
+    background-color: #aacfcf;
+    color: #b83b5e;
+    padding: 2%;
+    width: 50%;
+    min-width: 450px;
+    display: inline-block;
+    text-align: left;
+    font-size: large;
+}
+
+input[type=text], input[type=email], input[type=number], select, #dropdown, #preferredTimeOfDay, #chooseGender, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgb(181, 78, 255);
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-size: medium;
+  }
+
+.submitButtonBox {
+    text-align: center;
+}
+
+input[type=submit] {
+    background-color: green;
+    color: white;
+    width:130px; height:50px; margin-top:8px;
+    font-size: larger;
+}
+
+footer {
+    padding-top: 1rem;
+    font-size: larger;
+}
+
+@media screen and (max-width: 500px) {
+    form {
+        width: 90%;
+        min-width: unset;
+    }
+}
