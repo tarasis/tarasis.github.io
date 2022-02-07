@@ -73,19 +73,14 @@ body {
 .frontEndMentorChallenges,
 .freecodeCampProjects,
 .completeWebDev2020Projects,
-.vanillaJSProjects {
+.vanillaJSProjects,
+.responsiveProjects {
     margin-top: var(--marginTop);
 }
 
 .projectsSection__title {
     font-weight: 600;
     font-size: 1.8rem;
-}
-
-/* .frontEndMentorChallenges {} */
-
-.frontEndMentorChallenges {
-    margin-left: 1rem;
 }
 
 .frontEndMentorChallenges > h3,
@@ -107,10 +102,7 @@ body {
 }
 
 .alignedHeader img {
-    /* /* width: 100%;  */
     height: 100%;
-
-    /* margin-left: auto; */
 }
 
 .stacked {
@@ -154,8 +146,13 @@ body {
     overflow: hidden;
 }
 
+.project-card a {
+    height: auto;
+}
+
 .card__img {
     width: 100%;
+    height: auto;
     aspect-ratio: 1 / 1.25;
     object-fit: cover;
 }
@@ -194,9 +191,9 @@ body {
 }
 
 @media (min-width: 38em) {
-    .card__img {
-        aspect-ratio: 1 / 1;
-    }
+    /* .card__img {
+        aspect-ratio: 1 / 1.25;
+    } */
 
     .project-card.featured {
         grid-row: span 2;
