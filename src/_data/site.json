@@ -1,0 +1,9 @@
+{
+    "name": "Robert McGovern's Practice Projects",
+    "url": "https://rmcg.dev",
+    "authorName": "Robert McGovern",
+    "authorUrl": "https://tarasis.net",
+    "authorEmail": "work@tarasis.net",
+    "description": "Projects from Frontend Mentor, FreeCodeCamp and more. Playground for learning.",
+    "favicon": "./svgs/purple_fedora.svg"
+}

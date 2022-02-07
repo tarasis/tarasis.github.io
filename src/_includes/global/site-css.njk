@@ -1,0 +1,12 @@
+{% if cssReset %}
+    <link rel="stylesheet" href="/FrontendMentor/reset.css"/>
+{% endif %}
+
+<link rel="stylesheet" href="/css/header.css"/>
+<link rel="stylesheet" href="/css/footer.css"/>
+
+{% if css %}
+    {% for link in css %}
+        <link rel="stylesheet" href="{{link}}"/>
+    {% endfor %}
+{% endif %}

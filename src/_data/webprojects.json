@@ -1,0 +1,121 @@
+{
+    "frontendMentor": {
+        "serviceName": "Frontend Mentor",
+        "svgSource": "/svgs/frontendmentor.svg",
+        "svgAltText": "Frontend Mentor Logo",
+        "description": "Collection of challenges I completed for Frontend Mentor",
+        "difficulty": [
+            {
+                "title": "Newbie",
+                "challenges": [
+                    {
+                        "title": "Order Summary Card Component",
+                        "url": "/FrontendMentor/newbie/order-summary-component/",
+                        "description": "Test",
+                        "techUsed": [
+                            "html5",
+                            "css3"
+                        ],
+                        "screenshotURL": "/screenshots/fem-newbie-order-summary-component.png",
+                        "screenshotAltText": "Order Summary Component Challenge from FrontendMentor"
+                    },
+                    {
+                        "title": "Profile Card Component",
+                        "url": "/FrontendMentor/newbie/profile-card-component/",
+                        "description": "",
+                        "techUsed": [
+                            "html5",
+                            "css3"
+                        ],
+                        "screenshotURL": "/screenshots/fem-newbie-profile-card-component.jpeg",
+                        "screenshotAltText": "Profile Card Component Challenge from FrontendMentor"
+                    },
+                    {
+                        "title": "Stats Preview Card Component",
+                        "url": "/FrontendMentor/newbie/stats-preview-card-component/",
+                        "description": "",
+                        "techUsed": [
+                            "html5",
+                            "css3"
+                        ],
+                        "screenshotURL": "/screenshots/fem-newbie-stats-preview-card-component.jpeg",
+                        "screenshotAltText": "Stats Preview Card Component Challenge from FrontendMentor"
+                    },
+                    {
+                        "title": "Article Preview Component",
+                        "url": "/FrontendMentor/newbie/article-preview-component/",
+                        "description": "",
+                        "techUsed": [
+                            "html5",
+                            "css3"
+                        ],
+                        "screenshotURL": "/screenshots/fem-newbie-article-preview-component.jpeg",
+                        "screenshotAltText": "Article Preview Component Challenge from FrontendMentor"
+                    },
+                    {
+                        "title": "Four Card Feature Section",
+                        "url": "/FrontendMentor/newbie/four-card-feature-section/",
+                        "description": "",
+                        "techUsed": [
+                            "html5",
+                            "css3"
+                        ],
+                        "screenshotURL": "/screenshots/fem-newbie-four-card-feature-section.jpeg",
+                        "screenshotAltText": "Four Card Feature Section Challenge from FrontendMentor"
+                    },
+                    {
+                        "title": "Single Price Grid Component",
+                        "url": "/FrontendMentor/newbie/single-price-grid-component-master/",
+                        "description": "",
+                        "techUsed": [
+                            "html5",
+                            "css3"
+                        ],
+                        "screenshotURL": "/screenshots/fem-newbie-single-price-grid-component.jpeg",
+                        "screenshotAltText": "Single Price Grid Component Challenge from FrontendMentor"
+                    },
+                    {
+                        "title": "Ping Coming-Soon",
+                        "url": "/FrontendMentor/newbie/ping-coming-soon-page-master/",
+                        "description": "",
+                        "techUsed": [
+                            "html5",
+                            "css3",
+                            "js"
+                        ],
+                        "screenshotURL": "/screenshots/fem-newbie-ping-coming-soon-page.jpeg",
+                        "screenshotAltText": "Ping Coming-Soon Challenge from FrontendMentor"
+                    },
+                    {
+                        "title": "The Huddle Landing Page",
+                        "url": "/FrontendMentor/newbie/huddle-landing-page-with-single-introductory-section-master/",
+                        "description": "",
+                        "techUsed": [
+                            "html5",
+                            "css3",
+                            "js"
+                        ],
+                        "screenshotURL": "/screenshots/fem-newbie-huddle-landing-page-with-single-introductory-section.png",
+                        "screenshotAltText": "The Huddle Landing Page Challenge from FrontendMentor, with a single introductory section."
+                    }
+                ]
+            },
+            {
+                "title": "Junior",
+                "challenges": []
+            },
+            {
+                "title": "Intermediate",
+                "challenges": []
+            },
+            {
+                "title": "Advanced",
+                "challenges": []
+            },
+            {
+                "title": "Guru",
+                "challenges": []
+            }
+        ]
+    }
+}

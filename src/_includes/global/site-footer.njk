@@ -1,0 +1,32 @@
+<footer>
+    <!-- some blurb here -->
+    {# Want the below but it doesnt work #}
+    {# {% set currentUrl = page.url %}
+    {% set testURL = test.url %}
+    {% renderFile "./src/_includes/MD/footer.md",
+    test %}
+
+    <h3>Alt Idea</h3>
+    {% renderTemplate "md",
+    test %}
+All projects are the work of Robert McGovern,
+2020 - 2022. Site V4  
+[Email](emailto: {{ test.url }}),
+[Website / Blog]({{ testURL }})
+
+[Background SVG provided by Steve Schoger @ Hero Patterns](http : //www.heropatterns.com/)
+        {% endrenderTemplate %} #}
+
+    <p>
+        All projects are the work of Robert McGovern, 2020-2022.
+    </p>
+    <div>
+        <img style="display: inline; width: 2rem;" src="/svgs/purple_fedora.svg" alt="A Purple Fedora" aria-hidden="true">
+        <a href="emailto:{{site.authorEmail}}">Email</a>
+        <a href="{{site.authorUrl}}">Website/Blog</a>
+        <img style="display: inline; width: 2rem;" src="/svgs/purple_fedora.svg" alt="A Purple Fedora" aria-hidden="true">
+    </div>
+    <p>
+        <a href="http://www.heropatterns.com/">Background SVG provided by Steve Schoger @ Hero Patterns</a>
+    </p>
+</footer>

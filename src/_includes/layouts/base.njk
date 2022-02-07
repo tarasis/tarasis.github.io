@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            {{ title }} - {{ site.url }}
+        </title>
+        {% include "global/site-meta.njk" %}
+        {% include "global/site-css.njk" %}
+        {% include "global/site-favicon.njk" %}
+    </head>
+    <body>
+        {% include "global/site-header.njk" %}
+        {% include "global/site-main.njk" %}
+        {% include "global/site-footer.njk" %}
+    </body>
+</html>

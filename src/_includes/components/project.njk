@@ -1,0 +1,39 @@
+{# {% set projectPrefix = project %} #}
+
+{% if projectContent %}
+    <div class="project-card stacked">
+        <a href="{{projectContent.url}}">
+            <img class="card__img" src="{{projectContent.screenshotURL}}"
+                        alt="{{projectContent.AltText}}"/>
+        </a>
+        <div class="card__content">
+            <h3 class="card__title">
+                {{projectContent.title}}
+            </h3>
+            {% if projectContent.description | length %}
+                <p class="card__description">
+                    {{projectContent.description}}
+                </p>
+            {% endif %}
+            <ul class="card__techUsed">
+                {% for tech in projectContent.techUsed %}
+                    {% if tech === "html5" %}
+                        <li>
+                            <img src="/svgs/html5.svg" alt="HTML5"/>
+                        </li>
+                    {% endif %}
+                    {% if tech === "css3" %}
+                        <li>
+                            <img src="/svgs/css3.svg" alt="CSS3"/>
+                        </li>
+                    {% endif %}
+                    {% if tech === "js" %}
+                        <li>
+                            <img src="/svgs/javascript.svg" alt="JavaScript"/>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endif %}

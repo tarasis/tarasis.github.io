@@ -84,11 +84,11 @@ body {
 
 /* .frontEndMentorChallenges {} */
 
-.frontEndMentorChallenges .newbieChallenges {
+.frontEndMentorChallenges {
     margin-left: 1rem;
 }
 
-.newbieChallenges > h3,
+.frontEndMentorChallenges > h3,
 .responsiveProjects > h3 {
     font-weight: 600;
     font-size: 1.3rem;
@@ -97,23 +97,6 @@ body {
 /* .freecodeCampProjects {} */
 /* .completeWebDev2020Projects {} */
 /* .vanillaJSProjects {} */
-
-footer {
-    margin-top: 3rem;
-    text-align: center;
-    font-size: 0.9rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 85%;
-}
-
-footer * {
-    margin-top: 1rem;
-}
-
-footer > a {
-    display: block;
-}
 
 .alignedHeader {
     display: flex;

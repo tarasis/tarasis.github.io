@@ -1,19 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: base.njk
+title: Playground
+css: ["/css/playground.css"]
+---
+{# css: ["/css/reset.css", "/css/playground.css"]
+ #}
+{# <link rel="stylesheet" href="./css/reset.css"> #}
+{# <link rel="stylesheet" href="./css/playground.css"> #}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playground</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/playground.css">
-</head>
+<h1>Tricks</h1>
 
-<body>
-    <h1>Tricks</h1>
-
-    <h2>Gradient text with CSS</h2>
+<h2>Gradient text with CSS</h2>
     This one comes from Kevin Powell, on a YouTube video short <a
         href="https://www.youtube.com/watch?v=IQT4aI_Iup4">"Gradient text with CSS | CSS Tip of the Day"</a>. It applies
     a colored gradient to text.
@@ -22,14 +19,14 @@
 
     <h1 class="gradient-text">Thingy Text thats with a gradient</h1>
 
-    <h2>Tip for screen sized approriate images</h2>
+<h2>Tip for screen sized approriate images</h2>
 
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-480.jpg" srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-960.jpg  2x, 
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-480.jpg" srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-960.jpg  2x, 
 	   	  	   https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1440.jpg 3x, 
 		 				 https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1920.jpg 4x" alt="shiny black dog looking pensive"
         width="480" height="360">
 
-    <pre>
+<pre>
 &ltimg src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-480.jpg" 
 srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-960.jpg  2x, 
             https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1440.jpg 3x, 
@@ -41,21 +38,21 @@ width="480" height="360"&gt
     Better though is
 
     <picture>
-        <source media="(min-width:600px)" srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-320.jpg  320w,
+    <source media="(min-width:600px)" srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-320.jpg  320w,
                         https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-480.jpg  480w, 
                         https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-720.jpg  720w,
                         https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-960.jpg  960w, 
                         https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-1440.jpg 1440w, 
                         https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-1920.jpg 1920w">
-        <source srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-320.jpg 320w,
+    <source srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-320.jpg 320w,
                         https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-480.jpg 480w, 
                         https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-720.jpg 720w,
                         https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-960.jpg 960w">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-480.jpg" alt="smiling black dog"
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-480.jpg" alt="smiling black dog"
             height="360px" width="480px">
-    </picture>
+</picture>
 
-    <pre>
+<pre>
 &ltpicture&gt
     &ltsource media="(min-width:600px)"
             srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-320.jpg  320w,
@@ -74,7 +71,4 @@ width="480" height="360"&gt
 &lt/picture&gt
     </pre>
 
-    <h2>???</h2>
-</body>
-
-</html>
+<h2>???</h2>

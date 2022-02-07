@@ -1,0 +1,19 @@
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+footer > * {
+    margin-top: 0.5rem;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
