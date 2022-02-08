@@ -22,137 +22,44 @@ cssReset: true
     <p>Robert McGovern</p>
 </div>
 
-<div class="projectsDiv">
-    <div class="alignedHeader">
-        <h2 class="projectsSection__title">{{webprojects.frontendMentor.serviceName}}</h2>
-        <img src="{{webprojects.frontendMentor.svgSource}}" alt="{{webprojects.frontendMentor.svgAltText}}"/>
-    </div>
-    <p>{{webprojects.frontendMentor.description}}</p>
-
-    {% for difficultyLevel in webprojects.frontendMentor.difficulty %}
-        {% if difficultyLevel.challenges | length %}
-            <div class="frontEndMentorChallenges">
-                <h3>{{difficultyLevel.title}} Challenges</h3>
-
-                <div class="projects-grid">
-
-                    {% for challenge in difficultyLevel.challenges %}
-
-                        {% set projectContent = challenge %}
-                        {% include "components/project.njk" %}
-                    {% endfor %}
-                </div>
-            </div>
-
-        {% endif %}
-    {% endfor %}
-</div>
-
-<div class="projectsDiv">
-    <div class="alignedHeader">
-        <h2 class="projectsSection__title">Freecodecamp</h2>
-        <img src="/svgs/freecodecamp.svg" alt="Freecodecamp"/>
-    </div>
-    <div class="responsiveProjects">
-        <h3>Responsive Web Design Projects</h3>
-        <p>
-            Note: As of 11 Oct 2020, these require a partial rework
-            to look good on mobile. 1-3 where written much earlier
-            in my learning, so while they fufill all the
-            requirements, they don't look great on mobile.
-        </p>
-        <div class="projects-grid">
-            <div class="project-card stacked">
-                <a href="./freeCodeCamp/responsive-web-design-projects/Project1-TributePage/">
-                    <img class="card__img" src="/screenshots/fcc-web-Project1-TributePage.jpeg"
-                        alt="Project 1 - Tribute Page"/>
-                </a>
-                <div class="card__content">
-                    <h3 class="card__title">
-                        Project 1 - Tribute Page
-                    </h3>
-                    <!-- <p class="card__description">
-                        Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit.
-                    </p> -->
-                    <ul class="card__techUsed">
-                        <li>
-                            <img src="/svgs/html5.svg" alt="HTML5"/>
-                        </li>
-                        <li>
-                            <img src="/svgs/css3.svg" alt="CSS3"/>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="project-card stacked">
-                <a href="/freeCodeCamp/responsive-web-design-projects/Project2-BuildaSurveyForm/">
-                    <img class="card__img" src="/screenshots/fcc-web-Project2-BuildaSurveyForm.jpeg"
-                        alt="Project 2 - Build A Survey Form"/>
-                </a>
-                <div class="card__content">
-                    <h3 class="card__title">
-                        Project 2 - Build A Survey Form
-                    </h3>
-                    <!-- <p class="card__description">
-                        Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit.
-                    </p> -->
-                    <ul class="card__techUsed">
-                        <li>
-                            <img src="/svgs/html5.svg" alt="HTML5"/>
-                        </li>
-                        <li>
-                            <img src="/svgs/css3.svg" alt="CSS3"/>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="project-card stacked">
-                <a href="/freeCodeCamp/responsive-web-design-projects/Project3-ProductLandingPage/">
-                    <img class="card__img" src="/screenshots/fcc-web-Project3-ProductLandingPage.jpeg"
-                        alt="Project 3 - Product Landing Page"/>
-                </a>
-                <div class="card__content">
-                    <h3 class="card__title">
-                        Project 3 - Product Landing Page
-                    </h3>
-                    <!-- <p class="card__description">
-                        Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit.
-                    </p> -->
-                    <ul class="card__techUsed">
-                        <li>
-                            <img src="/svgs/html5.svg" alt="HTML5"/>
-                        </li>
-                        <li>
-                            <img src="/svgs/css3.svg" alt="CSS3"/>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+{% for service in webprojects.services %}
+    <div class="projectsDiv {{service.cssClass}}">
+        <div class="alignedHeader">
+            <h2 class="projectsSection__title">{{service.name}}</h2>
+            {% if service.svgSource%}
+                <img src="{{service.svgSource}}" alt="{{service.svgAltText}}"/>
+            {% endif %}
         </div>
+        {% if service.description%}
+            <p>{{service.description}}</p>
+        {% endif %}
+
+        {% for difficultyLevel in service.difficulty %}
+            {% if difficultyLevel.challenges | length %}
+                <div class="{{difficultyLevel.cssClass}}">
+                    {% if difficultyLevel.title%}
+                        <h3>{{difficultyLevel.title}} Challenges</h3>
+                    {% endif %}
+                    {% if difficultyLevel.description%}
+                        <p>{{difficultyLevel.description}}</p>
+                    {% endif %}
+                    <div class="projects-grid">
+                        {% for challenge in difficultyLevel.challenges %}
+                            {% set projectContent = challenge %}
+                            {% include "components/project.njk" %}
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
     </div>
-</div>
+{% endfor %}
 
 <div class="projectsDiv">
-
     <div class="alignedHeader">
-        <h2 class="projectsSection__title">
-            The Complete 2022 Web Development Bootcamp
-        </h2>
-        <img src="/svgs/udemy.svg" alt="The Complete 2022 Web Development Bootcamp Udemy Course"/>
+        <h2 class="projectsSection__title">Playground</h2>
+        <img style="width: 10%;" src="/svgs/purple_fedora.svg" alt="A Purple Fedora"/>
     </div>
-    <p>coming soon</p>
-</div>
-
-<div class="projectsDiv">
-    <h2 class="projectsSection__title">Vanilla JS Projects</h2>
-    <p>coming soon</p>
-</div>
-
-<div class="projectsDiv">
-    <h2 class="projectsSection__title">Playground</h2>
     <p>
         Intended for just little snippets of code that look useful
     </p>
