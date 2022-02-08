@@ -143,17 +143,15 @@ body {
 .project-card {
     border: 3px solid var(--projects-border-color);
     border-radius: 10px;
-    aspect-ratio: 1 / 1.4;
     overflow: hidden;
 }
 
 .project-card a {
-    height: auto;
+    aspect-ratio: 1 / 1.4;
 }
 
 .card__img {
     width: 100%;
-    height: auto;
     aspect-ratio: 1 / 1.25;
     object-fit: cover;
 }
