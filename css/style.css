@@ -49,6 +49,14 @@ body {
     font-family: "Source Sans Pro", sans-serif;
 }
 
+.blurb p {
+    margin-bottom: 1em;
+}
+
+.blurb p:last-child {
+    margin-bottom: 0em;
+}
+
 .header {
     text-align: center;
     padding-top: 10px;
@@ -143,17 +151,15 @@ body {
 .project-card {
     border: 3px solid var(--projects-border-color);
     border-radius: 10px;
-    aspect-ratio: 1 / 1.4;
     overflow: hidden;
 }
 
 .project-card a {
-    height: auto;
+    aspect-ratio: 1 / 1.4;
 }
 
 .card__img {
     width: 100%;
-    height: auto;
     aspect-ratio: 1 / 1.25;
     object-fit: cover;
 }
@@ -161,16 +167,11 @@ body {
 .card__techUsed {
     list-style: none;
     display: flex;
-    /* align-content: space-evenly; */
     justify-content: space-evenly;
     align-items: center;
     padding: 0;
     /* font-size: 0.625rem; */
 }
-
-/* .card__techUsed > li {
-    margin: 0;
-} */
 
 .card__techUsed img {
     margin-top: 0.25rem;
@@ -193,7 +194,7 @@ body {
 
 @media (min-width: 38em) {
     /* .card__img {
-        aspect-ratio: 1 / 1.25;
+        aspect-ratio: 1 / 1;
     } */
 
     .project-card.featured {
