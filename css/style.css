@@ -87,6 +87,7 @@ body {
 .responsiveProjects > h3 {
     font-weight: 600;
     font-size: 1.3rem;
+    margin-bottom: 0.5rem;
 }
 
 /* .freecodeCampProjects {} */
