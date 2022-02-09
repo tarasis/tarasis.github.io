@@ -180,6 +180,17 @@
                             ],
                             "screenshotURL": "/screenshots/fcc-web-Project4-BuildATechnicalDocument.png",
                             "screenshotAltText": "Project 4 - Build A Technical Document"
+                        },
+                        {
+                            "title": "Project 5 - Personal Portfolio Page",
+                            "url": "/freeCodeCamp/responsive-web-design-projects/Project5-PersonalPortfolioPage",
+                            "description": "",
+                            "techUsed": [
+                                "html5",
+                                "css3"
+                            ],
+                            "screenshotURL": "/screenshots/fcc-web-Project5-PersonalPortfolioPage.png",
+                            "screenshotAltText": "Project 5 - Personal Portfolio Page"
                         }
                     ]
                 }

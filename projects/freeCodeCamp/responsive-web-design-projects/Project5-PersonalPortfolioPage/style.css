@@ -1,0 +1,21 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+#navbar {
+    position: fixed;
+}
+
+#welcome-section {
+    height: 100vh;
+}
+
+@media screen and (min-width: 500px) {
+}
