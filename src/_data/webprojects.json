@@ -169,6 +169,17 @@
                             ],
                             "screenshotURL": "/screenshots/fcc-web-Project3-ProductLandingPage.jpeg",
                             "screenshotAltText": "Project 3 - Product Landing Page"
+                        },
+                        {
+                            "title": "Project 4 - Build A Technical Document",
+                            "url": "/freeCodeCamp/responsive-web-design-projects/Project4-BuildATechnicalDocumentPage",
+                            "description": "",
+                            "techUsed": [
+                                "html5",
+                                "css3"
+                            ],
+                            "screenshotURL": "/screenshots/fcc-web-Project4-BuildATechnicalDocument.png",
+                            "screenshotAltText": "Project 4 - Build A Technical Document"
                         }
                     ]
                 }
