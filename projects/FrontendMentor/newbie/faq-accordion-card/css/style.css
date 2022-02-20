@@ -1,0 +1,27 @@
+/* 
+Info: 
+    desktop size 1440x768
+    mobile size 375x768
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+    /* colors: */
+    /* Text */
+    -col-red-soft: hsl(14, 88%, 65%);
+    -col-blue-very-dark-desaturated: hsl(238, 29%, 16%);
+    -col-blue-very-dark-grayish: hsl(237, 12%, 33%);
+    -col-blue-dark-grayish: hsl(240, 6%, 50%);
+
+    /*  divider */
+    -col-blue-light-grayish: hsl(240, 5%, 91%);
+
+    /* backgroun gradient */
+    -col-violet-soft: hsl(273, 75%, 66%);
+    -col-blue-soft: hsl(240, 73%, 65%);
+
+    /* Fonts */
+    -font-size: 12px;
+}
