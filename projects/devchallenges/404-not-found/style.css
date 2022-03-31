@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap");
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --col-primary: hsla(0, 0%, 20%, 1);
+    --col-secondary: hsla(0, 0%, 31%, 1);
+    --col-tertiary: hsla(0, 0%, 74%, 1);
+    --col-white: hsla(0, 0%, 100%, 1);
+    /* --col-test-white: hsl(0, 0%, 100%);
+    --col-test-hsl-with-alpha: hsl(0, 0%, 100%, 1);
+    --col-test-hsla: hsla(0, 0%, 100%, 1);
+    --col-test-rbg-with-alpha: rgb(255, 255, 255, 1);
+    --col-test-rgba: rgba(255, 255, 255, 1);
+    --col-test-rgb-no-alpha: rgb(255, 255, 255); */
+
+    --ff-inconsolata: "Inconsolata", monospace;
+    --ff-space-mono: "Space Mono", monospace;
+    --ff-montserrat: "Montserrat", sans-serif;
+
+    /* * 24px mobile and desktop */
+    --fs-h1: 1.5rem;
+    /* * 48px mobile to 64px mobile */
+    --fs-h2: clamp(3rem, 5vw + 1rem, 4rem);
+    /* * 18px mobile to 24px mobile */
+    --fs-error-message: clamp(1.125rem, 0.993rem + 0.5634vw, 1.5rem);
+    /* * 14px mobile & desktop */
+    --fs-back-link: 0.875rem;
+
+    /* * Margins */
+    --mar-24px: 1.5rem;
+    --mar-77px: 4.8125rem;
+    --margin-default: var(--mar-24px);
+
+    /* * Flex */
+    --flex-direction: column;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* * text styling */
+h1 {
+    font-family: var(--ff-inconsolata);
+    font-weight: 700;
+    font-size: var(--fs-h1);
+}
+
+.container {
+    font-family: var(--ff-space-mono);
+    font-weight: 700;
+    color: var(--col-primary);
+}
+
+.container h2 {
+    font-size: var(--fs-h2);
+}
+
+.container p {
+    font-weight: 400;
+    font-size: var(--fs-error-message);
+    color: var(--col-secondary);
+}
+
+.container a {
+    font-size: var(--fs-back-link);
+}
+
+footer {
+    text-align: center;
+    font-family: var(--ff-montserrat);
+    font-size: var(--fs-back-link);
+    color: var(--col-tertiary);
+}
+
+/* ? Positioning & sizing */
+
+h1 {
+    margin-left: var(--margin-default);
+}
+
+.container {
+    display: flex;
+    flex-direction: var(--flex-direction);
+    margin: 0 var(--margin-default);
+}
+
+.img_container {
+    margin: 4rem 1.25rem 3.75rem 1.25rem;
+}
+
+.container img {
+    width: 100%;
+}
+
+.text_container h2 {
+    margin-bottom: 1.875rem;
+}
+
+.text_container p {
+    margin-bottom: 4.125rem;
+}
+
+.text_container a {
+    padding: 1.5rem 2.6875rem;
+    background-color: var(--col-primary);
+    color: var(--col-white);
+}
+
+footer {
+    position: fixed;
+    bottom: 1rem;
+    /* color: var(--col-test-white);
+    color: var(--col-test-hsl-with-alpha);
+    color: var(--col-test-hsla);
+    color: var(--col-test-rbg-with-alpha);
+    color: var(--col-test-rgba);
+    color: var(--col-test-rgb-no-alpha);
+    color: --col-test; */
+}
+
+@media screen and (min-width: 1000px) {
+    :root {
+        --margin-default: var(--mar-77px);
+        --flex-direction: row;
+    }
+}
