@@ -8,6 +8,7 @@
 
 :root {
     --bkg: linear-gradient(to top, #0f0915, #050307);
+    /* --dark: #050307; */
     --dark: #050307;
     --text: #f9f6fe;
     --accent: #4233e4;
@@ -33,6 +34,11 @@ nav {
 nav.active {
     background-color: var(--dark);
 }
+
+.nav-link[aria-current="page"] {
+    text-decoration: underline wavy #f8c348 0.15rem;
+    text-underline-offset: 0.5rem;
+  }
 
 .nav-container {
     display: flex;
@@ -271,10 +277,11 @@ header {
     width: clamp(4rem, 10vw, 8rem);
 }
 
+/* default transform was 1 second, I prefer a lower figure */
 .fade-up {
     opacity: 0;
     transform: translate3d(0, 5rem, 0);
-    transition: transform 1s cubic-bezier(0.64, 0.04, 0.26, 0.87),
+    transition: transform 0.4s cubic-bezier(0.64, 0.04, 0.26, 0.87),
         opacity 0.8s cubic-bezier(0.64, 0.04, 0.26, 0.87);
 }
 
