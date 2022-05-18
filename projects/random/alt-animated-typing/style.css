@@ -1,0 +1,153 @@
+:root {
+    --bg-color: hsl(49 37% 94%);
+    --typewriterSpeed: 6s;
+    /* this is a pure HTML/CSS approach. If you want it to
+    be more dynamic then you would need JavaScript to grab 
+    the H1 calculate its size and then have it update this
+    variable
+    
+    You would need to use querySelector to grab the :root
+    and put it in a variable, then use that variable (say r)
+    and do r.style.setProperty('--typewriterCharacters', h1.length)
+    assuming you've grabbed the h1
+    */
+    --typewriterCharacters: 24;
+}
+
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    background: var(--bg-color);
+}
+
+h1 {
+    /* for increasing and decreasing the font size depending on
+  device size */
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    position: relative;
+    /* MUST BE A MONOSPACE FONT or the idea collapses per Kevin */
+    font-family: "Source Code Pro", monospace;
+    /* position: relative; */
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+
+.subtitle {
+    color: hsl(0 0% 0% / 0.7);
+    font-size: 2rem;
+    font-weight: 400;
+    /* Below makes the subtitle appear to fade onto the page */
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 0.5s) forwards;
+}
+
+h1::before,
+h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+h1::before {
+    /* a mask font color, needs to be the same color as the page 
+  or container background color */
+    background-color: var(--bg-color);
+    /* the number of steps is equal to the number of characters
+    that the h1 is. However in CSS you can see length of h1 so
+    you need to do this manually. */
+    animation: typewriting var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+h1::after {
+    /* em so it can respond to font size change */
+    width: 0.125em;
+    background: black;
+    /* the number of steps is equal to the number of characters
+    that the h1 is. However in CSS you can see length of h1 so
+    you need to do this manually. */
+    animation: typewriting var(--typewriterSpeed)
+            steps(var(--typewriterCharacters)) 1s forwards,
+        blink 500ms steps(var(--typewriterCharacters)) infinite;
+}
+
+@keyframes typewriting {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*
+h1::before {
+  background: var(--bg-color);
+  -webkit-animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+          animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+h1::after {
+  width: 0.125em;
+  background: black;
+  -webkit-animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards, blink 750ms steps(var(--typewriterCharacters)) infinite;
+          animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards, blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+.subtitle {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 2rem;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateY(3rem);
+  -webkit-animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+          animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+}
+
+@-webkit-keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+@-webkit-keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+*/
+#yt-link {
+    position: absolute;
+    bottom: 2em;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.7);
+}
+#yt-link:hover,
+#yt-link:focus {
+    color: teal;
+}

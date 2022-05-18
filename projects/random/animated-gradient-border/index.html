@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Gradient Border</title>
+
+    <style>
+        *,
+        ::before,
+        ::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        main {
+            display: grid;
+            place-content: center;
+            height: 100%;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            /* border: 1px solid red; */
+            width: 20ch;
+            background-color: black;
+        }
+
+        /* this is the one where the magic happens */
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(100% + 8px);
+            height: calc(100% + 8px);
+            transform: translate(-4px, -4px);
+            /* play with the degrees till you are happy with the animation effect */
+            background: linear-gradient(60deg, #5ff281, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f), 0 50%;
+            /* effectively zooming in on the colors, needs to be higher than 100% 100% */
+            background-size: 300% 300%;
+            /* can be whatever you want, but card must also have the same border radius */
+            border-radius: 8px;
+            /* to make it appear as just the border, need a color set for the background of the card */
+            z-index: -1;
+
+            animation: animated-gradient 2.5s alternate infinite;
+        }
+
+        .card h2 {
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .card .card__price-per-month {
+            margin-bottom: 2.5rem;
+        }
+
+        .card .link {
+            margin-bottom: 1.5rem;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: 2px solid white;
+            /* for pill shape */
+            border-radius: 20%/50%;
+        }
+
+        .card a:is(:focus, :hover) {
+            background-color: rgb(67, 64, 64);
+
+        }
+
+        @keyframes animated-gradient {
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Animated Gradient Border</h1>
+        <p>From a youtube short video, link to be added later.</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Premium</h2>
+            <div class="card__price-per-month">
+                <span>$20</span>
+                <span>/</span>
+                <span>month</span>
+            </div>
+
+            <div class="link"><a href="#">Get started</a></div>
+        </div>
+    </main>
+</body>
+
+</html>

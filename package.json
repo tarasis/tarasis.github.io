@@ -18,5 +18,8 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0"
+  },
+  "dependencies": {
+    "open-props": "^1.3.9"
   }
 }

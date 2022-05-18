@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Open+Sans:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --site-color: hsl(0, 0%, 94%);
+    --font-color: rgb(28, 27, 27);
+    --codeblock-background-color: hsl(300, 1%, 33%);
+    --codeblock-font-color: rgb(255, 255, 255);
+
+    --left-column-width: 320px;
+    --right-column-width: calc(100vw-320px);
+}
+
+/* Layout */
+#navbar {
+    position: fixed;
+    width: var(--left-column-width);
+}
+
+#main-doc {
+    width: var(--right-column-width);
+    margin-left: var(--left-column-width);
+    padding: 1rem;
+    border-left: 2px solid black;
+}
+
+/* Styling */
+body {
+    font-family: "Open Sans";
+    background-color: var(--site-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-size: x-large;
+    margin-bottom: 0.5rem;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+section li {
+    width: 85%;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+#navbar header {
+    text-align: center;
+}
+#navbar li:first-child {
+    border-top: 1px solid;
+}
+
+#navbar li {
+    padding: 0.3125rem 0;
+    border-bottom: 1px dashed;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 550px) {
+    #navbar {
+        position: unset;
+        width: unset;
+    }
+
+    #main-doc {
+        width: unset;
+        margin-left: unset;
+        padding: 0 1rem;
+        border-left: unset;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    :root {
+        --left-column-width: 40%;
+        --right-column-width: 60%;
+    }
+}
