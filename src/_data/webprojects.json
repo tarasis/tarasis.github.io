@@ -12,6 +12,17 @@
                     "cssClass": "frontEndMentorChallenges",
                     "challenges": [
                         {
+                            "title": "Pod Request Access Landing Page",
+                            "url": "/FrontendMentor/newbie/pod-request-landing-page/",
+                            "description": "",
+                            "techUsed": [
+                                "html5",
+                                "css3"
+                            ],
+                            "screenshotURL": "/FrontendMentor/newbie/pod-request-landing-page/screenshots/desktop.png",
+                            "screenshotAltText": "Pod Request Landing Page Challenge from FrontendMentor"
+                        },
+                        {
                             "title": "3 Column Preview Card Component",
                             "url": "/FrontendMentor/newbie/3-column-preview-card-component/",
                             "description": "",
