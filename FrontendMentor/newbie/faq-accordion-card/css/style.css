@@ -1,0 +1,176 @@
+/* 
+Info: 
+    desktop size 1440x768
+    mobile size 375x768
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+    /* colors: */
+    /* Text */
+    --col-red-soft: hsl(14, 88%, 65%);
+    --col-blue-very-dark-desaturated: hsl(238, 29%, 16%);
+    --col-blue-very-dark-grayish: hsl(237, 12%, 33%);
+    --col-blue-dark-grayish: hsl(240, 6%, 50%);
+
+    /*  divider */
+    --col-blue-light-grayish: hsl(240, 5%, 91%);
+
+    /* background gradient */
+    --col-violet-soft: hsl(273, 75%, 66%);
+    --col-blue-soft: hsl(240, 73%, 65%);
+
+    --clr-test: rgb(255, 111, 000);
+
+    /* Fonts */
+    --fs-12px: 0.75rem;
+    --fw-400: 400;
+    --fw-700: 700;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html,
+body,
+main {
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Base page styling */
+
+body {
+    background: linear-gradient(
+        180deg,
+        var(--col-violet-soft) 0%,
+        var(--col-blue-soft) 100%
+    );
+}
+
+main {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    font-family: "Kumbh Sans", sans-serif;
+
+    background-color: white;
+    width: 87%;
+    border-radius: 23px;
+    background-image: var(--card-image);
+}
+
+.card__header {
+    text-align: center;
+    font-weight: var(--fw-700);
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.card__header_image {
+    position: absolute;
+    background-size: contain;
+    content: url(../images/illustration-woman-online-mobile.svg);
+    /* margin: 0 auto; */
+    width: 237px;
+    height: 180px;
+    left: calc(50% - calc(237px / 2) - 10px);
+    top: -20px;
+    /* : calc(100% - 237px/2); */
+    /* left: 40px; */
+}
+
+.card__header_image_shadow {
+    background-image: url(../images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    border: 1px solid red;
+}
+
+@media screen and (min-width: 376px) {
+    .card {
+        flex-direction: row;
+    }
+    .card__header {
+        text-align: start;
+    }
+}
+
+.faq {
+    margin-top: 6.125rem;
+    /* border: 1px red solid; */
+    color: var(--col-red-soft);
+}
+
+/* FAQ Section */
+
+details {
+    font-size: var(--fs-12px);
+    line-height: 1.125rem;
+    padding: 1rem 0 1rem 1.5rem;
+    color: var(--col-blue-dark-grayish);
+
+    border-bottom: 1px solid var(--col-blue-light-grayish);
+    border-width: 75%;
+}
+
+summary {
+    font-size: 0.8125rem;
+    font-weight: var(--fw-400);
+    line-height: 1rem;
+
+    color: var(--col-blue-very-dark-grayish);
+    /* padding: 1rem 1.5rem; */
+    margin-bottom: 1rem;
+    outline: none;
+    /* border-radius: 0.25rem; */
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+
+summary:hover {
+    color: var(--col-red-soft);
+}
+
+details > summary::after {
+    position: absolute;
+    content: url(../images/icon-arrow-down.svg);
+    right: 20px;
+}
+details[open] > summary {
+    font-weight: var(--fw-700);
+    color: var(--col-blue-very-dark-desaturated);
+}
+details[open] > summary::after {
+    transform: rotate(180deg);
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open] summary ~ * {
+    animation: sweep 0.5s ease-in-out;
+}
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        margin-top: -10px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
