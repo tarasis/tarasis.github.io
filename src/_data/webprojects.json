@@ -12,6 +12,17 @@
                     "cssClass": "frontEndMentorChallenges",
                     "challenges": [
                         {
+                            "title": "3 Column Preview Card Component",
+                            "url": "/FrontendMentor/newbie/3-column-preview-card-component/",
+                            "description": "",
+                            "techUsed": [
+                                "html5",
+                                "css3"
+                            ],
+                            "screenshotURL": "/FrontendMentor/newbie/3-column-preview-card-component/screenshots/desktop.png",
+                            "screenshotAltText": "3 Column Preview Card Component Challenge from FrontendMentor"
+                        },
+                        {
                             "title": "Order Summary Card Component",
                             "url": "/FrontendMentor/newbie/order-summary-component/",
                             "description": "",
