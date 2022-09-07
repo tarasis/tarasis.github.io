@@ -38,7 +38,7 @@ nav.active {
 .nav-link[aria-current="page"] {
     text-decoration: underline wavy #f8c348 0.15rem;
     text-underline-offset: 0.5rem;
-  }
+}
 
 .nav-container {
     display: flex;

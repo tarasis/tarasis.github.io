@@ -20,6 +20,9 @@
     "@11ty/eleventy": "^1.0.0"
   },
   "dependencies": {
+    "@11ty/eleventy-img": "^2.0.1",
+    "@fontsource/black-ops-one": "^4.5.7",
+    "@fontsource/source-sans-pro": "^4.5.10",
     "open-props": "^1.3.9"
   }
 }
