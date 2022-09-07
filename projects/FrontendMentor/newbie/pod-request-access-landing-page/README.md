@@ -65,6 +65,7 @@ The approach to this was more difficult than any of the Frontend Mentor challeng
 
 Now I have to think about Mobile, Tablet, and Desktop; rather than just Mobile and Desktop.
 
+Also interesting was working without a style guide document + figma doc. This time I just had the figma document, so I had to make more notes for myself. Interesting particularly because it wasn't clear from the design section what weights of Chivo I needed.
 
 To see how you can add code snippets, see below:
 

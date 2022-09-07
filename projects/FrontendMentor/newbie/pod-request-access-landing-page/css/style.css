@@ -1,0 +1,12 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lh-general: 1.75rem;
+    --lh-mobile: 1.5625rem;
+}
