@@ -1,3 +1,9 @@
+/* Sizes
+    Mobile: 375x667
+    Tablet: 768x1024
+    Desktop: 1440x900
+*/
+
 *,
 ::after,
 ::before {
@@ -6,7 +12,311 @@
     box-sizing: border-box;
 }
 
+input {
+    font-size: inherit;
+    line-height: inherit;
+}
+
 :root {
-    --lh-general: 1.75rem;
-    --lh-mobile: 1.5625rem;
+    /* Line Height */
+    --lh-28px: 1.75rem;
+    --lh-25px: 1.5625rem;
+    --lh-38px: 2.375rem;
+    --lh-56px: 3.5rem;
+    --lh-68px: 4.25rem;
+
+    /* Colors */
+    --col-lime-green: hsla(157, 74%, 62%, 1);
+    --col-lime-green-hover: hsla(157, 100%, 85%, 1);
+
+    --col-dark-blue: hsla(225, 26%, 23%, 1);
+    --col-darker-blue: hsl(225, 36%, 11%);
+
+    --col-light-blue: hsla(225, 21%, 45%, 1);
+    --col-lighter-blue: hsla(225, 40%, 83%, 1);
+
+    --col-white: hsla(0, 0%, 100%, 1);
+
+    /* Fonts */
+
+    --ff-chivo: "Chivo", sans-serif;
+    --fs-14px: 0.875rem;
+    --fs-15px: 0.9375rem;
+    --fs-18px: 1.125rem;
+    --fs-48px: 3rem;
+    --fs-52px: 3.25rem;
+    --fs-26px: 1.625rem;
+
+    --background-image: url(../assets/mobile/image-host.jpg);
+    --background-image-opacity: 0.9;
+
+    --text-alignment: center;
+
+    --logos-height-17px: 1.0625rem;
+    --logos-height-29px: 1.8125rem;
+
+    /* Variables for Elements */
+    --fs-title: var(--fs-26px);
+    --lh-title: var(--lh-38px);
+    --fs-blurb: var(--fs-15px);
+    --lh-blurb: var(--lh-25px);
+
+    --logos-height: var(--logos-height-17px);
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    font-family: "Chivo", sans-serif;
+    font-size: 0.875rem;
+
+    display: flex;
+    flex-direction: column;
+
+    /* Turned off for mobile so I can get exact match */
+    /* align-items: center;
+    justify-content: center; */
+
+    background-color: var(--col-darker-blue);
+    color: var(--col-lighter-blue);
+
+    text-align: var(--text-alignment);
+    background-image: var(--background-image);
+    background-repeat: no-repeat;
+}
+
+header {
+    /* Added to get exact mobile match */
+    margin-top: 3.875rem;
+    margin-bottom: 3.5rem;
+}
+
+main::before {
+    content: " ";
+    background-color: var(--col-darker-blue);
+
+    mix-blend-mode: normal;
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    /* opacity: var(--background-image-opacity); */
+    opacity: var(--background-image-opacity);
+    z-index: -1;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 1.5rem;
+}
+
+.logo {
+    order: 1;
+    margin-bottom: 3.5625rem;
+    height: 3.5rem;
+}
+
+.title {
+    order: 2;
+    color: var(--col-lime-green);
+
+    font-size: var(--fs-title);
+    line-height: var(--lh-title);
+
+    text-transform: uppercase;
+
+    margin-bottom: 16px;
+    font-weight: normal;
+}
+
+.title span {
+    color: var(--col-white);
+}
+.blurb {
+    order: 3;
+    font-size: var(--fs-blurb);
+    line-height: var(--lh-blurb);
+    margin-bottom: 2rem;
+}
+.logos-section {
+    order: 4;
+    /* width: 100%; */
+    margin-bottom: 3rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* flex-shrink: 2; */
+    justify-content: space-between;
+    height: var(--logos-height);
+}
+
+.logos-section img {
+    height: var(--logos-height);
+}
+
+.email-form {
+    order: 5;
+    font-size: var(--fs-14px);
+    line-height: var(--lh-28px);
+}
+
+.email-form__field {
+    width: 100%;
+    border-radius: 28px;
+    background-color: var(--col-dark-blue);
+    padding: 0.5625rem 0;
+    color: var(--col-lighter-blue);
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    border-width: 0px;
+}
+
+.email-form__field:is(:active, :focus) {
+    color: var(--col-white);
+}
+
+.email-form__button-submit {
+    width: 100%;
+    border-radius: 28px;
+    background-color: var(--col-lime-green);
+    padding: 0.5625rem 0;
+    color: var(--col-darker-blue);
+    border-width: 0px;
+}
+
+.email-form__button-submit:hover,
+.email-form__button-submit:focus {
+    background-color: var(--col-lime-green-hover);
+}
+
+.dots-image {
+    visibility: hidden;
+}
+
+/* Tablet */
+@media screen and (min-width: 760px) {
+    :root {
+        --background-image: url(../assets/tablet/image-host.jpg);
+        --text-alignment: unset;
+        --background-image-opacity: 1;
+        --fs-title: var(--fs-48px);
+        --lh-title: var(--lh-56px);
+        --fs-blurb: var(--fs-18px);
+        --lh-blurb: var(--lh-28px);
+
+        --logos-height: var(--logos-height-29px);
+    }
+
+    body {
+        /* align-items: center; */
+        justify-content: center;
+
+        background-position: top right;
+    }
+
+    header {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        margin-top: 50px;
+        margin-left: 39px;
+    }
+
+    main {
+        padding: unset;
+        width: 39.6875rem;
+        height: 31.875rem;
+        padding-top: 5.75rem;
+        margin-left: 39px;
+    }
+
+    .title {
+        width: 25ch;
+        margin-bottom: 2rem;
+    }
+
+    .blurb {
+        width: 40ch;
+        margin-bottom: 2.5rem;
+    }
+
+    .logos-section {
+        order: 5;
+        margin-bottom: unset;
+        justify-content: space-evenly;
+    }
+
+    .email-form {
+        order: 4;
+        margin-bottom: 64px;
+        position: relative;
+    }
+
+    .email-form__field {
+        width: 48ch;
+        z-index: -1;
+    }
+
+    .email-form__button-submit {
+        width: unset;
+        padding: 0.5625rem 1.6875rem;
+        position: relative;
+        right: 10rem;
+    }
+
+    .dots-image {
+        visibility: visible;
+        position: absolute;
+
+        bottom: 0px;
+        left: 30px;
+    }
+
+    main::before {
+        background-color: unset;
+        /* position: absolute; */
+        /* top: 0px; */
+        /* right: 50%; */
+        /* bottom: 0px; */
+        /* left: 0px; */
+    }
+
+    main {
+        background-color: var(--col-darker-blue);
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1430px) {
+    :root {
+        --background-image: url(../assets/desktop/image-host.jpg);
+        --text-alignment: unset;
+        --background-image-opacity: 1;
+
+        --fs-title: var(--fs-52px);
+        --lh-title: var(--lh-68px);
+        --fs-blurb: var(--fs-18px);
+        --lh-blurb: var(--lh-28px);
+
+        --logos-height: var(--logos-height-29px);
+    }
+
+    header {
+        margin-top: 102px;
+        margin-left: 165px;
+    }
+
+    .logos-section {
+        order: 5;
+    }
+
+    .email-form {
+        order: 4;
+    }
 }
