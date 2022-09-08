@@ -55,7 +55,9 @@ input {
     --logos-height-17px: 1.0625rem;
     --logos-height-29px: 1.8125rem;
 
-    --border-radius-28px: 28px;
+    --border-radius: 28px;
+
+    --title-margin-bottom: 1rem;
 
     /* Variables for Elements */
     --fs-title: var(--fs-26px);
@@ -137,7 +139,7 @@ main {
 
     text-transform: uppercase;
 
-    margin-bottom: 1rem;
+    margin-bottom: var(--title-margin-bottom);
     font-weight: normal;
 }
 
@@ -184,7 +186,7 @@ main {
 
 .email-form__field {
     width: 100%;
-    border-radius: 28px;
+    border-radius: var(--border-radius);
     background-color: var(--col-dark-blue);
     padding: 0.5625rem 0;
     color: var(--col-lighter-blue);
@@ -199,7 +201,7 @@ main {
 
 .email-form__button-submit {
     width: 100%;
-    border-radius: 28px;
+    border-radius: var(--border-radius);
     background-color: var(--col-lime-green);
     padding: 0.5625rem 0;
     color: var(--col-darker-blue);
@@ -235,6 +237,8 @@ main {
         --lh-blurb: var(--lh-28px);
 
         --logos-height: var(--logos-height-29px);
+
+        --title-margin-bottom: 2rem;
     }
 
     body {
@@ -248,8 +252,8 @@ main {
         position: absolute;
         top: 0px;
         left: 0px;
-        margin-top: 50px;
-        margin-left: 39px;
+        margin-top: 3.125rem;
+        margin-left: 2.4375rem;
     }
 
     main {
@@ -257,12 +261,11 @@ main {
         width: 39.6875rem;
         height: 31.875rem;
         padding-top: 5.75rem;
-        margin-left: 39px;
+        margin-left: 2.4375rem;
     }
 
     .title {
         width: 25ch;
-        margin-bottom: 2rem;
     }
 
     .blurb {
@@ -278,7 +281,7 @@ main {
 
     .email-form {
         order: 4;
-        margin-bottom: 64px;
+        margin-bottom: 4rem;
         position: relative;
     }
 
@@ -295,7 +298,7 @@ main {
     }
 
     .email-warning {
-        bottom: 20px;
+        bottom: 1.25rem;
         padding-left: 2rem;
     }
 
@@ -304,7 +307,7 @@ main {
         position: absolute;
 
         bottom: 0px;
-        left: 30px;
+        left: 1.875rem;
     }
 
     main::before {
@@ -323,6 +326,8 @@ main {
 
         --fs-title: var(--fs-52px);
         --lh-title: var(--lh-62px);
+
+        --title-margin-bottom: 1.5rem;
     }
 
     body {
@@ -330,22 +335,18 @@ main {
     }
 
     header {
-        margin-top: 102px;
-        margin-left: 165px;
+        margin-top: 6.375rem;
+        margin-left: 10.3125rem;
     }
 
     main {
         padding-top: 5.5rem;
         margin-left: 10.3125rem;
-        width: 724px;
-    }
-
-    .title {
-        margin-bottom: 1.5rem;
+        width: 45.25rem;
     }
 
     .dots-image {
-        bottom: 78px;
+        bottom: 4.875rem;
         right: 0px;
         left: unset;
     }

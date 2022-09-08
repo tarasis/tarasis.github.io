@@ -16,9 +16,6 @@ This is a solution to the [Pod request access landing page challenge on Frontend
     - [Continued development](#continued-development)
     - [Useful resources](#useful-resources)
   - [Author](#author)
-  - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -34,20 +31,22 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+Here are the screenshots for the complete project. First is the mobile version running at 375x667
+![mobile](./screenshots/mobile.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+Then the tablet version 768x1024
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
+![tablet](./screenshots/tablet.png)
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+Then the desktop version, first without the error state and then with the error state
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![tablet](./screenshots/desktop.png)
+![tablet](./screenshots/desktop_with_error.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/tarasis/tarasis.github.io/tree/main/projects/FrontendMentor/newbie/pod-request-access-landing-page)
-- Live Site URL: [Add live site URL here](https://tarasis.github.io/FrontendMentor/newbie/pod-request-access-landing-page)
+- Solution URL: [Github](https://github.com/tarasis/tarasis.github.io/tree/main/projects/FrontendMentor/newbie/pod-request-access-landing-page)
+- Live Site URL: [Github.io](https://tarasis.github.io/FrontendMentor/newbie/pod-request-access-landing-page)
 
 ## My process
 
@@ -56,49 +55,29 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### What I learned
 
-The approach to this was more difficult than any of the Frontend Mentor challenges that I had approached so far. Basically till now I've only approached the newbie free projects (although with a mixture of access to the figma design file).
+The approach to this was more difficult than any of the Frontend Mentor challenges that I had approached so far. Basically till now I've only approached the newbie free projects (sometimes working with the figma design file and sometimes not).
 
 Now I have to think about Mobile, Tablet, and Desktop; rather than just Mobile and Desktop.
 
 Also interesting was working without a style guide document + figma doc. This time I just had the figma document, so I had to make more notes for myself. Interesting particularly because it wasn't clear from the design section what weights of Chivo I needed.
 
-To see how you can add code snippets, see below:
+I ended up using fixed values for position between the three version with I concede is problematic.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+I tried to use properties a lot so that I can just change the values in the `:root` for each media section. I got a little sloppy towards the end and haven't moved all the values I can into properties. I find that using properties leads to a cleaner CSS file and easier cognitive load.
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+For email validation I simply used a pattern set on the input field, and then a combination of `:invalid`, `:valid` and `:placeholder-shown` to affect whether the formatting error is show; rather than taking a JavaScript approach. This does mean I have only implemented one of the two error states. (Honestly I had missed there was a second till I was working on this readme)
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Focus on improving positioning when dealing with three different formats.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Codepen showing CSS pattern matching & errors](https://codepen.io/jh3y/pen/yLKMOBm) - Found this method of handling error handling for input fields.
 
 ## Author
 
@@ -106,9 +85,3 @@ Use this section to outline areas that you want to continue focusing on in futur
 - Portfolio - [Robert McGovern Portfolio](https://rmcg.dev)
 - Frontend Mentor - [@tarasis](https://www.frontendmentor.io/profile/tarasis)
 - Twitter - [@tarasis](https://www.twitter.com/tarasis)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**

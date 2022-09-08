@@ -13,13 +13,13 @@
                     "challenges": [
                         {
                             "title": "Pod Request Access Landing Page",
-                            "url": "/FrontendMentor/newbie/pod-request-landing-page/",
+                            "url": "/FrontendMentor/newbie/pod-request-access-landing-page/",
                             "description": "",
                             "techUsed": [
                                 "html5",
                                 "css3"
                             ],
-                            "screenshotURL": "/FrontendMentor/newbie/pod-request-landing-page/screenshots/desktop.png",
+                            "screenshotURL": "/FrontendMentor/newbie/pod-request-access-landing-page/screenshots/mobile.png",
                             "screenshotAltText": "Pod Request Landing Page Challenge from FrontendMentor"
                         },
                         {
