@@ -23,7 +23,7 @@ input {
     --lh-25px: 1.5625rem;
     --lh-38px: 2.375rem;
     --lh-56px: 3.5rem;
-    --lh-68px: 4.25rem;
+    --lh-62px: 3.875rem;
 
     /* Colors */
     --col-lime-green: hsla(157, 74%, 62%, 1);
@@ -55,6 +55,8 @@ input {
     --logos-height-17px: 1.0625rem;
     --logos-height-29px: 1.8125rem;
 
+    --border-radius-28px: 28px;
+
     /* Variables for Elements */
     --fs-title: var(--fs-26px);
     --lh-title: var(--lh-38px);
@@ -62,6 +64,10 @@ input {
     --lh-blurb: var(--lh-25px);
 
     --logos-height: var(--logos-height-17px);
+
+    /* Email Waring */
+    --warning-visible: visible;
+    --fs-warning: 0;
 }
 
 body {
@@ -82,6 +88,7 @@ body {
     color: var(--col-lighter-blue);
 
     text-align: var(--text-alignment);
+
     background-image: var(--background-image);
     background-repeat: no-repeat;
 }
@@ -117,7 +124,7 @@ main {
 
 .logo {
     order: 1;
-    margin-bottom: 3.5625rem;
+    /* margin-bottom: 3.5625rem; */
     height: 3.5rem;
 }
 
@@ -130,7 +137,7 @@ main {
 
     text-transform: uppercase;
 
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     font-weight: normal;
 }
 
@@ -145,13 +152,11 @@ main {
 }
 .logos-section {
     order: 4;
-    /* width: 100%; */
     margin-bottom: 3rem;
 
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    /* flex-shrink: 2; */
     justify-content: space-between;
     height: var(--logos-height);
 }
@@ -166,6 +171,17 @@ main {
     line-height: var(--lh-28px);
 }
 
+.email-form:is(:invalid):has(.email-form__field:is(:placeholder-shown)) {
+    --fs-warning: 0;
+}
+.email-form:where(:invalid) {
+    --fs-warning: 14;
+}
+
+.email-form:is(:valid) {
+    --fs-warning: 0;
+}
+
 .email-form__field {
     width: 100%;
     border-radius: 28px;
@@ -177,7 +193,7 @@ main {
     border-width: 0px;
 }
 
-.email-form__field:is(:active, :focus) {
+.email-form__field:is(:active, :focus, :not(:placeholder-shown)) {
     color: var(--col-white);
 }
 
@@ -193,6 +209,14 @@ main {
 .email-form__button-submit:hover,
 .email-form__button-submit:focus {
     background-color: var(--col-lime-green-hover);
+}
+
+.email-warning {
+    font-size: var(--fs-warning);
+    color: red;
+    position: relative;
+    bottom: -5px;
+    height: 0;
 }
 
 .dots-image {
@@ -270,6 +294,11 @@ main {
         right: 10rem;
     }
 
+    .email-warning {
+        bottom: 20px;
+        padding-left: 2rem;
+    }
+
     .dots-image {
         visibility: visible;
         position: absolute;
@@ -280,11 +309,6 @@ main {
 
     main::before {
         background-color: unset;
-        /* position: absolute; */
-        /* top: 0px; */
-        /* right: 50%; */
-        /* bottom: 0px; */
-        /* left: 0px; */
     }
 
     main {
@@ -296,15 +320,13 @@ main {
 @media screen and (min-width: 1430px) {
     :root {
         --background-image: url(../assets/desktop/image-host.jpg);
-        --text-alignment: unset;
-        --background-image-opacity: 1;
 
         --fs-title: var(--fs-52px);
-        --lh-title: var(--lh-68px);
-        --fs-blurb: var(--fs-18px);
-        --lh-blurb: var(--lh-28px);
+        --lh-title: var(--lh-62px);
+    }
 
-        --logos-height: var(--logos-height-29px);
+    body {
+        background-position: center right;
     }
 
     header {
@@ -312,11 +334,19 @@ main {
         margin-left: 165px;
     }
 
-    .logos-section {
-        order: 5;
+    main {
+        padding-top: 5.5rem;
+        margin-left: 10.3125rem;
+        width: 724px;
     }
 
-    .email-form {
-        order: 4;
+    .title {
+        margin-bottom: 1.5rem;
+    }
+
+    .dots-image {
+        bottom: 78px;
+        right: 0px;
+        left: unset;
     }
 }
