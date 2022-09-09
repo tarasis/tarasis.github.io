@@ -13,33 +13,66 @@
     --col-secondary: hsla(0, 0%, 31%, 1);
     --col-tertiary: hsla(0, 0%, 74%, 1);
     --col-white: hsla(0, 0%, 100%, 1);
-    /* --col-test-white: hsl(0, 0%, 100%);
-    --col-test-hsl-with-alpha: hsl(0, 0%, 100%, 1);
-    --col-test-hsla: hsla(0, 0%, 100%, 1);
-    --col-test-rbg-with-alpha: rgb(255, 255, 255, 1);
-    --col-test-rgba: rgba(255, 255, 255, 1);
-    --col-test-rgb-no-alpha: rgb(255, 255, 255); */
 
     --ff-inconsolata: "Inconsolata", monospace;
     --ff-space-mono: "Space Mono", monospace;
     --ff-montserrat: "Montserrat", sans-serif;
 
-    /* * 24px mobile and desktop */
+    /* * mobile and desktop
+        24px font size
+        25px line height
+        -8& letter spacing
+    */
     --fs-h1: 1.5rem;
-    /* * 48px mobile to 64px mobile */
+    --lh-h1: 1.5625rem;
+    --ls-h1: -0.08em;
+
+    /*
+        * 48px mobile to 64px desktop
+        * line height 71px mobile to 95px desktop
+    */
     --fs-h2: clamp(3rem, 5vw + 1rem, 4rem);
-    /* * 18px mobile to 24px mobile */
+
+    /* min-height: 0vw; */
+    --lh-h2: clamp(71px, calc(4.4375rem + ((1vw - 3.75px) * 2.2535)), 95px);
+    --ls-h2: -0.035em;
+    /*
+        * 18px mobile to 24px desktop
+        * line height 27px mobile to 36 desktop
+    */
     --fs-error-message: clamp(1.125rem, 0.993rem + 0.5634vw, 1.5rem);
+    --lh-error-message: clamp(
+        27px,
+        calc(1.6875rem + ((1vw - 3.75px) * 0.8451)),
+        36px
+    );
+
     /* * 14px mobile & desktop */
     --fs-back-link: 0.875rem;
 
     /* * Margins */
     --mar-24px: 1.5rem;
     --mar-77px: 4.8125rem;
-    --margin-default: var(--mar-24px);
+    --margin-default-sides: var(--mar-24px);
+    --margin-default-top: 0px;
+
+    --header-margin-top: clamp(
+        20px,
+        calc(1.25rem + ((1vw - 3.75px) * 1.8779)),
+        40px
+    );
+
+    --image-margin-top: 4rem;
+    --image-margin-bottom: 3.75rem;
+    --image-margin-left: 1.25rem;
+    --image-margin-right: 1.25rem;
 
     /* * Flex */
     --flex-direction: column;
+
+    --error-text-box-width: auto;
+
+    --image-container-width: 100%;
 }
 
 body {
@@ -51,26 +84,34 @@ h1 {
     font-family: var(--ff-inconsolata);
     font-weight: 700;
     font-size: var(--fs-h1);
+
+    line-height: var(--lh-h1);
+    letter-spacing: var(--ls-h1);
 }
 
 .container {
     font-family: var(--ff-space-mono);
     font-weight: 700;
     color: var(--col-primary);
+    letter-spacing: var(--ls-h2);
 }
 
 .container h2 {
     font-size: var(--fs-h2);
+    line-height: var(--lh-h2);
+    letter-spacing: var(--ls-h2);
 }
 
 .container p {
     font-weight: 400;
     font-size: var(--fs-error-message);
     color: var(--col-secondary);
+    line-height: var(--lh-error-message);
 }
 
 .container a {
     font-size: var(--fs-back-link);
+    text-transform: uppercase;
 }
 
 footer {
@@ -83,21 +124,23 @@ footer {
 /* ? Positioning & sizing */
 
 h1 {
-    margin-left: var(--margin-default);
+    margin-left: var(--margin-default-sides);
+    margin-top: var(--header-margin-top);
 }
 
 .container {
     display: flex;
     flex-direction: var(--flex-direction);
-    margin: 0 var(--margin-default);
+    margin: var(--margin-default-top) var(--margin-default-sides);
 }
 
 .img_container {
-    margin: 4rem 1.25rem 3.75rem 1.25rem;
+    margin: var(--image-margin-top) var(--image-margin-right)
+        var(--image-margin-bottom) var(--image-margin-left);
 }
 
 .container img {
-    width: 100%;
+    width: var(--image-container-width);
 }
 
 .text_container h2 {
@@ -106,6 +149,7 @@ h1 {
 
 .text_container p {
     margin-bottom: 4.125rem;
+    width: var(--error-text-box-width);
 }
 
 .text_container a {
@@ -116,19 +160,22 @@ h1 {
 
 footer {
     position: fixed;
-    bottom: 1rem;
-    /* color: var(--col-test-white);
-    color: var(--col-test-hsl-with-alpha);
-    color: var(--col-test-hsla);
-    color: var(--col-test-rbg-with-alpha);
-    color: var(--col-test-rgba);
-    color: var(--col-test-rgb-no-alpha);
-    color: --col-test; */
+    bottom: 1.5rem;
+    width: 100%;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 800px) {
     :root {
-        --margin-default: var(--mar-77px);
+        --margin-default-sides: var(--mar-77px);
+        --margin-default-top: 12.5rem;
         --flex-direction: row;
+        --error-text-box-width: 26ch;
+
+        --image-margin-top: 0px;
+        --image-margin-bottom: 0px;
+        --image-margin-left: 0px;
+        --image-margin-right: 0px;
+
+        --image-container-width: 75%;
     }
 }
