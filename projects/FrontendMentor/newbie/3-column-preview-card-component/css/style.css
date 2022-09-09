@@ -1,0 +1,154 @@
+/*
+Info:
+    desktop size 1440x800
+    mobile size 375x1502
+*/
+
+/* ! Create variables */
+:root {
+    /* Colors: Primary */
+    --col-pri-bright-orange: hsl(31, 77%, 52%);
+    --col-pri-dark-cyan: hsl(184, 100%, 22%);
+    --col-pri-very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Colors: Neutral */
+    /*         paragraphs */
+    --col-neu-transparent-white: hsla(0, 0%, 100%, 0.75);
+    /*         background, headings, buttons */
+    --col-neu-very-light-gray: hsl(0, 0%, 95%);
+
+    /* Fonts */
+    --fs-body-15px: 0.9375rem;
+    --fw-400: 400;
+    --fw-700: 700;
+
+    --ff-lexend: "Lexend Deca", sans-serif;
+    --ff-big-shoulders: "Big Shoulders Display", cursive;
+}
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Provided attribution styling */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* justify-content: space-around; */
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+html {
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    /* place-items: center; */
+    justify-content: center;
+    align-content: center;
+    background-color: var(--col-neu-very-light-gray);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.card {
+    padding: 3rem;
+
+    font-family: var(--ff-lexend);
+    font-size: var(--fs-body-15px);
+    color: var(--col-neu-very-light-gray);
+}
+
+.card:first-child {
+    border-radius: 8px 8px 0 0;
+}
+
+.card:last-child {
+    border-radius: 0 0 8px 8px;
+}
+
+.card__image {
+    margin-bottom: 2.1875rem;
+}
+.card__title {
+    font-family: var(--ff-big-shoulders);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1.5625rem;
+}
+.card__body {
+    margin-bottom: 1.5625rem;
+    width: 25ch;
+    color: var(--col-neu-transparent-white);
+    line-height: 1.5625rem;
+}
+
+.card-learn-more__button {
+    background-color: var(--col-neu-very-light-gray);
+    border-radius: 25px;
+    padding: 12px 32px;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--col-fg);
+}
+
+.card-learn-more__button:focus,
+.card-learn-more__button:hover {
+    background-color: var(--col-fg);
+    border: 2px solid var(--col-neu-very-light-gray);
+    padding: 10px 30px;
+    color: var(--col-neu-very-light-gray);
+}
+
+.sedan-color {
+    background-color: var(--col-pri-bright-orange);
+    --col-fg: var(--col-pri-bright-orange);
+}
+
+.suv-color {
+    background-color: var(--col-pri-dark-cyan);
+    --col-fg: var(--col-pri-dark-cyan);
+}
+
+.luxury-color {
+    background-color: var(--col-pri-very-dark-cyan);
+    --col-fg: var(--col-pri-very-dark-cyan);
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .card:first-child {
+        border-radius: 8px 0 0 8px;
+    }
+
+    .card:last-child {
+        border-radius: 0 8px 8px 0;
+    }
+
+    .card__body {
+        /* just changed to chase design, honestly the 25ch width is fine */
+        width: 23.15ch;
+        margin-bottom: 5.25rem;
+    }
+}
