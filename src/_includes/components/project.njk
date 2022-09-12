@@ -3,7 +3,7 @@
 {% if projectContent %}
     <div class="project-card stacked">
         <a href="{{projectContent.url}}">
-            <img class="card__img" src="{{projectContent.screenshotURL}}"
+            <img loading="lazy" class="card__img" src="{{projectContent.screenshotURL}}"
                         alt="{{projectContent.screenshotAltText}}"/>
         </a>
         <div class="card__content">
