@@ -45,7 +45,6 @@ Info:
 
 html,
 body {
-    /* min-width: 320px; */
     min-height: 100vh;
     width: 100%;
 }
@@ -77,10 +76,10 @@ body {
     border-radius: 23px;
     background-image: var(--card-image);
 
-    max-width: 920px;
+    max-width: 400px;
 }
 
-.card__header {
+.card__title {
     text-align: center;
     font-weight: var(--fw-700);
     font-size: var(--fs-header);
@@ -89,75 +88,36 @@ body {
     margin-bottom: 2.375rem;
 }
 
-.card__header_thing {
-    /* position: relative; */
+.card__header {
     margin-bottom: 40px;
     height: 90px;
 }
 
 .card__header_image {
-    position: relative;
-    background-size: contain;
-    /* background-image: url(../images/illustration-woman-online-mobile.svg),
-        url(../images/bg-pattern-mobile.svg);
-    background-position: center, bottom center;
-    background-repeat: no-repeat; */
-    /* margin: 0 auto; */
-    /* width: 237px; */
-    width: 80%;
-    height: 180px;
-    /* left: calc(50% - calc(237px / 2) - 10px); */
-    /* left: calc(50% - calc(80% / 2) - 10px); */
-
-    /* top: calc(50% - calc(80% / 2) - 10px); */
-    /* : calc(100% - 237px/2); */
-    /* left: 40px; */
+    background: url(../images/bg-pattern-mobile.svg) center bottom no-repeat;
+    background-position-x: 0px;
+    background-position-y: 125px;
+    background-size: 95%;
+    margin: 0 auto;
+    max-width: 245px;
+    margin-top: -130px;
 }
 
-.card__header_image.desktop {
+.desktop {
     display: none;
 }
 
-.card__header_image.mobile {
-    display: contents;
-    margin: 0 auto;
-}
-
-.card__header_image.mobile > img {
-    /* width: 72.5%; */
-}
-
-.woman,
-.box,
-.background {
-    position: absolute;
+.mobile {
+    display: block;
 }
 
 .woman {
-    top: -95px;
-    left: calc((50% - 118.5px) - 10px);
-    width: 73%;
-    position: relative;
-}
-
-.background {
-    left: calc(50% - 118.5px + 15px);
-    width: 66%;
-    top: -170px;
-    position: relative;
-}
-
-.card__header_image_shadow {
-    background-image: url(../images/bg-pattern-mobile.svg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    border: 1px solid red;
+    margin-left: -16px;
+    padding: 30px 0px;
 }
 
 .faq {
-    /* border: 1px red solid; */
     color: var(--col-red-soft);
-    /* margin: 6.125rem 1.5rem 3rem; */
     margin: 0 1.5rem 3rem;
 }
 
@@ -183,10 +143,7 @@ summary {
     line-height: var(--lh-question);
 
     color: var(--col-blue-very-dark-grayish);
-    /* padding: 1rem 1.5rem; */
-    /* margin-bottom: 1rem; */
     outline: none;
-    /* border-radius: 0.25rem; */
     text-align: left;
     cursor: pointer;
     position: relative;
@@ -214,10 +171,17 @@ details > summary::-webkit-details-marker {
     display: none;
 }
 
-/* ! add check for prefers motion */
 details[open] summary ~ * {
     animation: sweep 0.5s ease-in-out;
 }
+
+/* ! In polypane, this only works in desktop, not mobile */
+@media (prefers-reduced-motion) {
+    details[open] summary ~ * {
+        animation: none;
+    }
+}
+
 @keyframes sweep {
     0% {
         opacity: 0;
@@ -234,7 +198,7 @@ details[open] summary ~ * {
     margin-top: 0.6875rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
     :root {
         --fs-question: 0.875rem;
         --lh-question: 1.0625rem;
@@ -242,37 +206,43 @@ details[open] summary ~ * {
 
     .card {
         flex-direction: row;
+        max-width: 920px;
+        height: 509px;
     }
 
-    .card__header_thing {
-        display: grid;
-        align-content: center;
+    .card__header {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
     }
 
     .card__header_image {
-        /* content: url(../images/illustration-woman-online-desktop.svg); */
-        top: unset;
-        position: unset;
-        width: 100%;
-        height: unset;
-
+        display: flex;
+        align-items: center;
+        background-image: url(../images/illustration-woman-online-desktop.svg),
+            url(../images/bg-pattern-desktop.svg);
+        background-position: -65px center, -571px -270px;
+        background-size: 100%, 200%;
+        height: 100%;
+        min-width: 300px;
+        margin: 0;
+        padding: 0;
+        width: 472px;
+        max-width: 500px;
         position: relative;
-
-        margin-bottom: unset;
     }
 
-    .woman,
-    .box,
-    .background {
-        position: absolute;
-    }
-
-    .card__header_image.mobile {
+    .mobile {
         display: none;
     }
 
-    .card__header_image.desktop {
-        display: contents;
+    .desktop {
+        display: block;
+        position: absolute;
+        margin-top: 100px;
+        left: -90px;
+        width: 40%;
     }
 
     article {
@@ -280,10 +250,18 @@ details[open] summary ~ * {
     }
 
     .faq {
-        margin-left: 5.4375rem;
+        margin-top: 65px;
     }
 
     .faq__content {
         width: 95%;
     }
+
+    .card__title {
+        text-align: start;
+    }
+
+    /* .box {
+        width: 90px;
+    } */
 }

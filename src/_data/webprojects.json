@@ -12,6 +12,17 @@
                     "cssClass": "frontEndMentorChallenges",
                     "challenges": [
                         {
+                            "title": "FAQ Accordion Card",
+                            "url": "/FrontendMentor/newbie/faq-accordion-card/",
+                            "description": "",
+                            "techUsed": [
+                                "html5",
+                                "css3"
+                            ],
+                            "screenshotURL": "/FrontendMentor/newbie/faq-accordion-card/screenshots/mobile-inactive.png",
+                            "screenshotAltText": "FAQ Accordion Card Challenge from FrontendMentor"
+                        },
+                        {
                             "title": "Pod Request Access Landing Page",
                             "url": "/FrontendMentor/newbie/pod-request-access-landing-page/",
                             "description": "",
