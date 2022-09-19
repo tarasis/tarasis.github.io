@@ -1,0 +1,222 @@
+/*
+
+* Mobile: 375x1000
+* Desktop: 1440x800
+
+*/
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --col-primary-background: hsl(0, 100%, 74%);
+    --col-primary-button: hsl(154, 59%, 51%);
+
+    --col-accent: hsl(248, 32%, 49%);
+
+    --col-neutral-text: hsl(249, 10%, 26%);
+    --col-neutral-light-text: hsl(246, 25%, 77%);
+
+    --col-border: hsl(0, 0%, 87%);
+
+    /* Fonts */
+
+    --fs-header: 28px;
+    --lh-header: 36px;
+    --fw-header: 700;
+    --ls-header: -0.291667px;
+
+    --fs-copy: 16px;
+    --lh-copy: 26px;
+    --fw-copy: 500;
+
+    --fs-sell: 15px;
+    --lh-sell: 26px;
+    --fw-sell-bold: 700;
+    --fw-sell: 400;
+    --ls-sell: 0.267857px;
+
+    --fs-fields: 14px;
+    --lh-fields: 26px;
+    --fw-fields: 600;
+    --ls-fields: 0.25px;
+    --opacity-fields-placeholder: 0.75;
+
+    --fs-button: 15px;
+    --lh-button: 26px;
+    --fw-button: 600;
+    --ls-button: 1px;
+
+    --fs-terms: 11px;
+    --lh-terms: 21px;
+    --fw-terms-bold: 700;
+    --fw-terms: 500;
+
+    --bg-image: url(../images/bg-intro-mobile.png);
+    --text-align: center;
+
+    --border-radius-sell: 0.625rem;
+    --border-radius-form: 0.625rem;
+    --border-radius-input: 0.3125rem;
+    --border-radius-button: 0.3125rem;
+
+    --box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+
+    --padding-fields: 1.2188rem;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Poppins", sans-serif;
+    text-align: var(--text-align);
+
+    background-color: var(--col-primary-background);
+    background-image: var(--bg-image);
+    color: white;
+
+    padding: 0 1.5rem;
+}
+
+header {
+    margin-top: 5.5rem;
+}
+
+h1 {
+    font-size: var(--fs-header);
+    line-height: var(--lh-header);
+    font-weight: var(--fw-header);
+    letter-spacing: var(--ls-header);
+
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: var(--fs-copy);
+    line-height: var(--lh-copy);
+    font-weight: var(--fw-copy);
+
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-size: var(--fs-sell);
+    line-height: var(--lh-sell);
+    font-weight: var(--fw-sell);
+    list-style: var(--ls-sell);
+
+    padding: 1.125rem 4.125rem;
+
+    background-color: var(--col-accent);
+    border-radius: var(--border-radius-sell);
+
+    box-shadow: var(--box-shadow);
+
+    margin-bottom: 1.5rem;
+}
+
+h2 span {
+    font-weight: var(--fw-sell-bold);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+
+    border-radius: var(--border-radius-form);
+    box-shadow: var(--box-shadow);
+
+    padding: 0 1.5rem;
+}
+
+form input:nth-child(1) {
+    margin-top: 1.5rem;
+}
+
+form input {
+    font-size: var(--fs-fields);
+    line-height: var(--lh-fields);
+    font-weight: var(--fw-fields);
+    letter-spacing: var(--ls-fields);
+    padding: var(--padding-fields);
+
+    height: 3.5rem;
+
+    margin: 1rem 0 0;
+
+    border-radius: var(--border-radius-input);
+    border: 1px solid var(--col-border);
+
+    color: var(--col-neutral-text);
+}
+
+form button {
+    font-size: var(--fs-button);
+    line-height: var(--lh-button);
+    font-weight: var(--fw-button);
+    list-style: var(--ls-button);
+
+    text-transform: uppercase;
+
+    background-color: var(--col-primary-button);
+    color: white;
+
+    padding: 0.9375rem 2.6875rem;
+
+    border-radius: var(--border-radius-button);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+
+    border: none;
+
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+form p {
+    font-size: var(--fs-terms);
+    line-height: var(--lh-terms);
+    font-weight: var(--fw-terms);
+
+    color: var(--col-neutral-light-text);
+
+    /* margin: 0 2.4375rem 1.5rem; */
+    padding-bottom: 1.5rem;
+}
+
+form p a {
+    color: var(--col-primary-background);
+    text-decoration: none;
+}
+
+.error {
+    color: var(--col-primary-background);
+}
+
+@media screen and (min-width: 800px) {
+    :root {
+        --fs-header: 50px;
+        --lh-header: 55px;
+        --fw-header: 700;
+        --ls-header: -0.520833px;
+
+        --lh-terms: 26px;
+
+        --bg-image: url(../images/bg-intro-desktop.png);
+
+        --text-align: start;
+
+        --padding-fields: 2rem;
+    }
+}
