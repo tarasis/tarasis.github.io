@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <script src="./js/script.js" defer></script>
   <link rel="stylesheet" href="./css/style.css">
   <title>Frontend Mentor | Intro component with sign up form</title>
 
@@ -35,14 +35,14 @@
   </header>
 
   <main>
-    <h2>Try it free 7 days then $20/mo. thereafter</h2>
+    <h2><span>Try it free 7 days</span> then $20/mo. thereafter</h2>
 
-    <form action="submit">
-      <input type="text" name="firstName" id="firstName" placeholder="First Name">
+    <form action="submit" onsubmit="return verifyData(this.form)">
+      <input type=" text" name="firstName" id="firstName" placeholder="First Name">
       <input type="text" name="lastName" id="lastName" placeholder="Last Name">
       <input type="email" name="email" id="email" placeholder="Email Address">
       <input type="password" name="password" id="password" placeholder="Password">
-      <button>Claim your free trial</button>
+      <button onClick="verifyData(this.form)">Claim your free trial</button>
       <p>
         By clicking the button, you are agreeing to our <a href="#" rel="">Terms and Services</a>
       </p>

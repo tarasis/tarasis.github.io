@@ -68,7 +68,9 @@
 
     --box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
 
+    --padding-outer-form: 0 1.5rem;
     --padding-fields: 1.2188rem;
+    --margin-top-inputs: 1rem;
 }
 
 body {
@@ -138,7 +140,7 @@ form {
     border-radius: var(--border-radius-form);
     box-shadow: var(--box-shadow);
 
-    padding: 0 1.5rem;
+    padding: var(--padding-outer-form);
 }
 
 form input:nth-child(1) {
@@ -154,12 +156,18 @@ form input {
 
     height: 3.5rem;
 
-    margin: 1rem 0 0;
+    margin-top: var(--margin-top-inputs);
 
     border-radius: var(--border-radius-input);
     border: 1px solid var(--col-border);
 
     color: var(--col-neutral-text);
+}
+
+input:active,
+input:focus {
+    outline: none;
+    border-color: var(--col-accent);
 }
 
 form button {
@@ -192,7 +200,8 @@ form p {
     color: var(--col-neutral-light-text);
 
     /* margin: 0 2.4375rem 1.5rem; */
-    padding-bottom: 1.5rem;
+    padding: 0 0.9375rem 1.5rem;
+    /* padding-bottom: 1.5rem; */
 }
 
 form p a {
@@ -218,5 +227,44 @@ form p a {
         --text-align: start;
 
         --padding-fields: 2rem;
+
+        --padding-outer-form: 0 2.5rem;
+
+        --margin-top-inputs: 1.25rem;
+    }
+
+    body {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 45px;
+    }
+
+    header,
+    main {
+        flex: 1;
+    }
+
+    header {
+        max-width: 32.8125rem;
+
+        margin-top: 4rem;
+    }
+
+    h1 {
+        margin-bottom: 2rem;
+    }
+
+    main {
+        max-width: 33.75rem;
+    }
+
+    form input:nth-child(1) {
+        margin-top: 2.5rem;
+    }
+
+    form p {
+        text-align: center;
     }
 }
