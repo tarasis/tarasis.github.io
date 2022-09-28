@@ -37,12 +37,32 @@
   <main>
     <h2><span>Try it free 7 days</span> then $20/mo. thereafter</h2>
 
-    <form action="submit" onsubmit="return verifyData(this.form)">
-      <input type=" text" name="firstName" id="firstName" placeholder="First Name">
-      <input type="text" name="lastName" id="lastName" placeholder="Last Name">
-      <input type="email" name="email" id="email" placeholder="Email Address">
-      <input type="password" name="password" id="password" placeholder="Password">
-      <button onClick="verifyData(this.form)">Claim your free trial</button>
+    <form id="details-form" action="submit" novalidate>
+      <input type="text" name="firstName" id="firstNameInput" placeholder="First Name" enterkeyhint="next"
+        autocomplete="given-name" autofocus required>
+      <div class="errorSection" id="errorSection">
+        <!-- hidden -->
+        <p hidden class="errorMessage-styling" id="errorMessage-firstNameInput">First Name cannot be empty</p>
+      </div>
+      <input type="text" name="lastName" id="lastNameInput" placeholder="Last Name" enterkeyhint="next"
+        autocomplete="family-name" required>
+      <div class="errorSection" id="errorSection">
+        <!-- hidden -->
+        <p hidden class="errorMessage-styling" id="errorMessage-lastNameInput">Last Name cannot be empty</p>
+      </div>
+      <input type="email" name="email" id="emailInput" placeholder="Email Address" enterkeyhint="next"
+        autocomplete="email" required>
+      <div class="errorSection" id="errorSection">
+        <!-- hidden -->
+        <p hidden class="errorMessage-styling" id="errorMessage-emailInput">Looks like this is not an email</p>
+      </div>
+      <input type="password" name="password" id="passwordInput" placeholder="Password" enterkeyhint="done"
+        autocomplete="new-password" required>
+      <div class="errorSection" id="errorSection">
+        <!-- hidden -->
+        <p hidden class="errorMessage-styling" id="errorMessage-passwordInput">Password cannot be empty</p>
+      </div>
+      <button type="submit">Claim your free trial</button>
       <p>
         By clicking the button, you are agreeing to our <a href="#" rel="">Terms and Services</a>
       </p>

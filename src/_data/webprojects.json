@@ -12,6 +12,18 @@
                     "cssClass": "frontEndMentorChallenges",
                     "challenges": [
                         {
+                            "title": "Intro Component with Signup form",
+                            "url": "/FrontendMentor/newbie/intro-component-with-signup-form/",
+                            "description": "",
+                            "techUsed": [
+                                "html5",
+                                "css3",
+                                "js"
+                            ],
+                            "screenshotURL": "/FrontendMentor/newbie/intro-component-with-signup-form/screenshots/mobile.png",
+                            "screenshotAltText": "Intro Component Challenge from FrontendMentor"
+                        },
+                        {
                             "title": "FAQ Accordion Card",
                             "url": "/FrontendMentor/newbie/faq-accordion-card/",
                             "description": "",

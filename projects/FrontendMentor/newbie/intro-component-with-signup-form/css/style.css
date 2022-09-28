@@ -58,6 +58,12 @@
     --fw-terms-bold: 700;
     --fw-terms: 500;
 
+    --fs-error: 11px;
+    --lh-error: 16px;
+    --fw-error: 500;
+    --font-style-error: italic;
+    --text-align-error: right;
+
     --bg-image: url(../images/bg-intro-mobile.png);
     --text-align: center;
 
@@ -211,6 +217,29 @@ form p a {
 
 .error {
     color: var(--col-primary-background);
+}
+
+.errorMessage-styling {
+    font-size: var(--fs-error);
+    line-height: var(--lh-error);
+    font-weight: var(--fw-error);
+    font-style: var(--font-style-error);
+    text-align: var(--text-align-error);
+    margin: 0;
+    padding: 6px 0 0 0;
+
+    color: var(--col-primary-background);
+}
+
+.error-highlight {
+    outline: none;
+    border-color: var(--col-primary-background);
+    color: var(--col-primary-background);
+
+    background-image: url("../images/icon-error.svg");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.3rem;
 }
 
 @media screen and (min-width: 800px) {
