@@ -20,10 +20,12 @@ function checkFormValidity(event) {
             // console.log(`${input.id} is invalid`);
             // console.log(`${input.id} msg ${input.validationMessage}`);
             // get the relevant error message element, using id of the input
-            let errorSection = document.getElementById(`errorMessage-${input.id}`)
+            let errorSection = document.getElementById(
+                `errorMessage-${input.id}`
+            );
             // console.log(`ES: ${errorSection}, ${typeof (errorSection)} id: ${errorSection.id}`);
-            errorSection.removeAttribute("hidden");
-            input.classList.add("error-highlight")
+            errorSection.hidden = false;
+            input.classList.add("error-highlight");
         }
     }
 }
@@ -32,8 +34,15 @@ function checkFormValidity(event) {
 // I could more ideally check if the class is in the classlist,
 // and attribute hidden was false
 function inputFocused(event) {
+    /**
+     * Just for VS Code intellisense
+     *
+     * @type {HTMLInputElement}
+     */
     const input = event.currentTarget;
-    input.classList.remove("error-highlight");
-    let errorSection = document.getElementById(`errorMessage-${input.id}`);
-    errorSection.setAttribute("hidden", true);
+    if (input.classList.contains("error-highlight")) {
+        input.classList.remove("error-highlight");
+        let errorSection = document.getElementById(`errorMessage-${input.id}`);
+        errorSection.hidden = true;
+    }
 }
