@@ -12,6 +12,17 @@
                     "cssClass": "frontEndMentorChallenges",
                     "challenges": [
                         {
+                            "title": "Social Proof Section",
+                            "url": "/FrontendMentor/newbie/social-proof-section/",
+                            "description": "",
+                            "techUsed": [
+                                "html5",
+                                "css3"
+                            ],
+                            "screenshotURL": "/FrontendMentor/newbie/social-proof-section/screenshots/desktop.png",
+                            "screenshotAltText": "Social Proof Challenge from FrontendMentor"
+                        },
+                        {
                             "title": "Intro Component with Signup form",
                             "url": "/FrontendMentor/newbie/intro-component-with-signup-form/",
                             "description": "",
