@@ -1,7 +1,7 @@
 /*
  * Design sizes:
-    Desktop: 1440x800
-    Mobile: 375x1530
+ *   Desktop: 1440x800
+ *   Mobile: 375x1530
 */
 
 *,
@@ -14,46 +14,198 @@
 
 :root {
     /* Colors */
-    --col-primary-very-dark-magenta: hsl(300, 43%, 22%);
-    --col-primary-soft-pink: hsl(333, 80%, 67%);
-    --col-neutral-dark-grayish-magenta: hsl(303, 10%, 53%);
-    --col-neutral-light-grayish-magenta: hsl(300, 24%, 96%);
+    --col-primary-very-dark-magenta: hsl(300, 44%, 22%);
+    --col-primary-soft-pink: hsl(334, 80%, 67%);
+    --col-neutral-dark-grayish-magenta: hsl(301, 10%, 53%);
+    --col-neutral-light-grayish-magenta: hsl(301, 23%, 96%);
     --col-neutral-white: hsl(0, 0%, 100%);
 
     /* Typography */
-    --fs-header: 2rem;
+    --fs-header: 2.5rem;
     --lh-header: 2rem;
-    --ls-header: -1.14286px;
+    --ls-header: -1.43px; /*-1.42857px;*/
     --fw-header: 700;
+    --text-align-header: center;
 
-    --fs-body: 0.9375rem;
+    --fs-body: 1.1875rem;
     --lh-body: 1.5625rem;
-    --ls-body: -0.5px;
+    --ls-body: -0.633333px;
     --fw-body: 500;
 
-    --fs-rating: 0.8125rem;
-    --lh-rating: 0.9375rem;
+    --fs-rating: 1.0625rem;
+    --lh-rating: 0.9775rem; /* 1rem */
     --fw-rating: 700;
 
-    --fs-name: 0.8125rem;
-    --lh-name: 0.9375rem;
+    --fs-name: 1.0625rem;
+    --lh-name: 0.9775rem; /* 1rem */
     --fw-name: 700;
 
-    --fs-buyer: 0.8125rem;
-    --lh-buyer: 0.9375rem;
+    --fs-buyer: 1.0625rem;
+    --lh-buyer: 0.9775rem; /* 1rem */
     --fw-buyer: 400;
 
-    --fs-quote: 0.8125rem;
+    --fs-quote: 1.0625rem;
     --lh-quote: 1.375rem;
-    --ls-quote: -0.232143px;
+    --ls-quote: -0.303571px;
     --fw-quote: 500;
+
+    /* Images */
+
+    --img-top: url(../images/bg-pattern-top-mobile.svg);
+    --img-bottom: url(../images/bg-pattern-bottom-mobile.svg);
+
+    --border-radius: 0.5rem;
+}
+
+body {
+    background: var(--img-bottom) bottom right no-repeat,
+        var(--img-top) top left no-repeat;
+
+    min-height: 100vh;
+
+    margin: auto 1.5rem;
+
+    font-family: "League Spartan", sans-serif;
+
+    display: grid;
+    place-content: center;
+}
+
+main {
+}
+
+.page-header {
+    margin-bottom: 2.4375rem;
+    text-align: var(--text-align-header);
+}
+.page__heading {
+    font-size: var(--fs-header);
+    font-weight: var(--fw-header);
+    line-height: var(--lh-header);
+    letter-spacing: var(--ls-header);
+
+    color: var(--col-primary-very-dark-magenta);
+
+    margin-bottom: 1rem;
+}
+
+.page__body {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-body);
+    line-height: var(--lh-body);
+    letter-spacing: var(--ls-body);
+
+    color: var(--col-neutral-dark-grayish-magenta);
+}
+
+.ratings {
+    margin-bottom: 3.0625rem;
+}
+
+.rating-box {
+    font-size: var(--fs-rating);
+    font-weight: var(--fw-rating);
+    line-height: var(--lh-rating);
+    color: var(--col-primary-very-dark-magenta);
+
+    background-color: var(--col-neutral-light-grayish-magenta);
+    margin-bottom: 1rem;
+    text-align: center;
+
+    border-radius: var(--border-radius);
+
+    padding: 1rem 3.4375rem;
+}
+
+.rating-box:last-of-type {
+    margin-bottom: unset;
+}
+
+.rating-box__ratings {
+    margin-bottom: 0.9519rem;
+}
+
+.rating-box__rated-by {
+}
+
+.reviews {
+}
+.card-review {
+    background-color: var(--col-primary-very-dark-magenta);
+    padding: 2.5rem 2rem 2.1875rem 2rem;
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius);
+}
+
+.card-review:last-of-type {
+    margin-bottom: 0;
+}
+
+.reviewer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1.4375rem;
+}
+
+.reviewer__image {
+    border-radius: 2.5rem;
+    height: 2.5rem;
+}
+
+.reviewer__block {
+    margin-left: 1.4375rem;
+}
+.reviewer__name {
+    font-size: var(--fs-name);
+    font-weight: var(--fw-name);
+    line-height: var(--lh-name);
+
+    color: var(--col-neutral-white);
+
+    margin-bottom: 0.25rem;
+}
+.reviewer__status {
+    font-size: var(--fs-buyer);
+    font-weight: var(--fw-buyer);
+    line-height: var(--lh-buyer);
+
+    color: var(--col-primary-soft-pink);
+}
+
+.reviewer__quote {
+    font-size: var(--fs-quote);
+    font-weight: var(--fw-quote);
+    line-height: var(--lh-quote);
+    letter-spacing: var(--ls-quote);
+
+    color: var(--col-neutral-white);
+}
+
+.reviewer__quote::before {
+    content: "“";
+}
+
+.reviewer__quote::after {
+    content: "”";
 }
 
 @media screen and (min-width: 800px) {
     :root {
         /* Typography */
-        --fs-header: 3rem;
+        --fs-header: 3.5rem;
         --lh-header: 3rem;
-        --ls-header: -1.71429px;
+        --ls-header: -2px;
+
+        --text-align-header: unset;
+
+        /* Images */
+
+        --img-top: url(../images/bg-pattern-top-desktop.svg);
+        --img-bottom: url(../images/bg-pattern-bottom-desktop.svg);
+    }
+
+    .page-header {
+        margin-bottom: unset;
     }
 }
