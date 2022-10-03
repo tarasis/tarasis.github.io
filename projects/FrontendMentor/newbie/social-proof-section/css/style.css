@@ -37,11 +37,11 @@
     --fw-rating: 700;
 
     --fs-name: 1.0625rem;
-    --lh-name: 0.9775rem; /* 1rem */
+    --lh-name: 1rem; /* 1rem */
     --fw-name: 700;
 
     --fs-buyer: 1.0625rem;
-    --lh-buyer: 0.9775rem; /* 1rem */
+    --lh-buyer: 1rem; /* 1rem */
     --fw-buyer: 400;
 
     --fs-quote: 1.0625rem;
@@ -55,6 +55,10 @@
     --img-bottom: url(../images/bg-pattern-bottom-mobile.svg);
 
     --border-radius: 0.5rem;
+
+    /* Sizing */
+
+    --max-width-main: 31.25rem;
 }
 
 body {
@@ -72,6 +76,7 @@ body {
 }
 
 main {
+    max-width: var(--max-width-main);
 }
 
 .page-header {
@@ -86,7 +91,7 @@ main {
 
     color: var(--col-primary-very-dark-magenta);
 
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem; /* 1rem;*/
 }
 
 .page__body {
@@ -114,7 +119,7 @@ main {
 
     border-radius: var(--border-radius);
 
-    padding: 1rem 3.4375rem;
+    padding: 1rem 3.4375rem 0.9375rem;
 }
 
 .rating-box:last-of-type {
@@ -123,13 +128,20 @@ main {
 
 .rating-box__ratings {
     margin-bottom: 0.9519rem;
+    margin-right: 0.5281rem;
 }
 
-.rating-box__rated-by {
+.rating-box__ratings img {
+    margin: 0;
+    padding: 0;
+    margin-right: 0.25rem;
 }
 
-.reviews {
+.rating-box__ratings img:last-of-type {
+    margin: 0;
+    margin-right: unset;
 }
+
 .card-review {
     background-color: var(--col-primary-very-dark-magenta);
     padding: 2.5rem 2rem 2.1875rem 2rem;
@@ -190,7 +202,7 @@ main {
     content: "”";
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
     :root {
         /* Typography */
         --fs-header: 3.5rem;
@@ -203,6 +215,105 @@ main {
 
         --img-top: url(../images/bg-pattern-top-desktop.svg);
         --img-bottom: url(../images/bg-pattern-bottom-desktop.svg);
+
+        /* Sizing */
+
+        --max-width-main: 68.75rem;
+    }
+
+    body {
+        /*
+        Following would have placement to match design
+        */
+        /* display: block;
+        margin: 7.375rem 165px 0 165px; */
+
+        margin: 0;
+    }
+
+    main {
+        /* remove if using the margins in the body */
+        margin-top: 0.9375rem;
+    }
+
+    .top-area {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        max-width: 68.75rem;
+        height: 15.3125rem;
+
+        margin-bottom: 4.4375rem;
+    }
+
+    .page-header {
+        width: 27.8125rem;
+    }
+
+    .ratings {
+        width: 33.75rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: unset;
+    }
+
+    .rating-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        padding: 1.25rem 4.9375rem 1.25rem 2rem;
+    }
+
+    .rating-box__ratings {
+        margin-bottom: unset;
+        margin-right: 2.0281rem;
+    }
+
+    .rating-box:first-of-type {
+        align-self: flex-start;
+    }
+
+    .rating-box:last-of-type {
+        align-self: flex-end;
+    }
+
+    .bottom-area {
+        height: 16.625rem;
+        /* max-width: 69.375rem; */
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: row;
+        gap: 1.875rem;
+        align-items: center;
+        height: 100%;
+    }
+
+    .card-review {
+        margin-bottom: unset;
+    }
+
+    .card-review:first-of-type {
+        align-self: start;
+    }
+
+    .card-review:last-of-type {
+        align-self: end;
+    }
+
+    .reviewer {
+        margin-bottom: 1.9375rem;
+    }
+
+    .reviewer__quote {
+        width: 29ch;
     }
 
     .page-header {
