@@ -1,0 +1,59 @@
+/*
+ * Design sizes:
+    Desktop: 1440x800
+    Mobile: 375x1530
+*/
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --col-primary-very-dark-magenta: hsl(300, 43%, 22%);
+    --col-primary-soft-pink: hsl(333, 80%, 67%);
+    --col-neutral-dark-grayish-magenta: hsl(303, 10%, 53%);
+    --col-neutral-light-grayish-magenta: hsl(300, 24%, 96%);
+    --col-neutral-white: hsl(0, 0%, 100%);
+
+    /* Typography */
+    --fs-header: 2rem;
+    --lh-header: 2rem;
+    --ls-header: -1.14286px;
+    --fw-header: 700;
+
+    --fs-body: 0.9375rem;
+    --lh-body: 1.5625rem;
+    --ls-body: -0.5px;
+    --fw-body: 500;
+
+    --fs-rating: 0.8125rem;
+    --lh-rating: 0.9375rem;
+    --fw-rating: 700;
+
+    --fs-name: 0.8125rem;
+    --lh-name: 0.9375rem;
+    --fw-name: 700;
+
+    --fs-buyer: 0.8125rem;
+    --lh-buyer: 0.9375rem;
+    --fw-buyer: 400;
+
+    --fs-quote: 0.8125rem;
+    --lh-quote: 1.375rem;
+    --ls-quote: -0.232143px;
+    --fw-quote: 500;
+}
+
+@media screen and (min-width: 800px) {
+    :root {
+        /* Typography */
+        --fs-header: 3rem;
+        --lh-header: 3rem;
+        --ls-header: -1.71429px;
+    }
+}
