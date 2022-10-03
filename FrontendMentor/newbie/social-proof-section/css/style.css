@@ -1,0 +1,322 @@
+/*
+ * Design sizes:
+ *   Desktop: 1440x800
+ *   Mobile: 375x1530
+*/
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --col-primary-very-dark-magenta: hsl(300, 44%, 22%);
+    --col-primary-soft-pink: hsl(334, 80%, 67%);
+    --col-neutral-dark-grayish-magenta: hsl(301, 10%, 53%);
+    --col-neutral-light-grayish-magenta: hsl(301, 23%, 96%);
+    --col-neutral-white: hsl(0, 0%, 100%);
+
+    /* Typography */
+    --fs-header: 2.5rem;
+    --lh-header: 2rem;
+    --ls-header: -1.43px; /*-1.42857px;*/
+    --fw-header: 700;
+    --text-align-header: center;
+
+    --fs-body: 1.1875rem;
+    --lh-body: 1.5625rem;
+    --ls-body: -0.633333px;
+    --fw-body: 500;
+
+    --fs-rating: 1.0625rem;
+    --lh-rating: 0.9775rem; /* 1rem */
+    --fw-rating: 700;
+
+    --fs-name: 1.0625rem;
+    --lh-name: 1rem; /* 1rem */
+    --fw-name: 700;
+
+    --fs-buyer: 1.0625rem;
+    --lh-buyer: 1rem; /* 1rem */
+    --fw-buyer: 400;
+
+    --fs-quote: 1.0625rem;
+    --lh-quote: 1.375rem;
+    --ls-quote: -0.303571px;
+    --fw-quote: 500;
+
+    /* Images */
+
+    --img-top: url(../images/bg-pattern-top-mobile.svg);
+    --img-bottom: url(../images/bg-pattern-bottom-mobile.svg);
+
+    --border-radius: 0.5rem;
+
+    /* Sizing */
+
+    --max-width-main: 31.25rem;
+}
+
+body {
+    background: var(--img-bottom) bottom right no-repeat,
+        var(--img-top) top left no-repeat;
+
+    min-height: 100vh;
+
+    margin: auto 1.5rem;
+
+    font-family: "League Spartan", sans-serif;
+
+    display: grid;
+    place-content: center;
+}
+
+main {
+    max-width: var(--max-width-main);
+}
+
+.page-header {
+    margin-bottom: 2.4375rem;
+    text-align: var(--text-align-header);
+}
+.page__heading {
+    font-size: var(--fs-header);
+    font-weight: var(--fw-header);
+    line-height: var(--lh-header);
+    letter-spacing: var(--ls-header);
+
+    color: var(--col-primary-very-dark-magenta);
+
+    margin-bottom: 1.5rem; /* 1rem;*/
+}
+
+.page__body {
+    font-size: var(--fs-body);
+    font-weight: var(--fw-body);
+    line-height: var(--lh-body);
+    letter-spacing: var(--ls-body);
+
+    color: var(--col-neutral-dark-grayish-magenta);
+}
+
+.ratings {
+    margin-bottom: 3.0625rem;
+}
+
+.rating-box {
+    font-size: var(--fs-rating);
+    font-weight: var(--fw-rating);
+    line-height: var(--lh-rating);
+    color: var(--col-primary-very-dark-magenta);
+
+    background-color: var(--col-neutral-light-grayish-magenta);
+    margin-bottom: 1rem;
+    text-align: center;
+
+    border-radius: var(--border-radius);
+
+    padding: 1rem 3.4375rem 0.9375rem;
+}
+
+.rating-box:last-of-type {
+    margin-bottom: unset;
+}
+
+.rating-box__ratings {
+    margin-bottom: 0.9519rem;
+    margin-right: 0.5281rem;
+}
+
+.rating-box__ratings img {
+    margin: 0;
+    padding: 0;
+    margin-right: 0.25rem;
+}
+
+.rating-box__ratings img:last-of-type {
+    margin: 0;
+    margin-right: unset;
+}
+
+.card-review {
+    background-color: var(--col-primary-very-dark-magenta);
+    padding: 2.5rem 2rem 2.1875rem 2rem;
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius);
+}
+
+.card-review:last-of-type {
+    margin-bottom: 0;
+}
+
+.reviewer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1.4375rem;
+}
+
+.reviewer__image {
+    border-radius: 2.5rem;
+    height: 2.5rem;
+}
+
+.reviewer__block {
+    margin-left: 1.4375rem;
+}
+.reviewer__name {
+    font-size: var(--fs-name);
+    font-weight: var(--fw-name);
+    line-height: var(--lh-name);
+
+    color: var(--col-neutral-white);
+
+    margin-bottom: 0.25rem;
+}
+.reviewer__status {
+    font-size: var(--fs-buyer);
+    font-weight: var(--fw-buyer);
+    line-height: var(--lh-buyer);
+
+    color: var(--col-primary-soft-pink);
+}
+
+.reviewer__quote {
+    font-size: var(--fs-quote);
+    font-weight: var(--fw-quote);
+    line-height: var(--lh-quote);
+    letter-spacing: var(--ls-quote);
+
+    color: var(--col-neutral-white);
+}
+
+.reviewer__quote::before {
+    content: "“";
+}
+
+.reviewer__quote::after {
+    content: "”";
+}
+
+@media screen and (min-width: 1200px) {
+    :root {
+        /* Typography */
+        --fs-header: 3.5rem;
+        --lh-header: 3rem;
+        --ls-header: -2px;
+
+        --text-align-header: unset;
+
+        /* Images */
+
+        --img-top: url(../images/bg-pattern-top-desktop.svg);
+        --img-bottom: url(../images/bg-pattern-bottom-desktop.svg);
+
+        /* Sizing */
+
+        --max-width-main: 68.75rem;
+    }
+
+    body {
+        /*
+        Following would have placement to match design
+        */
+        /* display: block;
+        margin: 7.375rem 165px 0 165px; */
+
+        margin: 0;
+    }
+
+    main {
+        /* remove if using the margins in the body */
+        margin-top: 0.9375rem;
+    }
+
+    .top-area {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        max-width: 68.75rem;
+        height: 15.3125rem;
+
+        margin-bottom: 4.4375rem;
+    }
+
+    .page-header {
+        width: 27.8125rem;
+    }
+
+    .ratings {
+        width: 33.75rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: unset;
+    }
+
+    .rating-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        padding: 1.25rem 4.9375rem 1.25rem 2rem;
+    }
+
+    .rating-box__ratings {
+        margin-bottom: unset;
+        margin-right: 2.0281rem;
+    }
+
+    .rating-box:first-of-type {
+        align-self: flex-start;
+    }
+
+    .rating-box:last-of-type {
+        align-self: flex-end;
+    }
+
+    .bottom-area {
+        height: 16.625rem;
+        /* max-width: 69.375rem; */
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: row;
+        gap: 1.875rem;
+        align-items: center;
+        height: 100%;
+    }
+
+    .card-review {
+        margin-bottom: unset;
+    }
+
+    .card-review:first-of-type {
+        align-self: start;
+    }
+
+    .card-review:last-of-type {
+        align-self: end;
+    }
+
+    .reviewer {
+        margin-bottom: 1.9375rem;
+    }
+
+    .reviewer__quote {
+        width: 29ch;
+    }
+
+    .page-header {
+        margin-bottom: unset;
+    }
+}
