@@ -1,0 +1,180 @@
+/*
+ * Design Sizing
+ *  Desktop 1440x810
+ *  Mobile 375x667
+ */
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+
+    --col-primary-light-cyan: hsl(193, 38%, 86%);
+    --col-primary-neon-green: hsl(150, 100%, 66%);
+
+    --col-neutral-grayish-blue: hsl(217, 19%, 38%);
+    --col-neutral-dark-grayish-blue: hsl(217, 19%, 24%);
+    --col-neutral-dark-blue: hsl(218, 23%, 16%);
+
+    /* Typography */
+
+    --fs-advice-title: 0.6875rem;
+    --lh-advice-title: 0.9375rem; /* or 15.03px */
+    --ls-advice-title: 0.2161rem;
+    --fw-advice-title: 800;
+    --text-align-advice-title: center;
+
+    --fs-advice-quote: 1.5rem;
+    --lh-advice-quote: 2.0625rem; /* or 32.78px */
+    --ls-advice-quote: -0.257143px; /* or -0.26px */
+    --text-align-advice-quote: center;
+
+    /* Styling */
+
+    /* Positioning */
+    --margin-top--advice__title: 2.5rem;
+    --margin-bottom--advice__title: 1.5rem;
+    --margin-bottom--advice__quote: 1.5rem;
+    --margin-bottom--advice__divider: 4rem;
+
+    --padding-sides--advice__section: 1.5rem;
+
+    --width--advice__button: 4rem;
+
+    /* Other */
+    --img-divider: url(images/pattern-divider-mobile.svg);
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: "Manrope", sans-serif;
+
+    background-color: var(--col-neutral-dark-blue);
+
+    display: grid;
+    place-content: center;
+
+    margin: auto 1rem;
+}
+
+.advice__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+    background-color: var(--col-neutral-dark-grayish-blue);
+
+    border-radius: 0.625rem;
+
+    padding: 0 var(--padding-sides--advice__section);
+
+    box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+
+    max-width: 33.75rem;
+}
+
+.advice__title {
+    font-size: var(--fs-advice-title);
+    line-height: var(--lh-advice-title);
+    letter-spacing: var(--ls-advice-title);
+
+    color: var(--col-primary-neon-green);
+
+    text-transform: uppercase;
+
+    text-align: var(--text-align-advice-title);
+
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.advice__quote {
+    font-size: var(--fs-advice-quote);
+    line-height: var(--lh-advice-quote);
+    letter-spacing: var(--ls-advice-quote);
+
+    color: var(--col-primary-light-cyan);
+
+    text-align: var(--text-align-advice-quote);
+
+    margin-bottom: 1.5rem;
+}
+
+.advice__divider {
+    margin-bottom: 4rem;
+}
+
+.advice__button {
+    background-color: var(--col-primary-neon-green);
+    border: none;
+    border-radius: 50%;
+
+    width: var(--width--advice__button);
+    aspect-ratio: 1;
+
+    cursor: pointer;
+
+    position: absolute;
+    bottom: calc(var(--width--advice__button) / -2);
+}
+
+.advice__button:is(:focus, :hover) {
+    box-shadow: 0px 0px 40px #53ffaa;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animate {
+        animation: none;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .animate {
+        animation: roll 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+}
+
+@keyframes roll {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (min-width: 800px) {
+    :root {
+        /* Colors */
+
+        /* Typography */
+        --fs-advice-title: 0.8125rem;
+        --lh-advice-title: 1.125rem; /* or 17.76px */
+        --ls-advice-title: 0.2554rem; /* or 4.09px */
+
+        --fs-advice-quote: 1.75rem;
+        --lh-advice-quote: 2.375rem; /* or 38.25px */
+        --ls-advice-quote: -0.3px; /* or -0.26px */
+
+        /* Styling */
+
+        /* Positioning */
+        --margin-top--advice__title: 3rem;
+        --margin-bottom--advice__quote: 2.5rem;
+        --margin-bottom--advice__divider: 4.5rem;
+
+        --padding-sides--advice__section: 3rem;
+
+        /* Other */
+        --img-divider: url(images/pattern-divider-desktop.svg);
+    }
+}

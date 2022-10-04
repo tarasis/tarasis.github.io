@@ -1,0 +1,28 @@
+/*
+ * Sizing
+ * Desktop: 1440x800
+ * Mobile: 375x800
+*/
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+
+    --col-primary-desaturated-red: hsl(0, 36%, 70%);
+    --col-primary-soft-red: hsl(0, 93%, 68%);
+    --col-neutral-dark-grayish-red: hsl(0, 6%, 24%);
+
+    --gradient-white: ;
+    --gardient-pink: ;
+
+    /* Typography */
+
+    /* Sizing */
+}
