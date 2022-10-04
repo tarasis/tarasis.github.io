@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
   <title>Frontend Mentor | Advice generator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -32,15 +33,12 @@
 
   <section class="advice__section">
     <header>
-      <h1 class="advice__title">
-        <!-- Advice ID goes here -->
-        Advice #
+      <h1 id="advice__title" class="advice__title">
       </h1>
     </header>
     <blockquote>
-      <p class="advice__quote">
-        “
-        <!-- Advice text goes here -->”
+      <p id="advice__quote" class="advice__quote">
+        “!! LOADING !!”
       </p>
     </blockquote>
 
@@ -48,7 +46,7 @@
       <source srcset="images/pattern-divider-desktop.svg" media="(min-width: 1000px)" />
       <img src="images/pattern-divider-mobile.svg" aria-hidden="true" alt="" class="advice__divider" />
     </picture>
-    <button class="advice__button" aria-label="Retrieve random advice">
+    <button id="advice__button" class="advice__button" aria-label="Retrieve random advice">
       <img src="images/icon-dice.svg" alt="Dice icon" srcset="" aria-hidden="true">
     </button>
   </section>

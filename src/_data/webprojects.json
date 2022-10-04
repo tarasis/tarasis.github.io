@@ -8,6 +8,24 @@
             "cssClass": "",
             "difficulty": [
                 {
+                    "title": "Junior",
+                    "cssClass": "frontEndMentorChallenges",
+                    "challenges": [
+                        {
+                            "title": "Advice Generator App",
+                            "url": "/FrontendMentor/junior/advice-generator-app/",
+                            "description": "",
+                            "techUsed": [
+                                "html5",
+                                "css3",
+                                "js"
+                            ],
+                            "screenshotURL": "/FrontendMentor/junior/advice-generator-app/screenshots/mobile.png",
+                            "screenshotAltText": "Advice Generator App"
+                        }
+                    ]
+                },
+                {
                     "title": "Newbie",
                     "cssClass": "frontEndMentorChallenges",
                     "challenges": [
@@ -158,11 +176,6 @@
                             "screenshotAltText": "The Huddle Landing Page Challenge from FrontendMentor, with a single introductory section."
                         }
                     ]
-                },
-                {
-                    "title": "Junior",
-                    "cssClass": "frontEndMentorChallenges",
-                    "challenges": []
                 },
                 {
                     "title": "Intermediate",
