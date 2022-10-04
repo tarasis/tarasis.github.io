@@ -122,6 +122,13 @@ main {
     padding: 1rem 3.4375rem 0.9375rem;
 }
 
+.rating-box__rated-by {
+    font-size: var(--fs-rating);
+    font-weight: var(--fw-rating);
+    line-height: var(--lh-rating);
+    color: var(--col-primary-very-dark-magenta);
+}
+
 .rating-box:last-of-type {
     margin-bottom: unset;
 }
