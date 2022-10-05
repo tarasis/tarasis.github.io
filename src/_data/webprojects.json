@@ -30,6 +30,17 @@
                     "cssClass": "frontEndMentorChallenges",
                     "challenges": [
                         {
+                            "title": "QR Code Component",
+                            "url": "/FrontendMentor/newbie/qr-code-component/",
+                            "description": "",
+                            "techUsed": [
+                                "html5",
+                                "css3"
+                            ],
+                            "screenshotURL": "/FrontendMentor/newbie/qr-code-component/screenshots/desktop.png",
+                            "screenshotAltText": "QR Code Component Challenge from FrontendMentor"
+                        },
+                        {
                             "title": "Social Proof Section",
                             "url": "/FrontendMentor/newbie/social-proof-section/",
                             "description": "",
