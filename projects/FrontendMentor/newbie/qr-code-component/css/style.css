@@ -1,0 +1,98 @@
+/*
+ * design sizing
+ *  Desktop: 1440x800
+ *  Mobile: 375x667
+ */
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --col-primary-dark-blue: hsl(218, 44%, 22%);
+    --col-primary-grayish-blue: hsl(220, 15%, 55%);
+    --col-neutral-white: hsl(0, 0%, 100%);
+    --col-neutral-light-gray: hsl(212, 45%, 89%);
+
+    --col-page-background: var(--col-neutral-light-gray);
+    --col-card-background: var(--col-neutral-white);
+    --col-heading: var(--col-primary-dark-blue);
+    --col-body: var(--col-primary-grayish-blue);
+
+    /* Typography */
+    --fs-heading: 1.375rem;
+    --lh-heading: 1.75rem;
+    --fw-heading: 700;
+
+    --fs-body: 0.9375rem;
+    --lh-body: 1.1875rem;
+    --fw-body: 400;
+    --ls-body: 0.1875px;
+
+    /* Styling */
+    --border-radius--outer: 1.25rem;
+    --border-radius--inner: 0.625rem;
+    /* Positioning */
+    --width-qr-card__body: 26ch;
+
+    /* Other */
+    --img: url(images/image-qr-code.png);
+}
+
+body {
+    min-height: 100vh;
+
+    display: grid;
+    place-content: center;
+
+    background-color: var(--col-page-background);
+}
+
+.qr-card {
+    font-family: "Outfit", sans-serif;
+
+    background-color: var(--col-card-background);
+    border-radius: var(--border-radius--outer);
+
+    padding: 1rem 1rem 2.5rem 1rem;
+
+    width: 20rem;
+
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.qr-card__img {
+    border-radius: var(--border-radius--inner);
+    margin-bottom: 1.5rem;
+
+    width: 100%;
+}
+
+.qr-card__heading {
+    color: var(--col-heading);
+    font-size: var(--fs-heading);
+    font-weight: var(--fw-heading);
+    line-height: var(--lh-heading);
+    text-align: center;
+
+    margin-bottom: 1rem;
+}
+
+.qr-card__body {
+    color: var(--col-body);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-body);
+    line-height: var(--lh-body);
+    letter-spacing: var(--ls-body);
+
+    text-align: center;
+
+    width: var(--width-qr-card__body);
+}
