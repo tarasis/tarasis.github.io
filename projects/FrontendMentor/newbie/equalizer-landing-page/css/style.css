@@ -1,0 +1,15 @@
+/*
+ * Sizings
+ *
+ * Desktop: 1440x1832
+ * Tablet: 768x1781
+ * Mobile: 375x1945
+*/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
