@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+
 /*
  * Sizings
  *
@@ -12,4 +14,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root {
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+@media screen and (min-width: 700px) {
+}
+
+@media screen and (min-width: 1400px) {
 }
