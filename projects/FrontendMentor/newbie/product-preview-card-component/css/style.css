@@ -204,6 +204,8 @@ body {
         --margin-bottom-product-card__name: 1.5rem;
         --margin-bottom-product-card__description: 1.8125rem;
         --margin-bottom-product-card__description: 1.875rem;
+
+        --margin-bottom-product-card__price-block: 1.8rem;
     }
 
     .product-card {
