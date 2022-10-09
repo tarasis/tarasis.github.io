@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "projects/FrontendMentor/junior/advice-generator-app"
 		}
 	],
 	"settings": {}

@@ -30,6 +30,18 @@
                     "cssClass": "frontEndMentorChallenges",
                     "challenges": [
                         {
+                            "title": "Product Preview Card Component",
+                            "url": "/FrontendMentor/newbie/product-preview-card-component/",
+                            "description": "",
+                            "techUsed": [
+                                "html5",
+                                "css3",
+                                "js"
+                            ],
+                            "screenshotURL": "/FrontendMentor/newbie/product-preview-card-component/screenshots/desktop.png",
+                            "screenshotAltText": "Product Preview Card Component Challenge from FrontendMentor"
+                        },
+                        {
                             "title": "QR Code Component",
                             "url": "/FrontendMentor/newbie/qr-code-component/",
                             "description": "",
