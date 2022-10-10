@@ -169,6 +169,14 @@ body {
 
     color: var(--col-price-old);
 }
+
+/* I tried using this but wasn't picked up in Safari / VoiceOver on macOS
+
+product-card__price-old::before {
+    content: "Old pricing was ";
+}
+*/
+
 .product-card__button-buy {
     font-family: var(--ff-button);
     font-size: var(--fs-button);
