@@ -17,6 +17,57 @@
 }
 
 :root {
+    /* Colors */
+    --col-cyan: hsla(177, 68%, 64%, 1);
+    --col-orange: hsla(33, 100%, 70%, 1);
+    --col-orangey-red: hsla(12, 94%, 65%, 1);
+    --col-off-white: hsla(20, 33%, 98%, 1);
+    --col-black: hsla(244, 23%, 12%, 1);
+    /* Typography */
+    --fw-400: 400;
+    --fw-700: 700;
+
+    --fs-header-page: 2.5rem;
+    --lh-header-page: 3rem;
+    --ls-header-page: -0.0284rem;
+    --fw-header-page: var(--fw-700);
+
+    --fs-header-card: 2rem;
+    --lh-header-card: 2.5rem;
+    --fw-header-card: var(--fw-700);
+
+    --fs-body-page: 1rem;
+    --lh-body-page: 1.625rem;
+    --fw-body-page: var(--fw-400);
+
+    --fs-body-card: 1.125rem;
+    --lh-body-card: 1.75rem;
+    --fw-body-card: var(--fw-400);
+
+    --fs-footer: 1rem;
+    --lh-footer: 1.625rem;
+    --fw-footer: var(--fw-400);
+
+    --fs-price: 4.0625rem;
+    --lh-price: 3.25rem;
+    --fw-price: var(--fw-700);
+
+    --fs-term: 1.25rem;
+    --lh-term: 2rem;
+    --fw-term: var(--fw-400);
+    --ls-term: -0.0125rem;
+
+    --fs-button: 1.125rem;
+    --lh-button: 2rem;
+    --ls-button: -0.0112rem;
+    --fw-button: var(--fw-700);
+
+    /* Other */
+    --image-background: url(../assets/bg-main-mobile.png);
+    --image-page-background: none;
+    --image-card-background: url(../assets/bg-pattern-2.svg);
+
+    --border-radius: 0.75rem;
 }
 
 body {
@@ -25,8 +76,169 @@ body {
     font-family: "IBM Plex Sans", sans-serif;
 }
 
+header {
+    position: relative;
+    background-position: right;
+    background-image: var(--image-background);
+
+    padding: 0 1.5rem;
+}
+
+.logo {
+    margin-top: 2.5rem;
+}
+.intro-section {
+    margin-top: 3.6875rem; /* per design ...4rem; */
+
+    padding: 0 1.5rem;
+}
+.page-header {
+    font-size: var(--fs-header-page);
+    line-height: var(--lh-header-page);
+    letter-spacing: var(--ls-header-page);
+    font-weight: var(--fw-header-page);
+}
+.main-body {
+    margin-top: 1.25rem;
+
+    font-size: var(--fs-body-page);
+    line-height: var(--lh-body-page);
+    font-weight: var(--fw-body-page);
+}
+.product-card {
+    margin-top: 34.125rem; /* ehh */
+    padding: 3rem 2.25rem 3rem 2.25rem;
+
+    color: var(--col-off-white);
+    background-color: var(--col-orangey-red);
+
+    border-radius: var(--border-radius);
+}
+.product-card__header {
+    font-size: var(--fs-header-card);
+    line-height: var(--lh-header-card);
+    font-weight: var(--fw-header-card);
+}
+.product-card__body {
+    margin-top: 0.75rem;
+
+    font-size: var(--fs-body-card);
+    line-height: var(--lh-body-card);
+    font-weight: var(--fw-body-card);
+}
+.price-block {
+    margin-top: 2.25rem;
+    padding-left: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.price-block__price {
+    font-size: var(--fs-price);
+    line-height: var(--lh-price);
+    font-weight: var(--fw-price);
+}
+.price-block__term {
+    font-size: var(--fs-term);
+    line-height: var(--lh-term);
+    letter-spacing: var(--ls-term);
+    font-weight: var(--fw-term);
+}
+.button-block {
+    margin-top: 2rem;
+    padding-left: 0.5rem;
+}
+
+.button + .button {
+    margin-top: 1rem;
+}
+
+.button {
+    font-size: var(--fs-button);
+    line-height: var(--lh-button);
+    font-weight: var(--fw-button);
+
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding: 0.9375rem 0;
+
+    border-radius: var(--border-radius);
+}
+
+.button-ios {
+    background-color: var(--col-black);
+    color: var(--col-off-white);
+}
+
+.button-android {
+    background-color: var(--col-off-white);
+    color: var(--col-black);
+}
+
+.button-ios:is(:hover, :focus) {
+    background-color: var(--col-cyan);
+}
+.button-android:is(:hover, :focus) {
+    background-color: var(--col-orange);
+}
+
+footer {
+    margin-top: 3.75rem; /* per design 4rem; */
+
+    padding: 0 1.5rem;
+}
+
+.logo-footer {
+    margin-bottom: 1.8125rem; /* per design 2rem; */
+}
+.footer__body {
+    font-size: var(--fs-footer);
+    font-weight: var(--fw-footer);
+    line-height: var(--lh-footer);
+    width: 30ch;
+
+    margin-bottom: 4rem;
+}
+.footer__email {
+    font-weight: var(--fw-700);
+}
+.social-image-block {
+    display: flex;
+    gap: 1.25rem;
+}
+
 @media screen and (min-width: 700px) {
+    :root {
+        --fs-header-page: 4rem;
+        --lh-header-page: 4rem;
+        --ls-header-page: -0.0456rem;
+
+        --fs-body-page: 1.125rem;
+        --lh-body-page: 1.75rem;
+
+        --image-background: url(../assets/bg-main-tablet.png);
+        --image-page-background: url(../assets/bg-pattern-1.svg);
+    }
 }
 
 @media screen and (min-width: 1400px) {
+    :root {
+        --fs-header-page: 5.5rem;
+        --lh-header-page: 5.5rem;
+        --ls-header-page: -0.0625rem;
+
+        --fs-header-card: 2.5rem;
+        --lh-header-card: 3.25rem;
+
+        --fs-body: 1.25rem;
+        --lh-body: 2.125rem;
+
+        --image-background: url(../assets/bg-main-desktop.png);
+    }
 }

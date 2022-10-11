@@ -14,35 +14,39 @@
 <body>
 
   <header>
-    <img src="assets/logo.svg" alt="equalizer company logo">
+    <img class="logo" src="assets/logo.svg" alt="equalizer company logo">
   </header>
 
   <main>
-    <section>
-      <h1>We make your music sound extraordinary.</h1>
+    <section class="intro-section">
+      <h1 class="page-header">We make your music sound extraordinary.</h1>
 
-      <p>
+      <p class="main-body">
         A system audio equalizer specifically designed for Android and iOS. Freely tune the
         way your music sounds with a professional grade parametric EQ & volume mixer. Control
         bass, mids, treble, gain control, reverb, and more!
       </p>
 
     </section>
-    <section>
-      <h2>Premium EQ</h2>
+    <section class="product-card">
+      <h2 class="product-card__header">Premium EQ</h2>
 
-      <p>
+      <p class="product-card__body">
         Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take
         your listening experience to a whole new level and access all our incredible features!
       </p>
 
-      <div class="price-block">
-        $4 <span>/ month</span>
-      </div>
+      <p class="price-block">
+        <span class="price-block__price">$4</span> <span class="price-block__term">/ month</span>
+      </p>
 
       <div class="button-block">
-        <a href="#">iOS Download</a>
-        <a href="#">Android Download</a>
+        <a class="button button-ios" href="#">
+          <img src="assets/icon-apple.svg" alt="Apple Logo" aria-hidden="true">
+          iOS Download</a>
+        <a class="button button-android" href="#">
+          <img src="assets/icon-android.svg" alt="Android Logo" aria-hidden="true">
+          Android Download</a>
       </div>
     </section>
   </main>
@@ -50,11 +54,12 @@
 
   <footer>
 
-    <img src="assets/logo.svg" alt="equalizer company logo">
+    <img class="logo-footer" src="assets/logo.svg" alt="equalizer company logo">
 
-    <p>
+    <p class="footer__body">
       All rights reserved © Equalizer 2021
-      Have any problems? Contact us via social media or email us at <span>equalizer@example.com</span>
+      Have any problems? Contact us via social media or email us at <span
+        class="footer__email">equalizer@example.com</span>
     </p>
 
     <div class="social-image-block">
