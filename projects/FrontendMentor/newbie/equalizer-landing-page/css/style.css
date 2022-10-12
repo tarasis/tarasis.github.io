@@ -96,13 +96,13 @@ header {
 
     padding: 0 1.5rem;
 }
-.page-header {
+.intro-section__header {
     font-size: var(--fs-header-page);
     line-height: var(--lh-header-page);
     letter-spacing: var(--ls-header-page);
     font-weight: var(--fw-header-page);
 }
-.main-body {
+.intro-section__body {
     margin-top: 1.25rem;
 
     font-size: var(--fs-body-page);
@@ -110,6 +110,7 @@ header {
     font-weight: var(--fw-body-page);
 }
 .product-card {
+    margin: auto;
     margin-top: 34.125rem; /* ehh */
     padding: 3rem 2.25rem 2.875rem 2.25rem;
 
@@ -119,11 +120,13 @@ header {
     border-radius: var(--border-radius);
 
     position: relative;
+
+    max-width: 25rem;
 }
 
 .product-card__image {
     position: absolute;
-    width: 208.97px;
+    width: 13.0606rem;
     margin: -33rem 3rem;
 }
 
@@ -131,7 +134,7 @@ header {
     position: absolute;
     z-index: -1;
     background-color: #191826;
-    background-image: url(../assets/bg-pattern-2.svg);
+    background-image: var(--image-card-background);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: 17.5rem;
@@ -217,13 +220,13 @@ header {
     background-color: var(--col-orange);
 }
 
-footer {
+.footer {
     margin-top: 3.875rem; /* per design 4rem; */
 
     padding: 0 1.5rem;
 }
 
-.logo-footer {
+.footer__logo {
     margin-bottom: 1.8125rem; /* per design 2rem; */
 }
 .footer__body {
@@ -237,12 +240,22 @@ footer {
 .footer__email {
     font-weight: var(--fw-700);
 }
-.social-image-block {
+.footer__social-block {
     display: flex;
     gap: 1.25rem;
+    align-items: center;
 }
 
-@media screen and (min-width: 700px) {
+.footer__social-block a {
+    color: black;
+}
+
+.footer__social-block svg:is(:hover, :focus) {
+    /* fill: currentColor; */
+    color: var(--col-orangey-red);
+}
+
+@media screen and (min-width: 750px) {
     :root {
         --fs-header-page: 4rem;
         --lh-header-page: 4rem;
@@ -256,7 +269,7 @@ footer {
     }
 
     body {
-        background-position: 13rem -2rem;
+        background-position: -25rem -18rem;
     }
 
     header::before {
@@ -265,8 +278,8 @@ footer {
         background-position: top right;
         background-repeat: no-repeat;
         background-size: 16.666875rem;
-        top: -32px;
-        left: 36px;
+        top: -2rem;
+        left: 2.25rem;
         width: 100%;
         height: 500%;
         content: " ";
@@ -280,30 +293,32 @@ footer {
     }
 
     .intro-section {
-        margin-top: 90px;
+        margin-top: 5.625rem;
         width: 61ch;
 
         padding: 0 2.4375rem;
     }
 
-    .main-body {
+    .intro-section__body {
         margin-top: 1.75rem;
     }
 
     .product-card::before {
-        top: -150px;
+        top: -9.375rem;
         left: -14.9375rem;
-        width: 699px;
-        height: 600px;
+        width: 43.6875rem;
+        height: 37.5rem;
 
-        background-position: 230px -30px;
+        background-position: 14.375rem -1.875rem;
     }
     .product-card {
-        margin-top: 400px;
+        margin-top: 25rem;
         width: 24.9375rem;
         margin-left: 17rem;
 
         padding: 3rem 3rem 2.875rem 3rem;
+
+        max-width: unset;
     }
 
     .product-card__image {
@@ -312,9 +327,9 @@ footer {
         z-index: -1;
     }
 
-    footer {
-        margin-top: 87px;
-        padding: 0 33px;
+    .footer {
+        margin-top: 85px;
+        padding: 0 2.0625rem;
 
         position: relative;
     }
@@ -323,10 +338,10 @@ footer {
         width: 40ch;
     }
 
-    .social-image-block {
+    .footer__social-block {
         position: absolute;
-        right: 39px;
-        bottom: 33px;
+        right: 2.4375rem;
+        bottom: 1.75rem;
     }
 }
 
@@ -339,8 +354,8 @@ footer {
         --fs-header-card: 2.5rem;
         --lh-header-card: 3.25rem;
 
-        --fs-body: 1.25rem;
-        --lh-body: 2.125rem;
+        --fs-body-page: 1.25rem;
+        --lh-body-page: 2.125rem;
 
         --fs-body-card: 1.25rem;
         --lh-body-card: 2.125rem;
@@ -348,56 +363,56 @@ footer {
         --image-background: url(../assets/bg-main-desktop.png);
     }
 
+    body {
+        background-position: -20rem -15rem;
+    }
+
     header::before {
-        top: -35px;
+        top: -2.1875rem;
         left: 0;
         background-size: auto;
     }
 
     header {
-        padding: 0 165.15px;
+        padding: 0 10.3219rem;
     }
 
     .intro-section {
-        margin-top: 125.01px;
-        padding: 0 165.15px;
+        margin-top: 7.8131rem;
+        padding: 0 10.3219rem;
 
         width: 130ch;
     }
 
-    .main-body {
-        margin-top: 40px;
-
-        font-size: var(--fs-body);
-        line-height: var(--lh-body);
+    .intro-section__body {
+        margin-top: 2.5rem;
 
         width: 70ch;
     }
 
     .product-card::before {
         background-size: 19.5rem;
-        background-position: 333px -40px;
-        width: 1110px;
-        top: -90px;
-        left: -570px;
+        background-position: 20.8125rem -2.5rem;
+        width: 69.375rem;
+        top: -5.625rem;
+        left: -35.625rem;
     }
 
     .product-card {
-        margin-top: 411px;
-        width: 446px;
+        margin-top: 25.6875rem;
+        width: 27.875rem;
         margin-left: 46rem;
 
-        padding: 58px 59px 48px 54px;
+        padding: 3.625rem 3.6875rem 3rem 3.375rem;
     }
 
     .product-card__image {
         width: 19.5rem;
-        margin: -362px -525px;
+        margin: -22.625rem -32.8125rem;
     }
 
     .product-card__body {
-        margin-top: 22px;
-        width: ;
+        margin-top: 1.375rem;
     }
 
     .price-block {
@@ -405,30 +420,29 @@ footer {
     }
 
     .button-block {
-        margin-top: 46px;
+        margin-top: 2.875rem;
         padding: unset;
     }
 
-    footer {
+    .footer {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .logo-footer {
-        /* margin-left: initial; */
+    .footer__logo {
         align-self: flex-start;
         height: 100%;
-        margin-right: 137px;
+        margin-right: 8.5625rem;
         margin-bottom: unset;
     }
 
     .footer__body {
         margin-bottom: 0;
-        margin-right: 340px;
+        margin-right: 21.25rem;
     }
 
-    .social-image-block {
+    .footer__social-block {
         position: relative;
         right: initial;
         bottom: initial;
