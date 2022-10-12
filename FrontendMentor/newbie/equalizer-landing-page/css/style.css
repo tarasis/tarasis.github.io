@@ -17,16 +17,435 @@
 }
 
 :root {
+    /* Colors */
+    --col-cyan: hsla(177, 68%, 64%, 1);
+    --col-orange: hsla(33, 100%, 70%, 1);
+    --col-orangey-red: hsla(12, 94%, 65%, 1);
+    --col-off-white: hsl(20, 33%, 98%);
+    --col-black: hsla(244, 23%, 12%, 1);
+    /* Typography */
+    --fw-400: 400;
+    --fw-700: 700;
+
+    --fs-header-page: 2.5rem;
+    --lh-header-page: 3rem;
+    --ls-header-page: -0.0284rem;
+    --fw-header-page: var(--fw-700);
+
+    --fs-header-card: 2rem;
+    --lh-header-card: 2.5rem;
+    --fw-header-card: var(--fw-700);
+
+    --fs-body-page: 1rem;
+    --lh-body-page: 1.625rem;
+    --fw-body-page: var(--fw-400);
+
+    --fs-body-card: 1.125rem;
+    --lh-body-card: 1.75rem;
+    --fw-body-card: var(--fw-400);
+
+    --fs-footer: 1rem;
+    --lh-footer: 1.625rem;
+    --fw-footer: var(--fw-400);
+
+    --fs-price: 4.0625rem;
+    --lh-price: 3.25rem;
+    --fw-price: var(--fw-700);
+
+    --fs-term: 1.25rem;
+    --lh-term: 2rem;
+    --fw-term: var(--fw-400);
+    --ls-term: -0.0125rem;
+
+    --fs-button: 1.125rem;
+    --lh-button: 2rem;
+    --ls-button: -0.0112rem;
+    --fw-button: var(--fw-700);
+
+    /* Other */
+    --image-background: url(../assets/bg-main-mobile.png);
+    --image-page-background: none;
+    --image-card-background: url(../assets/bg-pattern-2.svg);
+
+    --border-radius: 0.75rem;
 }
 
 body {
     min-height: 100vh;
 
     font-family: "IBM Plex Sans", sans-serif;
+
+    background-image: var(--image-background);
+    background-repeat: no-repeat;
+    background-position: 1.875rem -16.875rem;
+
+    background-color: #f2f2f2;
 }
 
-@media screen and (min-width: 700px) {
+header {
+    position: relative;
+
+    padding: 0 1.5rem;
+}
+
+.logo {
+    margin-top: 2.5rem;
+}
+.intro-section {
+    margin-top: 3.6875rem; /* per design ...4rem; */
+
+    padding: 0 1.5rem;
+}
+.intro-section__header {
+    font-size: var(--fs-header-page);
+    line-height: var(--lh-header-page);
+    letter-spacing: var(--ls-header-page);
+    font-weight: var(--fw-header-page);
+}
+.intro-section__body {
+    margin-top: 1.25rem;
+
+    font-size: var(--fs-body-page);
+    line-height: var(--lh-body-page);
+    font-weight: var(--fw-body-page);
+}
+.product-card {
+    margin: auto;
+    margin-top: 34.125rem; /* ehh */
+    padding: 3rem 2.25rem 2.875rem 2.25rem;
+
+    color: var(--col-off-white);
+    background-color: var(--col-orangey-red);
+
+    border-radius: var(--border-radius);
+
+    position: relative;
+
+    max-width: 25rem;
+}
+
+.product-card__image {
+    position: absolute;
+    width: 13.0606rem;
+    margin: -33rem 3rem;
+}
+
+.product-card::before {
+    position: absolute;
+    z-index: -1;
+    background-color: #191826;
+    background-image: var(--image-card-background);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 17.5rem;
+    top: -23.8rem;
+    left: -0px;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+}
+
+.product-card__header {
+    font-size: var(--fs-header-card);
+    line-height: var(--lh-header-card);
+    font-weight: var(--fw-header-card);
+}
+.product-card__body {
+    margin-top: 0.75rem;
+
+    font-size: var(--fs-body-card);
+    line-height: var(--lh-body-card);
+    font-weight: var(--fw-body-card);
+}
+.price-block {
+    margin-top: 2.25rem;
+    padding-left: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.price-block__price {
+    font-size: var(--fs-price);
+    line-height: var(--lh-price);
+    font-weight: var(--fw-price);
+}
+.price-block__term {
+    font-size: var(--fs-term);
+    line-height: var(--lh-term);
+    letter-spacing: var(--ls-term);
+    font-weight: var(--fw-term);
+}
+.button-block {
+    margin-top: 2rem;
+    padding-left: 0.5rem;
+}
+
+.button + .button {
+    margin-top: 1rem;
+}
+
+.button {
+    font-size: var(--fs-button);
+    line-height: var(--lh-button);
+    font-weight: var(--fw-button);
+
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding: 0.9375rem 0;
+
+    border-radius: var(--border-radius);
+}
+
+.button-ios {
+    background-color: var(--col-black);
+    color: var(--col-off-white);
+}
+
+.button-android {
+    background-color: var(--col-off-white);
+    color: var(--col-black);
+}
+
+.button-ios:is(:hover, :focus) {
+    background-color: var(--col-cyan);
+}
+.button-android:is(:hover, :focus) {
+    background-color: var(--col-orange);
+}
+
+.footer {
+    margin-top: 3.875rem; /* per design 4rem; */
+
+    padding: 0 1.5rem;
+}
+
+.footer__logo {
+    margin-bottom: 1.8125rem; /* per design 2rem; */
+}
+.footer__body {
+    font-size: var(--fs-footer);
+    font-weight: var(--fw-footer);
+    line-height: var(--lh-footer);
+    width: 32ch;
+
+    margin-bottom: 4rem;
+}
+.footer__email {
+    font-weight: var(--fw-700);
+}
+.footer__social-block {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.footer__social-block a {
+    color: black;
+}
+
+.footer__social-block svg:is(:hover, :focus) {
+    /* fill: currentColor; */
+    color: var(--col-orangey-red);
+}
+
+@media screen and (min-width: 750px) {
+    :root {
+        --fs-header-page: 4rem;
+        --lh-header-page: 4rem;
+        --ls-header-page: -0.0456rem;
+
+        --fs-body-page: 1.125rem;
+        --lh-body-page: 1.75rem;
+
+        --image-background: url(../assets/bg-main-tablet.png);
+        --image-page-background: url(../assets/bg-pattern-1.svg);
+    }
+
+    body {
+        background-position: -25rem -18rem;
+    }
+
+    header::before {
+        position: absolute;
+        background-image: var(--image-page-background);
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: 16.666875rem;
+        top: -2rem;
+        left: 2.25rem;
+        width: 100%;
+        height: 500%;
+        content: " ";
+    }
+    header {
+        padding: 0 2.4375rem;
+    }
+
+    .logo {
+        margin-top: 3.875rem;
+    }
+
+    .intro-section {
+        margin-top: 5.625rem;
+        width: 61ch;
+
+        padding: 0 2.4375rem;
+    }
+
+    .intro-section__body {
+        margin-top: 1.75rem;
+    }
+
+    .product-card::before {
+        top: -9.375rem;
+        left: -14.9375rem;
+        width: 43.6875rem;
+        height: 37.5rem;
+
+        background-position: 14.375rem -1.875rem;
+    }
+    .product-card {
+        margin-top: 25rem;
+        width: 24.9375rem;
+        margin-left: 17rem;
+
+        padding: 3rem 3rem 2.875rem 3rem;
+
+        max-width: unset;
+    }
+
+    .product-card__image {
+        width: 16.8881rem;
+        margin: -21rem -14rem;
+        z-index: -1;
+    }
+
+    .footer {
+        margin-top: 85px;
+        padding: 0 2.0625rem;
+
+        position: relative;
+    }
+
+    .footer__body {
+        width: 40ch;
+    }
+
+    .footer__social-block {
+        position: absolute;
+        right: 2.4375rem;
+        bottom: 1.75rem;
+    }
 }
 
 @media screen and (min-width: 1400px) {
+    :root {
+        --fs-header-page: 5.5rem;
+        --lh-header-page: 5.5rem;
+        --ls-header-page: -0.0625rem;
+
+        --fs-header-card: 2.5rem;
+        --lh-header-card: 3.25rem;
+
+        --fs-body-page: 1.25rem;
+        --lh-body-page: 2.125rem;
+
+        --fs-body-card: 1.25rem;
+        --lh-body-card: 2.125rem;
+
+        --image-background: url(../assets/bg-main-desktop.png);
+    }
+
+    body {
+        background-position: -20rem -15rem;
+    }
+
+    header::before {
+        top: -2.1875rem;
+        left: 0;
+        background-size: auto;
+    }
+
+    header {
+        padding: 0 10.3219rem;
+    }
+
+    .intro-section {
+        margin-top: 7.8131rem;
+        padding: 0 10.3219rem;
+
+        width: 130ch;
+    }
+
+    .intro-section__body {
+        margin-top: 2.5rem;
+
+        width: 70ch;
+    }
+
+    .product-card::before {
+        background-size: 19.5rem;
+        background-position: 20.8125rem -2.5rem;
+        width: 69.375rem;
+        top: -5.625rem;
+        left: -35.625rem;
+    }
+
+    .product-card {
+        margin-top: 25.6875rem;
+        width: 27.875rem;
+        margin-left: 46rem;
+
+        padding: 3.625rem 3.6875rem 3rem 3.375rem;
+    }
+
+    .product-card__image {
+        width: 19.5rem;
+        margin: -22.625rem -32.8125rem;
+    }
+
+    .product-card__body {
+        margin-top: 1.375rem;
+    }
+
+    .price-block {
+        padding: unset;
+    }
+
+    .button-block {
+        margin-top: 2.875rem;
+        padding: unset;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__logo {
+        align-self: flex-start;
+        height: 100%;
+        margin-right: 8.5625rem;
+        margin-bottom: unset;
+    }
+
+    .footer__body {
+        margin-bottom: 0;
+        margin-right: 21.25rem;
+    }
+
+    .footer__social-block {
+        position: relative;
+        right: initial;
+        bottom: initial;
+        height: 100%;
+    }
 }
