@@ -16,9 +16,6 @@ This is a solution to the [Equalizer landing page challenge on Frontend Mentor](
     - [Continued development](#continued-development)
     - [Useful resources](#useful-resources)
   - [Author](#author)
-  - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -31,23 +28,30 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Mobile](screenshots/mobile.png)
+![Tablet](screenshots/tablet.png)
+![Desktop](screenshots/desktop.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+This is completed challenges at the design file sizes.
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
+Despite somewhat pixel chasing towards the end, the comparison video of the build (left side of slider) vs design (right side of slider), I fell a little short.
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+[![Equalizer Landing Page Build vs Design Comparison](https://res.cloudinary.com/marcomontalbano/image/upload/v1665612622/video_to_markdown/images/youtube--kqLrR20VT8o-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=kqLrR20VT8o "Equalizer Landing Page Build vs Design Comparison")
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/tarasis/tarasis.github.io/tree/main/projects/FrontendMentor/newbie/equalizer-landing-page)
+- Live Site URL: [tarasis.github.io](https://tarasis.github.io/FrontendMentor/newbie/equalizer-landing-page/)
 
 ## My process
 
+My first step was to break down the design to establish that there were three sections of content + logo.
+
+After that I built out the properties I thought I would need. Then I build the mobile version. I did some initial fiddling with placement of the blurry background image but left chasing exactness till the end.
+
+At the end just for interest I ran my solution under Lighthouse, and got a favorable report.
+
+![Lighthouse report for desktop version](screenshots/lighthouse.png)
 ### Built with
 
 - Semantic HTML5 markup
@@ -55,44 +59,33 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-To only be so beholden to the design. If I was in a position to I would be actively going to the designer to ask why certain padding areas are uneven (for instance the product card, the left/right padding is odd  / unbalanced. Particularly around the price block, where for tablet and mobile its more indented)
+To only be so beholden to the design. If I was in a position to I would be actively going to the designer to ask why certain padding areas are uneven (for instance the product card, the left/right padding is odd  / unbalanced. Particularly around the price block, where for tablet and mobile its more indented).
 
+After that I built out the tablet, then desktop. Making as few tweaks as possible from one to the next.
+
+At the end I realized that really I had built it to match the design sizes, and not really be responsive in the between sizes. Its okay from Mobile to Tablet, but it leaves a lot to design for Tablet to Desktop and beyond.
+
+It was at this point that I realized I may have tackled the middle section the wrong way around.
+
+For the middle I built out a `Product Card`, the reddish card. Then added the black box and the image of the phone using the `::before` pseudo selector. Because of that "placing" the `Product Card` requires shifting with `margin-left`, which means I can't do `margin: 0 auto` to auto center along the x axis.
+
+If I had built it the other way around, where I made the black area a `Product Area`, then had the phone image, and the red `Product Card` come off the black box, I could then have used `margin: 0 auto` on the black card and had it nicely centered as I moved up from Tablet to Desktop.
+
+Not sure what approach I would take to handle beyond 1600px in terms of clamping the top logo, then right side image and the intro section.
 
 ### Continued development
 
+Take another crack at building the product area and consider different approaches for handling large desktop image sizes.
 
 ### Useful resources
 
-This article for reminding me how to do a fake background card
-
-https://chenhuijing.com/blog/css-card-shadow-effects/#%F0%9F%A6%8A
-
-
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+The [CSS Card Shadow Effects](https://chenhuijing.com/blog/css-card-shadow-effects/#%F0%9F%A6%8A) article was helpful for reminding me how to do a fake background card.
 
 ## Author
 
 - Website - [Robert McGovern](https://tarasis.net)
 - Frontend Mentor - [@tarasis](https://www.frontendmentor.io/profile/tarasis)
 - Twitter - [@tarasis](https://www.twitter.com/tarasis)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
-
-----
-
-NOTES
-
-Lighthouse notes that the offwhite on redish isn't a good contract.
