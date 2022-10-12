@@ -30,6 +30,17 @@
                     "cssClass": "frontEndMentorChallenges",
                     "challenges": [
                         {
+                            "title": "equalizer Landing Page",
+                            "url": "/FrontendMentor/newbie/equalizer-landing-page/",
+                            "description": "",
+                            "techUsed": [
+                                "html5",
+                                "css3"
+                            ],
+                            "screenshotURL": "/FrontendMentor/newbie/equalizer-landing-page/screenshots/desktop.png",
+                            "screenshotAltText": "equalizer Landing Page Challenge from FrontendMentor"
+                        },
+                        {
                             "title": "Product Preview Card Component",
                             "url": "/FrontendMentor/newbie/product-preview-card-component/",
                             "description": "",
