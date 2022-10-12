@@ -342,6 +342,96 @@ footer {
         --fs-body: 1.25rem;
         --lh-body: 2.125rem;
 
+        --fs-body-card: 1.25rem;
+        --lh-body-card: 2.125rem;
+
         --image-background: url(../assets/bg-main-desktop.png);
+    }
+
+    header::before {
+        top: -35px;
+        left: 0;
+        background-size: auto;
+    }
+
+    header {
+        padding: 0 165.15px;
+    }
+
+    .intro-section {
+        margin-top: 125.01px;
+        padding: 0 165.15px;
+
+        width: 130ch;
+    }
+
+    .main-body {
+        margin-top: 40px;
+
+        font-size: var(--fs-body);
+        line-height: var(--lh-body);
+
+        width: 70ch;
+    }
+
+    .product-card::before {
+        background-size: 19.5rem;
+        background-position: 333px -40px;
+        width: 1110px;
+        top: -90px;
+        left: -570px;
+    }
+
+    .product-card {
+        margin-top: 411px;
+        width: 446px;
+        margin-left: 46rem;
+
+        padding: 58px 59px 48px 54px;
+    }
+
+    .product-card__image {
+        width: 19.5rem;
+        margin: -362px -525px;
+    }
+
+    .product-card__body {
+        margin-top: 22px;
+        width: ;
+    }
+
+    .price-block {
+        padding: unset;
+    }
+
+    .button-block {
+        margin-top: 46px;
+        padding: unset;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-footer {
+        /* margin-left: initial; */
+        align-self: flex-start;
+        height: 100%;
+        margin-right: 137px;
+        margin-bottom: unset;
+    }
+
+    .footer__body {
+        margin-bottom: 0;
+        margin-right: 340px;
+    }
+
+    .social-image-block {
+        position: relative;
+        right: initial;
+        bottom: initial;
+        height: 100%;
     }
 }
