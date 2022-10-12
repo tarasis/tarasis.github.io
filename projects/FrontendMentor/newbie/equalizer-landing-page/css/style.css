@@ -224,6 +224,8 @@ header {
     margin-top: 3.875rem; /* per design 4rem; */
 
     padding: 0 1.5rem;
+
+    margin-bottom: 5rem;
 }
 
 .footer__logo {
@@ -332,6 +334,8 @@ header {
         padding: 0 2.0625rem;
 
         position: relative;
+
+        margin-bottom: 5.3125rem;
     }
 
     .footer__body {
@@ -428,6 +432,8 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        margin-bottom: 5.6875rem;
     }
 
     .footer__logo {
