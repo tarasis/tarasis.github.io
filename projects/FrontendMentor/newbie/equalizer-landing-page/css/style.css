@@ -21,7 +21,7 @@
     --col-cyan: hsla(177, 68%, 64%, 1);
     --col-orange: hsla(33, 100%, 70%, 1);
     --col-orangey-red: hsla(12, 94%, 65%, 1);
-    --col-off-white: hsla(20, 33%, 98%, 1);
+    --col-off-white: hsl(20, 33%, 98%);
     --col-black: hsla(244, 23%, 12%, 1);
     /* Typography */
     --fw-400: 400;
@@ -74,12 +74,16 @@ body {
     min-height: 100vh;
 
     font-family: "IBM Plex Sans", sans-serif;
+
+    background-image: var(--image-background);
+    background-repeat: no-repeat;
+    background-position: 1.875rem -16.875rem;
+
+    background-color: #f2f2f2;
 }
 
 header {
     position: relative;
-    background-position: right;
-    background-image: var(--image-background);
 
     padding: 0 1.5rem;
 }
@@ -107,13 +111,38 @@ header {
 }
 .product-card {
     margin-top: 34.125rem; /* ehh */
-    padding: 3rem 2.25rem 3rem 2.25rem;
+    padding: 3rem 2.25rem 2.875rem 2.25rem;
 
     color: var(--col-off-white);
     background-color: var(--col-orangey-red);
 
     border-radius: var(--border-radius);
+
+    position: relative;
 }
+
+.product-card__image {
+    position: absolute;
+    width: 208.97px;
+    margin: -33rem 3rem;
+}
+
+.product-card::before {
+    position: absolute;
+    z-index: -1;
+    background-color: #191826;
+    background-image: url(../assets/bg-pattern-2.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 17.5rem;
+    top: -23.8rem;
+    left: -0px;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+}
+
 .product-card__header {
     font-size: var(--fs-header-card);
     line-height: var(--lh-header-card);
@@ -189,7 +218,7 @@ header {
 }
 
 footer {
-    margin-top: 3.75rem; /* per design 4rem; */
+    margin-top: 3.875rem; /* per design 4rem; */
 
     padding: 0 1.5rem;
 }
