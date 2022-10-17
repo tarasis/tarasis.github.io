@@ -30,6 +30,17 @@
                     "cssClass": "frontEndMentorChallenges",
                     "challenges": [
                         {
+                            "title": "NFT preview card component",
+                            "url": "/FrontendMentor/newbie/nft-preview-card-component/",
+                            "description": "",
+                            "techUsed": [
+                                "html5",
+                                "css3"
+                            ],
+                            "screenshotURL": "/FrontendMentor/newbie/nft-preview-card-component/screenshots/desktop.png",
+                            "screenshotAltText": "NFT preview card component Challenge from FrontendMentor"
+                        },
+                        {
                             "title": "equalizer Landing Page",
                             "url": "/FrontendMentor/newbie/equalizer-landing-page/",
                             "description": "",

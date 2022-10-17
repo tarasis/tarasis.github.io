@@ -1,33 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <meta name="description"
+    content="This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with." />
+  <meta name="url" content="https://nftcardfrontendmentor.netlify.app/" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Frontend Mentor | NFT Preview Card Component Challenge Solution" />
+  <meta property="og:site_name" content="NFT Preview Card Component Challenge Solution" />
+  <meta property="og:description"
+    content="This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with." />
+  <meta property="og:url" content="https://rmcg.dev/FrontendMentor/newbie/nft-preview-card-component/" />
+  <meta property="og:image"
+    content="https://rmcg.dev/FrontendMentor/newbie/nft-preview-card-component/screenshots/mobile.png" />
+  <meta property="og:image:width" content="375" />
+  <meta property="og:image:height" content="667" />
+  <meta property="og:image:type" content="image/png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@tarasis" />
+  <meta name="twitter:creator" content="@tarasis" />
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
+  <link rel="stylesheet" href="css/style.css">
+
   <title>Frontend Mentor | NFT preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
+
 <body>
 
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  <main>
+    <section class="nft-card">
+      <a href="images/image-equilibrium.jpg" class="nft-card__image-preview">
+        <picture>
+          <img class="nft-card__img" src="images/image-equilibrium.jpg"
+            alt="NFT Preview Image called Equilibrium, semi transparent cube with a red light shining through it, pivoted on its side.">
+        </picture>
+      </a>
+      <h1 class="nft-card__header">
+        <a href="#" class="nft-card__header-link">
+          Equilibrium #3429
+        </a>
+      </h1>
+      <p class="nft-card__description">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div class="nft-card__price-block">
+        <div>
+          <img class="nft-card__price__img" src="images/icon-ethereum.svg" alt="Ethereum Icon" aria-hidden="true">
+          <span class="nft-card__price">
+            0.041 ETH
+          </span>
+        </div>
+        <div>
+          <img class="nft-card__clock" src="images/icon-clock.svg" alt="image of a clock" aria-hidden="true">
+          <span class="nft-card__time-left">
+            3 days left
+          </span>
+        </div>
+      </div>
+      <hr class="nft-card__hr">
+      <!-- <div class="nft-card__hr"> </div> -->
+      <div class="nft-card__creator-block">
+        <img class="nft-card__creator-img" src="images/image-avatar.png" alt="Image of creator" aria-hidden="true">
+        <p class="nft-card__creator-text">
+          Creation of
+        </p>
+        <a href="#" class="nft-card__creator-name">
+          Jules Wyvern
+        </a>
+        </p>
+      </div>
+    </section>
+  </main>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
+
 </html>
