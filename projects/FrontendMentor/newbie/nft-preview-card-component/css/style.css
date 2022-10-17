@@ -176,7 +176,7 @@ body {
     font-weight: var(--fw-400);
 }
 
-.nft_card__hr {
+.nft-card__hr {
     border: 1px solid var(--col-line);
     border-style: solid none none none;
 }
