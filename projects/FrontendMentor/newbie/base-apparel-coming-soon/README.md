@@ -1,6 +1,6 @@
 # Frontend Mentor - Base Apparel coming soon page solution
 
-This is a solution to the [Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -36,7 +36,7 @@ Users should be able to:
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
 
 Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
@@ -48,6 +48,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
+
+
 
 ### Built with
 
@@ -64,27 +66,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+The <picture> element is a container only. The <img> element is the main part describing its contents. <source> only describes different sources. So the alt remains the same for all of them.
 
-To see how you can add code snippets, see below:
+https://stackoverflow.com/a/48207973
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
@@ -112,3 +97,34 @@ Use this section to outline areas that you want to continue focusing on in futur
 This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
 **Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+
+Initial HTML
+```html
+  <main>
+    <header>
+      <picture>
+        <img src="images/logo.svg" alt="Logo of Base Apparel. Hollow round circle with the text Base Apparel beside it">
+      </picture>
+    </header>
+
+    <picture>
+      <source srcset="images/hero-desktop.jpg" media="(min-width: 1000px">
+      <img src="images/hero-mobile.jpg"
+        alt="Hero image of a young lady holding her arm up showing some jewelry on her wrist. The lady stands in front of a bush">
+    </picture>
+
+    <h1></h1>
+    <p></p>
+
+    <form action="submit">
+      <label class="visually-hidden" for="email">Email input field</label>
+      <input placeholder="Email Address" type="email" name="email" id="email">
+      <button type="submit"><img src="" alt=""></button>
+
+    </form>
+  </main>
+
+```
+
+visually hidden https://stackoverflow.com/a/71349645
+

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
 /*
  * Sizing
  * Desktop: 1440x800
@@ -19,10 +21,264 @@
     --col-primary-soft-red: hsl(0, 93%, 68%);
     --col-neutral-dark-grayish-red: hsl(0, 6%, 24%);
 
-    --gradient-white: ;
-    --gardient-pink: ;
+    --gradient-white: linear-gradient(
+        135deg,
+        hsl(0, 0%, 100%) 0%,
+        hsl(0, 100%, 98%) 100%
+    );
+    --gardient-pink: linear-gradient(
+        135deg,
+        hsl(0, 80%, 86%) 0%,
+        hsl(0, 74%, 74%) 100%
+    );
+
+    --gardient-pink-hover: linear-gradient(
+        135deg,
+        hsl(0, 80%, 86%) 0%,
+        hsl(0, 76%, 80%) 100%
+    );
 
     /* Typography */
 
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-600: 600;
+
+    --fs-header: 2.5rem;
+    --lh-header: 105%;
+    --ls-header: 0.6769rem;
+
+    --fs-body: 0.875rem;
+    --lh-body: 157%;
+    --fw-body: var(--fw-400);
+    --col-body: var(--col-primary-desaturated-red);
+
+    --fs-field: 0.875rem;
+    --lh-field: 200%;
+    --fw-field: var(--fw-400);
+    --col-field: var(--col-primary-desaturated-red);
+
+    --fs-error: 0.8125rem;
+    --lh-error: 100%;
+    --fw-error: var(--fw-400);
+    --col-error: var(--col-primary-soft-red);
     /* Sizing */
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    background: var(--gradient-white);
+}
+
+main {
+    max-width: 31.25rem;
+}
+
+.header {
+    margin: 30px 2rem 2rem 2rem;
+    grid-area: "logo";
+}
+
+.body {
+    grid-area: "body";
+
+    margin: 4rem 2rem 5.75rem 2rem;
+    text-align: center;
+}
+.body__header {
+    font-size: var(--fs-header);
+    font-weight: var(--fw-300);
+    line-height: var(--lh-header);
+    letter-spacing: var(--ls-header);
+    color: var(--col-primary-desaturated-red);
+    text-transform: uppercase;
+}
+
+.body__header span {
+    color: var(--col-neutral-dark-grayish-red);
+    font-weight: var(--fw-600);
+}
+
+.body__text {
+    margin-top: 1rem;
+
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    color: var(--col-body);
+}
+
+.hero-picture {
+    /* display: block; */
+    grid-area: "hero-image";
+    justify-self: end;
+    margin: 0 auto;
+}
+
+.hero-picture img {
+    vertical-align: bottom;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 6.25rem;
+    vertical-align: bottom;
+}
+
+.email-form {
+    margin-top: 2rem;
+    position: relative;
+}
+.email-form__input {
+    border: 1px solid var(--col-field);
+    /* border: none; */
+    width: 40ch;
+
+    font-size: var(--fs-field);
+    line-height: var(--lh-field);
+    padding: 10px 0 10px 24px;
+    border-radius: 28px;
+    background: inherit;
+    color: var(--col-neutral-dark-grayish-red);
+    /* background-color: var(--col-primary-desaturated-red); */
+    /* margin-left: 24px; */
+}
+
+::placeholder {
+    color: var(--col-field);
+    opacity: 0.5;
+}
+
+.email-form__button-submit {
+    position: absolute;
+    padding: 13px 27.1px 13px 28px;
+    border-radius: 28px;
+    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+    background: var(--gardient-pink);
+    right: 0px;
+    border: none;
+
+    cursor: pointer;
+}
+
+.email-form__button-submit:has(:hover, :focus) {
+    background: var(--gardient-pink-hover);
+}
+
+.email-form__error-message {
+    color: var(--col-error);
+    font-size: var(--fs-error);
+    text-align: left;
+    margin-left: 24px;
+
+    margin-top: 8px;
+}
+
+.error-hidden {
+    opacity: 0;
+}
+
+/* Screen Reader only */
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 1000px) {
+    :root {
+        --fs-header: 4rem;
+        --lh-header: 100%;
+        --ls-header: 1.0825rem;
+
+        --fs-body: 1rem;
+        --lh-body: 175%;
+
+        --fs-field: 1rem;
+        --lh-field: 175%;
+
+        --lh-error: 215%;
+    }
+
+    body {
+        background-color: var(--gradient-white);
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-blend-mode: color;
+        background-size: auto;
+        /* background-position: left; */
+
+        margin: 0 auto;
+    }
+
+    main {
+        max-width: 1440px;
+        height: 100%;
+        display: grid;
+        /* grid-template-areas: "logo hero-image body"; */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 20% 80%;
+        grid-template-areas:
+            "logo hero-image"
+            "body hero-image";
+
+        /* grid-auto-rows: auto;
+        gap: 55px; */
+    }
+
+    .header {
+        margin: unset;
+        align-self: center;
+        margin-left: 166px;
+    }
+
+    .logo {
+        width: unset;
+    }
+
+    .hero-picture {
+        margin: initial;
+    }
+
+    .body {
+        margin: unset;
+        align-items: baseline;
+        margin-top: 72px;
+        margin-left: 165px;
+        text-align: start;
+    }
+
+    .body__header span {
+        line-height: 111%;
+    }
+
+    .body__text {
+        margin-top: 18px;
+        width: 45ch;
+    }
+
+    .email-form {
+        margin-top: 2.5rem;
+    }
+
+    .email-form__input {
+        width: 45ch;
+        padding: 15px 0 15px 24px;
+    }
+
+    .email-form__button-submit {
+        padding: 18px 45.1px 18px 46px;
+        right: 110px;
+    }
 }
