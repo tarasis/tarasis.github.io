@@ -134,19 +134,25 @@ main {
 }
 
 .email-form {
+    margin: 0 auto;
     margin-top: 2rem;
-    position: relative;
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--col-field);
+    text-align: center;
+    width: 31ch;
+    border-radius: var(--border-radius);
 }
 .email-form__input {
-    border: 1px solid var(--col-field);
-    width: 40ch;
-
+    /* width: 30ch; */
     font-size: var(--fs-field);
     line-height: var(--lh-field);
     font-weight: var(--fw-field);
     padding: 0.625rem 0 0.625rem var(--adjustment-left-field-and-error);
-    border-radius: var(--border-radius);
+    border: none;
     background: inherit;
+    width: 100%;
     color: var(--col-neutral-dark-grayish-red);
 }
 
@@ -160,13 +166,14 @@ main {
 }
 
 .email-form__button-submit {
-    position: absolute;
+    /* position: absolute; */
     padding: 0.8125rem 1.6938rem 0.8125rem 1.75rem;
     border-radius: var(--border-radius);
     box-shadow: 0px 0.9375rem 1.25rem rgba(198, 110, 110, 0.247569);
     background: var(--gradient-pink);
-    right: 0;
+    /* right: 0; */
     border: none;
+    margin-left: 0.5rem;
 
     cursor: pointer;
 }
@@ -183,6 +190,13 @@ main {
     margin-left: var(--adjustment-left-field-and-error);
 
     margin-top: 0.5rem;
+}
+
+.email-form__error-icon {
+    opacity: 0;
+    height: 100%;
+    align-self: center;
+    /* width:  */
 }
 
 .error-hidden {
@@ -275,17 +289,19 @@ main {
     }
 
     .email-form {
+        margin: unset;
         margin-top: 2.5rem;
+        width: 45ch;
     }
 
     .email-form__input {
-        width: 45ch;
+        /* width: 80ch; */
         padding: 0.9375rem 0 0.9375rem var(--adjustment-left-field-and-error);
     }
 
     .email-form__button-submit {
         padding: 1.125rem 2.8188rem 1.125rem 2.875rem;
-        right: 6.875rem;
+        margin-left: 1rem;
     }
 
     .email-form__error-message {
