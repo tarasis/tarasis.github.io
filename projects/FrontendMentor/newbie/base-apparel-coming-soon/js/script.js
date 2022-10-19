@@ -23,7 +23,7 @@
 const validEmailFormat = /^[A-Za-z0-9][\w\+]*@[A-Za-z0-9]{3,}\.[A-Za-z]{2,}$/i;
 
 const emailForm = document.getElementById("email-form");
-const emailInput = document.getElementById("email");
+const emailInput = document.getElementById("email-input");
 const submitButton = document.getElementById("submit-button");
 const errorMessage = document.getElementById("errorMessage");
 const errorIcon = document.getElementById("error-icon");
