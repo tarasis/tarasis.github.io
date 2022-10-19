@@ -166,7 +166,7 @@ main {
 }
 
 .email-form__button-submit:has(:hover, :focus) {
-    background: var(--gradient-pink-hover);
+    background: red;
 }
 
 .email-form__error-message {
