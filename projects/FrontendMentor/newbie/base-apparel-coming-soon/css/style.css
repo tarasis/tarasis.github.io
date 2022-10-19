@@ -35,7 +35,7 @@
     --gradient-pink-hover: linear-gradient(
         135deg,
         hsl(0, 80%, 86%) 0%,
-        hsl(0, 76%, 80%) 100%
+        hsl(0, 76%, 90%) 100%
     );
 
     /* Typography */
@@ -63,6 +63,10 @@
     --fw-error: var(--fw-400);
     --col-error: var(--col-primary-soft-red);
     /* Sizing */
+
+    --border-radius: 1.75rem;
+
+    --adjustment-left-field-and-error: 1.5rem;
 }
 
 body {
@@ -79,7 +83,7 @@ main {
 }
 
 .header {
-    margin: 30px 2rem 2rem 2rem;
+    margin: 1.875rem 2rem 2rem 2rem;
     grid-area: "logo";
 }
 
@@ -108,11 +112,11 @@ main {
 
     font-size: var(--fs-body);
     line-height: var(--lh-body);
+    font-weight: var(--fw-body);
     color: var(--col-body);
 }
 
 .hero-picture {
-    /* display: block; */
     grid-area: "hero-image";
     justify-self: end;
     margin: 0 auto;
@@ -135,17 +139,19 @@ main {
 }
 .email-form__input {
     border: 1px solid var(--col-field);
-    /* border: none; */
     width: 40ch;
 
     font-size: var(--fs-field);
     line-height: var(--lh-field);
-    padding: 10px 0 10px 24px;
-    border-radius: 28px;
+    font-weight: var(--fw-field);
+    padding: 0.625rem 0 0.625rem var(--adjustment-left-field-and-error);
+    border-radius: var(--border-radius);
     background: inherit;
     color: var(--col-neutral-dark-grayish-red);
-    /* background-color: var(--col-primary-desaturated-red); */
-    /* margin-left: 24px; */
+}
+
+.error-border {
+    border: 1px solid var(--col-error);
 }
 
 ::placeholder {
@@ -155,31 +161,36 @@ main {
 
 .email-form__button-submit {
     position: absolute;
-    padding: 13px 27.1px 13px 28px;
-    border-radius: 28px;
-    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+    padding: 0.8125rem 1.6938rem 0.8125rem 1.75rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0.9375rem 1.25rem rgba(198, 110, 110, 0.247569);
     background: var(--gradient-pink);
-    right: 0px;
+    right: 0;
     border: none;
 
     cursor: pointer;
 }
 
-.email-form__button-submit:has(:hover, :focus) {
-    background: red;
+.email-form__button-submit:where(:hover, :focus) {
+    background: var(--gradient-pink-hover);
 }
 
 .email-form__error-message {
     color: var(--col-error);
     font-size: var(--fs-error);
+    font-weight: var(--fw-error);
     text-align: left;
-    margin-left: 24px;
+    margin-left: var(--adjustment-left-field-and-error);
 
-    margin-top: 8px;
+    margin-top: 0.5rem;
 }
 
 .error-hidden {
     opacity: 0;
+}
+
+.error-visible {
+    opacity: 1;
 }
 
 /* Screen Reader only */
@@ -196,7 +207,7 @@ main {
     white-space: nowrap;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 62.5rem) {
     :root {
         --fs-header: 4rem;
         --lh-header: 100%;
@@ -209,38 +220,33 @@ main {
         --lh-field: 175%;
 
         --lh-error: 215%;
+
+        --adjustment-left-field-and-error: 2rem;
     }
 
     body {
-        background-color: var(--gradient-white);
-        background-image: url(../images/bg-pattern-desktop.svg);
-        background-repeat: no-repeat;
-        background-blend-mode: color;
-        background-size: auto;
-        /* background-position: left; */
+        background: var(--gradient-white);
 
-        margin: 0 auto;
+        margin: auto;
     }
 
     main {
-        max-width: 1440px;
-        height: 100%;
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        max-width: 90rem;
         display: grid;
-        /* grid-template-areas: "logo hero-image body"; */
+
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 20% 80%;
         grid-template-areas:
             "logo hero-image"
             "body hero-image";
-
-        /* grid-auto-rows: auto;
-        gap: 55px; */
     }
 
     .header {
         margin: unset;
         align-self: center;
-        margin-left: 166px;
+        margin-left: 10.375rem;
     }
 
     .logo {
@@ -254,8 +260,8 @@ main {
     .body {
         margin: unset;
         align-items: baseline;
-        margin-top: 72px;
-        margin-left: 165px;
+        margin-top: 4.5rem;
+        margin-left: 10.3125rem;
         text-align: start;
     }
 
@@ -264,7 +270,7 @@ main {
     }
 
     .body__text {
-        margin-top: 18px;
+        margin-top: 1.125rem;
         width: 45ch;
     }
 
@@ -274,11 +280,15 @@ main {
 
     .email-form__input {
         width: 45ch;
-        padding: 15px 0 15px 24px;
+        padding: 0.9375rem 0 0.9375rem var(--adjustment-left-field-and-error);
     }
 
     .email-form__button-submit {
-        padding: 18px 45.1px 18px 46px;
-        right: 110px;
+        padding: 1.125rem 2.8188rem 1.125rem 2.875rem;
+        right: 6.875rem;
+    }
+
+    .email-form__error-message {
+        margin-left: var(--adjustment-left-field-and-error);
     }
 }
