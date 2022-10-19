@@ -20,9 +20,8 @@
  *
  * Recommended regex is: ^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})
  */
-const validEmailFormat = /^[A-Za-z0-9][\w\+]*@[A-Za-z0-9]{3,}\.[A-Za-z]{2,}$/i;
+const validEmailFormat = /^[A-Za-z0-9][\w+]*@[A-Za-z0-9]{3,}\.[A-Za-z]{2,}$/i;
 
-const emailForm = document.getElementById("email-form");
 const emailInput = document.getElementById("email-input");
 const submitButton = document.getElementById("submit-button");
 const errorMessage = document.getElementById("errorMessage");
