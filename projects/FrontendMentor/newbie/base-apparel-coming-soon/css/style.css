@@ -151,6 +151,7 @@ main {
     font-weight: var(--fw-field);
     padding: 0.625rem 0 0.625rem var(--adjustment-left-field-and-error);
     border: none;
+    border-radius: var(--border-radius);
     background: inherit;
     width: 100%;
     color: var(--col-neutral-dark-grayish-red);
@@ -196,7 +197,6 @@ main {
     opacity: 0;
     height: 100%;
     align-self: center;
-    /* width:  */
 }
 
 .error-hidden {

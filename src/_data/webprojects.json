@@ -30,6 +30,18 @@
                     "cssClass": "frontEndMentorChallenges",
                     "challenges": [
                         {
+                            "title": "BASE Apparel Coming Soon Page",
+                            "url": "/FrontendMentor/newbie/base-apparel-coming-soon/",
+                            "description": "",
+                            "techUsed": [
+                                "html5",
+                                "css3",
+                                "js"
+                            ],
+                            "screenshotURL": "/FrontendMentor/newbie/base-apparel/screenshots/desktop.png",
+                            "screenshotAltText": "Base Apparel Coming Soon page Challenge from FrontendMentor"
+                        },
+                        {
                             "title": "NFT preview card component",
                             "url": "/FrontendMentor/newbie/nft-preview-card-component/",
                             "description": "",
