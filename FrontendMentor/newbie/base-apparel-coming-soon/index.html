@@ -9,6 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
@@ -27,12 +28,40 @@
 
 <body>
 
-  We're coming soon
 
-  Hello fellow shoppers! We're currently building our new fashion store.
-  Add your email below to stay up-to-date with announcements and our launch deals.
+  <main>
+    <header class="header">
+      <picture>
+        <img class="logo" src="images/logo.svg"
+          alt="Logo of Base Apparel. Hollow round circle with the text Base Apparel beside it">
+      </picture>
+    </header>
 
-  Email Address
+    <picture class="hero-picture">
+      <source srcset="images/hero-desktop.jpg" media="(min-width: 1000px)">
+      <img src="images/hero-mobile.jpg"
+        alt="Hero image of a young lady holding her arm up showing some jewelry on her wrist. The lady stands in front of a bush">
+    </picture>
+
+    <section class="body">
+      <h1 class="body__header">
+        We're<br><span>coming soon</span>
+      </h1>
+      <p class="body__text">
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <div class="email-form" id="email-form" action="submit" novalidate>
+        <label class="visually-hidden" for="email">Email</label>
+        <input class="email-form__input" placeholder="Email Address" type="email" name="email-input" id="email-input"
+          required>
+        <img class="email-form__error-icon" id="error-icon" src="images/icon-error.svg" alt="Error icon">
+        <button id="submit-button" class="email-form__button-submit" type="submit"><img src="images/icon-arrow.svg"
+            alt="Submit Button">
+      </div>
+      <p class="email-form__error-message error-hidden" id="errorMessage">Please provide a valid email</p>
+    </section>
+  </main>
 
   <!-- <footer>
     <p class="attribution">
