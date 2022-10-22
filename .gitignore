@@ -30,6 +30,8 @@ src/_includes/css
 # my chosen output directory.
 www
 
+**/*/premdesigns
+
 #### From FrontEnd Mentor gitignore. Just to avoid accidentally uploading design files
 #
 # Avoid accidental upload of the Sketch and Figma design files
