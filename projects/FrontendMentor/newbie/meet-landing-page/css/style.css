@@ -1,0 +1,90 @@
+/*
+ * Design sizes:
+ *      375x2215
+ *      768x540
+ *      1440x308
+ */
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* General Colors */
+    --col-dark-cyan: hsla(192, 37%, 48%, 1);
+    --col-light-cyan: hsla(192, 90%, 77%, 1);
+    --col-dark-magenta: hsla(268, 34%, 53%, 1);
+    --col-light-magenta: hsla(268, 100%, 86%, 1);
+    --col-dark-blue-gray: hsla(240, 21%, 20%, 1);
+    --col-light-gray: hsla(240, 10%, 57%, 1);
+    --col-slightly-off-white: hsla(0, 0%, 98%, 1);
+
+    /*  */
+    --col-background: var(--col-slightly-off-white);
+    --col-headers: var(--col-dark-blue-gray);
+    --col-body: var(--col-light-gray);
+    --col-button-text: white;
+    --col-button-background: var(--col-dark-magenta);
+    --col-button-background-hover: var(--col-light-magenta);
+
+    /* Typography */
+    --fs-page-header: 2.5rem;
+    --lh-page-header: 110%;
+    --fw-page-header: 900;
+
+    --fs-main-page-body: 1rem;
+    --lh-main-page-body: 162%;
+    --fw-main-page-body: 500;
+
+    --fs-sell-tag: 1rem;
+    --lh-sell-tag: 162%;
+    --ls-sell-tag: 4px;
+    --fw-sell-tag: 900;
+
+    --fs-second-heading: 2rem;
+    --lh-second-heading: 112%;
+    --fw-second-heading: 900;
+
+    --fs-footer-header: 2rem;
+    --lh-footer-header: 112%;
+    --fw-footer-header: 900;
+
+    --fs-footer-body: 1.125rem;
+    --lh-footer-body: 144%;
+    --fw-footer-body: 500;
+
+    --fs-button: 1rem;
+    --lh-button: 162%;
+    --fw-button: 900;
+
+    --padding-btn: 1rem 2.5rem;
+}
+
+body {
+    height: 100vh;
+
+    font-family: "Red Hat Display", sans-serif;
+}
+
+@media screen and (min-width: 48rem) {
+    /* 768px */
+    :root {
+        /* Typography */
+        --fs-page-header: 4rem;
+        --lh-page-header: 100%;
+
+        --fs-second-heading: 2.5rem;
+        --lh-second-heading: 110%;
+
+        --fs-main-page-body: 1.125rem;
+        --lh-main-page-body: 144%;
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    /* 1440px */
+}
