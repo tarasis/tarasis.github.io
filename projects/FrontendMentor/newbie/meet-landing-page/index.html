@@ -17,53 +17,71 @@
 <body>
   <header>
     <picture>
-      <img src="assets/logo.svg" alt="Logo of Meet">
+      <img class="logo" src="assets/logo.svg" alt="Logo of Meet">
     </picture>
   </header>
 
   <main>
     <section>
-      <picture>
-        <img src="assets/tablet/image-hero.png" alt="Image of users of meet" aria-hidden="true">
-      </picture>
-      <picture>
-        <img src="assets/desktop/image-hero-left.png" alt="Image of users of meet" aria-hidden="true">
-      </picture>
-      <section>
-        <h1>Group Chat for Everyone</h1>
-        <p>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
-        <a href="">Download <span>v1.3</span></a>
-        <a href="">What is it?</a>
+      <!-- <picture class="hero-img"> -->
+      <img class="hero-img" src="assets/tablet/image-hero.png" alt="Image of users of meet" aria-hidden="true">
+      <!-- </picture> -->
+      <!-- <picture class="hero-img-left"> -->
+      <img class="hero-img-left" src="assets/desktop/image-hero-left.png" alt="Image of users of meet"
+        aria-hidden="true">
+      <!-- </picture> -->
+      <section class="primary-section">
+        <h1 class="primary-section__heading">Group Chat for Everyone</h1>
+        <p class="primary-section__body">Meet makes it easy to connect with others face-to-face virtually and
+          collaborate across any device.</p>
+        <p class="btn-block">
+
+          <a class="btn btn-download" href="#">Download <span>v1.3</span></a>
+          <a class="btn btn-info" href="#">What is it?</a>
+        </p>
       </section>
-      <picture>
-        <img src="assets/desktop/image-hero-right.png" alt="Image of users of meet" aria-hidden="true">
-      </picture>
+      <!-- <picture class="hero-img-right"> -->
+      <img class="hero-img-right" src="assets/desktop/image-hero-right.png" alt="Image of users of meet"
+        aria-hidden="true">
+      <!-- </picture> -->
     </section>
 
     <section>
-      <div>01</div>
+      <div class="circle-plus-line">
+        <div class="circle-number">01</div>
+      </div>
 
-      <section>
-        <img src="assets/desktop/image-woman-in-videocall.jpg" alt="A Woman in a Videocall">
-        <img src="assets/desktop/image-women-videochatting.jpg" alt="A group of women video chatting">
-        <img src="assets/desktop/image-men-in-meeting.jpg" alt="A man in a meeting via video chat">
-        <img src="assets/desktop/image-man-texting.jpg" alt="A man sitting and texting">
+      <section class="images-of-users">
+        <img src="assets/shared/image-woman-in-videocall.jpg" alt="A Woman in a Videocall">
+        <img src="assets/shared/image-women-videochatting.jpg" alt="A group of women video chatting">
+        <img src="assets/shared/image-men-in-meeting.jpg" alt="A man in a meeting via video chat">
+        <img src="assets/shared/image-man-texting.jpg" alt="A man sitting and texting">
       </section>
 
-      <h3>Built for modern use</h3>
-      <h2>Smarter meetings, all in one place</h2>
-      Send messages, share files, show your screen, and record your meetings — all in one
-      workspace. Control who can join with invite-only team access, data encryption, and data export.
+      <p class="outline">Built for modern use</p>
+      <h2 class="secondary-header">Smarter meetings, all in one place</h2>
+
+      <p class="secondary-body">
+        Send messages, share files, show your screen, and record your meetings — all in one
+        workspace. Control who can join with invite-only team access, data encryption, and data export.
+      </p>
     </section>
   </main>
 
   <footer>
 
-    <div>02</div>
-    <h2>Experience more together</h2>
-    <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+    <div class="circle-plus-line">
+      <div class="circle-number">02</div>
+    </div>
+    <section class="footer">
 
-    <a href="">Download <span>v1.3</span></a>
+      <h2 class="footer__header">Experience more together</h2>
+      <p class="footer__body">Stay connected with reliable HD meetings and unlimited one-on-one and group video
+        sessions.
+      </p>
+
+      <a class="btn btn-download" href="#">Download<span>v1.3</span></a>
+    </section>
   </footer>
 </body>
 
