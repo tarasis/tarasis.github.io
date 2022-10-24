@@ -1,10 +1,10 @@
-/* 
+/*
  * Challenge resolutions:
  * 375x667 & 1440x800
  * 327x512 - 730x280
  */
 
- @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
 
 :root {
     /* font stuff */
@@ -18,16 +18,16 @@
     --cornerRadius: 10px;
 }
 
-/* Base styling */ 
+/* Base styling */
 
 body {
-    font-family: 'Manrope', sans-serif;
+    font-family: "Manrope", sans-serif;
     background-color: var(--lightGrayishBlue);
     display: flex;
     flex-direction: column;
     font-size: 13px;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .articlePreview {
@@ -50,7 +50,7 @@ body {
 
 .previewImage > img {
     width: 100%;
-    margin:-5% 0 -14.5% 0%;
+    margin: -5% 0 -14.5% 0%;
 }
 
 .previewBody {
@@ -115,7 +115,7 @@ body {
 
 .articleShareButton {
     background-color: var(--lightGrayishBlue);
-    color: #6E8098;
+    color: #6e8098;
 
     width: 30px;
     height: 30px;
@@ -152,7 +152,6 @@ body {
     padding: 0.75rem 1rem;
     top: -60px;
     right: -47px;
-
 }
 
 .articleShareButtonTooltip::before {
@@ -180,18 +179,18 @@ body {
     background: var(--veryDarkGrayishBlue);
 }
 
-.articleShareButtonTooltip > p, .articleShareSection > p {
+.articleShareButtonTooltip > p,
+.articleShareSection > p {
     letter-spacing: 5px;
     color: var(--grayishBlue);
     font-weight: 500;
     font-size: 13px;
 }
 
-
 @media screen and (min-width: 650px) {
     body {
         align-content: center;
-        align-items: center; 
+        align-items: center;
     }
 
     .articlePreview {
@@ -199,7 +198,7 @@ body {
         width: 50%;
         min-width: 600px;
         overflow: visible;
-    }    
+    }
 
     .previewImage {
         width: 100%;
@@ -207,7 +206,7 @@ body {
     }
 
     .previewImage > img {
-        margin:0;
+        margin: 0;
         height: 105%;
         object-fit: cover;
         object-position: left;
@@ -226,17 +225,22 @@ body {
         font-size: 20px;
         letter-spacing: 0.25px;
         line-height: 28px;
-
     }
     .articleSell {
         margin-top: 0.5rem;
     }
-    
+
     .articleFooter {
         padding: 0rem 1.75rem 1.5rem 1.5rem;
     }
-
 }
 
-.attribution { position: absolute; bottom: 0; font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    position: absolute;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
 /* sizes: 1440x720 , 375 × 667 */
 *,
@@ -23,14 +23,13 @@
 
 html {
     font-size: var(--page-base-font-size);
-    height: 100%;
 }
 
 body {
     background-color: var(--dark-cyan);
     font-size: var(--default-font-size);
     font-weight: 700;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: "Kumbh Sans", sans-serif;
     color: var(--very-dark-desaturated-blue);
 
     display: flex;
@@ -39,7 +38,9 @@ body {
     align-items: center;
 
     margin: 0 auto;
-    height: 100%;
+    min-height: 100vh;
+
+    overflow: hidden;
 }
 
 .card {
@@ -48,7 +49,7 @@ body {
     box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
     border-radius: 15px;
     text-align: center;
-    
+
     width: min(87vw, 350px);
 }
 
@@ -68,7 +69,7 @@ body {
     height: 96px;
 
     border-radius: 50%;
-    top: calc(100% - 96px/2); 
+    top: calc(100% - 96px / 2);
 }
 
 .photo:after {
@@ -76,12 +77,12 @@ body {
     padding: 5px;
     border: 5px solid white;
     position: absolute;
-    content: '';
+    content: "";
     top: -5px;
     left: -5px;
     bottom: -5px;
     right: -5px;
-  }
+}
 
 .nameAndAge {
     margin-top: 4.5rem;
@@ -89,7 +90,8 @@ body {
     padding-bottom: 0.25rem;
 }
 
-.name, .stat {
+.name,
+.stat {
     font-weight: bold;
 }
 
@@ -129,10 +131,11 @@ body {
     padding-bottom: 0.1875rem;
 }
 
-.topCircle, .bottomCircle {
+.topCircle,
+.bottomCircle {
     position: absolute;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100%;
     background-size: auto;
     transform: translate(-50%, -50%);
     z-index: -1;
@@ -158,9 +161,11 @@ footer {
     bottom: 1rem;
 }
 
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
+.attribution {
+    font-size: 11px;
+    text-align: center;
     bottom: 1rem;
 }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
