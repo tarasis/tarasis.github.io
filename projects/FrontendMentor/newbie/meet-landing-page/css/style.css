@@ -135,8 +135,7 @@ body {
     font-size: var(--fs-main-page-body);
     line-height: var(--lh-main-page-body);
     font-weight: var(--fw-main-page-body);
-    width: 30ch;
-    margin-inline: auto;
+    margin-inline: 1.5rem;
 }
 
 .btn-block {
@@ -259,21 +258,17 @@ body {
 .secondary-header {
     margin-top: 1.5rem;
 
-    margin-inline: auto;
+    margin-inline: 24px;
 
     color: var(--col-headers);
     font-size: var(--fs-second-heading);
     line-height: var(--lh-second-heading);
     font-weight: var(--fw-second-heading);
-
-    width: 14ch;
 }
 
 .secondary-body {
     margin-top: 2rem;
-    margin-inline: auto;
-
-    width: 30ch;
+    margin-inline: 24px;
 
     color: var(--col-body);
     font-size: var(--fs-main-page-body);
@@ -312,6 +307,19 @@ body {
 
 .footer .btn-download {
     margin-top: 2rem;
+}
+
+@media screen and (min-width: 450px) {
+    .primary-section__body,
+    .secondary-body {
+        width: 30ch;
+        margin-inline: auto;
+    }
+
+    .secondary-header {
+        width: 14ch;
+        margin-inline: auto;
+    }
 }
 
 @media screen and (min-width: 48rem) {
@@ -353,6 +361,7 @@ body {
 
     .primary-section__body {
         width: 40ch;
+        margin-inline: auto;
     }
 
     .btn-info {
@@ -399,7 +408,7 @@ body {
 
     .footer__header {
         /* margin-top: 4rem; */
-        width: 15ch;
+        width: 14ch;
     }
 
     .footer__body {
@@ -439,6 +448,7 @@ body {
         margin-top: 60px;
         display: flex;
         gap: 115px;
+        justify-content: center;
     }
 
     .hero-img {
@@ -500,7 +510,7 @@ body {
     .footer {
         flex-direction: row;
         justify-content: center;
-        gap: 4.6875rem;
+        gap: 5.5rem;
         text-align: left;
 
         padding: 116px 0 104px 0;
