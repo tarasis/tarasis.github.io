@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
 
 /* -- Basic Styling -- */
 
@@ -15,7 +15,6 @@
     --site-grayish-blue: hsl(218, 22%, 67%);
     --box-border-radius: 8px;
     font-weight: 400;
-
 }
 
 * {
@@ -29,9 +28,9 @@
 body {
     /* per the style guide, the body copy is 16px */
     font-size: 16px;
-    font-family: 'Karla', sans-serif;
+    font-family: "Karla", sans-serif;
     width: 85vw;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0 auto;
 
     display: flex;
@@ -44,7 +43,7 @@ body {
 }
 
 .container {
-    box-shadow: 2px 10px 25px -12px rgba(0,0,0,0.5);
+    box-shadow: 2px 10px 25px -12px rgba(0, 0, 0, 0.5);
 }
 
 .box {
@@ -59,7 +58,6 @@ body {
     color: white;
     font-size: 0.95rem;
     /* font-weight: 700; */
-
 }
 
 /* Specific stylings */
@@ -74,7 +72,7 @@ body {
 
 .topRow .heading {
     color: var(--site-cyan);
-    font-size: 1.20rem;
+    font-size: 1.2rem;
 }
 
 .quickSell {
@@ -91,10 +89,9 @@ body {
 .bottomRow {
     display: flex;
     flex-direction: column;
-
 }
 .pricingBox {
-    background-color: var(--site-cyan);    
+    background-color: var(--site-cyan);
 }
 .priceRow {
     display: flex;
@@ -104,7 +101,6 @@ body {
 .price {
     color: white;
     font-size: 1.5rem;
-
 }
 .pricePeriod {
     color: var(--site-greener-cyan);
@@ -123,21 +119,18 @@ body {
     color: white;
     /* width: 85%; */
     /* height: 20%; */
-    padding: 13px 3.25rem; 
+    padding: 13px 3.25rem;
     /* margin-left: auto; */
     /* margin-right: auto; */
     /* align-self: center; */
     justify-content: center;
     border-radius: 5px;
     font-weight: 700;
-
-
 }
 .whyUsBox {
     background-color: var(--site-greener-cyan);
     border-bottom-left-radius: var(--box-border-radius);
     border-bottom-right-radius: var(--box-border-radius);
-
 }
 .blurb {
     margin-top: 0.75rem;
@@ -158,15 +151,19 @@ footer {
 }
 
 /* Feel free to remove these styles or customise in your own stylesheet 👍 */
-    .attribution { font-size: 11px; text-align: center; 
-        /* visibility: hidden; */
-    }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    /* visibility: hidden; */
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
 
-/** 
+/**
 * * style guide has 2 designs, one aimed for 375x870, and the other 1440x800
 * TODO: Tweak transition point later
-*/ 
+*/
 @media screen and (max-width: 500px) {
     .topRow {
     }
@@ -189,7 +186,7 @@ footer {
     }
 
     .quickSell {
-        margin-top: 1.20rem;
+        margin-top: 1.2rem;
         font-size: 0.8rem;
     }
 
@@ -220,22 +217,20 @@ footer {
     }
     .signupButton {
         margin-top: 1.5rem;
-        padding: 13px 3.25rem; 
-    
+        padding: 13px 3.25rem;
     }
     .whyUsBox {
     }
     .blurb {
         margin-top: 0.75rem;
     }
-    
+
     .blurb .unstyledList {
         font-size: 14px;
     }
-    
+
     footer {
     }
-
 }
 
 @media screen and (min-width: 500px) and (max-width: 800px) {
@@ -245,7 +240,7 @@ footer {
     }
 
     .signupButton {
-        font-size: 0.90rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -261,7 +256,6 @@ footer {
     .pricingBox {
         width: 50%;
         border-bottom-left-radius: var(--box-border-radius);
-    
     }
     .signupButton {
     }

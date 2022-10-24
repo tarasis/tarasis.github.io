@@ -71,7 +71,7 @@
 
 body {
     font-family: "Josefin Sans", sans-serif;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
 
@@ -80,15 +80,17 @@ body {
 
 main {
     max-width: 31.25rem;
+
+    overflow: hidden;
 }
 
 .header {
     margin: 1.875rem 2rem 2rem 2rem;
-    grid-area: "logo";
+    grid-area: logo;
 }
 
 .body {
-    grid-area: "body";
+    grid-area: body;
 
     margin: 4rem 2rem 5.75rem 2rem;
     text-align: center;
@@ -117,7 +119,7 @@ main {
 }
 
 .hero-picture {
-    grid-area: "hero-image";
+    grid-area: hero-image;
     justify-self: end;
     margin: 0 auto;
 }
@@ -221,6 +223,12 @@ main {
     white-space: nowrap;
 }
 
+@media screen and (max-width: 23.375rem) {
+    .email-form {
+        width: unset;
+    }
+}
+
 @media screen and (min-width: 62.5rem) {
     :root {
         --fs-header: 4rem;
@@ -241,7 +249,7 @@ main {
     body {
         background: var(--gradient-white);
 
-        margin: auto;
+        margin: 0 auto;
     }
 
     main {
