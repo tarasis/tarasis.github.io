@@ -100,7 +100,6 @@ body {
 }
 
 .hero-img {
-    outline: 1px solid red;
     margin-top: 3.175rem;
     height: 153px;
     object-fit: cover;
@@ -141,6 +140,8 @@ body {
 }
 
 .btn-block {
+    margin-top: 2rem;
+
     display: flex;
     flex-direction: column;
 
@@ -171,7 +172,6 @@ body {
 }
 
 .btn-download {
-    margin-top: 2rem;
     background-color: var(--col-button-download-background);
 }
 
@@ -310,8 +310,110 @@ body {
     font-weight: var(--fw-footer-body);
 }
 
+.footer .btn-download {
+    margin-top: 2rem;
+}
+
 @media screen and (min-width: 48rem) {
     /* 768px */
+    :root {
+        /* Typography */
+        --fs-page-header: 3rem;
+        --lh-page-header: 100%;
+
+        --fs-second-heading: 2.5rem;
+        --lh-second-heading: 110%;
+
+        --fs-main-page-body: 1rem;
+        --lh-main-page-body: 162%;
+
+        --fs-footer-header: 2.5rem;
+        --lh-footer-header: 110%;
+
+        --image-footer: url(../assets/tablet/image-footer.jpg);
+    }
+
+    .hero-img {
+        margin-top: 60px;
+        height: 303px;
+    }
+
+    .btn-block {
+        margin-top: 32px;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .btn-download {
+    }
+
+    .primary-section__heading {
+        margin-top: 4.5rem;
+    }
+
+    .primary-section__body {
+        width: 40ch;
+    }
+
+    .btn-info {
+        margin-top: unset;
+    }
+
+    .circle-plus-line {
+        margin-top: 5rem;
+    }
+
+    .images-of-users {
+        margin-top: 96px;
+
+        gap: 11px;
+
+        flex-flow: row nowrap;
+    }
+
+    .images-of-users img {
+        width: 164px;
+        flex: unset;
+    }
+
+    .outline {
+        margin-top: 3rem;
+    }
+
+    .secondary-header {
+        margin-top: 16px;
+
+        width: 16ch;
+    }
+
+    .secondary-body {
+        width: 49ch;
+    }
+
+    .footer {
+        margin: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__header {
+        /* margin-top: 4rem; */
+        width: 15ch;
+    }
+
+    .footer__body {
+        margin-top: 2rem;
+        width: 48ch;
+    }
+
+    .footer .btn-download {
+        margin-top: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 90rem) {
+    /* 1440px */
     :root {
         /* Typography */
         --fs-page-header: 4rem;
@@ -326,37 +428,73 @@ body {
         --fs-footer-header: 2.5rem;
         --lh-footer-header: 110%;
 
-        --image-footer: url(../assets/tablet/image-footer.jpg);
-    }
-
-    .btn-download {
-        margin-top: 2.5rem;
-    }
-
-    .footer {
-        margin: unset;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer__header {
-        width: 15ch;
-    }
-
-    .footer__body {
-        margin-top: 2rem;
-        width: 48ch;
-    }
-}
-
-@media screen and (min-width: 90rem) {
-    /* 1440px */
-    :root {
         --image-footer: url(../assets/desktop/image-footer.jpg);
     }
 
+    .logo {
+        margin-top: 80px;
+    }
+
+    .top-section {
+        margin-top: 60px;
+        display: flex;
+        gap: 115px;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-img-left,
+    .hero-img-right {
+        display: block;
+        width: 394px;
+        object-fit: cover;
+    }
+
+    .hero-img-left {
+        align-self: flex-start;
+        margin-left: -30px;
+    }
+
+    .hero-img-right {
+        align-self: flex-end;
+        overflow: hidden;
+        /* margin-top: 16px; */
+    }
+
+    .primary-section__heading {
+        margin-top: 44px;
+
+        justify-self: center;
+    }
+
+    .primary-section__body {
+        margin-top: 2.1875rem;
+    }
+
+    .circle-plus-line {
+        margin-top: 117px;
+    }
+
     .circle-number {
+    }
+
+    .btn-block {
+        margin-top: 32px;
+    }
+
+    .images-of-users {
+        gap: 30px;
+        margin-top: 90px;
+    }
+
+    .images-of-users img {
+        width: 255px;
+    }
+
+    .outline {
+        margin-top: 80px;
     }
 
     .footer {
@@ -364,9 +502,25 @@ body {
         justify-content: center;
         gap: 4.6875rem;
         text-align: left;
+
+        padding: 116px 0 104px 0;
+    }
+
+    footer .circle-plus-line {
+        margin-top: 72px;
+    }
+
+    .footer__header {
+        margin-top: unset;
     }
 
     .footer__body {
+        margin-top: unset;
+
         width: 29ch;
+    }
+
+    .footer .btn-download {
+        margin-top: unset;
     }
 }
