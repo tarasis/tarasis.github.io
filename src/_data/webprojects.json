@@ -30,6 +30,17 @@
                     "cssClass": "frontEndMentorChallenges",
                     "challenges": [
                         {
+                            "title": "meet Landing Page",
+                            "url": "/FrontendMentor/newbie/meet-landing-page/",
+                            "description": "",
+                            "techUsed": [
+                                "html5",
+                                "css3",
+                            ],
+                            "screenshotURL": "/FrontendMentor/newbie/meet-landing-page/screenshots/desktop.png",
+                            "screenshotAltText": "meet Landing Page Challenge from FrontendMentor"
+                        },
+                        {
                             "title": "BASE Apparel Coming Soon Page",
                             "url": "/FrontendMentor/newbie/base-apparel-coming-soon/",
                             "description": "",
@@ -38,7 +49,7 @@
                                 "css3",
                                 "js"
                             ],
-                            "screenshotURL": "/FrontendMentor/newbie/base-apparel/screenshots/desktop.png",
+                            "screenshotURL": "/FrontendMentor/newbie/base-apparel-coming-soon/screenshots/desktop.png",
                             "screenshotAltText": "Base Apparel Coming Soon page Challenge from FrontendMentor"
                         },
                         {
