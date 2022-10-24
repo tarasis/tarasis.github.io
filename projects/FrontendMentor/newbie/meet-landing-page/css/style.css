@@ -87,6 +87,8 @@ body {
     font-family: "Red Hat Display", sans-serif;
 
     text-align: center;
+
+    background-color: var(--col-background);
 }
 
 .logo {
@@ -96,12 +98,8 @@ body {
 }
 
 .hero-img {
-    /* height: 100%; */
-}
-
-.hero-img {
     margin-top: 3.175rem;
-    height: 153px;
+    height: 9.5625rem;
     object-fit: cover;
 
     vertical-align: top;
@@ -110,10 +108,6 @@ body {
 .hero-img-left,
 .hero-img-right {
     display: none;
-}
-
-.hero-img-left img,
-.hero-img-right img {
 }
 
 .primary-section__heading {
@@ -204,7 +198,7 @@ body {
 .circle-number {
     position: relative;
     border-radius: 50%;
-    padding: 15px 16px;
+    padding: 0.9375rem 1rem;
 
     font-size: 1rem;
     line-height: 162%;
@@ -217,34 +211,26 @@ body {
     border: 1px solid hsla(240, 10%, 57%, 0.25);
     width: 3.5rem;
 
-    /* top: 1.75rem; */
     top: var(--line-height);
     left: calc(50% - 1.75rem);
 }
 
 .images-of-users {
-    margin-top: calc(4rem + 28px);
-    /* height: 19.375rem; */
-    /* display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; */
+    margin-top: calc(4rem + 1.75rem);
 
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .images-of-users img {
-    /* width: auto; */
-    /* height: 100%; */
-    /* flex: 0 1 auto; */
     flex: 0 0 40%;
     width: 40%;
     border-radius: 0.5rem;
 }
 
-.outline {
+.overline {
     margin-top: 4rem;
     text-transform: uppercase;
 
@@ -258,7 +244,7 @@ body {
 .secondary-header {
     margin-top: 1.5rem;
 
-    margin-inline: 24px;
+    margin-inline: 1.5rem;
 
     color: var(--col-headers);
     font-size: var(--fs-second-heading);
@@ -268,7 +254,7 @@ body {
 
 .secondary-body {
     margin-top: 2rem;
-    margin-inline: 24px;
+    margin-inline: 1.5rem;
 
     color: var(--col-body);
     font-size: var(--fs-main-page-body);
@@ -286,7 +272,7 @@ body {
 
     color: var(--col-slightly-off-white);
 
-    padding: 58px 1.5rem 4.5rem 1.5rem;
+    padding: 3.625rem 1.5rem 4.5rem 1.5rem;
 }
 
 .footer__header {
@@ -309,7 +295,7 @@ body {
     margin-top: 2rem;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 28.125rem) {
     .primary-section__body,
     .secondary-body {
         width: 30ch;
@@ -342,17 +328,14 @@ body {
     }
 
     .hero-img {
-        margin-top: 60px;
-        height: 303px;
+        margin-top: 3.75rem;
+        height: 18.9375rem;
     }
 
     .btn-block {
-        margin-top: 32px;
+        margin-top: 2rem;
         flex-direction: row;
         gap: 1rem;
-    }
-
-    .btn-download {
     }
 
     .primary-section__heading {
@@ -373,24 +356,24 @@ body {
     }
 
     .images-of-users {
-        margin-top: 96px;
+        margin-top: 6rem;
 
-        gap: 11px;
+        gap: 0.6875rem;
 
         flex-flow: row nowrap;
     }
 
     .images-of-users img {
-        width: 164px;
+        width: 10.25rem;
         flex: unset;
     }
 
-    .outline {
+    .overline {
         margin-top: 3rem;
     }
 
     .secondary-header {
-        margin-top: 16px;
+        margin-top: 1rem;
 
         width: 16ch;
     }
@@ -407,7 +390,7 @@ body {
     }
 
     .footer__header {
-        /* margin-top: 4rem; */
+        margin-top: 2.125rem;
         width: 14ch;
     }
 
@@ -441,14 +424,15 @@ body {
     }
 
     .logo {
-        margin-top: 80px;
+        margin-top: 5rem;
     }
 
     .top-section {
-        margin-top: 60px;
+        margin-top: 3.75rem;
         display: flex;
-        gap: 115px;
+        gap: 7.5rem;
         justify-content: center;
+        overflow: hidden;
     }
 
     .hero-img {
@@ -458,23 +442,20 @@ body {
     .hero-img-left,
     .hero-img-right {
         display: block;
-        width: 394px;
+        width: 24.625rem;
         object-fit: cover;
     }
 
     .hero-img-left {
         align-self: flex-start;
-        margin-left: -30px;
     }
 
     .hero-img-right {
         align-self: flex-end;
-        overflow: hidden;
-        /* margin-top: 16px; */
     }
 
     .primary-section__heading {
-        margin-top: 44px;
+        margin-top: 2.75rem;
 
         justify-self: center;
     }
@@ -484,27 +465,24 @@ body {
     }
 
     .circle-plus-line {
-        margin-top: 117px;
-    }
-
-    .circle-number {
+        margin-top: 7.3125rem;
     }
 
     .btn-block {
-        margin-top: 32px;
+        margin-top: 2rem;
     }
 
     .images-of-users {
-        gap: 30px;
-        margin-top: 90px;
+        gap: 1.875rem;
+        margin-top: 5.625rem;
     }
 
     .images-of-users img {
-        width: 255px;
+        width: 15.9375rem;
     }
 
-    .outline {
-        margin-top: 80px;
+    .overline {
+        margin-top: 5rem;
     }
 
     .footer {
@@ -513,11 +491,11 @@ body {
         gap: 5.5rem;
         text-align: left;
 
-        padding: 116px 0 104px 0;
+        padding: 7.25rem 0 6.5rem 0;
     }
 
     footer .circle-plus-line {
-        margin-top: 72px;
+        margin-top: 4.5rem;
     }
 
     .footer__header {
