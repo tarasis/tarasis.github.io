@@ -1,0 +1,30 @@
+/*
+ * Design sizes:
+ *  Mobile: 375x667 (327x360)
+ *  Desktop: 1440x800 (412x416)
+ */
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Overpass", sans-serif;
+
+    /* margin: 0 auto; */
+    display: grid;
+    place-content: center;
+}
+
+@media screen and (min-width: 62.5rem) {
+    :root {
+    }
+}

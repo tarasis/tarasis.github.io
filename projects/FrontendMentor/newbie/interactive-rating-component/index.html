@@ -1,49 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+
+
+
   <title>Frontend Mentor | Interactive rating component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style> -->
 </head>
+
 <body>
 
-  <!-- Rating state start -->
+  <main>
 
-  How did we do?
+    <!-- Rating state start -->
+    <section>
+      <img src="images/icon-star.svg" alt="Image of a Star" aria-hidden="true">
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+      <h2>How did we do?</h2>
+      <p>
+        Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+        offering!
+      </p>
+      <form>
+        <fieldset>
+          <!-- <legend>Please select your preferred contact method:</legend> -->
+          <div>
+            <input type="radio" id="ratingScore1" name="rating" value="1">
+            <label for="ratingScore1">1</label>
 
-  1 2 3 4 5
+            <input type="radio" id="ratingScore2" name="rating" value="2">
+            <label for="ratingScore2">2</label>
 
-  Submit
+            <input type="radio" id="ratingScore3" name="rating" value="3">
+            <label for="ratingScore3">3</label>
 
-  <!-- Rating state end -->
+            <input type="radio" id="ratingScore4" name="rating" value="4">
+            <label for="ratingScore4">4</label>
 
-  <!-- Thank you state start -->
+            <input type="radio" id="ratingScore5" name="rating" value="5">
+            <label for="ratingScore5">5</label>
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+    <!-- Rating state end -->
 
-  You selected <!-- Add rating here --> out of 5
+    <!-- Thank you state start -->
+    <section>
+      <img src="images/illustration-thank-you.svg"
+        alt="Image of an electronic box with paper coming out of it. A card is moving towards the box"
+        aria-hidden="true">
+      <p>
+        You selected <span></span>
+        <!-- Add rating here --> out of 5
+      </p>
+      <h2>Thank you!</h2>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+      </p>
+    </section>
+    <!-- Thank you state end -->
+  </main>
 
-  Thank you!
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <!-- <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer> -->
 </body>
+
 </html>
