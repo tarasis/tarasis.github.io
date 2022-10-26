@@ -13,9 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
-
-
+  <script src="js/script.js" defer></script>
 
   <title>Frontend Mentor | Interactive rating component</title>
 
@@ -36,58 +34,54 @@
 
   <main>
 
-    <!-- Rating state start -->
-    <section>
-      <img src="images/icon-star.svg" alt="Image of a Star" aria-hidden="true">
-
-      <h2>How did we do?</h2>
-      <p>
-        Please let us know how we did with your support request. All feedback is appreciated to help us improve our
-        offering!
-      </p>
-      <form>
-        <fieldset>
-          <!-- <legend>Please select your preferred contact method:</legend> -->
-          <div>
-            <input type="radio" id="ratingScore1" name="rating" value="1">
-            <label for="ratingScore1">1</label>
-
-            <input type="radio" id="ratingScore2" name="rating" value="2">
-            <label for="ratingScore2">2</label>
-
-            <input type="radio" id="ratingScore3" name="rating" value="3">
-            <label for="ratingScore3">3</label>
-
-            <input type="radio" id="ratingScore4" name="rating" value="4">
-            <label for="ratingScore4">4</label>
-
-            <input type="radio" id="ratingScore5" name="rating" value="5">
-            <label for="ratingScore5">5</label>
-          </div>
-          <div>
-            <button type="submit">Submit</button>
-          </div>
-        </fieldset>
-      </form>
-    </section>
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-    <section>
-      <img src="images/illustration-thank-you.svg"
-        alt="Image of an electronic box with paper coming out of it. A card is moving towards the box"
-        aria-hidden="true">
-      <p>
-        You selected <span></span>
-        <!-- Add rating here --> out of 5
-      </p>
-      <h2>Thank you!</h2>
-      <p>
-        We appreciate you taking the time to give a rating. If you ever need more support,
-        don’t hesitate to get in touch!
-      </p>
-    </section>
-    <!-- Thank you state end -->
+    <article class="rating-component">
+      <!-- Rating state start -->
+      <section class="component-front">
+        <img src="images/icon-star.svg" alt="Image of a Star" aria-hidden="true">
+        <h2 class="rating-component__header">How did we do?</h2>
+        <p class="rating-component__body">
+          Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+          offering!
+        </p>
+        <form id="ratingForm">
+          <fieldset>
+            <!-- <legend>Please select your preferred contact method:</legend> -->
+            <div>
+              <input type="radio" id="ratingScore1" name="rating" value="1">
+              <label for="ratingScore1">1</label>
+              <input type="radio" id="ratingScore2" name="rating" value="2">
+              <label for="ratingScore2">2</label>
+              <input type="radio" id="ratingScore3" name="rating" value="3">
+              <label for="ratingScore3">3</label>
+              <input type="radio" id="ratingScore4" name="rating" value="4">
+              <label for="ratingScore4">4</label>
+              <input type="radio" id="ratingScore5" name="rating" value="5">
+              <label for="ratingScore5">5</label>
+            </div>
+            <div>
+              <button class="btn btn-submit" type="submit">Submit</button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+      <!-- Rating state end -->
+      <!-- Thank you state start -->
+      <section>
+        <img src="images/illustration-thank-you.svg"
+          alt="Image of an electronic box with paper coming out of it. A card is moving towards the box"
+          aria-hidden="true">
+        <p class="rating-component__rating">
+          You selected <span id="ratingSpan"></span>
+          <!-- Add rating here --> out of 5
+        </p>
+        <h2 class="rating-component__header">Thank you!</h2>
+        <p class="rating-component__body">
+          We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!
+        </p>
+      </section>
+      <!-- Thank you state end -->
+    </article>
   </main>
 
 
