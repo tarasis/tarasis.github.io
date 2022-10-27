@@ -83,16 +83,13 @@ body {
 }
 
 .star-icon {
-    /* margin-top: 19px; */
     display: block;
     background-color: var(--col-dark-blue);
-    /* width: 100px; */
-    /* height: 100px; */
+
     border-radius: 50%;
     text-align: center;
     width: 40px;
-    /* line-height: 100px; */
-    vertical-align: middle;
+
     padding: 13px;
 }
 
@@ -272,6 +269,8 @@ body {
         --fs-button: 15px;
         --lh-button: 1.2666666667;
         --ls-button: 2px;
+
+        --border-radius: 30px;
     }
 
     .rating-component {
@@ -282,16 +281,40 @@ body {
         padding: 32px 39px 32px 32px;
     }
 
+    .star-icon {
+        width: 48px;
+
+        padding: 16px;
+    }
+
     .rating-component__header {
-        margin-top: 30px;
+        margin-top: 40px;
     }
 
     .rating-component__body {
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
+    .ratingForm__label {
+        width: 51px;
+        height: 51px;
+        padding: 15px;
+    }
+
+    #ratingForm label {
+        margin-right: 17px;
+    }
+
+    #ratingForm label:nth-child(odd) {
+        margin-right: 15px;
+    }
+
+    .btn {
+        padding: 14px 138px 12px 137px;
+    }
     .btn-submit {
         margin-top: 32px;
+        margin-inline: unset;
     }
 
     .rating-component-back {
