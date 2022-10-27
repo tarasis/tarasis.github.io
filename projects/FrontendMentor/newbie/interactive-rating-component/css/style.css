@@ -319,10 +319,18 @@ body {
 
     .rating-component-back {
         padding: 45px 40px 45px 32px;
+        /* padding: 32px 39px 40px 32px; */
+    }
+
+    .thank-you-img {
+        /* margin-top: 16px; */
+        width: 48%;
     }
 
     .rating-component__rating {
-        margin-top: 32px;
+        margin-top: 22px;
+        margin-inline: 60px;
+        padding: 4px 19px 4px 20px;
     }
 
     .rating-component__header-submitted {
@@ -330,6 +338,6 @@ body {
     }
 
     .rating-component__body-submitted {
-        margin-top: 15px;
+        margin-top: 12px;
     }
 }
