@@ -77,9 +77,9 @@ body {
     background: var(--col-background-component);
     border-radius: var(--border-radius);
     /* margin: 0 1.5rem; */
-    padding: 24px 24px 32px 24px;
 }
 .rating-component-front {
+    padding: 24px 24px 32px 24px;
 }
 
 .star-icon {
@@ -226,21 +226,22 @@ body {
 
 .rating-component-back {
     /* display: none; */
-    padding: 34px 24px 37px 24px;
+    padding: 24px 24px 37px 24px;
 
     text-align: center;
 }
 
 .thank-you-img {
-    margin-top: 0px;
+    margin-top: 10px;
+    width: 50%;
 }
 
 .rating-component__rating {
-    margin-top: 1.5rem;
-    /* margin-inline: 45px; */
+    margin-top: 24px;
+    margin-inline: 55px;
 
     font-size: var(--fs-body);
-    /* line-height: var(--lh-body); */
+    line-height: var(--lh-body);
     color: var(--col-orange);
 
     border-radius: 22.5px;
@@ -253,7 +254,7 @@ body {
 }
 
 .rating-component__body-submitted {
-    margin-top: 10px;
+    margin-top: 14px;
 }
 
 @media screen and (min-width: 62.5rem) {
