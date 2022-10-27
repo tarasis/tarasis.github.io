@@ -1,6 +1,9 @@
 const form = document.getElementById("ratingForm");
 const ratingSpan = document.getElementById("ratingSpan");
 
+const frontSection = document.getElementById("rating-component-front");
+const backSection = document.getElementById("rating-component-back");
+
 console.log(form);
 
 form.addEventListener(
@@ -14,6 +17,8 @@ form.addEventListener(
         ratingSpan.innerText = output;
 
         //hide first section, make second section visible
+        frontSection.classList.add("hidden");
+        backSection.classList.remove("hidden");
         //use a transition effect, plus a reduced motion version
 
         event.preventDefault();
