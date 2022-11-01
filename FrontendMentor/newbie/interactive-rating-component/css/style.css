@@ -1,0 +1,322 @@
+/*
+ * Design sizes:
+ *  Mobile: 375x667 (327x360)
+ *  Desktop: 1440x800 (412x416)
+ */
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    --col-orange: hsl(25, 97%, 53%);
+
+    --col-white: hsl(0, 0%, 100%);
+    --col-light-grey: hsl(217, 12%, 63%);
+    --col-medium-grey: hsl(216, 12%, 54%);
+    --col-very-dark-blue: hsl(216, 12%, 8%);
+    --col-dark-blue: hsl(213, 19%, 18%);
+
+    --col-background-component: radial-gradient(
+        98.96% 98.96% at 50% 0%,
+        #232a34 0%,
+        #181e27 100%
+    );
+
+    /* Typography */
+    --fs-header: 1.5rem;
+    --lh-header: 125%;
+    --fw-header: 700;
+
+    --fs-body: 0.875rem;
+    --lh-body: 157%;
+    --fw-body: 400;
+
+    --fs-rating: 0.875rem;
+    --lh-rating: 171%;
+    --ls-rating: 0.175px;
+
+    --fs-button: 0.875rem;
+    --lh-button: 128.57142857%;
+    --ls-button: 1.86667px;
+
+    --border-radius: 0.9375rem;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Overpass", sans-serif;
+
+    display: grid;
+    place-content: center;
+
+    background-color: var(--col-very-dark-blue);
+}
+
+.rating-component {
+    max-width: 20.4375rem;
+    background: var(--col-background-component);
+    border-radius: var(--border-radius);
+}
+.rating-component-front {
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
+}
+
+.star-icon {
+    display: block;
+    background-color: var(--col-dark-blue);
+
+    border-radius: 50%;
+    text-align: center;
+    width: 2.5rem;
+
+    padding: 0.8125rem;
+}
+
+.header {
+    font-size: var(--fs-header);
+    line-height: var(--lh-header);
+    color: var(--col-white);
+}
+
+.body {
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    color: var(--col-light-grey);
+}
+
+.rating-component__header {
+    margin-top: 1.375rem; /* 1rem;*/
+}
+.rating-component__body {
+    margin-top: 1.0625rem;
+    margin-left: 0.125rem;
+}
+
+#ratingForm {
+    margin-top: 1.5rem;
+}
+
+#ratingForm fieldset {
+    border: none;
+}
+
+.ratingForm__label {
+    display: inline-block;
+
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--col-dark-blue);
+
+    font-size: var(--fs-rating);
+    line-height: var(--lh-rating);
+    letter-spacing: var(--ls-rating);
+
+    font-weight: 700;
+    color: var(--col-medium-grey);
+
+    padding: 0.625rem;
+    text-align: center;
+    width: 2.625rem;
+    height: 2.625rem;
+
+    margin-right: 0.8125rem;
+}
+
+#ratingForm input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.ratingForm__label:last-of-type {
+    margin-right: 0px;
+}
+
+.ratingForm__label:hover {
+    background-color: var(--col-orange);
+    color: var(--col-white);
+}
+
+.radio_container input[type="radio"]:focus + label {
+    outline: 2px dashed var(--col-white);
+    color: var(--col-white);
+    background-color: var(--col-medium-grey);
+}
+
+.radio_container input[type="radio"]:checked + label {
+    color: var(--col-white);
+    background-color: var(--col-medium-grey);
+}
+
+.btn {
+    border-radius: 1.4063rem;
+    padding: 0.8125rem 6.875rem 0.8125rem 6.6875rem;
+    text-align: center;
+
+    font-family: "Overpass", sans-serif;
+    font-size: var(--fs-button);
+    line-height: var(--lh-button);
+    letter-spacing: var(--ls-button);
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    border: none;
+}
+
+.btn-submit {
+    margin-top: 1.5rem;
+    margin-inline: auto;
+
+    color: var(--col-white);
+    background-color: var(--col-orange);
+}
+
+.btn-submit:where(:focus, :hover) {
+    color: var(--col-orange);
+    background-color: var(--col-white);
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+/*  for rating-component-back */
+.rating-component-back {
+    padding: 1.5rem 1.5rem 2.3125rem 1.5rem;
+
+    text-align: center;
+}
+
+.thank-you-img {
+    margin-top: 0.625rem;
+    width: 50%;
+}
+
+.rating-component__rating-result {
+    margin-top: 1.5rem;
+    margin-inline: 3.4375rem;
+
+    font-size: var(--fs-body);
+    line-height: var(--lh-body);
+    color: var(--col-orange);
+
+    border-radius: 1.4063rem;
+    background-color: var(--col-dark-blue);
+    padding: 0.3125rem 0.75rem;
+}
+
+.rating-component__header-submitted {
+    margin-top: 1.5rem;
+}
+
+.rating-component__body-submitted {
+    margin-top: 0.875rem;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 62.5rem) {
+    :root {
+        /* Typography */
+        --fs-header: 1.75rem;
+
+        --fs-body: 0.9375rem;
+        --lh-body: 160%;
+
+        --fs-rating: 1rem;
+        --lh-rating: 150%;
+        --ls-rating: 0.2px;
+
+        --fs-button: 0.9375rem;
+        --lh-button: 1.2666666667;
+        --ls-button: 2px;
+
+        --border-radius: 1.875rem;
+    }
+
+    .rating-component {
+        max-width: 25.75rem;
+    }
+
+    .rating-component-front {
+        padding: 2rem 2.4375rem 2rem 2rem;
+    }
+
+    .star-icon {
+        width: 3rem;
+
+        padding: 1rem;
+    }
+
+    .rating-component__header {
+        margin-top: 2.5rem;
+    }
+
+    .rating-component__body {
+        margin-top: 0.625rem;
+    }
+
+    .ratingForm__label {
+        width: 3.1875rem;
+        height: 3.1875rem;
+        padding: 0.9375rem;
+
+        margin-right: 1.0625rem;
+    }
+
+    .ratingForm__label:nth-child(odd) {
+        margin-right: 0.9375rem;
+    }
+
+    .btn {
+        padding: 0.875rem 8.625rem 0.75rem 8.5625rem;
+    }
+    .btn-submit {
+        margin-top: 2rem;
+        margin-inline: unset;
+    }
+
+    .rating-component-back {
+        padding: 2.8125rem 2.5rem 2.8125rem 2rem;
+    }
+
+    .thank-you-img {
+        width: 48%;
+    }
+
+    .rating-component__rating-result {
+        margin-top: 1.375rem;
+        margin-inline: 3.75rem;
+        padding: 0.25rem 1.1875rem 0.25rem 1.25rem;
+    }
+
+    .rating-component__header-submitted {
+        margin-top: 2rem;
+    }
+
+    .rating-component__body-submitted {
+        margin-top: 0.75rem;
+    }
+}
