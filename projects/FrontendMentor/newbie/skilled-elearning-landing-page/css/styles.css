@@ -14,6 +14,63 @@
 }
 
 :root {
+    /* Colors */
+    --col-medium-purple: hsla(234, 25%, 52%, 1);
+    --col-dark-purple: hsla(234, 53%, 16%, 1);
+    --col-light-purple: hsla(233, 10%, 56%, 1);
+
+    --col-hot-pink: hsla(341, 92%, 62%, 1);
+    --col-light-pink: hsla(341, 100%, 83%, 1);
+
+    --col-white: hsla(0, 0%, 100%, 1);
+
+    --col-orange-to-pink: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+    --col-purple-to-pink: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+
+    --col-orange-to-pink-hover: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)
+        ),
+        linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+    --col-purple-to-pink-hover: linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.5)
+        ),
+        linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+
+    /* Typography */
+    --fs-heading-xl: 3.5rem;
+    --lh-heading-xl: 71px;
+    --fw-headings: 800;
+
+    --fs-heading-l: 2.5rem;
+    --lh-heading-l: 3.1875rem;
+
+    --fs-heading-m: 2rem;
+    --lh-heading-m: 2.5rem;
+
+    --fs-heading-s: 1.5rem;
+    --lh-heading-s: 1.75rem;
+
+    --fs-body-m: 1.125rem;
+    --lh-body-m: 1.75rem;
+    --fw-body-m: 500;
+
+    --fs-body-s: 1rem;
+    --lh-body-s: 1.625rem; /* design system says 28px / 1.75rem, but in the elements themselves its 26px / 1.625rem */
+    --fw-body-s: 700;
+    /* Sizing */
+
+    --border-radius: 1.75rem;
+
+    /* Other */
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 @media screen and (min-width: 768px) {
