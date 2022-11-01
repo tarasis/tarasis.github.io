@@ -1,0 +1,23 @@
+/*
+* Design Sizes:
+*   Mobile: 375x2615
+*   Tablet: 768 × 1760
+*   Desktop: 1440 × 1845
+*/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1440px) {
+}
