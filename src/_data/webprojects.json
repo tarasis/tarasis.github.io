@@ -30,6 +30,18 @@
                     "cssClass": "frontEndMentorChallenges",
                     "challenges": [
                         {
+                            "title": "Interactive Rating Challenge",
+                            "url": "/FrontendMentor/newbie/interactive-rating-component/",
+                            "description": "",
+                            "techUsed": [
+                                "html5",
+                                "css3",
+                                "js"
+                            ],
+                            "screenshotURL": "/FrontendMentor/newbie/interactive-rating-component/screenshots/desktop-front.png",
+                            "screenshotAltText": "Interactive Rating Component Challenge from FrontendMentor"
+                        },
+                        {
                             "title": "meet Landing Page",
                             "url": "/FrontendMentor/newbie/meet-landing-page/",
                             "description": "",

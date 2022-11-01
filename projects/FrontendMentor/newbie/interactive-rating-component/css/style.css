@@ -22,24 +22,11 @@
     --col-very-dark-blue: hsl(216, 12%, 8%);
     --col-dark-blue: hsl(213, 19%, 18%);
 
-    --col-button: var(--col-orange);
-    --col-button-hover: var(--col-white);
-    --col-background-page: var(--col-very-dark-blue);
     --col-background-component: radial-gradient(
         98.96% 98.96% at 50% 0%,
         #232a34 0%,
         #181e27 100%
     );
-    --col-background-rating: var(--col-dark-blue);
-    --col-font-rating: var(--col-medium-grey);
-    --col-font-selected-rating: var(--col-orange);
-    --col-font-header: var(--col-white);
-    --col-font-body: var(--col-light-grey);
-    --col-background-button-hover: var(--col-white);
-    --col-font-button-hover: var(--col-orange);
-
-    --col-font-selected-rating: var(--col-white);
-    --col-background-selected-rating: var(--col-medium-grey);
 
     /* Typography */
     --fs-header: 1.5rem;
@@ -55,7 +42,7 @@
     --ls-rating: 0.175px;
 
     --fs-button: 0.875rem;
-    --lh-button: 1.2857142857;
+    --lh-button: 128.57142857%;
     --ls-button: 1.86667px;
 
     --border-radius: 0.9375rem;
@@ -65,21 +52,19 @@ body {
     min-height: 100vh;
     font-family: "Overpass", sans-serif;
 
-    /* margin: 0 auto; */
     display: grid;
     place-content: center;
 
-    background-color: var(--col-background-page);
+    background-color: var(--col-very-dark-blue);
 }
 
 .rating-component {
-    max-width: 327px;
+    max-width: 20.4375rem;
     background: var(--col-background-component);
     border-radius: var(--border-radius);
-    /* margin: 0 1.5rem; */
 }
 .rating-component-front {
-    padding: 24px 24px 32px 24px;
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
 }
 
 .star-icon {
@@ -88,33 +73,29 @@ body {
 
     border-radius: 50%;
     text-align: center;
-    width: 40px;
+    width: 2.5rem;
 
-    padding: 13px;
-}
-
-.star-icon:before {
+    padding: 0.8125rem;
 }
 
 .header {
     font-size: var(--fs-header);
     line-height: var(--lh-header);
-    color: var(--col-font-header);
+    color: var(--col-white);
 }
 
 .body {
     font-size: var(--fs-body);
     line-height: var(--lh-body);
-    color: var(--col-font-body);
+    color: var(--col-light-grey);
 }
 
 .rating-component__header {
-    margin-top: 22px; /* 1rem;*/
+    margin-top: 1.375rem; /* 1rem;*/
 }
 .rating-component__body {
-    margin-top: 17px;
-    /* margin-top: 33px; */
-    margin-left: 2px;
+    margin-top: 1.0625rem;
+    margin-left: 0.125rem;
 }
 
 #ratingForm {
@@ -125,33 +106,26 @@ body {
     border: none;
 }
 
-/* #ratingForm input {
-    visibility: hidden;
-} */
-
-.radio_container {
-    /* display: flex; */
-    /* gap: 30px; */
-}
-
 .ratingForm__label {
     display: inline-block;
 
     cursor: pointer;
     border-radius: 50%;
-    background-color: var(--col-background-rating);
+    background-color: var(--col-dark-blue);
 
     font-size: var(--fs-rating);
     line-height: var(--lh-rating);
     letter-spacing: var(--ls-rating);
 
     font-weight: 700;
-    color: var(--col-font-rating);
-    /* padding: 13px 18.12px 12px 17.29px; */
-    padding: 10px;
+    color: var(--col-medium-grey);
+
+    padding: 0.625rem;
     text-align: center;
-    width: 42px;
-    height: 42px;
+    width: 2.625rem;
+    height: 2.625rem;
+
+    margin-right: 0.8125rem;
 }
 
 #ratingForm input[type="radio"] {
@@ -160,18 +134,15 @@ body {
     width: 0;
 }
 
-#ratingForm label {
-    margin-right: 13px;
-}
-
-#ratingForm label:last-of-type {
+.ratingForm__label:last-of-type {
     margin-right: 0px;
 }
 
-#ratingForm label:hover {
+.ratingForm__label:hover {
     background-color: var(--col-orange);
     color: var(--col-white);
 }
+
 .radio_container input[type="radio"]:focus + label {
     outline: 2px dashed var(--col-white);
     color: var(--col-white);
@@ -184,8 +155,8 @@ body {
 }
 
 .btn {
-    border-radius: 22.5px;
-    padding: 13px 110px 13px 107px;
+    border-radius: 1.4063rem;
+    padding: 0.8125rem 6.875rem 0.8125rem 6.6875rem;
     text-align: center;
 
     font-family: "Overpass", sans-serif;
@@ -204,12 +175,12 @@ body {
     margin-inline: auto;
 
     color: var(--col-white);
-    background-color: var(--col-button);
+    background-color: var(--col-orange);
 }
 
 .btn-submit:where(:focus, :hover) {
     color: var(--col-orange);
-    background-color: var(--col-background-button-hover);
+    background-color: var(--col-white);
 }
 
 .hidden {
@@ -219,39 +190,51 @@ body {
 .visible {
     display: block;
 }
-/*  for rating-component-back */
 
+/*  for rating-component-back */
 .rating-component-back {
-    /* display: none; */
-    padding: 24px 24px 37px 24px;
+    padding: 1.5rem 1.5rem 2.3125rem 1.5rem;
 
     text-align: center;
 }
 
 .thank-you-img {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     width: 50%;
 }
 
-.rating-component__rating {
-    margin-top: 24px;
-    margin-inline: 55px;
+.rating-component__rating-result {
+    margin-top: 1.5rem;
+    margin-inline: 3.4375rem;
 
     font-size: var(--fs-body);
     line-height: var(--lh-body);
     color: var(--col-orange);
 
-    border-radius: 22.5px;
+    border-radius: 1.4063rem;
     background-color: var(--col-dark-blue);
-    padding: 5px 12px;
+    padding: 0.3125rem 0.75rem;
 }
 
 .rating-component__header-submitted {
-    margin-top: 24px;
+    margin-top: 1.5rem;
 }
 
 .rating-component__body-submitted {
-    margin-top: 14px;
+    margin-top: 0.875rem;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
 }
 
 @media screen and (min-width: 62.5rem) {
@@ -266,11 +249,11 @@ body {
         --lh-rating: 150%;
         --ls-rating: 0.2px;
 
-        --fs-button: 15px;
+        --fs-button: 0.9375rem;
         --lh-button: 1.2666666667;
         --ls-button: 2px;
 
-        --border-radius: 30px;
+        --border-radius: 1.875rem;
     }
 
     .rating-component {
@@ -278,66 +261,62 @@ body {
     }
 
     .rating-component-front {
-        padding: 32px 39px 32px 32px;
+        padding: 2rem 2.4375rem 2rem 2rem;
     }
 
     .star-icon {
-        width: 48px;
+        width: 3rem;
 
-        padding: 16px;
+        padding: 1rem;
     }
 
     .rating-component__header {
-        margin-top: 40px;
+        margin-top: 2.5rem;
     }
 
     .rating-component__body {
-        margin-top: 10px;
+        margin-top: 0.625rem;
     }
 
     .ratingForm__label {
-        width: 51px;
-        height: 51px;
-        padding: 15px;
+        width: 3.1875rem;
+        height: 3.1875rem;
+        padding: 0.9375rem;
+
+        margin-right: 1.0625rem;
     }
 
-    #ratingForm label {
-        margin-right: 17px;
-    }
-
-    #ratingForm label:nth-child(odd) {
-        margin-right: 15px;
+    .ratingForm__label:nth-child(odd) {
+        margin-right: 0.9375rem;
     }
 
     .btn {
-        padding: 14px 138px 12px 137px;
+        padding: 0.875rem 8.625rem 0.75rem 8.5625rem;
     }
     .btn-submit {
-        margin-top: 32px;
+        margin-top: 2rem;
         margin-inline: unset;
     }
 
     .rating-component-back {
-        padding: 45px 40px 45px 32px;
-        /* padding: 32px 39px 40px 32px; */
+        padding: 2.8125rem 2.5rem 2.8125rem 2rem;
     }
 
     .thank-you-img {
-        /* margin-top: 16px; */
         width: 48%;
     }
 
-    .rating-component__rating {
-        margin-top: 22px;
-        margin-inline: 60px;
-        padding: 4px 19px 4px 20px;
+    .rating-component__rating-result {
+        margin-top: 1.375rem;
+        margin-inline: 3.75rem;
+        padding: 0.25rem 1.1875rem 0.25rem 1.25rem;
     }
 
     .rating-component__header-submitted {
-        margin-top: 32px;
+        margin-top: 2rem;
     }
 
     .rating-component__body-submitted {
-        margin-top: 12px;
+        margin-top: 0.75rem;
     }
 }
