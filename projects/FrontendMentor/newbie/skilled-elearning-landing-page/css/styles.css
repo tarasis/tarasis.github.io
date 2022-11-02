@@ -40,6 +40,8 @@
         ),
         linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
 
+    --col-white-to-off-white: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+
     /* Typography */
     --fs-heading-xl: 3.5rem;
     --lh-heading-xl: 71px;
