@@ -19,13 +19,13 @@
 
 <body>
 
-  <header>
-    <img src="assets/logo-dark.svg" alt="skilled logo">
-    <a href="">Get Started</a>
-  </header>
+  <header class="header">
 
+    <div>
+      <img class="logo header__logo" src="assets/logo-dark.svg" alt="skilled logo">
+      <a class="btn header__getting-started" href="">Get Started</a>
+    </div>
 
-  <main>
     <section>
       <h1>Maximize skill, minimize budget</h1>
       <p>
@@ -36,7 +36,7 @@
       <a href="">Get Started</a>
 
       <picture>
-        <!-- <source media="(min-width: 1440px)"
+        <source media="(min-width: 1440px)"
           srcset="assets/image-hero-desktop@2x.webp 2x, assets/image-hero-desktop.webp" type="image/webp">
         <source media="(min-width: 1440px)" srcset="assets/image-hero-desktop@2x.png 2x, assets/image-hero-desktop.png">
         <source media="(min-width: 768px)" srcset="assets/image-hero-tablet@2x.webp 2x, assets/image-hero-tablet.webp"
@@ -44,39 +44,48 @@
         <source media="(min-width: 768px)" srcset="assets/image-hero-tablet@2x.png 2x, assets/image-hero-tablet.png">
         <source media="(max-width: 767px)" srcset="assets/image-hero-mobile@2x.webp 2x, assets/image-hero-mobile.webp"
           type="image/webp">
-        <source media="(max-width: 767px)" srcset="assets/image-hero-mobile@2x.png 2x, assets/image-hero-mobile.png"> -->
+        <source media="(max-width: 767px)" srcset="assets/image-hero-mobile@2x.png 2x, assets/image-hero-mobile.png">
+        -->
         <!-- // fallback in different sizes, as well as regular src. -->
         <!-- mobile image 435x409, page 327x301
             x2 870x818
           tablet: 695x723, on page 640.71x640
             x2 1390x1446
           desktop: 1046x938, page 991.63x936.92
-            x2 2092x1876
-         -->
+            x2 2092x1876 -->
 
-        <!-- either widths, or pixel density -->
-        <img srcset="
+        <!-- either widths, or pixel density 327-->
+        <!-- <img src="assets/logo-dark.svg" srcset="
         assets/image-hero-mobile.png 435w,
         assets/image-hero-tablet.png 695w,
         assets/image-hero-desktop.png 1046w" sizes="
-              (max-width: 767px) 327px,
-              (max-width: 1439px) 640px,
-              870px" src="assets/image-hero-mobile.png"
+              (max-width: 767px) 87vw,
+              (max-width: 1439px) 83vw,
+              (max-width: 2000px) 870px,
+              1000px"
           alt="Woman blowing onto a mug. Top right of her is a box indicating 29k Members. On the bottom right is a box indicating 1,451 Course Hours."
-          class="">
-
+          class=""> -->
+        <img class="hero_img" srcset="assets/image-hero-mobile.png, assets/image-hero-mobile@2x.png 2x"
+          alt="Woman blowing onto a mug. Top right of her is a box indicating 29k Members. On the bottom right is a box indicating 1,451 Course Hours."
+          srcset="assets/image-hero-mobile@2x.png 2x">
 
 
       </picture>
 
     </section>
 
+  </header>
+
+
+  <main>
     <section>
 
       <h2>Check out our most popular courses!</h2>
 
       <article>
-        <img src="assets/icon-animation.svg" alt="">
+        <img src="assets/icon-animation.svg"
+          alt="Stylised image of Person running, inside a circle with a gradient from orange to pink"
+          aria-hidden="true">
         <h3>Animation</h3>
         <p>
           Learn the latest animation techniques to create stunning motion design and captivate your audience.
@@ -85,7 +94,8 @@
       </article>
 
       <article>
-        <img src="assets/icon-design.svg" alt="">
+        <img src="assets/icon-design.svg"
+          alt="Stylised image of Picture, inside a circle with a gradient from orange to pink" aria-hidden="true">
         <h3>Design</h3>
         <p>
           Create beautiful, usable interfaces to help shape the future of how the web looks.
@@ -94,7 +104,8 @@
       </article>
 
       <article>
-        <img src="assets/icon-photography.svg" alt="">
+        <img src="assets/icon-photography.svg"
+          alt="Stylised image of a Camera, inside a circle with a gradient from orange to pink" aria-hidden="true">
         <h3>Photography</h3>
         <p>
           Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.
@@ -103,7 +114,8 @@
       </article>
 
       <article>
-        <img src="assets/icon-crypto.svg" alt="">
+        <img src="assets/icon-crypto.svg"
+          alt="Stylised image of 8 dots, inside a circle with a gradient from orange to pink" aria-hidden="true">
         <h3>Crypto</h3>
         <p>
           All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour
@@ -113,7 +125,9 @@
       </article>
 
       <article>
-        <img src="assets/icon-business.svg" alt="">
+        <img src="assets/icon-business.svg"
+          alt="Stylised image of Bag with handles, inside a circle with a gradient from orange to pink"
+          aria-hidden="true">
         <h3>Business</h3>
         <p>
           A step-by-step playbook to help you start, scale, and sustain your business without outside investment.
@@ -124,9 +138,9 @@
     </section>
   </main>
 
-  <footer>
-    <img src="assets/logo-light.svg" alt="skilled logo">
-    <a href="">Get Started</a>
+  <footer class="footer">
+    <img class="logo footer_logo" src="assets/logo-light.svg" alt="skilled logo">
+    <a class="btn footer__getting-started" href="">Get Started</a>
   </footer>
 
 </body>
