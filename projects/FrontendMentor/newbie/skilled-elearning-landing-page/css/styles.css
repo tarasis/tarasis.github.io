@@ -201,6 +201,7 @@ body {
 .card__image {
     position: relative;
     width: 56px;
+    height: 56px;
     top: -23px;
 }
 .card__header {
@@ -251,6 +252,79 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+    header {
+        position: relative;
+        overflow: hidden;
+    }
+    .banner {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-between; */
+        align-items: center;
+        padding: 24px 39.5px 0px 39.5px;
+    }
+    .intro {
+        margin-top: 99px;
+        margin-left: 39.5px;
+        overflow: unset;
+        display: flex;
+        flex-direction: row;
+        flex: 1 0 50%;
+        /* width: 51%; */
+        padding-bottom: 210px;
+        position: relative;
+    }
+
+    .intro > div {
+        flex-basis: 56%;
+    }
+
+    .intro__image {
+        display: block;
+        position: absolute;
+        top: -291px; /*-38vw;*/
+        right: -404px; /*-52.5vw;*/
+    }
+
+    .intro__image img {
+        display: block;
+        /* margin-right: 113%; */
+        width: 695px;
+    }
+
+    .cards {
+        margin-top: unset;
+        margin-inline: 39.5px;
+        /* display: grid;
+        gap: unset;
+        row-gap: 2.5em;
+        column-gap: 1.5em;
+        grid-template-columns: repeat(2, 1fr); */
+        /* margin-top: 210px; */
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 11px;
+        row-gap: 53px;
+    }
+
+    .cards > * {
+        /* flex-shrink: 0; */
+        flex-basis: 49%;
+    }
+
+    .card {
+        padding-inline: 32px 21px;
+        /* margin-inline-start: 32px; */
+    }
+
+    .cards__header {
+        padding: 56px 21px 139px 32px;
+    }
+
+    .footer {
+        margin-top: 88px;
+        padding: 36px 39.5px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
