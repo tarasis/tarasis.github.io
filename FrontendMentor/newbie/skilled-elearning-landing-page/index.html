@@ -1,52 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
   <title>Frontend Mentor | Skilled e-learning landing page</title>
 </head>
+
 <body>
 
-  Get Started
+  <header class="header">
 
-  Maximize skill, minimize budget
+    <div class="banner">
+      <img class="logo banner__logo" src="assets/logo-dark.svg" alt="skilled logo">
+      <a class="btn banner__getting-started" href="">Get Started</a>
+    </div>
 
-  Our modern courses across a range of in-demand skills will give you the 
-  knowledge you need to live the life you want.
+    <div class="intro">
+      <div>
+        <h1 class="intro__header">Maximize skill, minimize budget</h1>
+        <p class="intro__body">
+          Our modern courses across a range of in-demand skills will give you the
+          knowledge you need to live the life you want.
+        </p>
 
-  Get Started
+        <a class="btn intro__getting-started" href="">Get Started</a>
+      </div>
 
-  Check out our most popular courses!
+      <picture class="intro__image">
+        <source media="(min-width: 1440px)"
+          srcset="assets/image-hero-desktop@2x.webp 2x, assets/image-hero-desktop.webp" type="image/webp">
+        <source media="(min-width: 1440px)" srcset="assets/image-hero-desktop@2x.png 2x, assets/image-hero-desktop.png">
+        <source media="(min-width: 768px)" srcset="assets/image-hero-tablet@2x.webp 2x, assets/image-hero-tablet.webp"
+          type="image/webp">
+        <source media="(min-width: 768px)" srcset="assets/image-hero-tablet@2x.png 2x, assets/image-hero-tablet.png">
+        <source media="(max-width: 767px)" srcset="assets/image-hero-mobile@2x.webp 2x, assets/image-hero-mobile.webp"
+          type="image/webp">
+        <source media="(max-width: 767px)" srcset="assets/image-hero-mobile@2x.png 2x, assets/image-hero-mobile.png">
 
-  Animation
-  Learn the latest animation techniques to create stunning motion 
-  design and captivate your audience.
-  Get Started
+        <!-- // fallback in different sizes, as well as regular src. -->
+        <!-- mobile image 435x409, page 327x301
+            x2 870x818
+          tablet: 695x723, on page 640.71x640
+            x2 1390x1446
+          desktop: 1046x938, page 991.63x936.92
+            x2 2092x1876 -->
 
-  Design
-  Create beautiful, usable interfaces to help shape the future of 
-  how the web looks.
-  Get Started
+        <!-- either widths, or pixel density 327-->
+        <!-- <img src="assets/logo-dark.svg" srcset="
+        assets/image-hero-mobile.png 435w,
+        assets/image-hero-tablet.png 695w,
+        assets/image-hero-desktop.png 1046w" sizes="
+              (max-width: 767px) 87vw,
+              (max-width: 1439px) 83vw,
+              (max-width: 2000px) 870px,
+              1000px"
+          alt="Woman blowing onto a mug. Top right of her is a box indicating 29k Members. On the bottom right is a box indicating 1,451 Course Hours."
+          class=""> -->
+        <img class="hero_img" src="assets/image-hero-mobile.png"
+          srcset="assets/image-hero-mobile.png, assets/image-hero-mobile@2x.png 2x"
+          alt="Woman blowing onto a mug. Top right of her is a box indicating 29k Members. On the bottom right is a box indicating 1,451 Course Hours.">
 
-  Photography
-  Explore critical fundamentals like lighting, composition, and focus 
-  to capture exceptional photos.
-  Get Started
 
-  Crypto
-  All you need to know to get started investing in crypto. Go from beginner 
-  to advanced with this 54 hour course.
-  Get Started
+      </picture>
 
-  Business
-  A step-by-step playbook to help you start, scale, and sustain your business 
-  without outside investment.
-  Get Started
+    </div>
 
-  Get Started
+  </header>
+
+
+  <main>
+    <section class="cards">
+
+      <h2 class="card cards__header">Check out our most popular courses!</h2>
+
+      <article class="card">
+        <img class="card__image" src="assets/icon-animation.svg"
+          alt="Stylised image of Person running, inside a circle with a gradient from orange to pink"
+          aria-hidden="true">
+        <h3 class="card__header">Animation</h3>
+        <p class="card__body">
+          Learn the latest animation techniques to create stunning motion design and captivate your audience.
+        </p>
+        <a class="btn card__getting-started" href="">Get Started</a>
+      </article>
+
+      <article class="card">
+        <img class="card__image" src="assets/icon-design.svg"
+          alt="Stylised image of Picture, inside a circle with a gradient from orange to pink" aria-hidden="true">
+        <h3 class="card__header">Design</h3>
+        <p class="card__body">
+          Create beautiful, usable interfaces to help shape the future of how the web looks.
+        </p>
+        <a class="btn card__getting-started" href="">Get Started</a>
+      </article>
+
+      <article class="card">
+        <img class="card__image" src="assets/icon-photography.svg"
+          alt="Stylised image of a Camera, inside a circle with a gradient from orange to pink" aria-hidden="true">
+        <h3 class="card__header">Photography</h3>
+        <p class="card__body">
+          Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.
+        </p>
+        <a class="btn card__getting-started" href="">Get Started</a>
+      </article>
+
+      <article class="card">
+        <img class="card__image" src="assets/icon-crypto.svg"
+          alt="Stylised image of 8 dots, inside a circle with a gradient from orange to pink" aria-hidden="true">
+        <h3 class="card__header">Crypto</h3>
+        <p class="card__body">
+          All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour
+          course.
+        </p>
+        <a class="btn card__getting-started" href="">Get Started</a>
+      </article>
+
+      <article class="card">
+        <img class="card__image" src="assets/icon-business.svg"
+          alt="Stylised image of Bag with handles, inside a circle with a gradient from orange to pink"
+          aria-hidden="true">
+        <h3 class="card__header">Business</h3>
+        <p class="card__body">
+          A step-by-step playbook to help you start, scale, and sustain your business without outside investment.
+        </p>
+        <a class="btn card__getting-started" href="">Get Started</a>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img class="logo footer__logo" src="assets/logo-light.svg" alt="skilled logo">
+    <a class="btn footer__getting-started" href="">Get Started</a>
+  </footer>
 
 </body>
+
 </html>
