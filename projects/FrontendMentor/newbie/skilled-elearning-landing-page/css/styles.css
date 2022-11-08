@@ -85,8 +85,6 @@ body {
     background: var(--col-white-to-off-white);
 }
 
-.header {
-}
 .banner {
     display: flex;
     justify-content: space-between;
@@ -97,9 +95,6 @@ body {
 .logo {
     width: 5.5625rem;
     vertical-align: center;
-}
-
-.banner__logo {
 }
 
 .btn {
@@ -171,8 +166,6 @@ body {
     display: block;
     margin-left: -13%;
     width: 125%;
-}
-.hero_img {
 }
 
 main {
@@ -248,8 +241,6 @@ main {
     justify-content: space-between;
     align-items: center;
     padding: 2.25rem 1rem;
-}
-.footer__logo {
 }
 
 .footer__getting-started {
