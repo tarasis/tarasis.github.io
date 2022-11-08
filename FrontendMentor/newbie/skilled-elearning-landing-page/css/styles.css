@@ -44,17 +44,17 @@
 
     /* Typography */
     --fs-heading-xl: 3.5rem;
-    --lh-heading-xl: 71px;
+    --lh-heading-xl: 4.4375rem;
     --fw-headings: 800;
 
     --fs-heading-l: 2.5rem;
     --lh-heading-l: 3.1875rem;
 
-    --fs-heading-m: 24px;
+    --fs-heading-m: 1.5rem;
     --lh-heading-m: 2rem;
 
-    --fs-heading-s: 20px;
-    --lh-heading-s: 25px;
+    --fs-heading-s: 1.25rem;
+    --lh-heading-s: 1.5625rem;
 
     --fs-body-m: 1.125rem;
     --lh-body-m: 1.75rem;
@@ -85,21 +85,16 @@ body {
     background: var(--col-white-to-off-white);
 }
 
-.header {
-}
 .banner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 16px 0px 16px;
+    padding: 1rem 1rem 0 1rem;
 }
 
 .logo {
-    width: 89px;
+    width: 5.5625rem;
     vertical-align: center;
-}
-
-.banner__logo {
 }
 
 .btn {
@@ -107,7 +102,7 @@ body {
     line-height: var(--lh-body-s);
     font-weight: 700;
 
-    padding: 10px 24px;
+    padding: 0.625rem 1.5rem;
     border-radius: var(--border-radius);
     text-decoration: none;
 }
@@ -122,8 +117,8 @@ body {
 }
 
 .intro {
-    margin-top: 38px;
-    margin-inline: 16px;
+    margin-top: 2.375rem;
+    margin-inline: 1rem;
     overflow: hidden;
 }
 .intro__header {
@@ -143,23 +138,28 @@ body {
     color: var(--col-light-purple);
 }
 .intro__body {
-    margin-top: 26px;
+    margin-top: 1.625rem;
 }
 .intro__getting-started {
     display: inline-block;
-    margin-top: 24px;
+    margin-top: 1.5rem;
 
-    padding: 15px 37.5px;
+    padding: 0.9375rem 2.3438rem;
 
     background: var(--col-orange-to-pink);
     color: var(--col-white);
     align-self: center;
 }
 
+.intro__getting-started:where(:focus, :hover) {
+    background: var(--col-orange-to-pink-hover);
+}
+
 .intro__image {
     display: block;
-    margin-top: 30px;
+    margin-top: 1.875rem;
     /* width: 100%; */
+    z-index: -1;
 }
 
 .intro__image img {
@@ -167,27 +167,30 @@ body {
     margin-left: -13%;
     width: 125%;
 }
-.hero_img {
+
+main {
+    margin-inline: auto;
 }
+
 .cards {
     display: flex;
     flex-direction: column;
 
-    margin-top: -18px;
-    margin-inline: 16px;
-    gap: 38px;
+    margin-top: -1.125rem;
+    margin-inline: 1rem;
+    gap: 2.375rem;
+
+    justify-content: center;
+
+    max-width: 70rem;
 }
 .card {
-    /* display: flex;
-    flex-direction: column; */
-
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background: white;
 
-    /* margin-top: 42px; */
-    padding-inline: 28px;
+    padding-inline: 1.75rem;
 
-    max-width: 350px;
+    max-width: 21.875rem;
 }
 .cards__header {
     font-size: var(--fs-heading-m);
@@ -196,16 +199,16 @@ body {
 
     color: var(--col-white);
     background: var(--col-orange-to-pink);
-    padding: 24px 30px 32px 27px;
+    padding: 1.5rem 1.875rem 2rem 1.6875rem;
 }
 .card__image {
     position: relative;
-    width: 56px;
-    height: 56px;
-    top: -23px;
+    width: 3.5rem;
+    height: 3.5rem;
+    top: -1.4375rem;
 }
 .card__header {
-    margin-top: 0px;
+    margin-top: 0rem;
 
     font-size: var(--fs-heading-s);
     line-height: var(--lh-heading-s);
@@ -214,14 +217,14 @@ body {
     color: var(--col-dark-purple);
 }
 .card__body {
-    margin-top: 16px;
+    margin-top: 1rem;
 }
 .card__getting-started {
     display: inline-block;
     font-size: 1.125rem;
     padding: unset;
-    margin-top: 24px;
-    margin-bottom: 32px;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
 
     color: var(--col-hot-pink);
 }
@@ -231,15 +234,13 @@ body {
 }
 
 .footer {
-    margin-top: 84px;
+    margin-top: 5.25rem;
     background: var(--col-dark-purple);
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 36px 16px;
-}
-.footer__logo {
+    padding: 2.25rem 1rem;
 }
 
 .footer__getting-started {
@@ -251,23 +252,23 @@ body {
     background: var(--col-purple-to-pink-hover);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
     header {
         position: relative;
         overflow: hidden;
     }
     .banner {
-        padding: 24px 39.5px 0px 39.5px;
+        padding: 1.5rem 2.4688rem 0 2.4688rem;
     }
     .intro {
-        margin-top: 99px;
-        margin-left: 39.5px;
+        margin-top: 6.1875rem;
+        margin-left: 2.4688rem;
         overflow: unset;
         display: flex;
         flex-direction: row;
         flex: 1 0 50%;
         /* width: 51%; */
-        padding-bottom: 210px;
+        padding-bottom: 13.125rem;
         position: relative;
     }
 
@@ -278,75 +279,69 @@ body {
     .intro__image {
         display: block;
         position: absolute;
-        top: -291px; /*-38vw;*/
-        right: -404px; /*-52.5vw;*/
+        top: -18.1875rem; /*-38vw;*/
+        right: -25.25rem; /*-52.5vw;*/
     }
 
     .intro__image img {
         display: block;
         /* margin-right: 113%; */
-        width: 695px;
+        width: 43.4375rem;
     }
 
     .cards {
         margin-top: unset;
-        margin-inline: 39.5px;
-        /* display: grid;
-        gap: unset;
-        row-gap: 2.5em;
-        column-gap: 1.5em;
-        grid-template-columns: repeat(2, 1fr); */
-        /* margin-top: 210px; */
+        margin-inline: 2.4688rem;
+
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 11px;
-        row-gap: 53px;
+        gap: 0.6875rem;
+        row-gap: 3.3125rem;
     }
 
     .cards > * {
-        /* flex-shrink: 0; */
         flex-basis: 49%;
     }
 
     .card {
-        padding-inline: 32px 21px;
-        /* margin-inline-start: 32px; */
+        padding-inline: 2rem 1.3125rem;
     }
 
     .cards__header {
-        padding: 56px 21px 139px 32px;
+        padding: 3.5rem 1.3125rem 8.6875rem 2rem;
     }
 
     .footer {
-        margin-top: 88px;
-        padding: 36px 39.5px;
+        margin-top: 5.5rem;
+        padding: 2.25rem 2.4688rem;
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 90rem) {
+    /* 1440px */
     :root {
         --fs-heading-m: 2rem;
         --lh-heading-m: 2.5rem;
 
-        --fs-heading-s: 24px;
-        --lh-heading-s: 30px;
+        --fs-heading-s: 1.5rem;
+        --lh-heading-s: 1.875rem;
     }
 
     .btn {
         font-size: var(--fs-body-m);
         line-height: var(--lh-body-m);
 
-        padding: 14px 31.5px;
+        padding: 0.875rem 1.9688rem;
     }
 
     .banner {
-        padding: 24px 165px 0 165px;
+        padding: 1.5rem 10.3125rem 0 10.3125rem;
     }
 
     .intro {
-        margin-top: 174px;
-        margin-left: 165px;
-        padding-bottom: 250px;
+        margin-top: 10.875rem;
+        margin-left: 10.3125rem;
+        padding-bottom: 15.625rem;
     }
 
     .intro > div {
@@ -364,39 +359,42 @@ body {
     }
 
     .intro__getting-started {
-        padding: 19px 31px 16px 32px;
-        margin-top: 42px;
+        padding: 1.1875rem 1.9375rem 1rem 2rem;
+        margin-top: 2.625rem;
     }
 
     .intro__image {
-        top: -431px; /*-38vw;*/
-        right: -486px; /*-52.5vw;*/
+        top: -26.9375rem; /*-38vw;*/
+        right: -30.375rem; /*-52.5vw;*/
     }
 
     .intro__image img {
-        width: 1046px;
+        width: 65.375rem;
     }
 
     .cards {
-        margin-inline: 165px;
-        gap: 30px;
-        row-gap: 80px;
+        margin-inline: 10.3125rem;
+        gap: 1.875rem;
+        row-gap: 5rem;
     }
 
     .cards__header {
-        padding: 64px 32px 138px 32px;
+        padding: 4rem 2rem 8.625rem 2rem;
     }
 
     .card {
-        padding-inline: 32px;
+        display: flex;
+        flex-direction: column;
+        padding-inline: 2rem;
     }
 
     .card__header {
-        margin-top: 4px;
+        margin-top: 0.5rem;
     }
 
     .card__body {
-        margin-top: 24px;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
         font-size: var(--fs-body-m);
         line-height: var(--lh-body-m);
     }
@@ -404,15 +402,16 @@ body {
     .card__getting-started {
         padding: unset;
         /* margin-top: ; */
-        margin-bottom: 40px;
+        margin-top: auto;
+        margin-bottom: 2.5rem;
     }
 
     .logo {
-        width: 114px;
+        width: 7.125rem;
     }
 
     .footer {
-        margin-top: 140px;
-        padding: 32px 165px;
+        margin-top: 8.75rem;
+        padding: 2rem 10.3125rem;
     }
 }
