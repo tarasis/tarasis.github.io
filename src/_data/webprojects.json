@@ -30,6 +30,17 @@
                     "cssClass": "frontEndMentorChallenges",
                     "challenges": [
                         {
+                            "title": "skilled eLearning Landing Page",
+                            "url": "/FrontendMentor/newbie/skilled-elearning-landing-page/",
+                            "description": "",
+                            "techUsed": [
+                                "html5",
+                                "css3"
+                            ],
+                            "screenshotURL": "/FrontendMentor/newbie/skilled-elearning-landing-page/screenshots/desktop.png",
+                            "screenshotAltText": "skilled eLearning Landing Page Challenge from FrontendMentor"
+                        },
+                        {
                             "title": "Interactive Rating Challenge",
                             "url": "/FrontendMentor/newbie/interactive-rating-component/",
                             "description": "",
