@@ -1,3 +1,54 @@
+"use strict";
+
+let username = "octocat";
+const apiURL = "https://api.github.com/users/";
+
+const searchField = document.getElementById("search-field");
+const searchButton = document.getElementById("search-button");
+
+searchButton.addEventListener("click", getProfile);
+
+window.document.addEventListener("DOMContentLoaded", getProfile);
+
+async function getProfile() {
+    try {
+        addLoaderAnimation();
+
+        if (searchField.value.length >= 1) {
+            username = searchField.value;
+        }
+
+        let url = `${apiURL}${username}`;
+
+        const response = await fetch(url);
+        // console.log(response);
+        const data = await response.json();
+
+        console.log(data);
+
+        // add fields to populate here
+    } catch (error) {
+        //do something, we got an error
+        alert(
+            `Something has gone wrong. Please try again shortly\n\n ${error}`
+        );
+        console.log("Error: " + error);
+
+        removeLoaderAnimation();
+    }
+}
+
+function addLoaderAnimation() {
+    // button.children[0].classList.add("animate");
+    setTimeout(() => {
+        removeLoaderAnimation();
+    }, 2000);
+}
+
+function removeLoaderAnimation() {
+    // button.children[0].classList.remove("animate");
+}
+
 // example return from api call to https://api.github.com/users/tarasis
 
 // {
