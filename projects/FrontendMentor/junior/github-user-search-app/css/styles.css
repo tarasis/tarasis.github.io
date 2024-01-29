@@ -1,0 +1,140 @@
+/*
+ *  Design Sizes:   Page    Inner
+ *      Desktop: 1440x900 (730x586)
+ *      Tablet:  768x1024 (573x648)
+ *      Mobile:  375x777 (327x667)
+*/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors */
+    color: black;
+    --col-blue: hsla(212, 100%, 50%, 1);
+    --col-lighter-blue: hsla(217, 35%, 45%, 1);
+    --col-gray-blue: hsla(217, 20%, 51%, 1);
+    --col-dark-blue: hsla(217, 21%, 21%, 1);
+
+    --col-light-gray: hsla(227, 100%, 98%, 1);
+    --col-white: hsla(0, 0%, 100%, 1);
+
+    --col-red: hsla(0, 91%, 62%, 1);
+
+    --col-page-background: var(--col-light-gray);
+    --col-main-section-background: var(--col-white);
+    --col-info-section-background: var(--col-light-gray);
+    --col-main-text: var(--col-lighter-blue);
+    --col-headings: var(--col-dark-blue);
+    --col-username: var(--col-blue);
+    --col-button: var(--col-blue);
+    --col-theme-switched: var(--col-gray-blue);
+    --col-date: var(--col-gray-blue);
+
+    /* Typography */
+
+    --fs-h1: 26px;
+    --lh-h1: 38px;
+    --fw-h1: 700;
+
+    --fs-h2: 22px;
+    --lh-h2: 33px;
+    --fw-h2: 700;
+
+    --fs-h3: 16px;
+    --lh-h3: 24px;
+    --fw-h3: 400;
+
+    --fs-h4: 13px;
+    --lh-h4: 20px;
+    --fw-h4: 400;
+
+    --fs-body: 15px;
+    --lh-body: 25px;
+    --fw-body: 400;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Space Mono", monospace;
+}
+
+/* For Light / Dark button */
+
+/* Update styling for checkbox */
+html[data-theme="theme-dark"] {
+    --col-page-background: hsla(220, 40%, 13%, 1);
+    --col-main-section-background: hsla(222, 41%, 20%, 1);
+    --col-info-section-background: hsla(220, 40%, 13%, 1);
+    --col-main-text: var(--col-white);
+    --col-headings: var(--col-white);
+    --col-username: var(--col-blue);
+    --col-button: var(--col-blue);
+    --col-theme-switched: var(--col-gray-blue);
+    --col-date: var(--col-gray-blue);
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    /* left: 0; */
+    right: -0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+
+    width: 50px;
+    height: 50px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    left: 0px;
+    bottom: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    box-shadow: 0 0px 15px #2020203d;
+    background-image: url("../assets/icon-moon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input:checked + .slider:before {
+    color: green;
+    background-image: url("../assets/icon-sun.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1440px) {
+}

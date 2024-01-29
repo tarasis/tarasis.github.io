@@ -5,30 +5,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <!-- <script src="js/script.js" defer></script> -->
+  <script src="js/github-api.js" defer></script>
+  <script src="js/theme-manager.js" defer></script>
 
   <title>Frontend Mentor | GitHub user search app</title>
 </head>
 
 <body>
 
-  devfinder
+  <header>
+    <h1>devfinder</h1>
 
-  Light
-  Dark
+    <label id="switch" class="switch" aria-hidden="true">
+      <input type="checkbox" id="theme-toggle" aria-label="Light / Dark mode switcher">
+      <span class="slider round"></span>
+    </label>
 
-  Search GitHub username...
-  <input type="text" name="search-username" id="search-field">
-  Search
-  <button type="submit" id="search-button"></button>
+    Light
+    Dark
+  </header>
 
-  Joined
+  <main>
 
-  Repos
-  Followers
-  Following
+    <section>
+      <input placeholder="Search GitHub username..." type="text" name="search-username" id="search-field">
+      <button type="submit" id="search-button">Search</button>
+    </section>
+
+    <article>
+      <section>
+        <!-- img -->
+      </section>
+      <section>
+        <header>
+          <div>
+            <h2>fullname</h2>
+            <h3>username</h3>
+          </div>
+          <p>Joined date</p>
+        </header>
+
+        <p>bio</p>
+
+        <section>
+          <h4>Repos</h4>
+          <h4>Followers</h4>
+          <h4>Following</h4>
+        </section>
+
+        <section>
+          <div>
+            <img src="assets/icon-location.svg" alt="" aria-hidden="true">
+            <a href="#">empty</a>
+          </div>
+
+          <div>
+            <img src="assets/icon-website.svg" alt="" aria-hidden="true">
+            <a href="#">empty</a>
+          </div>
+
+          <div>
+            <img src="assets/icon-twitter.svg" alt="" aria-hidden="true">
+            <a href="#">empty</a>
+          </div>
+
+          <div>
+            <img src="assets/icon-company.svg" alt="" aria-hidden="true">
+            <a href="#">empty</a>
+          </div>
+        </section>
+
+      </section>
+
+    </article>
+
+  </main>
 
 </body>
 
