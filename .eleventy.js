@@ -1,8 +1,9 @@
-const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const Image = require("@11ty/eleventy-img");
 const CleanCSS = require("clean-css");
 
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
+    const { EleventyRenderPlugin } = await import("@11ty/eleventy");
+
     eleventyConfig.addPassthroughCopy("./src/css");
     eleventyConfig.addPassthroughCopy("./src/fonts");
     eleventyConfig.addPassthroughCopy("./src/images");
