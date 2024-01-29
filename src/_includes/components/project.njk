@@ -3,8 +3,11 @@
 {% if projectContent %}
     <div class="project-card stacked">
         <a href="{{projectContent.url}}">
-            <img loading="lazy" class="card__img" src="{{projectContent.screenshotURL}}"
-                        alt="{{projectContent.screenshotAltText}}"/>
+            {# {% if  projectContent.screenshotURL contains "screenshots" %} #}
+            {% imageGenSync projectContent.screenshotURL , projectContent.screenshotAltText %}
+            {# {% elif %} #}
+
+            {# {% endif %} #}
         </a>
         <div class="card__content">
             <h3 class="card__title">

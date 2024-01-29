@@ -1,4 +1,4 @@
-{% if cssReset %}
+{# {% if cssReset %}
     <link rel="stylesheet" href="/FrontendMentor/reset.css"/>
 {% endif %}
 
@@ -9,4 +9,24 @@
     {% for link in css %}
         <link rel="stylesheet" href="{{link}}"/>
     {% endfor %}
-{% endif %}
+{% endif %} #}
+
+{% set myCss %}
+    {% if cssReset %}
+      {% include "../../../projects/FrontendMentor/reset.css" %}
+    {% endif %}
+
+  {% include "../../css/header.css" %}
+  {% include "../../css/footer.css" %}
+
+  {% if css %}
+    {% for link in css %}
+        {% include "../../" + link %}/>
+    {% endfor %}
+  {% endif %}
+
+{% endset %}
+<!-- feed it through our cssmin filter to minify -->
+<style>
+  {{ myCss | cssmin | safe }}
+</style>
