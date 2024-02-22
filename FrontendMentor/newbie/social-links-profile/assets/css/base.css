@@ -1,0 +1,11 @@
+body {
+    /* -webkit-user-select: none; */
+    /* user-select: none; */
+    /* position: relative; */
+    min-height: 100dvh;
+
+    display: grid;
+    place-content: center;
+
+    background-color: var(--off-black);
+}

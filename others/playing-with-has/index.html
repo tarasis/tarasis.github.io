@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing with has selector</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>:has Playground</h1>
+    </header>
+    <!-- ideas: -->
+
+    <!-- highlight box that has hover but blur others -->
+
+    <!-- search to toggle classes that highlight certain matches -->
+
+    <main>
+        <section id="section1">
+            <!-- Section 1 -->
+            <h2>Section 1 - simple :has</h2>
+            &nbsp;
+            <h3>
+                What do <span>you</span> think?
+            </h3>
+
+            <h3>
+                What do you think?
+            </h3>
+
+            <!-- selective margins based on if a subtitle is there -->
+            <div class="header-group">
+                <h3>Blog Post Title</h3> <!-- main spacing applied here -->
+            </div>
+
+            <div class="header-group">
+                <h3>Blog Post Title</h3>
+                <div class="subtitle"> <!-- main spacing applied here -->
+                    This is a subtitle
+                </div>
+            </div>
+        </section>
+        <section id="section2">
+            <!-- Section 2 -->
+            <h2>Section 2 - has for light dark switch</h2>
+
+            <div class="switch">
+                <label class="switch__label" for="switch">Light / Dark</label>
+                <input id="switch" class="switch__input" name="switch" type="checkbox">
+            </div>
+        </section>
+        <section id="section3">
+            <h2>Section 3</h2>
+        </section>
+    </main>
+
+    <footer>
+        <i class="nf nf-fa-heart"></i> 2024 using <i class="nf nf-md-microsoft_visual_studio_code"></i> <i
+            class="nf nf-dev-apple"></i>
+        <i class="nf nf-dev-css3"></i> <i class="nf nf-linux-archlinux"></i>
+    </footer>
+</body>
+
+</html>
