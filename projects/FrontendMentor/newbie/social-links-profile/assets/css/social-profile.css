@@ -1,0 +1,72 @@
+.social-profile {
+    padding: var(--padding);
+    background-color: var(--dark-grey);
+    border-radius: var(--border-radius-frame);
+
+    color: var(--white);
+    font-weight: var(--fw-default);
+    font-size: var(--fs-default);
+    line-height: var(--lh-default);
+    text-align: center;
+
+    font-family: "Inter";
+
+    /* width will grow between design sizes of 327 to 384 depending on screen size */
+    width: var(--width-frame);
+
+    @media (orientation: landscape) and (hover: none) and (pointer: coarse) {
+        /* CSS to target only landscape mobile users */
+        width: auto;
+
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+/*
+    * Set the margin bottom for every element in this unnamed div.
+    * Using the where to lower the specificity so that I can override
+    * the margin bottom for .social-profile__name
+ */
+:where(.social-profile > div:nth-child(1) > *) {
+    margin-bottom: var(--margin-bottom-default);
+}
+
+.social-profile__avatar {
+    border-radius: var(--border-radius-avatar);
+    width: var(--size-avatar);
+    margin-inline: auto;
+}
+
+.social-profile__name {
+    font-weight: var(--fw-name-text);
+    font-size: var(--fs-name-text);
+    margin-bottom: var(--margin-bottom-name);
+}
+
+.social-profile__location {
+    color: var(--neon-green);
+}
+
+.social-profile__info {
+    font-weight: var(--fw-info-text);
+}
+
+.social-profile_links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-between-links);
+}
+
+.social-profile__link {
+    padding: var(--padding-link);
+    background-color: var(--grey);
+    border-radius: var(--border-radius-link);
+    color: var(--white);
+    text-decoration: none;
+}
+
+.social-profile__link:where(:hover, :focus) {
+    background-color: var(--neon-green);
+    color: var(--off-black);
+}

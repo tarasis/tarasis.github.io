@@ -1,0 +1,53 @@
+:root {
+    /* Colors */
+
+    --off-black: hsl(0, 0%, 8%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --grey: hsl(0, 0%, 20%);
+    --white: hsl(0, 0%, 100%);
+    --neon-green: hsl(75, 94%, 57%);
+
+    /* Font Sizing */
+
+    --fs-name-text: 1.5rem;
+    --fs-default: 0.875rem; /* 14px used for info, location, and link text*/
+
+    /* Line Height */
+
+    --lh-default: 1.5;
+
+    /* Font Families */
+
+    /* Font Weights */
+
+    --fw-info-text: 400;
+    --fw-name-text: 600;
+    --fw-default: 700; /* used for location & link text*/
+
+    /* Font Styles */
+
+    /* Sizing */
+    --width-frame: clamp(
+        20.4375rem,
+        19.1831rem + 5.3521vi,
+        24rem
+    ); /* 327 @ 375px and 384 @ 1440px */
+
+    /* Spacing */
+
+    --padding: clamp(1.5rem, 1.1479rem + 1.5023vi, 2.5rem); /* 24px → 40px */
+
+    --padding-link: 12px;
+
+    --margin-bottom-default: 24px;
+    --margin-bottom-name: 4px;
+
+    --gap-between-links: 16px;
+
+    /* Radius */
+    --border-radius-link: 8px;
+    --border-radius-frame: 12px;
+    --border-radius-avatar: 50%;
+
+    --size-avatar: 88px;
+}

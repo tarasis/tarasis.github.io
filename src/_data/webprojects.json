@@ -30,6 +30,17 @@
                     "cssClass": "frontEndMentorChallenges",
                     "challenges": [
                         {
+                            "title": "Social Links Profile",
+                            "url": "/FrontendMentor/newbie/social-links-profile/",
+                            "description": "",
+                            "techUsed": [
+                                "html5",
+                                "css3"
+                            ],
+                            "screenshotURL": "/FrontendMentor/newbie/social-links-profile/screenshots/desktop.png",
+                            "screenshotAltText": "Screenshot of my completed mobile version of the Social Links Profile challenge from Frontend Mentor"
+                        },
+                        {
                             "title": "skilled eLearning Landing Page",
                             "url": "/FrontendMentor/newbie/skilled-elearning-landing-page/",
                             "description": "",
