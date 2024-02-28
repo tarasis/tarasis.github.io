@@ -1,0 +1,43 @@
+:root {
+    --dark-charcoal: #312e2c;
+    --dark-raspberry: #7a284e;
+    --brandy-red: #854632;
+    --wenge-brown: #5f564d;
+    --eggshell: #f3e5d7;
+    --white-coffee: #e3ddd7;
+    --snow: #fff7fb;
+    --white: #fff;
+}
+
+body {
+    color: var(--wenge-brown);
+    background-color: var(--eggshell);
+}
+
+article {
+    background-color: var(--white);
+}
+
+h1 {
+    color: var(--dark-charcoal);
+}
+
+h2 {
+    color: var(--brandy-red);
+}
+
+h3 {
+    color: var(--dark-raspberry);
+}
+
+li:before {
+    color: var(--brandy-red);
+}
+
+hr {
+    color: var(--white-coffee);
+}
+
+.preparation {
+    background-color: var(--snow);
+}

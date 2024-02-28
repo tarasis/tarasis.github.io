@@ -1,0 +1,16 @@
+body {
+    /* -webkit-user-select: none; */
+    /* user-select: none; */
+    /* position: relative; */
+    min-height: 100dvh;
+
+    /* ! TEMP REMOVE */
+    @media (min-width: 50ch) {
+        height: 1955px;
+    }
+
+    display: grid;
+    place-content: center;
+
+    background-color: var(--off-black);
+}

@@ -17,7 +17,8 @@
   "author": "Robert McGovern",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "3.0.0-alpha.4"
+    "@11ty/eleventy": "3.0.0-alpha.4",
+    "lightningcss-cli": "^1.24.0"
   },
   "dependencies": {
     "@11ty/eleventy-img": "^3.1.8",
