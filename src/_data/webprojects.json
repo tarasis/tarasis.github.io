@@ -30,6 +30,17 @@
 					"cssClass": "frontEndMentorChallenges",
 					"challenges": [
 						{
+							"title": "Recipe Page",
+							"url": "/FrontendMentor/newbie/recipe-page/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/FrontendMentor/newbie/recipe-page/screenshots/desktop.png",
+							"screenshotAltText": "Screenshot of my completed mobile version of the Recipe Page challenge from Frontend Mentor"
+						},
+						{
 							"title": "Blog Preview Card",
 							"url": "/FrontendMentor/newbie/blog-preview-card/",
 							"description": "",
