@@ -8,9 +8,11 @@ article {
 	border: black 1px solid;
 	/* shadow scales from 8px at 375, to 16 at 1440 */
 	box-shadow: var(--sizing-box-shadow) var(--sizing-box-shadow) black;
+	/*! design shows desktop active with 16px, but desktop inactive with 8px */
+	/* box-shadow: 8px 8px black; */
 
 	img {
-		border-radius: 20px;
+		border-radius: 10px;
 	}
 
 	a {
@@ -26,4 +28,8 @@ article {
 		background-color: var(--clr-yellow);
 		border-radius: 4px;
 	}
+}
+
+article:hover {
+	--sizing-box-shadow: 16px;
 }
