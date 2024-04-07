@@ -1,0 +1,42 @@
+:root {
+	/** Font related */
+	/* Font Family */
+	--ff-figtree: 'FigTree', sans-serif;
+
+	/* Font Weights */
+	--fw-500: 500;
+	--fw-600: 600;
+	--fw-700: 700;
+	--fw-800: 800;
+
+	/* Font Sizes */
+	/* * 36px * 375, 40px @ 1440px */
+	--fs-post-title: var(--fs-20-24px);
+	--fs-post-date: var(--fs-12-14px);
+	--fs-post-author: var(--fs-14px);
+	--fs-post-excerpt: var(--fs-14-16px);
+	--fs-post-category: var(--fs-12-14px);
+
+	--fs-12-14px: clamp(0.75rem, 0.706rem + 0.1878vw, 0.875rem);
+	--fs-14-16px: clamp(0.875rem, 0.831rem + 0.1878vw, 1rem);
+	--fs-20-24px: clamp(1.25rem, 1.162rem + 0.3756vw, 1.5rem);
+
+	--fs-14px: 0.875rem;
+
+	/* Line Heights */
+	--lh-150: 1.5;
+
+	/** Colors */
+
+	--clr-yellow: hsl(47, 88%, 63%);
+	--clr-white: hsl(0, 0%, 100%);
+	--clr-grey: hsl(0, 0%, 50%);
+	--clr-black: hsl(0, 0%, 7%);
+
+	/** Sizing  */
+
+	/* shadow scales from 8px at 375, to 16 at 1440 */
+	--sizing-box-shadow: clamp(0.5rem, 0.3239rem + 0.7512vi, 1rem);
+	/* Size between: 327px → 384px */
+	--sizing-article-width: clamp(20.4375rem, 19.1831rem + 5.3521vi, 24rem);
+}

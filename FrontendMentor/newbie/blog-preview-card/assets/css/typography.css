@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'FigTree';
+	src: url('../fonts/figtree/Figtree-VariableFont_wght.ttf');
+}
+
+article {
+	font-family: var(--ff-figtree);
+	font-size: var(--fs-12-14px);
+	font-weight: var(--fw-800);
+
+	line-height: var(--lh-150);
+
+	h2 {
+		font-size: var(--fs-post-title);
+	}
+
+	.category,
+	.title,
+	.author-name {
+		font-weight: var(--fw-800);
+	}
+
+	.date {
+		font-weight: var(--fw-500);
+	}
+
+	.excerpt {
+		color: var(--clr-grey);
+		font-weight: var(--fw-500);
+		font-size: var(--fs-post-excerpt);
+	}
+}

@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "YoungSerif";
+    src: url("../fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url("../fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+:root {
+    /* Font Family */
+    --ff-outfit: "Outfit", sans-serif;
+    --ff-young: "YoungSerif", sans-serif;
+
+    /* Font Weights */
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+
+    /* Font Sizes */
+    /* * 36px * 375, 40px @ 1440px */
+    --fs-title: clamp(2.25rem, 2.162rem + 0.3756vi, 2.5rem);
+    --fs-16: 1rem;
+    --fs-20: 1.25rem;
+    --fs-28: 1.75rem;
+
+    --fs-default: var(--fs-16);
+
+    /* Line Heights */
+    --lh-100: 1;
+    --lh-150: 1.5;
+}
+
+body,
+h3 {
+    font-family: var(--ff-outfit);
+    font-size: var(--fs-16);
+    font-weight: var(--fw400);
+
+    line-height: var(--lh-150);
+}
+
+h1,
+h2 {
+    font-weight: var(--fw-400);
+    font-family: var(--ff-young);
+
+    line-height: var(--lh-100);
+}
+
+h1 {
+    font-size: var(--fs-title);
+}
+
+h2 {
+    font-size: var(--fs-28);
+}
+
+h3 {
+    font-weight: var(--fw-600);
+    line-height: var(--lh-100);
+    font-size: var(--fs-20);
+}
+
+li > span {
+    font-weight: var(--fw-700);
+}

@@ -1,0 +1,5 @@
+.emphasized,
+li::marker {
+    font-weight: var(--fw-700);
+    color: var(--brandy-red);
+}
