@@ -1,0 +1,29 @@
+body {
+	background-color: var(--clr-yellow);
+}
+
+article {
+	background-color: var(--clr-white);
+	border-radius: 20px;
+	border: black 1px solid;
+	/* shadow scales from 8px at 375, to 16 at 1440 */
+	box-shadow: var(--sizing-box-shadow) var(--sizing-box-shadow) black;
+
+	img {
+		border-radius: 20px;
+	}
+
+	a {
+		color: var(--clr-black);
+		text-decoration: none;
+	}
+
+	a:has(:hover, :focus) {
+		color: var(--clr-yellow);
+	}
+
+	.category {
+		background-color: var(--clr-yellow);
+		border-radius: 4px;
+	}
+}

@@ -1,0 +1,8 @@
+body {
+	min-height: 100dvh;
+
+	display: grid;
+	place-content: center;
+
+	background-color: var(--clr-yellow);
+}

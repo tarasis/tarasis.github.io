@@ -1,401 +1,412 @@
 {
-    "services": [
-        {
-            "name": "Frontend Mentor",
-            "svgSource": "/svgs/frontendmentor.svg",
-            "svgAltText": "Frontend Mentor Logo",
-            "description": "Collection of challenges I completed for Frontend Mentor",
-            "cssClass": "",
-            "difficulty": [
-                {
-                    "title": "Junior",
-                    "cssClass": "frontEndMentorChallenges",
-                    "challenges": [
-                        {
-                            "title": "Advice Generator App",
-                            "url": "/FrontendMentor/junior/advice-generator-app/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3",
-                                "js"
-                            ],
-                            "screenshotURL": "/FrontendMentor/junior/advice-generator-app/screenshots/mobile.png",
-                            "screenshotAltText": "Advice Generator App"
-                        }
-                    ]
-                },
-                {
-                    "title": "Newbie",
-                    "cssClass": "frontEndMentorChallenges",
-                    "challenges": [
-                        {
-                            "title": "Social Links Profile",
-                            "url": "/FrontendMentor/newbie/social-links-profile/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3"
-                            ],
-                            "screenshotURL": "/FrontendMentor/newbie/social-links-profile/screenshots/desktop.png",
-                            "screenshotAltText": "Screenshot of my completed mobile version of the Social Links Profile challenge from Frontend Mentor"
-                        },
-                        {
-                            "title": "skilled eLearning Landing Page",
-                            "url": "/FrontendMentor/newbie/skilled-elearning-landing-page/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3"
-                            ],
-                            "screenshotURL": "/FrontendMentor/newbie/skilled-elearning-landing-page/screenshots/desktop.png",
-                            "screenshotAltText": "skilled eLearning Landing Page Challenge from FrontendMentor"
-                        },
-                        {
-                            "title": "Interactive Rating Challenge",
-                            "url": "/FrontendMentor/newbie/interactive-rating-component/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3",
-                                "js"
-                            ],
-                            "screenshotURL": "/FrontendMentor/newbie/interactive-rating-component/screenshots/desktop-front.png",
-                            "screenshotAltText": "Interactive Rating Component Challenge from FrontendMentor"
-                        },
-                        {
-                            "title": "meet Landing Page",
-                            "url": "/FrontendMentor/newbie/meet-landing-page/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3"
-                            ],
-                            "screenshotURL": "/FrontendMentor/newbie/meet-landing-page/screenshots/desktop.png",
-                            "screenshotAltText": "meet Landing Page Challenge from FrontendMentor"
-                        },
-                        {
-                            "title": "BASE Apparel Coming Soon Page",
-                            "url": "/FrontendMentor/newbie/base-apparel-coming-soon/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3",
-                                "js"
-                            ],
-                            "screenshotURL": "/FrontendMentor/newbie/base-apparel-coming-soon/screenshots/desktop.png",
-                            "screenshotAltText": "Base Apparel Coming Soon page Challenge from FrontendMentor"
-                        },
-                        {
-                            "title": "NFT preview card component",
-                            "url": "/FrontendMentor/newbie/nft-preview-card-component/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3"
-                            ],
-                            "screenshotURL": "/FrontendMentor/newbie/nft-preview-card-component/screenshots/desktop.png",
-                            "screenshotAltText": "NFT preview card component Challenge from FrontendMentor"
-                        },
-                        {
-                            "title": "equalizer Landing Page",
-                            "url": "/FrontendMentor/newbie/equalizer-landing-page/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3"
-                            ],
-                            "screenshotURL": "/FrontendMentor/newbie/equalizer-landing-page/screenshots/desktop.png",
-                            "screenshotAltText": "equalizer Landing Page Challenge from FrontendMentor"
-                        },
-                        {
-                            "title": "Product Preview Card Component",
-                            "url": "/FrontendMentor/newbie/product-preview-card-component/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3",
-                                "js"
-                            ],
-                            "screenshotURL": "/FrontendMentor/newbie/product-preview-card-component/screenshots/desktop.png",
-                            "screenshotAltText": "Product Preview Card Component Challenge from FrontendMentor"
-                        },
-                        {
-                            "title": "QR Code Component",
-                            "url": "/FrontendMentor/newbie/qr-code-component/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3"
-                            ],
-                            "screenshotURL": "/FrontendMentor/newbie/qr-code-component/screenshots/desktop.png",
-                            "screenshotAltText": "QR Code Component Challenge from FrontendMentor"
-                        },
-                        {
-                            "title": "Social Proof Section",
-                            "url": "/FrontendMentor/newbie/social-proof-section/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3"
-                            ],
-                            "screenshotURL": "/FrontendMentor/newbie/social-proof-section/screenshots/desktop.png",
-                            "screenshotAltText": "Social Proof Challenge from FrontendMentor"
-                        },
-                        {
-                            "title": "Intro Component with Signup form",
-                            "url": "/FrontendMentor/newbie/intro-component-with-signup-form/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3",
-                                "js"
-                            ],
-                            "screenshotURL": "/FrontendMentor/newbie/intro-component-with-signup-form/screenshots/mobile.png",
-                            "screenshotAltText": "Intro Component Challenge from FrontendMentor"
-                        },
-                        {
-                            "title": "FAQ Accordion Card",
-                            "url": "/FrontendMentor/newbie/faq-accordion-card/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3"
-                            ],
-                            "screenshotURL": "/FrontendMentor/newbie/faq-accordion-card/screenshots/mobile-inactive.png",
-                            "screenshotAltText": "FAQ Accordion Card Challenge from FrontendMentor"
-                        },
-                        {
-                            "title": "Pod Request Access Landing Page",
-                            "url": "/FrontendMentor/newbie/pod-request-access-landing-page/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3"
-                            ],
-                            "screenshotURL": "/FrontendMentor/newbie/pod-request-access-landing-page/screenshots/mobile.png",
-                            "screenshotAltText": "Pod Request Landing Page Challenge from FrontendMentor"
-                        },
-                        {
-                            "title": "3 Column Preview Card Component",
-                            "url": "/FrontendMentor/newbie/3-column-preview-card-component/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3"
-                            ],
-                            "screenshotURL": "/FrontendMentor/newbie/3-column-preview-card-component/screenshots/desktop.png",
-                            "screenshotAltText": "3 Column Preview Card Component Challenge from FrontendMentor"
-                        },
-                        {
-                            "title": "Order Summary Card Component",
-                            "url": "/FrontendMentor/newbie/order-summary-component/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3"
-                            ],
-                            "screenshotURL": "/screenshots/fem-newbie-order-summary-component.png",
-                            "screenshotAltText": "Order Summary Component Challenge from FrontendMentor"
-                        },
-                        {
-                            "title": "Profile Card Component",
-                            "url": "/FrontendMentor/newbie/profile-card-component/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3"
-                            ],
-                            "screenshotURL": "/screenshots/fem-newbie-profile-card-component.jpeg",
-                            "screenshotAltText": "Profile Card Component Challenge from FrontendMentor"
-                        },
-                        {
-                            "title": "Stats Preview Card Component",
-                            "url": "/FrontendMentor/newbie/stats-preview-card-component/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3"
-                            ],
-                            "screenshotURL": "/screenshots/fem-newbie-stats-preview-card-component.jpeg",
-                            "screenshotAltText": "Stats Preview Card Component Challenge from FrontendMentor"
-                        },
-                        {
-                            "title": "Article Preview Component",
-                            "url": "/FrontendMentor/newbie/article-preview-component/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3"
-                            ],
-                            "screenshotURL": "/screenshots/fem-newbie-article-preview-component.jpeg",
-                            "screenshotAltText": "Article Preview Component Challenge from FrontendMentor"
-                        },
-                        {
-                            "title": "Four Card Feature Section",
-                            "url": "/FrontendMentor/newbie/four-card-feature-section/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3"
-                            ],
-                            "screenshotURL": "/screenshots/fem-newbie-four-card-feature-section.jpeg",
-                            "screenshotAltText": "Four Card Feature Section Challenge from FrontendMentor"
-                        },
-                        {
-                            "title": "Single Price Grid Component",
-                            "url": "/FrontendMentor/newbie/single-price-grid-component-master/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3"
-                            ],
-                            "screenshotURL": "/screenshots/fem-newbie-single-price-grid-component.jpeg",
-                            "screenshotAltText": "Single Price Grid Component Challenge from FrontendMentor"
-                        },
-                        {
-                            "title": "Ping Coming-Soon",
-                            "url": "/FrontendMentor/newbie/ping-coming-soon-page-master/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3",
-                                "js"
-                            ],
-                            "screenshotURL": "/screenshots/fem-newbie-ping-coming-soon-page.jpeg",
-                            "screenshotAltText": "Ping Coming-Soon Challenge from FrontendMentor"
-                        },
-                        {
-                            "title": "The Huddle Landing Page",
-                            "url": "/FrontendMentor/newbie/huddle-landing-page-with-single-introductory-section-master/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3",
-                                "js"
-                            ],
-                            "screenshotURL": "/screenshots/fem-newbie-huddle-landing-page-with-single-introductory-section.png",
-                            "screenshotAltText": "The Huddle Landing Page Challenge from FrontendMentor, with a single introductory section."
-                        }
-                    ]
-                },
-                {
-                    "title": "Intermediate",
-                    "cssClass": "frontEndMentorChallenges",
-                    "challenges": []
-                },
-                {
-                    "title": "Advanced",
-                    "cssClass": "frontEndMentorChallenges",
-                    "challenges": []
-                },
-                {
-                    "title": "Guru",
-                    "cssClass": "frontEndMentorChallenges",
-                    "challenges": []
-                }
-            ]
-        },
-        {
-            "name": "Freecodecamp",
-            "svgSource": "/svgs/freecodecamp.svg",
-            "svgAltText": "Freecodecamp Logo",
-            "description": "Collection of challenges I completed while doing Freecodecamp",
-            "cssClass": "",
-            "difficulty": [
-                {
-                    "title": "Responsive Web Design Projects",
-                    "description": "Note: As of 11 Oct 2020, these require a partial rework to look good on mobile. 1-3 where written much earlier in my learning, so while they fufill all the requirements, they don't look great on mobile.",
-                    "cssClass": "responsiveProjects",
-                    "challenges": [
-                        {
-                            "title": "Project 1 - Tribute Page",
-                            "url": "/freeCodeCamp/responsive-web-design-projects/Project1-TributePage/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3"
-                            ],
-                            "screenshotURL": "/screenshots/fcc-web-Project1-TributePage.jpeg",
-                            "screenshotAltText": "Project 1 - Tribute Page"
-                        },
-                        {
-                            "title": "Project 2 - Build A Survey Form",
-                            "url": "/freeCodeCamp/responsive-web-design-projects/Project2-BuildaSurveyForm/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3"
-                            ],
-                            "screenshotURL": "/screenshots/fcc-web-Project2-BuildaSurveyForm.jpeg",
-                            "screenshotAltText": "Project 2 - Build A Survey Form"
-                        },
-                        {
-                            "title": "Project 3 - Product Landing Page",
-                            "url": "/freeCodeCamp/responsive-web-design-projects/Project3-ProductLandingPage/",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3"
-                            ],
-                            "screenshotURL": "/screenshots/fcc-web-Project3-ProductLandingPage.jpeg",
-                            "screenshotAltText": "Project 3 - Product Landing Page"
-                        },
-                        {
-                            "title": "Project 4 - Build A Technical Document",
-                            "url": "/freeCodeCamp/responsive-web-design-projects/Project4-BuildATechnicalDocumentPage",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3"
-                            ],
-                            "screenshotURL": "/screenshots/fcc-web-Project4-BuildATechnicalDocument.png",
-                            "screenshotAltText": "Project 4 - Build A Technical Document"
-                        },
-                        {
-                            "title": "Project 5 - Personal Portfolio Page",
-                            "url": "/freeCodeCamp/responsive-web-design-projects/Project5-PersonalPortfolioPage",
-                            "description": "",
-                            "techUsed": [
-                                "html5",
-                                "css3"
-                            ],
-                            "screenshotURL": "/screenshots/fcc-web-Project5-PersonalPortfolioPage.png",
-                            "screenshotAltText": "Project 5 - Personal Portfolio Page"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "The Complete 2022 Web Development Bootcamp",
-            "svgSource": "/svgs/udemy.svg",
-            "svgAltText": "Udemy Logo",
-            "description": "Coming Soon™",
-            "cssClass": "",
-            "difficulty": [
-                {
-                    "title": "",
-                    "description": "",
-                    "cssClass": "",
-                    "challenges": []
-                }
-            ]
-        },
-        {
-            "name": "JavaScript Projects",
-            "svgSource": "/svgs/javascript.svg",
-            "svgAltText": "JavaScript",
-            "description": "Various JavaScript projects I've completed",
-            "cssClass": "",
-            "difficulty": [
-                {
-                    "title": "",
-                    "description": "",
-                    "cssClass": "",
-                    "challenges": []
-                }
-            ]
-        }
-    ]
+	"services": [
+		{
+			"name": "Frontend Mentor",
+			"svgSource": "/svgs/frontendmentor.svg",
+			"svgAltText": "Frontend Mentor Logo",
+			"description": "Collection of challenges I completed for Frontend Mentor",
+			"cssClass": "",
+			"difficulty": [
+				{
+					"title": "Junior",
+					"cssClass": "frontEndMentorChallenges",
+					"challenges": [
+						{
+							"title": "Advice Generator App",
+							"url": "/FrontendMentor/junior/advice-generator-app/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3",
+								"js"
+							],
+							"screenshotURL": "/FrontendMentor/junior/advice-generator-app/screenshots/mobile.png",
+							"screenshotAltText": "Advice Generator App"
+						}
+					]
+				},
+				{
+					"title": "Newbie",
+					"cssClass": "frontEndMentorChallenges",
+					"challenges": [
+						{
+							"title": "Blog Preview Card",
+							"url": "/FrontendMentor/newbie/blog-preview-card/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/FrontendMentor/newbie/blog-preview-card/screenshots/desktop.png",
+							"screenshotAltText": "Screenshot of my completed mobile version of the Blog Preview Card challenge from Frontend Mentor"
+						},
+						{
+							"title": "Social Links Profile",
+							"url": "/FrontendMentor/newbie/social-links-profile/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/FrontendMentor/newbie/social-links-profile/screenshots/desktop.png",
+							"screenshotAltText": "Screenshot of my completed mobile version of the Social Links Profile challenge from Frontend Mentor"
+						},
+						{
+							"title": "skilled eLearning Landing Page",
+							"url": "/FrontendMentor/newbie/skilled-elearning-landing-page/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/FrontendMentor/newbie/skilled-elearning-landing-page/screenshots/desktop.png",
+							"screenshotAltText": "skilled eLearning Landing Page Challenge from FrontendMentor"
+						},
+						{
+							"title": "Interactive Rating Challenge",
+							"url": "/FrontendMentor/newbie/interactive-rating-component/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3",
+								"js"
+							],
+							"screenshotURL": "/FrontendMentor/newbie/interactive-rating-component/screenshots/desktop-front.png",
+							"screenshotAltText": "Interactive Rating Component Challenge from FrontendMentor"
+						},
+						{
+							"title": "meet Landing Page",
+							"url": "/FrontendMentor/newbie/meet-landing-page/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/FrontendMentor/newbie/meet-landing-page/screenshots/desktop.png",
+							"screenshotAltText": "meet Landing Page Challenge from FrontendMentor"
+						},
+						{
+							"title": "BASE Apparel Coming Soon Page",
+							"url": "/FrontendMentor/newbie/base-apparel-coming-soon/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3",
+								"js"
+							],
+							"screenshotURL": "/FrontendMentor/newbie/base-apparel-coming-soon/screenshots/desktop.png",
+							"screenshotAltText": "Base Apparel Coming Soon page Challenge from FrontendMentor"
+						},
+						{
+							"title": "NFT preview card component",
+							"url": "/FrontendMentor/newbie/nft-preview-card-component/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/FrontendMentor/newbie/nft-preview-card-component/screenshots/desktop.png",
+							"screenshotAltText": "NFT preview card component Challenge from FrontendMentor"
+						},
+						{
+							"title": "equalizer Landing Page",
+							"url": "/FrontendMentor/newbie/equalizer-landing-page/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/FrontendMentor/newbie/equalizer-landing-page/screenshots/desktop.png",
+							"screenshotAltText": "equalizer Landing Page Challenge from FrontendMentor"
+						},
+						{
+							"title": "Product Preview Card Component",
+							"url": "/FrontendMentor/newbie/product-preview-card-component/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3",
+								"js"
+							],
+							"screenshotURL": "/FrontendMentor/newbie/product-preview-card-component/screenshots/desktop.png",
+							"screenshotAltText": "Product Preview Card Component Challenge from FrontendMentor"
+						},
+						{
+							"title": "QR Code Component",
+							"url": "/FrontendMentor/newbie/qr-code-component/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/FrontendMentor/newbie/qr-code-component/screenshots/desktop.png",
+							"screenshotAltText": "QR Code Component Challenge from FrontendMentor"
+						},
+						{
+							"title": "Social Proof Section",
+							"url": "/FrontendMentor/newbie/social-proof-section/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/FrontendMentor/newbie/social-proof-section/screenshots/desktop.png",
+							"screenshotAltText": "Social Proof Challenge from FrontendMentor"
+						},
+						{
+							"title": "Intro Component with Signup form",
+							"url": "/FrontendMentor/newbie/intro-component-with-signup-form/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3",
+								"js"
+							],
+							"screenshotURL": "/FrontendMentor/newbie/intro-component-with-signup-form/screenshots/mobile.png",
+							"screenshotAltText": "Intro Component Challenge from FrontendMentor"
+						},
+						{
+							"title": "FAQ Accordion Card",
+							"url": "/FrontendMentor/newbie/faq-accordion-card/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/FrontendMentor/newbie/faq-accordion-card/screenshots/mobile-inactive.png",
+							"screenshotAltText": "FAQ Accordion Card Challenge from FrontendMentor"
+						},
+						{
+							"title": "Pod Request Access Landing Page",
+							"url": "/FrontendMentor/newbie/pod-request-access-landing-page/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/FrontendMentor/newbie/pod-request-access-landing-page/screenshots/mobile.png",
+							"screenshotAltText": "Pod Request Landing Page Challenge from FrontendMentor"
+						},
+						{
+							"title": "3 Column Preview Card Component",
+							"url": "/FrontendMentor/newbie/3-column-preview-card-component/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/FrontendMentor/newbie/3-column-preview-card-component/screenshots/desktop.png",
+							"screenshotAltText": "3 Column Preview Card Component Challenge from FrontendMentor"
+						},
+						{
+							"title": "Order Summary Card Component",
+							"url": "/FrontendMentor/newbie/order-summary-component/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/screenshots/fem-newbie-order-summary-component.png",
+							"screenshotAltText": "Order Summary Component Challenge from FrontendMentor"
+						},
+						{
+							"title": "Profile Card Component",
+							"url": "/FrontendMentor/newbie/profile-card-component/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/screenshots/fem-newbie-profile-card-component.jpeg",
+							"screenshotAltText": "Profile Card Component Challenge from FrontendMentor"
+						},
+						{
+							"title": "Stats Preview Card Component",
+							"url": "/FrontendMentor/newbie/stats-preview-card-component/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/screenshots/fem-newbie-stats-preview-card-component.jpeg",
+							"screenshotAltText": "Stats Preview Card Component Challenge from FrontendMentor"
+						},
+						{
+							"title": "Article Preview Component",
+							"url": "/FrontendMentor/newbie/article-preview-component/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/screenshots/fem-newbie-article-preview-component.jpeg",
+							"screenshotAltText": "Article Preview Component Challenge from FrontendMentor"
+						},
+						{
+							"title": "Four Card Feature Section",
+							"url": "/FrontendMentor/newbie/four-card-feature-section/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/screenshots/fem-newbie-four-card-feature-section.jpeg",
+							"screenshotAltText": "Four Card Feature Section Challenge from FrontendMentor"
+						},
+						{
+							"title": "Single Price Grid Component",
+							"url": "/FrontendMentor/newbie/single-price-grid-component-master/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/screenshots/fem-newbie-single-price-grid-component.jpeg",
+							"screenshotAltText": "Single Price Grid Component Challenge from FrontendMentor"
+						},
+						{
+							"title": "Ping Coming-Soon",
+							"url": "/FrontendMentor/newbie/ping-coming-soon-page-master/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3",
+								"js"
+							],
+							"screenshotURL": "/screenshots/fem-newbie-ping-coming-soon-page.jpeg",
+							"screenshotAltText": "Ping Coming-Soon Challenge from FrontendMentor"
+						},
+						{
+							"title": "The Huddle Landing Page",
+							"url": "/FrontendMentor/newbie/huddle-landing-page-with-single-introductory-section-master/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3",
+								"js"
+							],
+							"screenshotURL": "/screenshots/fem-newbie-huddle-landing-page-with-single-introductory-section.png",
+							"screenshotAltText": "The Huddle Landing Page Challenge from FrontendMentor, with a single introductory section."
+						}
+					]
+				},
+				{
+					"title": "Intermediate",
+					"cssClass": "frontEndMentorChallenges",
+					"challenges": []
+				},
+				{
+					"title": "Advanced",
+					"cssClass": "frontEndMentorChallenges",
+					"challenges": []
+				},
+				{
+					"title": "Guru",
+					"cssClass": "frontEndMentorChallenges",
+					"challenges": []
+				}
+			]
+		},
+		{
+			"name": "Freecodecamp",
+			"svgSource": "/svgs/freecodecamp.svg",
+			"svgAltText": "Freecodecamp Logo",
+			"description": "Collection of challenges I completed while doing Freecodecamp",
+			"cssClass": "",
+			"difficulty": [
+				{
+					"title": "Responsive Web Design Projects",
+					"description": "Note: As of 11 Oct 2020, these require a partial rework to look good on mobile. 1-3 where written much earlier in my learning, so while they fufill all the requirements, they don't look great on mobile.",
+					"cssClass": "responsiveProjects",
+					"challenges": [
+						{
+							"title": "Project 1 - Tribute Page",
+							"url": "/freeCodeCamp/responsive-web-design-projects/Project1-TributePage/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/screenshots/fcc-web-Project1-TributePage.jpeg",
+							"screenshotAltText": "Project 1 - Tribute Page"
+						},
+						{
+							"title": "Project 2 - Build A Survey Form",
+							"url": "/freeCodeCamp/responsive-web-design-projects/Project2-BuildaSurveyForm/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/screenshots/fcc-web-Project2-BuildaSurveyForm.jpeg",
+							"screenshotAltText": "Project 2 - Build A Survey Form"
+						},
+						{
+							"title": "Project 3 - Product Landing Page",
+							"url": "/freeCodeCamp/responsive-web-design-projects/Project3-ProductLandingPage/",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/screenshots/fcc-web-Project3-ProductLandingPage.jpeg",
+							"screenshotAltText": "Project 3 - Product Landing Page"
+						},
+						{
+							"title": "Project 4 - Build A Technical Document",
+							"url": "/freeCodeCamp/responsive-web-design-projects/Project4-BuildATechnicalDocumentPage",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/screenshots/fcc-web-Project4-BuildATechnicalDocument.png",
+							"screenshotAltText": "Project 4 - Build A Technical Document"
+						},
+						{
+							"title": "Project 5 - Personal Portfolio Page",
+							"url": "/freeCodeCamp/responsive-web-design-projects/Project5-PersonalPortfolioPage",
+							"description": "",
+							"techUsed": [
+								"html5",
+								"css3"
+							],
+							"screenshotURL": "/screenshots/fcc-web-Project5-PersonalPortfolioPage.png",
+							"screenshotAltText": "Project 5 - Personal Portfolio Page"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "The Complete 2022 Web Development Bootcamp",
+			"svgSource": "/svgs/udemy.svg",
+			"svgAltText": "Udemy Logo",
+			"description": "Coming Soon™",
+			"cssClass": "",
+			"difficulty": [
+				{
+					"title": "",
+					"description": "",
+					"cssClass": "",
+					"challenges": []
+				}
+			]
+		},
+		{
+			"name": "JavaScript Projects",
+			"svgSource": "/svgs/javascript.svg",
+			"svgAltText": "JavaScript",
+			"description": "Various JavaScript projects I've completed",
+			"cssClass": "",
+			"difficulty": [
+				{
+					"title": "",
+					"description": "",
+					"cssClass": "",
+					"challenges": []
+				}
+			]
+		}
+	]
 }
