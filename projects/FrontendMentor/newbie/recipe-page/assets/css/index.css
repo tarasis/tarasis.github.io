@@ -1,24 +1,25 @@
 /* Layer architecture */
 /* Best practice to put @layer at top of the import file for organization */
 
-@layer reset, base, properties, typography, theme, layouts, components, utilities;
+@layer reset, variables, base, properties, typography, theme, layouts, components, utilities;
 
 /* Base */
-@import "reset.css" layer(reset);
+@import 'reset.css' layer(reset);
 /* @import '../css/base/normalize.css' layer(base); */
-@import "base.css" layer(base);
-@import "properties.css" layer(properties);
-@import "theme.css" layer(theme); /* theme variables */
-@import "typography.css" layer(typography); /* theme typography */
-@import "utilities.css" layer(utilities);
+@import 'variables.css' layer(variables);
+@import 'base.css' layer(base);
+@import 'properties.css' layer(properties);
+@import 'theme.css' layer(theme); /* theme variables */
+@import 'typography.css' layer(typography); /* theme typography */
+@import 'utilities.css' layer(utilities);
 
 /* Layouts */
 
-@import "layout.css" layer(layouts);
+@import 'layout.css' layer(layouts);
 
 /* Components */
 
-@import "recipe-page.css" layer(components);
+@import 'recipe-page.css' layer(components);
 
 /* ! important */
 /* ? Question */

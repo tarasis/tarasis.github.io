@@ -1,105 +1,120 @@
-:root {
-    /*! @media doesn't support variables, grr */
-    /* --min-width: 45ch; */
-
-    --border-radius-card: 24px;
-    --border-radius-img: 12px;
-    --border-radius-callout: 12px;
-}
-
 main {
-    display: grid;
-    place-content: center;
+	display: grid;
+	place-content: center;
 }
 
 article {
-    outline: orange 10px solid;
+	padding: 0 2rem 2.5rem 2rem;
 
-    padding: 0px 32px;
+	@media (min-width: 50ch) {
+		max-width: 46rem;
 
-    @media (min-width: 50ch) {
-        outline: purple 10px solid;
-        max-width: 46rem;
+		padding: 40px;
 
-        padding: 40px;
+		border-radius: var(--border-radius-card);
+	}
 
-        border-radius: var(--border-radius-card);
-    }
-}
+	> * + * {
+		margin-top: 2rem;
+	}
 
-article > * + * {
-    margin-top: 2rem;
-}
+	header {
+		width: 100%;
 
-/* might need grid trick to pop the image out */
-header {
-    /* width: 100vw; */
+		@media (min-width: 50ch) {
+			width: 100%;
+		}
 
-    @media (min-width: 50ch) {
-        width: 100%;
-    }
-}
+		img {
+			margin-bottom: 40px;
+			/* width: 100%; */
 
-header img {
-    margin-bottom: 40px;
-    width: 100%;
+			left: 50%;
+			margin-left: -50vw;
+			margin-right: -50vw;
+			max-width: 100vw;
+			position: relative;
+			right: 50%;
+			width: 100vw;
 
-    @media (min-width: 50ch) {
-        width: 100%;
-        border-radius: var(--border-radius-img);
-    }
-}
+			@media (min-width: 50ch) {
+				width: 100%;
+				border-radius: var(--border-radius-img);
 
-ul,
-ol {
-    /*
+				left: initial;
+				margin-left: initial;
+				margin-right: initial;
+				max-width: initial;
+				position: initial;
+				right: initial;
+			}
+		}
+
+		h1 + p {
+			margin-top: 1.5rem;
+		}
+	}
+
+	ul,
+	ol {
+		/*
     using inside means you can't adjust
     the padding of both into position
 
     ended up searching and coming across this article about it https://css-tricks.com/everything-you-need-to-know-about-the-gap-after-the-list-marker/
     */
 
-    /* list-style-position: inside; */
-    padding-inline-start: 24px;
-}
+		/* list-style-position: inside; */
+		padding-inline-start: 24px;
+	}
 
-li {
-    padding-inline-start: 16px;
-}
+	li {
+		padding-inline-start: 16px;
+	}
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
+	li + li {
+		padding-top: 0.5rem;
+	}
 
-table > * + * {
-}
+	table {
+		border-collapse: collapse;
+		width: 100%;
+		tr:first-child td {
+			/* padding-top: 0px; */
+			padding-block-end: 12px;
+		}
 
-table > tr > td + td {
-}
+		tr:not(:first-child) > * + * {
+			padding-block: 12px;
+		}
 
-tbody > tr:first-child > td {
-    padding-top: 24px;
-}
+		tr:not(:last-child) {
+			border-bottom: 1px solid var(--white-coffee);
+		}
 
-tr > * + * {
-    padding-block: 12px;
-}
+		tr td:first-child {
+			padding-inline-start: 2rem;
+		}
 
-td {
-    border-bottom: 1px solid var(--white-coffee);
-}
+		tr td:last-child {
+			padding-inline-end: 2rem;
+		}
+	}
 
-tr td:first-child {
-    padding-inline-start: 2rem;
-}
+	section > * + * {
+		margin-top: 1.5rem;
+	}
 
-tr td:last-child {
-    padding-inline-end: 2rem;
-}
+	.preparation {
+		padding: 1.5rem;
 
-.preparation {
-    @media (min-width: 50ch) {
-        border-radius: var(--border-radius-callout);
-    }
+		ul {
+			margin-top: 1rem;
+		}
+
+		@media (min-width: 50ch) {
+			padding: 1.75rem;
+			border-radius: var(--border-radius-callout);
+		}
+	}
 }
