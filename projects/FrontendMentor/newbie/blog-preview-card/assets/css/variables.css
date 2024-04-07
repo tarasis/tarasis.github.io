@@ -36,7 +36,8 @@
 	/** Sizing  */
 
 	/* shadow scales from 8px at 375, to 16 at 1440 */
-	--sizing-box-shadow: clamp(0.5rem, 0.3239rem + 0.7512vi, 1rem);
+	/* --sizing-box-shadow: clamp(0.5rem, 0.3239rem + 0.7512vi, 1rem); */
+	--sizing-box-shadow: 8px;
 	/* Size between: 327px → 384px */
 	--sizing-article-width: clamp(20.4375rem, 19.1831rem + 5.3521vi, 24rem);
 }
