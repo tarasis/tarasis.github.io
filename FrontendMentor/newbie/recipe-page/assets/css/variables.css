@@ -1,0 +1,41 @@
+:root {
+	/*! @media doesn't support variables, grr */
+	/* --min-width: 45ch; */
+
+	--border-radius-card: 24px;
+	--border-radius-img: 12px;
+	--border-radius-callout: 12px;
+
+	/* * Colors */
+	--dark-charcoal: #312e2c;
+	--dark-raspberry: #7a284e;
+	--brandy-red: #854632;
+	--wenge-brown: #5f564d;
+	--eggshell: #f3e5d7;
+	--white-coffee: #e3ddd7;
+	--snow: #fff7fb;
+	--white: #fff;
+
+	/** Font Stuff */
+	/* Font Family */
+	--ff-outfit: 'Outfit', sans-serif;
+	--ff-young: 'YoungSerif', sans-serif;
+
+	/* Font Weights */
+	--fw-400: 400;
+	--fw-600: 600;
+	--fw-700: 700;
+
+	/* Font Sizes */
+	/* * 36px * 375, 40px @ 1440px */
+	--fs-title: clamp(2.25rem, 2.162rem + 0.3756vi, 2.5rem);
+	--fs-16: 1rem;
+	--fs-20: 1.25rem;
+	--fs-28: 1.75rem;
+
+	--fs-default: var(--fs-16);
+
+	/* Line Heights */
+	--lh-100: 1;
+	--lh-150: 1.5;
+}
